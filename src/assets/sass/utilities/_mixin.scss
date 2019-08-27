@@ -1,0 +1,7 @@
+@mixin transition(
+    $property: all, 
+    $duration: 0.2s,
+    $timing: $ease--in-cubic ,
+    $delay: "") {
+    transition: $property $duration $timing unquote($delay);
+}

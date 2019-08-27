@@ -1,0 +1,18 @@
+.media{
+    display:flex;
+    align-items: center;
+    @include e(content){
+    }
+    @include e(title){
+        font-size: getFontSize("lg");
+        color: getColor("grey.base");
+        @include m(sm-font){
+            font-size: getFontSize("sm");
+        }
+    }
+    @include e(body){
+        @include m(xs-font){
+            font-size: getFontSize("xs");
+        }
+    }
+}

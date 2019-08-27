@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/sass/style.scss';
+
+import Header from './components/common/header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="guide-wrapper d-flex">
+        <div className="sidebar sidebar--bordered-right-1x">
+
+        </div>
+
+        <div className="guide-content">
+          <div className="header">
+            <Header />
+          </div>
+          <div className="guide-content__inner col-8">
+            <div className="typography ">
+              <h3 className="title--lg mb-8">Typography</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

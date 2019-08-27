@@ -1,0 +1,17 @@
+.title{
+    @include m(lg){
+        font-size: rem(24px);
+        font-weight: 700;
+    }
+    @include m(md){
+        font-size: rem(18px);
+        font-weight: 600;
+    }
+    @include m(sm){
+        font-size: rem(16px);
+        font-weight: 600;
+    }
+    @include m(dark){
+        color: getColor('grey.base');
+    }
+}

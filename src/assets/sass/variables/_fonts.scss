@@ -1,0 +1,43 @@
+// Custom font url
+$font-url: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap' !default;
+$font-custom: 'Source Sans Pro' !default;
+
+// Font Decleration
+$font-sans : $font-custom, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+$font-primary: $font-sans;
+
+// Font Size
+$base__line: 1.5 !default;
+$base__font-size: 1rem !default;
+
+//Font size variables
+$font-size-def: $base__font-size * 0.875 !default;
+$font-size-sm: $base__font-size * 0.75 !default;
+$font-size-xsm: $base__font-size * 0.625 !default;
+
+//Heading font size vairables
+$font-size-h1: $base__font-size * 2 !default;
+$font-size-h2: $base__font-size * 1.5 !default;
+$font-size-h3: $base__font-size * 1.17 !default;
+$font-size-h4: $base__font-size * 1 !default;
+$font-size-h5: $base__font-size * 0.83 !default;
+$font-size-h6: $base__font-size * 0.75 !default; 
+
+//font-sizes
+$fontSize: (
+    "xxs" : $base__font-size * 0.625,
+    "xs" : $base__font-size * 0.75,
+    "sm" : $base__font-size * 0.875,
+    "md" : $base__font-size,
+    "lg" : $base__font-size * 1.125,
+    "xlg" : $base__font-size * 1.25,
+    "xxlg" : $base__font-size * 1.5
+ );
+
+//font-weight
+$fontWeight: (
+    "thin": 300,
+    "normal": 400,
+    "bold": 600,
+    "bolder": 700
+);

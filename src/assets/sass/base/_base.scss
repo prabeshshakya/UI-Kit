@@ -1,0 +1,101 @@
+// ==========================================================================
+// Base
+// A Base rule is applied to HTML element using an element selector, a
+// descendent selector, or a child selector, along with any pseudo-classes.
+// We cannot reference any element defined here by their respective class or ID name.
+// This defines the default styling for how that element should look.
+// Changes in style other than default should be overwritten using other partials.
+// ==========================================================================
+
+// Import Custom font here.
+@import url($font-url);
+
+// Reset CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // Global Clearfixing
+  @if $grid-type == float {
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
+  }
+}
+
+// Base Code
+html,
+body {
+  font-size: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: getColor('grey.xlight');
+  font-family: $font-primary;
+  $font-size: $font-size-def;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  outline: none;
+  color: getColor('primary.base');
+  text-decoration: none;
+  @include transition($property: color);
+  &:hover{
+    color: getColor('primary.dark');
+  }
+}
+
+@if $grid-type == float {
+  a,
+  span,
+  strong {
+    &:after {
+      @extend %clearfix-none;
+    }
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}

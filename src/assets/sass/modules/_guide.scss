@@ -1,0 +1,14 @@
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    @include m(bordered-right-1x){
+        border-right: 1px solid getColor('grey.xxxxlight');
+    }
+}
+
+.guide-content{
+    flex:1;
+    @include e(inner){
+        padding-top: 120px;
+    }
+}

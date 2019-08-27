@@ -1,0 +1,11 @@
+// .btn {
+//   @include buttonMaker;
+//   @include m(default) {
+//     @include buttonColor(outline-button-color);
+//     color: $primary-color;
+//     @include m(outline) {
+//       @include buttonColor(outline-button-color, true);
+//       background-color: $white;
+//     }
+//   }
+// }
