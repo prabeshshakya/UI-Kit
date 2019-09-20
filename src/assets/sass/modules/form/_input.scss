@@ -1,0 +1,100 @@
+%reset-input{
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+%custom-select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='20' width='20' fill='hsl(0,0%,80%)' viewBox='0 0 20 20' aria-hidden='true' focusable='false' class='css-tj5bde-Svg'%3E%3Cpath d='M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: getSpacing("5x");
+    background-position: calc(100% - 0.5rem) center;
+}
+
+.form-group{  
+    margin-bottom: getSpacing("7x");
+    @include e(label){
+        font-size: getFontSize("xs");
+        color: getColor("blue-grey.darker");
+        margin-bottom: getSpacing("1x");
+        display: block;
+        .form-group--has-error &{
+            color: getColor("error.base");
+        }
+    }
+    @include e(control-container){
+        .form-group--has-icon &{
+            position: relative;
+        }
+    }
+    @include e(control){
+        width: 100%;
+        border: 1px solid getColor("blue-grey.base");
+        padding: 0 getSpacing("3x");
+        color: getColor("black.base");
+        border-radius: $border-radius;
+        @extend %reset-input;
+        @include transition($property: border-color);
+        font-size: getFontSize("sm");
+        height: get("regular", $input-height);
+        &::placeholder{
+            color: getColor("blue-grey.base");
+        }
+        &:focus{
+            border-color: getColor("primary.base");
+            box-shadow: 0px 0px 0px 1px getColor("primary.base");
+            &:hover{
+                border-color: getColor("primary.base");
+            }
+        }
+        &:disabled{
+            cursor: not-allowed;
+            opacity: 0.6;
+            background-color: getColor("black.black10");
+        }
+        &:hover{
+            border-color: getColor("blue-grey.dark");
+        }
+        @include m(large){
+            height: get("large", $input-height);
+        }
+        .form-group--has-error &{
+            border-color: getColor("error.base");
+            color: getColor("error.base");
+        }
+        .form-group--has-icon--left &{
+            padding-left: getSpacing('7x');
+        }
+        .form-group--has-icon--right &{
+            padding-right: getSpacing('7x');
+        }
+    }
+    @include e(error){
+        position: absolute;
+        margin-top: getSpacing("1x");
+        color: getColor("error.base");
+        font-size: getFontSize('xs');
+        display: none;
+        .form-group--has-error &{
+            display: block;
+        }
+    }
+     
+    @include e(icon){
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: getColor("blue-grey.dark");
+        .form-group--has-icon--left &{
+            left: getSpacing("2x");
+        }
+        .form-group--has-icon--right &{
+            right: getSpacing("2x");            
+        }
+    }
+}
+
+select{
+    @extend %custom-select;
+}

@@ -1,0 +1,207 @@
+// .btn {
+//   @include buttonMaker;
+//   @include m(default) {
+//     @include buttonColor(outline-button-color);
+//     color: $primary-color;
+//     @include m(outline) {
+//       @include buttonColor(outline-button-color, true);
+//       background-color: $white;
+//     }
+//   }
+// }
+
+%btn-reset{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    outline: none;
+    line-height: 100%;
+}
+.btn {
+    @extend %btn-reset;
+    padding: 0 getSpacing("9x");
+    border-radius: $border-radius;
+    font-size: getFontSize("sm");
+    @include transition($duration: 0.2s);
+    font-family: $font-primary;
+    font-weight: getFontWeight("bold");
+    letter-spacing: 0.2px;
+    min-height: get("regular", $btn-height);
+    display: flex;
+    align-items: center;
+    &:active{
+        transform: scale(0.98);
+    }
+    @include m(icon){
+        padding: 0;
+        min-height: auto;
+        position: relative;
+        @include m(grey){
+            color: getColor("blue-grey.dark");
+        }
+        @include e(icon-node){
+            z-index: get("1up", $z-index);
+        }
+        &:before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            padding: getSpacing("2x");
+            left: - getSpacing("2x");
+            background: getColor("blue-grey.lighter");
+            border-radius: 100%;
+            position: absolute;
+            z-index: get("1down", $z-index);
+            transform: scale(0);
+            opacity: 0;
+            @include transition;
+        }
+        &:hover{
+            &:before{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    }
+   
+    @include m(text){
+        padding: 0 getSpacing("3x");
+        &:hover{
+            background-color: getColor("blue-grey.lighter");
+        }
+        &--primary{
+            color: getColor("primary.base");
+        }
+        &--secondary{
+            color: getColor("secondary.base");
+        }
+        &--warning{
+            color: getColor("warning.base");
+        }
+        &--error{
+            color: getColor("error.base");
+        }
+    }
+    @include m(small){
+        min-height: get("small", $btn-height);
+        padding: 0 getSpacing("3x");
+    }
+    @include m(large){
+        min-height: get("large", $btn-height);
+    }
+    @include m(primary){
+        background-color: getColor("primary.base");
+        color: getColor("white.base");
+        &:hover{
+            background-color: getColor("primary.dark");
+        }
+    }
+    @include m(secondary){
+        background-color: getColor("secondary.base");
+        color: getColor("white.base");
+        &:hover{
+            background-color: getColor("secondary.dark");
+        }
+        &:focus{
+            background-color: getColor("secondary.dark");
+        }
+    }
+    // @include m(round){
+    //     width: 44px;
+    //     height: 44px;
+    //     background-color: getColor("blue-grey.light");
+
+    // }
+    @include m(outline){
+        background-color: transparent;
+        border-color: getColor("black.black20");
+        @include m(grey){
+            border-color: getColor("blue-grey.base");
+            color: getColor("blue-grey.base");
+            &:hover{
+                background-color: getColor("blue-grey.base");
+                border-color: getColor("blue-grey.base");
+                color: getColor("white.base");
+            }
+        }
+        @include m(primary){
+            border-color: getColor("primary.base");
+            color: getColor("primary.base");
+            &:hover{
+                background-color: getColor("primary.base");
+                color: getColor("white.base");
+            }
+        }
+        @include m(secondary){
+            border-color: getColor("secondary.base");
+            color: getColor("secondary.base");
+            &:hover{
+                background-color: getColor("secondary.base");
+                color: getColor("white.base");
+            }
+        }
+    }
+    @include m(clear){
+        padding: 0;
+        min-height: auto;
+    }
+}
+
+.round-input{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include e(icon){
+        width: $round-input-size;
+        height: $round-input-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: getColor("blue-grey.base");
+        box-shadow: 0 0 0 2px getColor("white.base"), 0 0 0 3px getColor("blue-grey.base");
+        color: getColor("white.base");
+        @include transition;
+        font-size: getFontSize("xxlg");
+        font-weight: getFontWeight("bold");
+        line-height: 100%;
+    }
+    &:hover{
+        .round-input{
+            @include e(icon){
+                background-color: getColor("primary.base");
+                box-shadow: 0 0 0 2px getColor("white.base"), 0 0 0 3px getColor("primary.base");
+            }
+            @include e(title){
+                color: getColor("primary.base");
+            }
+        }
+    }
+    &:active{
+        .round-input{
+            @include e(icon){
+                @include pulse-animation();
+            }
+        }
+    }
+    @include e(title){
+        margin-top: getSpacing("2x");
+        font-size: getFontSize("xs");
+    }
+    @include m(active){
+        .round-input{
+            @include e(icon){
+                background-color: getColor("primary.base");
+                box-shadow: 0 0 0 2px getColor("white.base"), 0 0 0 3px getColor("primary.base");
+            }
+            @include e(title){
+                color: getColor("primary.base");
+            }
+        }
+    }
+}

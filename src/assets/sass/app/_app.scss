@@ -1,0 +1,39 @@
+.counter{
+    font-weight: getFontWeight("normal");
+    color: getColor("black.black50")
+}
+
+.group-content{
+    display: flex;
+    align-items: flex-end;
+    @include e(inner){
+    }
+    @include e(title){
+        font-size: getFontSize("xs");
+        font-weight: getFontWeight("bold");
+        margin-bottom: getSpacing("3x");
+    }
+    @include e(body){
+        display: flex;
+        position: relative;
+    }
+    @include e(repeatable){
+        text-align: center;
+        padding: {
+            left: getSpacing("4x");
+            right: getSpacing("4x");
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top:0;
+            width: 1px;
+            height: 100%;
+            background-color: getColor("blue-grey.light");
+        }
+    }
+}
+.group-detail{
+    border-top: 1px solid getColor("blue-grey.light");
+}

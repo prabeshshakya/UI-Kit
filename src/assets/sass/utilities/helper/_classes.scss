@@ -1,0 +1,29 @@
+.font-weight{
+    @include m(thin){
+        font-weight: getFontWeight('thin');
+    }
+    @include m(normal){
+        font-weight: getFontWeight('normal');
+    }
+    @include m(bold){
+        font-weight: getFontWeight('bold');
+    }
+    @include m(bolder){
+        font-weight: getFontWeight('bolder');
+    }
+}
+
+.text--uppercase{
+    text-transform: uppercase;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.warning--text{
+    color: getColor("warning.base");
+}
+.flex--1{
+    flex: 1;
+}

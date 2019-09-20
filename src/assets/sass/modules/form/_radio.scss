@@ -1,0 +1,70 @@
+.c-radio{
+    position: relative;
+    cursor: pointer;
+    @include m(block){
+        display: flex;
+    }
+    @include e(control){
+        opacity: 0;
+        &:hover{
+            & + label{
+                &:before{
+                    border-color: getColor("primary.base");
+                }
+            }
+        }
+       
+        &:checked{
+            & + label{
+                font-weight: getFontWeight("bold");
+                &:after{
+                    content: '';
+                    width: $radio-size - 6;
+                    height: $radio-size - 6;
+                    border-radius: 100%;
+                    position: absolute;
+                    left: ($radio-size - ($radio-size - 6)) / 2;
+                    top: ($radio-size - ($radio-size - 8)) / 2;
+                    background: getColor("primary.base");
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+        &:focus{
+            & + label{
+                &:after{
+                    @include pulse-animation;
+                }
+            }
+        }
+        & + label{
+            cursor: pointer;
+            padding-left: getSpacing('2x');
+            &:after{
+                content: '';
+                width: $radio-size - 6;
+                height: $radio-size - 6;
+                border-radius: 100%;
+                position: absolute;
+                left: ($radio-size - ($radio-size - 6)) / 2;
+                top: ($radio-size - ($radio-size - 6) / 2) / 2;
+                background: getColor("primary.base");
+                transform: scale(0);
+                opacity: 0;
+                @include transition($duration: 0.15s);
+            }
+            &:before{
+                content: '';
+                width: $radio-size;
+                height: $radio-size;
+                border-radius: 100%;
+                border: 1px solid getColor("blue-grey.base");
+                @include centralize('vertical');
+                left: 0;
+                box-sizing: border-box;
+                @include transition($duration: 0.15s);
+            }
+        }
+    }
+}

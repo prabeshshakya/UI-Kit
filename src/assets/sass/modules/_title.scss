@@ -1,17 +1,25 @@
 .title{
-    @include m(lg){
-        font-size: rem(24px);
+    @include m(large){
+        font-size: getFontSize("xlg");
         font-weight: 700;
     }
-    @include m(md){
-        font-size: rem(18px);
+    @include m(medium){
+        font-size: getFontSize("lg");
         font-weight: 600;
     }
-    @include m(sm){
-        font-size: rem(16px);
-        font-weight: 600;
+    @include m(small){
+        font-size: getFontSize("md");
+        font-weight: 700;
+    }
+    @include m(smaller){
+        font-size: getFontSize("sm");
+        font-weight: 700;
+    }
+    @include m(smallest){
+        font-size: getFontSize("xs");
+        font-weight: 700;
     }
     @include m(dark){
-        color: getColor('grey.base');
+        color: getColor('black.base');
     }
 }

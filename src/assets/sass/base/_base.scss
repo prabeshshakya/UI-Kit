@@ -35,8 +35,9 @@ body {
   -webkit-font-smoothing: antialiased;
   color: getColor('grey.xlight');
   font-family: $font-primary;
-  $font-size: $font-size-def;
+  font-size: $font-size-def;
   text-rendering: optimizeLegibility;
+  background-color: $bg-color;
 }
 
 a {

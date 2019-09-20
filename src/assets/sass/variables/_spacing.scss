@@ -65,11 +65,20 @@ $spacers: (-8 -4 0 4 8 12 16 20 24 28 32 36 40 44 48 68 100);
 $defaultSpacing: $base__font-size / 4;
 
 $spacing: (
+  "-4x" : $defaultSpacing * -4,
+  "-3x" : $defaultSpacing * -3,
+  "-2x" : $defaultSpacing * -2,
+  "-1x" : $defaultSpacing * -1,
   "0" : 0,
   "1x" : $defaultSpacing * 1,
   "2x" : $defaultSpacing * 2,
   "3x" : $defaultSpacing * 3,
   "4x" : $defaultSpacing * 4,
   "5x" : $defaultSpacing * 5,
-  "6x" : $defaultSpacing * 6
+  "6x" : $defaultSpacing * 6,
+  "7x" : $defaultSpacing * 7,
+  "8x" : $defaultSpacing * 8,
+  "9x" : $defaultSpacing * 9,
+  "10x" : $defaultSpacing * 10,
+  "11x" : $defaultSpacing * 11
 )

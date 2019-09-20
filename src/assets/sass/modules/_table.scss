@@ -1,0 +1,22 @@
+.table{
+    @include e(row){
+        display: flex;
+        border-bottom: 1px solid getColor("blue-grey.light");
+    }
+    @include e(col){
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: getSpacing("4x") 0;
+        @include m(head){
+            text-transform: uppercase;
+            color: getColor("black.black40");
+            font-size: getFontSize("xs");
+            font-weight: getFontWeight("bold");
+        }
+        @include m(body){
+            color: getColor("black.black90");
+        }
+    }
+}

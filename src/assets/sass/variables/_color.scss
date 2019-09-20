@@ -8,6 +8,7 @@ $secondary-color: #66BB6A !default;
 $error-color: #ef5350 !default;
 $warning-color: #FFCA28 !default;
 $warning-alt-color: #FF9800 !default;
+$blue-grey: #9cb2bf !default;
 $base-grey: #333333 !default;
 $light-grey: lighten($base-grey, 15%);
 $xlight-grey: lighten($light-grey, 15%);
@@ -15,8 +16,32 @@ $xxlight-grey: lighten($xlight-grey, 15%);
 $xxxlight-grey: lighten($xxlight-grey, 15%);
 $xxxxlight-grey: lighten($xxxlight-grey, 15%);
 
+$bg-color: #F6F8F9 !default;
+
 //Color Palette
 $colorMap: (
+  "white" : (
+    "base" : $white
+  ),
+  "blue-grey" : (
+    "lighter" : lighten($blue-grey, 25%),
+    "light" : lighten($blue-grey, 20%),
+    "base" : lighten($blue-grey, 10%),
+    "dark" : $blue-grey,
+    "darker" : darken($blue-grey, 15%)
+  ),
+  "black" : (
+    "base": $black,
+    "black90" : rgba($black, 0.9), 
+    "black80" : rgba($black, 0.8), 
+    "black70" : rgba($black, 0.7), 
+    "black60" : rgba($black, 0.6), 
+    "black50" : rgba($black, 0.5), 
+    "black40" : rgba($black, 0.4), 
+    "black30" : rgba($black, 0.3), 
+    "black20" : rgba($black, 0.2), 
+    "black10" : rgba($black, 0.1), 
+  ),
   "primary": (
     "base": $primary-color,
     "dark": darken($primary-color, 10%),

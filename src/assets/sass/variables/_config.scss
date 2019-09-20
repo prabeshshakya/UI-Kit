@@ -8,3 +8,16 @@ $domain-name: 'www.domain-name.com';
 
 //Path to Assets
 $path--rel: '../images';
+
+$base-index: 1;
+
+$z-index: (
+    "1down" : $base-index - 1,
+    "1up" : $base-index + 1,
+    "2up" : $base-index + 2,
+    "xtreme" : $base-index + 9999
+);
+
+
+$border-radius: 3px;
+$status-indicator-size: 10px;
