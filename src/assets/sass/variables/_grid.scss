@@ -19,6 +19,6 @@ $container-max-widths: (
 ) !default;
 
 $grid-container: 'container';
-$grid-container-fluid: 'container-fluid';
+$grid-container-fluid: 'container--fluid';
 $row-name: 'row';
 $grid-type: flex; //type of grid (either 'float' or 'flex' only)

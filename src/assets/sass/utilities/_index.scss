@@ -9,8 +9,6 @@
 @import 'normalize';
 /* Normalize Code End */
 
-@import './functions/index';
-
 @import 'utilities';
 @import 'helpers';
 
@@ -22,3 +20,6 @@
 /* Sass Compiled Custom Flex Utils End */
 @import 'extends';
 @import 'mixin';
+
+//Component Utils
+@import './components/button';

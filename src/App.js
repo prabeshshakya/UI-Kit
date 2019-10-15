@@ -13,6 +13,7 @@ const App = () => {
     <IconContext.Provider value={IconDefaultParams}>
       <Router />
     </IconContext.Provider>
+
   );
 }
 

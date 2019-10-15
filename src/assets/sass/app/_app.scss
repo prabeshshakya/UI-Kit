@@ -1,39 +1,56 @@
-.counter{
-    font-weight: getFontWeight("normal");
-    color: getColor("black.black50")
+.doc-title{
+    font-weight: getFontWeight("thin");
+    font-size: getFontSize("xxxlg");
+}
+code{
+    padding: getSpacing("1x");
+    margin: 0 getSpacing("1x");
+    font-size: getFontSize("xs");
+    background-color: getColor("blue-grey.lighter");
+    border-radius: $border-radius;
+    color: getColor("error.base");
 }
 
-.group-content{
-    display: flex;
-    align-items: flex-end;
-    @include e(inner){
+.code-preview{
+    width: 100%;
+    padding: getSpacing("5x");
+    margin: getSpacing("6x") 0;
+    background-color:  getColor("blue-grey.lighter");
+    pre{
+        background: none !important;
+        padding: 0px !important;
+        overflow-y: hidden;
     }
-    @include e(title){
-        font-size: getFontSize("xs");
-        font-weight: getFontWeight("bold");
-        margin-bottom: getSpacing("3x");
-    }
-    @include e(body){
-        display: flex;
-        position: relative;
-    }
-    @include e(repeatable){
-        text-align: center;
-        padding: {
-            left: getSpacing("4x");
-            right: getSpacing("4x");
-        }
-        &:after{
-            content: '';
-            position: absolute;
-            right: 0;
-            top:0;
-            width: 1px;
-            height: 100%;
-            background-color: getColor("blue-grey.light");
-        }
+    code{
+        padding: 0;
+        margin: 0;
     }
 }
-.group-detail{
-    border-top: 1px solid getColor("blue-grey.light");
+
+.kit-landing-page{
+    height: 100vh;
+}
+
+.menu-group{
+    @include e(title){
+        font-weight: getFontWeight("normal");
+        text-transform: uppercase;
+        font-size: getFontSize("xs");
+        letter-spacing: 2px;
+        border-bottom: 1px solid getColor("black.black10");
+        padding-bottom: getSpacing("2x");
+        margin-bottom: getSpacing("4x");
+    }
+    @include e(nodes){
+        padding: getSpacing("1x") 0;
+        @include e(single){
+            color: getColor("black.black50");
+            &:hover{
+                color: getColor("black.black80");
+            }
+            @include m(active){
+                color: getColor("primary.base");
+            }
+        }
+    }
 }

@@ -1,16 +1,20 @@
 .font-weight{
     @include m(thin){
-        font-weight: getFontWeight('thin');
+        font-weight: getFontWeight('thin') !important;
     }
     @include m(normal){
-        font-weight: getFontWeight('normal');
+        font-weight: getFontWeight('normal') !important;
     }
     @include m(bold){
-        font-weight: getFontWeight('bold');
+        font-weight: getFontWeight('bold') !important;
     }
     @include m(bolder){
-        font-weight: getFontWeight('bolder');
+        font-weight: getFontWeight('bolder') !important;
     }
+}
+
+.lead-text{
+    font-size: getFontSize("xlg");
 }
 
 .text--uppercase{

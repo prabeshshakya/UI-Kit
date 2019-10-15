@@ -4,7 +4,7 @@
   }
   
   @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
-    @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
+    @return if(breakpoint-min($name, $breakpoints) == null, '', '--#{$name}');
   }
   
   @each $breakpoint in map-keys($grid-breakpoints) {
@@ -13,46 +13,46 @@
   
       @each $prop, $abbrev in (margin: m, padding: p) {
         @each $size, $length in $spacing {
-          .#{$abbrev}#{$infix}-#{$size} {
+          .#{$abbrev}--#{$size}#{$infix} {
             #{$prop}: $length!important;
           }
-          .#{$abbrev}t#{$infix}-#{$size},
-          .#{$abbrev}y#{$infix}-#{$size} {
+          .#{$abbrev}t--#{$size}#{$infix},
+          .#{$abbrev}y--#{$size}#{$infix} {
             #{$prop}-top: $length!important;
           }
-          .#{$abbrev}r#{$infix}-#{$size},
-          .#{$abbrev}x#{$infix}-#{$size} {
+          .#{$abbrev}r--#{$size}#{$infix},
+          .#{$abbrev}x--#{$size}#{$infix} {
             #{$prop}-right: $length!important;
           }
-          .#{$abbrev}b#{$infix}-#{$size},
-          .#{$abbrev}y#{$infix}-#{$size} {
+          .#{$abbrev}b--#{$size}#{$infix},
+          .#{$abbrev}y--#{$size}#{$infix} {
             #{$prop}-bottom: $length!important;
           }
-          .#{$abbrev}l#{$infix}-#{$size},
-          .#{$abbrev}x#{$infix}-#{$size} {
+          .#{$abbrev}l--#{$size}#{$infix},
+          .#{$abbrev}x--#{$size}#{$infix} {
             #{$prop}-left: $length!important;
           }
         }
       }
   
       // Some special margin utils
-      .m#{$infix}-auto {
+      .m--auto#{$infix} {
         margin: auto !important;
       }
-      .mt#{$infix}-auto,
-      .my#{$infix}-auto {
+      .mt--auto#{$infix},
+      .my--auto#{$infix} {
         margin-top: auto !important;
       }
-      .mr#{$infix}-auto,
-      .mx#{$infix}-auto {
+      .mr--auto#{$infix},
+      .mx--auto#{$infix} {
         margin-right: auto !important;
       }
-      .mb#{$infix}-auto,
-      .my#{$infix}-auto {
+      .mb--auto#{$infix},
+      .my--auto#{$infix} {
         margin-bottom: auto !important;
       }
-      .ml#{$infix}-auto,
-      .mx#{$infix}-auto {
+      .ml--auto#{$infix},
+      .mx--auto#{$infix} {
         margin-left: auto !important;
       }
     }

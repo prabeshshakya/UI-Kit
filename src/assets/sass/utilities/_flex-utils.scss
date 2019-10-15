@@ -1,65 +1,3 @@
-$justify-properties: (
-  justify-content-start: flex-start,
-  justify-content-end: flex-end,
-  justify-content-center: center,
-  justify-content-between: space-between,
-  justify-content-around: space-around,
-  justify-content-initial: initial,
-  justify-content-inherit: inherit
-);
-
-$align-properties: (
-  align-items-stretch: stretch,
-  align-items-center: center,
-  align-items-start: flex-start,
-  align-items-end: flex-end,
-  align-items-base: baseline
-);
-
-$align-self-properties: (
-  align-self-auto: auto,
-  align-self-stretch: stretch,
-  align-self-center: center,
-  align-self-start: flex-start,
-  align-self-end: flex-end,
-  align-self-baseline: baseline,
-  align-self-initial: initial,
-  align-self-inherit: inherit
-);
-
-$align-content-properties: (
-  align-content-stretch: stretch,
-  align-content-center: center,
-  align-content-start: flex-start,
-  align-content-end: flex-end,
-  align-content-between: space-between,
-  align-content-around: space-around,
-  align-content-initial: initial,
-  align-content-inherit: inherit
-);
-
-$flex-direction: (
-  flex-row: row,
-  flex-row-reverse: row-reverse,
-  flex-column: column,
-  flex-column-reverse: column-reverse
-);
-
-$flex-wrap: (
-  flex-wrap: wrap,
-  flex-nowrap: nowrap
-);
-
-$flex-utilities: (
-  justify-content: $justify-properties,
-  align-items: $align-properties,
-  align-self: $align-self-properties,
-  align-content: $align-content-properties,
-  flex-direction: $flex-direction,
-  flex-wrap: $flex-wrap,
-  order: order
-);
-
 @mixin flex-modifier($breakpoints, $flex-utilities) {
   @each $name, $breakpoint in $breakpoints {
     @include mq($name) {
@@ -124,11 +62,11 @@ $flex-utilities: (
         @if ($types == order) {
           @for $i from 1 through $grid-count {
             @if $breakpoint == 0 {
-              .#{$types}-#{$i} {
+              .#{$types}--#{$i} {
                 #{$types}: #{$i};
               }
             } @else {
-              .#{$types}-#{$name}-#{$i} {
+              .#{$types}--#{$i}--#{$name} {
                 #{$types}: #{$i};
               }
             }
@@ -140,7 +78,7 @@ $flex-utilities: (
               #{$types}: $properties;
             }
           } @else {
-            .#{$type}-#{$name} {
+            .#{$type}--#{$name} {
               #{$types}: $properties;
             }
           }

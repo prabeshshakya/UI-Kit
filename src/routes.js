@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Dashboard from './components/dashboard';
 import Kit from './components/kit';
+import Landing from './components/landing';
 
 
 /**
@@ -11,11 +11,8 @@ import Kit from './components/kit';
 function AppRouter() {
   return (
     <Router>
-      <div>
-        <Route path="/" exact component={Dashboard} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/kit" component={Kit} />
-      </div>
+        <Route path="/" exact component={Landing} />
+        <Route path="/docs" component={Kit} />
     </Router>
   );
 }

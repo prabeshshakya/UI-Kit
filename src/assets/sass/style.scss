@@ -8,13 +8,14 @@
 // With SMACSS, we divide our styles into fives categories: base, libs, modules, states, and utilities
 // ==========================================================================
 
+@import 'utilities/functions/index';
 @import 'variables/index';
 
 @import 'utilities/index';
 
 /* Sass Compiled Css Code Start */
 @import 'base/index';
-@import 'modules/index';
+@import 'components/index';
 @import 'libs/index';
 @import 'states/index';
 @import 'app/index';

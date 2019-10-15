@@ -20,3 +20,16 @@
         }
     }
 }
+
+.ui-html-table{
+    width: 100%;
+    border-collapse: collapse;
+    th, td{
+        padding: getSpacing('4x');
+        border-bottom: 1px solid getColor("black.black10");
+    }
+    th{
+        font-size: getFontSize('xs');
+        text-align: left;
+    }
+}

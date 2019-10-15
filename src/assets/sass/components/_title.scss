@@ -1,4 +1,8 @@
 .title{
+    @include m(largest){
+        font-size: getFontSize("xxxlg");
+        font-weight: 700;
+    }
     @include m(large){
         font-size: getFontSize("xlg");
         font-weight: 700;

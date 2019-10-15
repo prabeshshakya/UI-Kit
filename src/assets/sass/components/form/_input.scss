@@ -13,7 +13,7 @@
 }
 
 .form-group{  
-    margin-bottom: getSpacing("7x");
+    margin-bottom: getSpacing("5x");
     @include e(label){
         font-size: getFontSize("xs");
         color: getColor("blue-grey.darker");
