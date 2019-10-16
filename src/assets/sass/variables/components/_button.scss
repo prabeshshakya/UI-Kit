@@ -5,17 +5,17 @@ $btn-base-text-color: getColor("white.base");
 $btn-size: (
     "small" : (
         "height" : 24px,
-        "font-size" : getFontSize('xs'),
+        "font-size" : getFontSize("12"),
         "spacing": 0 getSpacing('2x')  
     ),
     "regular" : (
         "height" : 32px,
-        "font-size" : getFontSize('sm'),
+        "font-size" : getFontSize("14"),
         "spacing": 0 getSpacing('4x')  
     ),
     "large" : (
         "height" : 40px,
-        "font-size" : getFontSize('sm'),
+        "font-size" : getFontSize("14"),
         "spacing": 0 getSpacing('4x')  
     )
 );

@@ -24,15 +24,15 @@ $font-size-h5: $base__font-size * 0.83 !default;
 $font-size-h6: $base__font-size * 0.75 !default; 
 
 //font-sizes
-$fontSize: (
-    "xxs" : $base__font-size * 0.625,
-    "xs" : $base__font-size * 0.75,
-    "sm" : $base__font-size * 0.875,
-    "md" : $base__font-size,
-    "lg" : $base__font-size * 1.125,
-    "xlg" : $base__font-size * 1.25,
-    "xxlg" : $base__font-size * 1.5,
-    "xxxlg" : $base__font-size * 2
+ $fontSize: (
+    "10" : $base__font-size * 0.625,
+    "12" : $base__font-size * 0.75,
+    "14" : $base__font-size * 0.875,
+    "16" : $base__font-size,
+    "18" : $base__font-size * 1.125,
+    "20" : $base__font-size * 1.25,
+    "24" : $base__font-size * 1.5,
+    "32" : $base__font-size * 2
  );
 
 //font-weight

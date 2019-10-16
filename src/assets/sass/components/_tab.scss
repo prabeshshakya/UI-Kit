@@ -3,7 +3,7 @@
         display: flex;
         position: relative;
         text-transform: uppercase;
-        font-size: getFontSize('xs');
+        font-size: getFontSize("12");
         margin-bottom: getSpacing('4x');
         &:before{
             content: '';

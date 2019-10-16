@@ -15,7 +15,7 @@
 .form-group{  
     margin-bottom: getSpacing("5x");
     @include e(label){
-        font-size: getFontSize("xs");
+        font-size: getFontSize("12");
         color: getColor("blue-grey.darker");
         margin-bottom: getSpacing("1x");
         display: block;
@@ -36,7 +36,7 @@
         border-radius: $border-radius;
         @extend %reset-input;
         @include transition($property: border-color);
-        font-size: getFontSize("sm");
+        font-size: getFontSize("14");
         height: get("regular", $input-height);
         &::placeholder{
             color: getColor("blue-grey.base");
@@ -74,7 +74,7 @@
         position: absolute;
         margin-top: getSpacing("1x");
         color: getColor("error.base");
-        font-size: getFontSize('xs');
+        font-size: getFontSize("12");
         display: none;
         .form-group--has-error &{
             display: block;

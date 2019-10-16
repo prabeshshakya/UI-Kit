@@ -4,15 +4,15 @@
     @include e(content){
     }
     @include e(title){
-        font-size: getFontSize("lg");
+        font-size: getFontSize("18");
         color: getColor("grey.base");
         @include m(sm-font){
-            font-size: getFontSize("sm");
+            font-size: getFontSize("14");
         }
     }
     @include e(body){
         @include m(xs-font){
-            font-size: getFontSize("xs");
+            font-size: getFontSize("12");
         }
     }
 }

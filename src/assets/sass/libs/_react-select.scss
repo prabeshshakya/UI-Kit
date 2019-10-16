@@ -14,7 +14,7 @@
             }
         }
         @include e(placeholder){
-            font-size: getFontSize("sm");
+            font-size: getFontSize("14");
         }
         @include e(indicator-separator){
             display: none;
