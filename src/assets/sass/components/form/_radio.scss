@@ -90,32 +90,29 @@
                 font-weight: getFontWeight("bold");
                 &:after{
                     content: '';
-                    width: $radio-size - 6;
-                    height: $radio-size - 6;
+                    width: 4px;
+                    height: 8px;
                     position: absolute;
-                    left: ($radio-size - ($radio-size - 6)) / 2;
-                    top: ($radio-size - ($radio-size - 8)) / 2;
-                    transform: scale(1) rotate(135deg);
+                    left: 5px;
+                    top: 1px;
+                    transform: scale(1) rotate(45deg);
                     opacity: 1;
-                    border-bottom: 4px solid black;
-                    border-right: 4px solid black;
+                    border-bottom: 2px solid getColor("white.base");
+                    border-right: 2px solid getColor("white.base");
                 }
-            }
-        }
-        &:focus{
-            & + label{
-                &:after{
-                    @include pulse-animation;
+                &:before{
+                    background-color: getColor("primary.base");
+                    border-color: getColor("primary.base");
                 }
             }
         }
         & + label{
             cursor: pointer;
-            padding-left: getSpacing('2x');
+            padding-left: getSpacing('3x');
             &:after{
                 content: '';
-                width: $radio-size - 6;
-                height: $radio-size - 6;
+                width: $radio-size/2;
+                height: $radio-size/2;
                 position: absolute;
                 left: ($radio-size - ($radio-size - 6)) / 2;
                 top: ($radio-size - ($radio-size - 6) / 2) / 2;

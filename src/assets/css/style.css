@@ -4289,8 +4289,8 @@ select {
         top: 4px;
         transform: scale(1) rotate(135deg);
         opacity: 1;
-        border-bottom: 4px solid black;
-        border-right: 4px solid black; }
+        border-bottom: 3px solid black;
+        border-right: 3px solid black; }
     .c-checkbox__control:focus + label:after {
       animation: pulse 1s forwards; }
 
