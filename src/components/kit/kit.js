@@ -2,6 +2,8 @@ import React from 'react';
 import KitRouter from './KitRouter';
 import {NavLink} from 'react-router-dom';
 
+import { PATHS } from '../../routePaths';
+
 const Kit = () => {
     return (
         <div className="guide-wrapper d-flex">
@@ -12,10 +14,13 @@ const Kit = () => {
                     <h4 className="menu-group__title">Components</h4>
                     <div className="menu-group__contents">
                         <div className="menu-group__nodes">
-                            <NavLink to="/docs/button" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Button</NavLink>
+                            <NavLink to={PATHS.BUTTON_PATH} className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Button</NavLink>
                         </div>
                         <div className="menu-group__nodes">
-                            <NavLink to="/docs/forms" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Form Elements</NavLink>
+                            <NavLink to={PATHS.FORM_PATH} className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Form Elements</NavLink>
+                        </div>
+                        <div className="menu-group__nodes">
+                            <NavLink to={PATHS.ALERT_PATH} className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Alerts</NavLink>
                         </div>
                     </div>
                 </div>
