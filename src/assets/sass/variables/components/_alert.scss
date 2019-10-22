@@ -1,0 +1,7 @@
+$alert-variant: (
+  "primary": (
+      "border-color": getColor("primary.base"),
+      "bg-color" : getColor("primary.light"),
+      "text-color" : getColor("primary.dark")
+  )
+);
