@@ -105,7 +105,7 @@
     //Generates common styles for grid classes
     @for $i from 1 through $columns {
       @if $breakpoint == 0 {
-        .#{$grid-class}--#{$i} {
+        .#{$grid-class}-#{$i} {
           @if $grid-type == 'flex' {
             @extend %grid-column-flex;
           } @else if $grid-type == 'float' {
@@ -113,7 +113,7 @@
           }
         }
       } @else {
-        .#{$grid-class}--#{$i}--#{$name} {
+        .#{$grid-class}-#{$i}-#{$name} {
           @if $grid-type == 'flex' {
             @extend %grid-column-flex;
           } @else if $grid-type == 'float' {
@@ -127,12 +127,12 @@
       @if $grid-type == 'flex' {
         // Provides basic `.col-{bp}` classes for equal-width flexbox columns
         // Ported from bootstrap 4
-        .#{$grid-class}--#{$name} {
+        .#{$grid-class}-#{$name} {
           flex-basis: 0;
           flex-grow: 1;
           max-width: 100%;
         }
-        .#{$grid-class}--auto--#{$name} {
+        .#{$grid-class}-auto-#{$name} {
           flex: 0 0 auto;
           width: auto;
           max-width: none; // Reset earlier grid tiers
@@ -140,7 +140,7 @@
       }
       @for $i from 1 through $columns {
         @if $breakpoint == 0 {
-          .#{$grid-class}--#{$i} {
+          .#{$grid-class}-#{$i} {
             @if $grid-type == 'flex' {
               @include make-col-flex($i, $columns);
             } @else if $grid-type == 'float' {
@@ -148,7 +148,7 @@
             }
           }
         } @else {
-          .#{$grid-class}--#{$i}--#{$name} {
+          .#{$grid-class}-#{$i}-#{$name} {
             @if $grid-type == 'flex' {
               @include make-col-flex($i, $columns);
             } @else if $grid-type == 'float' {
@@ -160,10 +160,11 @@
     }
   }
 }
-
+@include make-container($grid-container-fluid);
 @include make-container;
 @include make-container-fixed-width;
 @include make-row;
+
 
 @if ($grid-type == 'flex' or $grid-type == 'float') {
   @include make-grid;

@@ -73,9 +73,9 @@
 }
 
 @function getSpacingName($space) {
-    @if $space < 0 {
-      @return 'neg#{$space}x';
-    }@else{
-      @return '#{$space}x';
-    }
+  @if $space < 0 {
+    @return 'neg#{$space}x';
+  }@else{
+    @return '#{$space}x';
   }
+}

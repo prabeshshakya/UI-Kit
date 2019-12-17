@@ -62,11 +62,11 @@
         @if ($types == order) {
           @for $i from 1 through $grid-count {
             @if $breakpoint == 0 {
-              .#{$types}--#{$i} {
+              .#{$types}-#{$i} {
                 #{$types}: #{$i};
               }
             } @else {
-              .#{$types}--#{$i}--#{$name} {
+              .#{$types}-#{$i}-#{$name} {
                 #{$types}: #{$i};
               }
             }
@@ -78,7 +78,7 @@
               #{$types}: $properties;
             }
           } @else {
-            .#{$type}--#{$name} {
+            .#{$type}-#{$name} {
               #{$types}: $properties;
             }
           }

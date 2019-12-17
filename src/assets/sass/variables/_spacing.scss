@@ -1,53 +1,53 @@
 $justify-properties: (
-  justify-content--start: flex-start,
-  justify-content--end: flex-end,
-  justify-content--center: center,
-  justify-content--between: space-between,
-  justify-content--around: space-around,
-  justify-content--initial: initial,
-  justify-content--inherit: inherit
+  justify-content-start: flex-start,
+  justify-content-end: flex-end,
+  justify-content-center: center,
+  justify-content-between: space-between,
+  justify-content-around: space-around,
+  justify-content-initial: initial,
+  justify-content-inherit: inherit
 );
 
 $align-properties: (
-  align-items--stretch: stretch,
-  align-items--center: center,
-  align-items--start: flex-start,
-  align-items--end: flex-end,
-  align-items--base: baseline
+  align-items-stretch: stretch,
+  align-items-center: center,
+  align-items-start: flex-start,
+  align-items-end: flex-end,
+  align-items-base: baseline
 );
 
 $align-self-properties: (
-  align-self--auto: auto,
-  align-self--stretch: stretch,
-  align-self--center: center,
-  align-self--start: flex-start,
-  align-self--end: flex-end,
-  align-self--baseline: baseline,
-  align-self--initial: initial,
-  align-self--inherit: inherit
+  align-self-auto: auto,
+  align-self-stretch: stretch,
+  align-self-center: center,
+  align-self-start: flex-start,
+  align-self-end: flex-end,
+  align-self-baseline: baseline,
+  align-self-initial: initial,
+  align-self-inherit: inherit
 );
 
 $align-content-properties: (
-  align-content--stretch: stretch,
-  align-content--center: center,
-  align-content--start: flex-start,
-  align-content--end: flex-end,
-  align-content--between: space-between,
-  align-content--around: space-around,
-  align-content--initial: initial,
-  align-content--inherit: inherit
+  align-content-stretch: stretch,
+  align-content-center: center,
+  align-content-start: flex-start,
+  align-content-end: flex-end,
+  align-content-between: space-between,
+  align-content-around: space-around,
+  align-content-initial: initial,
+  align-content-inherit: inherit
 );
 
 $flex-direction: (
-  flex--row: row,
-  flex--row-reverse: row-reverse,
-  flex--column: column,
-  flex--column-reverse: column-reverse
+  flex-row: row,
+  flex-row-reverse: row-reverse,
+  flex-column: column,
+  flex-column-reverse: column-reverse
 );
 
 $flex-wrap: (
-  flex--wrap: wrap,
-  flex--nowrap: nowrap
+  flex-wrap: wrap,
+  flex-nowrap: nowrap
 );
 
 $flex-utilities: (
@@ -64,7 +64,7 @@ $defaultSpacing: $base__font-size / 4;
 
 $spacing: ();
 $spaceFrom: -4;
-$spaceTill: 15;
+$spaceTill: 20;
 
 @for $i from $spaceFrom through $spaceTill {
   $spacing: map-merge($spacing, (getSpacingName($i) : $defaultSpacing * $i));
