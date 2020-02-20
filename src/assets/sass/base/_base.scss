@@ -35,16 +35,16 @@ body {
   -webkit-font-smoothing: antialiased;
   color: getColor('grey.xlight');
   font-family: $font-primary;
-  font-size: $font-size-def;
+  font-size: $base__font-size;
   text-rendering: optimizeLegibility;
   background-color: $bg-color;
+  line-height: $base__line;
 }
 
 a {
   outline: none;
   color: getColor('primary.base');
   text-decoration: none;
-  @include transition($property: color);
   &:hover{
     color: getColor('primary.dark');
   }
@@ -75,24 +75,27 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size-h1;
+  @include getHeaderFontSize("h1");
 }
 
 h2 {
-  font-size: $font-size-h2;
+  @include getHeaderFontSize("h2");
 }
 
 h3 {
-  font-size: $font-size-h3;
+  @include getHeaderFontSize("h3");
 }
+
 h4 {
-  font-size: $font-size-h4;
+  @include getHeaderFontSize("h4");
 }
+
 h5 {
-  font-size: $font-size-h5;
+  @include getHeaderFontSize("h5");
 }
+
 h6 {
-  font-size: $font-size-h6;
+  @include getHeaderFontSize("h6");
 }
 
 img {

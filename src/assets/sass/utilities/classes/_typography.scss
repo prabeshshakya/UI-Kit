@@ -1,0 +1,38 @@
+// This will generate utility class for header fonts
+// .${prefix}-h1
+// Example:
+// .lf-h1{
+//    font-size: 52px;
+//    line-height: 63px; 
+// }
+//
+ @mixin generate-header-font($map: get("header", $fontSize)){
+    @each $name, $value in $map{
+        .#{$prefix}-#{$name} {
+            @include getHeaderFontSize("#{$name}");
+        }
+    }
+}
+@if ($generate-header-font-classes){
+    @include generate-header-font;
+}
+
+// This will generate utility class for body fonts
+// .${prefix}-body
+// Example:
+// .lf-body{
+//    font-size: 17px;
+//    line-height: 21px; 
+// }
+//
+@mixin generate-font($map: get("font", $fontSize)){
+    @each $name, $value in $map{
+        .#{$prefix}-#{$name} {
+            @include getFontSize("#{$name}");
+        }
+    }
+}
+
+@if ($generate-font-classes){
+    @include generate-font;
+}

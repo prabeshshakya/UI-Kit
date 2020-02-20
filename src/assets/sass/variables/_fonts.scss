@@ -2,43 +2,111 @@
 $font-url: 'https://rsms.me/inter/inter.css' !default;
 $font-custom: 'Inter' !default;
 
-// Font Decleration
+// Font Declaration
 $font-sans : $font-custom, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 $font-primary: $font-sans;
 
-// Font Size
-$base__line: 1.5 !default;
-$base__font-size: 1rem !default;
-
-//Font size variables
-$font-size-def: $base__font-size * 0.875 !default;
-$font-size-sm: $base__font-size * 0.75 !default;
-$font-size-xsm: $base__font-size * 0.625 !default;
-
-//Heading font size vairables
-$font-size-h1: $base__font-size * 2 !default;
-$font-size-h2: $base__font-size * 1.5 !default;
-$font-size-h3: $base__font-size * 1.17 !default;
-$font-size-h4: $base__font-size * 1 !default;
-$font-size-h5: $base__font-size * 0.83 !default;
-$font-size-h6: $base__font-size * 0.75 !default; 
-
-//font-sizes
- $fontSize: (
-    "10" : $base__font-size * 0.625,
-    "12" : $base__font-size * 0.75,
-    "14" : $base__font-size * 0.875,
-    "16" : $base__font-size,
-    "18" : $base__font-size * 1.125,
-    "20" : $base__font-size * 1.25,
-    "24" : $base__font-size * 1.5,
-    "32" : $base__font-size * 2
- );
-
 //font-weight
 $fontWeight: (
-    "thin": 300,
+    "light": 300,
     "normal": 400,
-    "bold": 600,
-    "bolder": 700
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "heavy": 900
 );
+
+$fontSize : (
+    "header": (
+        "h1": (
+            "font-size": 52px,
+            "line-height": 63px
+        ),
+        "h2": (
+            "font-size": 44px,
+            "line-height": 53px
+        ),
+        "h3": (
+            "font-size": 32px,
+            "line-height": 39px
+        ),
+        "h4": (
+            "font-size": 26px,
+            "line-height": 31px
+        ),
+        "h5": (
+            "font-size": 20px,
+            "line-height": 24px
+        ),
+        "h6": (
+            "font-size": 19px,
+            "line-height": 23px
+        )
+    ),
+    "font" : (
+        "body1": (
+            "font-size": 17px,
+            "line-height": 21px
+        ),
+        "body2": (
+            "font-size": 15px,
+            "line-height": 18px
+        ),
+        "subheading": (
+            "font-size": 22px,
+            "line-height": 27px
+        ),
+        "caption": (
+            "font-size": 20px,
+            "line-height": 24px
+        ),
+
+    )
+);
+
+$fontDecoration: (
+    "striked" : (
+        "text-decoration" : "line-through"
+    ),
+    "underlined" : (
+        "text-decoration" : "underline"
+    ),
+);
+
+$fontCase: (
+    "uppercase" : (
+        "text-transform" : "uppercase"
+    ),
+    "lowercase" : (
+        "text-transform" : "lowercase"
+    ),
+    "capitalized" : (
+        "text-transform" : "capitalize"
+    ),
+);
+
+$fontStyle: (
+    "italic" : (
+        "font-style" : "italic"
+    )
+);
+
+$textAlignment: (
+    "center" : (
+        "text-alignment" : "center"
+    ),
+    "left" : (
+        "text-alignment" : "left"
+    ),
+    "right" : (
+        "text-alignment" : "right"
+    ),
+    "justified" : (
+        "text-alignment" : "justify"
+    ),
+);
+
+
+// Base font size
+$base__line: 1.5 !default;
+$base__font-size: 16px !default;

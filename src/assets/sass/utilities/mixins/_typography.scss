@@ -1,0 +1,24 @@
+// This mixin will extract header font size & line-height information from $fontSize map
+// $fontSize -> header -> {key}
+// Usage
+// h1{ @include getHeaderFontSize("h1") }
+// Note: make sure key exists in the map
+// Map found at /variables/fonts.scss
+
+@mixin getHeaderFontSize($key : null) {
+    font-size: get("header.#{$key}.font-size", $fontSize);
+    line-height: get("header.#{$key}.line-height", $fontSize);
+};
+
+
+// This mixin will extract body font size & line-height information from $fontSize map
+// $fontSize -> font -> {key}
+// Usage
+// .card-title { @include getFontSize("body1") }
+// Note: make sure key exists in the map
+// Map found at /variables/fonts.scss
+
+@mixin getFontSize($key : null) {
+    font-size: get("font.#{$key}.font-size", $fontSize);
+    line-height: get("font.#{$key}.line-height", $fontSize);
+};

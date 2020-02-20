@@ -11,13 +11,18 @@ $path--rel: '../images';
 
 $base-index: 1;
 
-$z-index: (
-    "1down" : $base-index - 1,
-    "1up" : $base-index + 1,
-    "2up" : $base-index + 2,
-    "xtreme" : $base-index + 9999
-);
-
-
 $border-radius: 3px;
 $status-indicator-size: 10px;
+
+// Customize your prefix
+$prefix: "lf";
+
+// ==========================================================================
+// Features
+// Set true to enable features
+// ==========================================================================
+
+// Utility Classes
+
+$generate-header-font-classes: true;
+$generate-font-classes: true;
