@@ -38,3 +38,18 @@
     @return ($target/$context) * 100%;
   }
   
+  // Unit Converstion
+  // $value    - Value to be converted into percentage
+  // $unit   - Intended unit
+  // @returns   - number
+  @function unitConversion($value, $unit: $unit) {
+    @if ($unit == $rem) {
+      @return rem($value);
+    } 
+    @else if ( $unit == $em ){
+      @return em($value);
+    }
+    @else{
+      @return $value;
+    }
+  }

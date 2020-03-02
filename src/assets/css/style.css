@@ -343,27 +343,27 @@ h6 {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
 
 h1 {
-  font-size: 52px;
+  font-size: 3.25rem;
   line-height: 63px; }
 
 h2 {
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 53px; }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 39px; }
 
 h4 {
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 31px; }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px; }
 
 h6 {
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 23px; }
 
 img {
@@ -1272,44 +1272,107 @@ img {
     order: 12; } }
 
 .lf-h1 {
-  font-size: 52px;
+  font-size: 3.25rem;
   line-height: 63px; }
 
 .lf-h2 {
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 53px; }
 
 .lf-h3 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 39px; }
 
 .lf-h4 {
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 31px; }
 
 .lf-h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px; }
 
 .lf-h6 {
-  font-size: 19px;
+  font-size: 1.1875rem;
   line-height: 23px; }
 
 .lf-body1 {
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 21px; }
 
 .lf-body2 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 18px; }
 
 .lf-subheading {
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 27px; }
 
 .lf-caption {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 24px; }
+
+.lf-text-striked {
+  text-decoration: line-through; }
+
+.lf-text-underlined {
+  text-decoration: underline; }
+
+.lf-text-uppercase {
+  text-transform: uppercase; }
+
+.lf-text-lowercase {
+  text-transform: lowercase; }
+
+.lf-text-capitalized {
+  text-transform: capitalize; }
+
+.lf-text-uppercase {
+  text-transform: uppercase; }
+
+.lf-text-lowercase {
+  text-transform: lowercase; }
+
+.lf-text-capitalized {
+  text-transform: capitalize; }
+
+.lf-text-normal {
+  font-style: normal; }
+
+.lf-text-italic {
+  font-style: italic; }
+
+.lf-text-oblique {
+  font-style: oblique; }
+
+.lf-text-center {
+  text-align: center; }
+
+.lf-text-left {
+  text-align: left; }
+
+.lf-text-right {
+  text-align: right; }
+
+.lf-text-justified {
+  text-align: justify; }
+
+.lf-text-light {
+  font-weight: 300; }
+
+.lf-text-normal {
+  font-weight: 400; }
+
+.lf-text-medium {
+  font-weight: 500; }
+
+.lf-text-semibold {
+  font-weight: 600; }
+
+.lf-text-bold {
+  font-weight: 700; }
+
+.lf-text-heavy {
+  font-weight: 900; }
 
 @media (min-width: 576px) {
   .is-collapsed-mobile {

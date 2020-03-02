@@ -6,7 +6,7 @@
 // Map found at /variables/fonts.scss
 
 @mixin getHeaderFontSize($key : null) {
-    font-size: get("header.#{$key}.font-size", $fontSize);
+    font-size: unitConversion(get("header.#{$key}.font-size", $fontSize));
     line-height: get("header.#{$key}.line-height", $fontSize);
 };
 
@@ -19,6 +19,6 @@
 // Map found at /variables/fonts.scss
 
 @mixin getFontSize($key : null) {
-    font-size: get("font.#{$key}.font-size", $fontSize);
+    font-size: unitConversion(get("font.#{$key}.font-size", $fontSize));
     line-height: get("font.#{$key}.line-height", $fontSize);
 };

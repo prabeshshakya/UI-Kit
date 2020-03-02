@@ -65,45 +65,27 @@ $fontSize : (
 );
 
 $fontDecoration: (
-    "striked" : (
-        "text-decoration" : "line-through"
-    ),
-    "underlined" : (
-        "text-decoration" : "underline"
-    ),
+    "striked" :  line-through,
+    "underlined" : underline,
 );
 
 $fontCase: (
-    "uppercase" : (
-        "text-transform" : "uppercase"
-    ),
-    "lowercase" : (
-        "text-transform" : "lowercase"
-    ),
-    "capitalized" : (
-        "text-transform" : "capitalize"
-    ),
+    "uppercase" : uppercase,
+    "lowercase" : lowercase,
+    "capitalized" : capitalize,
 );
 
 $fontStyle: (
-    "italic" : (
-        "font-style" : "italic"
-    )
+    "normal" : normal,
+    "italic" : italic,
+    "oblique": oblique
 );
 
 $textAlignment: (
-    "center" : (
-        "text-alignment" : "center"
-    ),
-    "left" : (
-        "text-alignment" : "left"
-    ),
-    "right" : (
-        "text-alignment" : "right"
-    ),
-    "justified" : (
-        "text-alignment" : "justify"
-    ),
+    "center" : center,
+    "left" : left,
+    "right" : right,
+    "justified" : justify,
 );
 
 

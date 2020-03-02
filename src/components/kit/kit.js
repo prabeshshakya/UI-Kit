@@ -11,11 +11,14 @@ const Kit = () => {
                 <div className="menu-group">
                     <h4 className="menu-group__title">Components</h4>
                     <div className="menu-group__contents">
-                        <div className="menu-group__nodes">
+                        {/* <div className="menu-group__nodes">
                             <NavLink to="/docs/button" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Button</NavLink>
                         </div>
                         <div className="menu-group__nodes">
                             <NavLink to="/docs/forms" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Form Elements</NavLink>
+                        </div> */}
+                        <div className="menu-group__nodes">
+                            <NavLink to="/docs/typography" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">Typography</NavLink>
                         </div>
                     </div>
                 </div>

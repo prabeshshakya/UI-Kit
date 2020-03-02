@@ -3,6 +3,12 @@
 // Define variables, maps and fonts at this partial.
 // ==========================================================================
 
+
+// CONSTANTS
+$rem :'rem';
+$em: 'em';
+$px: "px";
+
 //Enter your Web Address here for print media
 $domain-name: 'www.domain-name.com';
 
@@ -11,8 +17,7 @@ $path--rel: '../images';
 
 $base-index: 1;
 
-$border-radius: 3px;
-$status-indicator-size: 10px;
+$unit: "rem";
 
 // Customize your prefix
 $prefix: "lf";
@@ -23,6 +28,10 @@ $prefix: "lf";
 // ==========================================================================
 
 // Utility Classes
-
-$generate-header-font-classes: true;
 $generate-font-classes: true;
+$generate-font-case-classes: true;
+$generate-font-style-classes: true;
+$generate-font-weight-classes: true;
+$generate-header-font-classes: true;
+$generate-text-alignment-classes: true;
+$generate-font-decoration-classes: true;
