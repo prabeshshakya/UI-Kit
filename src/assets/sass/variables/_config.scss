@@ -3,21 +3,42 @@
 // Define variables, maps and fonts at this partial.
 // ==========================================================================
 
+// CONSTANTS
+$rem: "rem";
+$em: "em";
+$px: "px";
+
 //Enter your Web Address here for print media
-$domain-name: 'www.domain-name.com';
+$domain-name: "www.domain-name.com";
 
 //Path to Assets
-$path--rel: '../images';
+$path--rel: "../images";
 
-$base-index: 1;
+$unit: "rem";
 
-$z-index: (
-    "1down" : $base-index - 1,
-    "1up" : $base-index + 1,
-    "2up" : $base-index + 2,
-    "xtreme" : $base-index + 9999
-);
+// Customize your prefix
+// append "-" to the prefix
+$prefix: "";
 
+$default-border-radius: 5px;
+$input-border-radius: 4px;
+$select-border-radius: 5px;
+$list-border-radius: 8px;
+$button-border-radius: 8px;
+$button-round: 24px;
 
-$border-radius: 3px;
-$status-indicator-size: 10px;
+// ==========================================================================
+// Features
+// Set true to enable features
+// ==========================================================================
+
+// Utility Classes
+$generate-font-classes: true;
+$generate-color-classes: true;
+$generate-button-classes: true;
+$generate-font-case-classes: true;
+$generate-font-style-classes: true;
+$generate-font-weight-classes: true;
+$generate-header-font-classes: true;
+$generate-text-alignment-classes: true;
+$generate-font-decoration-classes: true;

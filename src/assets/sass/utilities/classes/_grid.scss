@@ -63,7 +63,7 @@
 // $row-name    - class name for row
 @mixin make-row($row-name: $row-name) {
   .#{$row-name} {
-    @if $grid-type == 'flex' {
+    @if $grid-type == "flex" {
       display: flex;
       flex-wrap: wrap;
     }
@@ -106,17 +106,17 @@
     @for $i from 1 through $columns {
       @if $breakpoint == 0 {
         .#{$grid-class}-#{$i} {
-          @if $grid-type == 'flex' {
+          @if $grid-type == "flex" {
             @extend %grid-column-flex;
-          } @else if $grid-type == 'float' {
+          } @else if $grid-type == "float" {
             @extend %grid-column-float;
           }
         }
       } @else {
         .#{$grid-class}-#{$i}-#{$name} {
-          @if $grid-type == 'flex' {
+          @if $grid-type == "flex" {
             @extend %grid-column-flex;
-          } @else if $grid-type == 'float' {
+          } @else if $grid-type == "float" {
             @extend %grid-column-float;
           }
         }
@@ -124,7 +124,7 @@
     }
     //Generates breakpoint wise grid classes
     @include mq($name) {
-      @if $grid-type == 'flex' {
+      @if $grid-type == "flex" {
         // Provides basic `.col-{bp}` classes for equal-width flexbox columns
         // Ported from bootstrap 4
         .#{$grid-class}-#{$name} {
@@ -141,17 +141,17 @@
       @for $i from 1 through $columns {
         @if $breakpoint == 0 {
           .#{$grid-class}-#{$i} {
-            @if $grid-type == 'flex' {
+            @if $grid-type == "flex" {
               @include make-col-flex($i, $columns);
-            } @else if $grid-type == 'float' {
+            } @else if $grid-type == "float" {
               @include make-col-float($i, $columns);
             }
           }
         } @else {
           .#{$grid-class}-#{$i}-#{$name} {
-            @if $grid-type == 'flex' {
+            @if $grid-type == "flex" {
               @include make-col-flex($i, $columns);
-            } @else if $grid-type == 'float' {
+            } @else if $grid-type == "float" {
               @include make-col-float($i, $columns);
             }
           }
@@ -165,8 +165,7 @@
 @include make-container-fixed-width;
 @include make-row;
 
-
-@if ($grid-type == 'flex' or $grid-type == 'float') {
+@if ($grid-type == "flex" or $grid-type == "float") {
   @include make-grid;
 } @else {
   @error "$grid-type should be 'flex' or 'float'";

@@ -4,7 +4,7 @@
 }
 
 @function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
-  @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -14,23 +14,23 @@
     @each $prop, $abbrev in (margin: m, padding: p) {
       @each $size, $length in $spacing {
         .#{$abbrev}-#{$size}#{$infix} {
-          #{$prop}: $length!important;
+          #{$prop}: $length !important;
         }
         .#{$abbrev}t-#{$size}#{$infix},
         .#{$abbrev}y-#{$size}#{$infix} {
-          #{$prop}-top: $length!important;
+          #{$prop}-top: $length !important;
         }
         .#{$abbrev}r-#{$size}#{$infix},
         .#{$abbrev}x-#{$size}#{$infix} {
-          #{$prop}-right: $length!important;
+          #{$prop}-right: $length !important;
         }
         .#{$abbrev}b-#{$size}#{$infix},
         .#{$abbrev}y-#{$size}#{$infix} {
-          #{$prop}-bottom: $length!important;
+          #{$prop}-bottom: $length !important;
         }
         .#{$abbrev}l-#{$size}#{$infix},
         .#{$abbrev}x-#{$size}#{$infix} {
-          #{$prop}-left: $length!important;
+          #{$prop}-left: $length !important;
         }
       }
     }

@@ -1,44 +1,207 @@
-// Custom font url
-$font-url: 'https://rsms.me/inter/inter.css' !default;
-$font-custom: 'Inter' !default;
-
-// Font Decleration
-$font-sans : $font-custom, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-$font-primary: $font-sans;
-
-// Font Size
-$base__line: 1.5 !default;
+// Base font size
+$base__header__line: 1.25 !default;
+$base__body__line: 1.3 !default;
 $base__font-size: 1rem !default;
 
-//Font size variables
-$font-size-def: $base__font-size * 0.875 !default;
-$font-size-sm: $base__font-size * 0.75 !default;
-$font-size-xsm: $base__font-size * 0.625 !default;
+// Custom font url
+// $font-url: "https://rsms.me/inter/inter.css" !default;
+$font-custom: "TT Commons" !default;
 
-//Heading font size vairables
-$font-size-h1: $base__font-size * 2 !default;
-$font-size-h2: $base__font-size * 1.5 !default;
-$font-size-h3: $base__font-size * 1.17 !default;
-$font-size-h4: $base__font-size * 1 !default;
-$font-size-h5: $base__font-size * 0.83 !default;
-$font-size-h6: $base__font-size * 0.75 !default; 
+$typefaces: (
+  'TTCommons-Black': (
+    family: 'TT Commons',
+    weight: 900,
+    style: normal
+  ),
+  'TTCommons-BlackItalic': (
+    family: 'TT Commons',
+    weight: 900,
+    style: italic
+  ),
+  'TTCommons-ExtraBold': (
+    family: 'TT Commons',
+    weight: 800,
+    style: normal
+  ),
+  'TTCommons-ExtraBoldItalic': (
+    family: 'TT Commons',
+    weight: 800,
+    style: italic
+  ),
+  'TTCommons-Bold': (
+    family: 'TT Commons',
+    weight: bold,
+    style: normal
+  ),
+  'TTCommons-BoldItalic': (
+    family: 'TT Commons',
+    weight: bold,
+    style: italic
+  ),
+  'TTCommons-DemiBold': (
+    family: 'TT Commons',
+    weight: 600,
+    style: normal
+  ),
+  'TTCommons-DemiBoldItalic': (
+    family: 'TT Commons',
+    weight: 600,
+    style: italic
+  ),
+  'TTCommons-Medium': (
+    family: 'TT Commons',
+    weight: 500,
+    style: normal
+  ),
+  'TTCommons-MediumItalic': (
+    family: 'TT Commons',
+    weight: 500,
+    style: italic
+  ),
+  'TTCommons-Regular': (
+    family: 'TT Commons',
+    weight: normal,
+    style: normal
+  ),
+  'TTCommons-Italic': (
+    family: 'TT Commons',
+    weight: normal,
+    style: italic
+  ),
+  'TTCommons-Light': (
+    family: 'TT Commons',
+    weight: 300,
+    style: normal
+  ), 
+   'TTCommons-LightItalic': (
+    family: 'TT Commons',
+    weight: 300,
+    style: italic
+  ),
+  'TTCommons-ExtraLight': (
+    family: 'TT Commons',
+    weight: 200,
+    style: normal
+  ),
+  'TTCommons-ExtraLightItalic': (
+    family: 'TT Commons',
+    weight: 200,
+    style: italic
+  ), 
+  'TTCommons-Thin': (
+    family: 'TT Commons',
+    weight: 100,
+    style: normal
+  ),
+  'TTCommons-ThinItalic': (
+    family: 'TT Commons',
+    weight: 100,
+    style: normal
+  )
+);
 
-//font-sizes
- $fontSize: (
-    "10" : $base__font-size * 0.625,
-    "12" : $base__font-size * 0.75,
-    "14" : $base__font-size * 0.875,
-    "16" : $base__font-size,
-    "18" : $base__font-size * 1.125,
-    "20" : $base__font-size * 1.25,
-    "24" : $base__font-size * 1.5,
-    "32" : $base__font-size * 2
- );
+// Font Declaration
+$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  sans-serif;
+$font-primary: $font-sans;
 
 //font-weight
 $fontWeight: (
-    "thin": 300,
-    "normal": 400,
-    "bold": 600,
-    "bolder": 700
+  "thin": 100,
+  "extralight": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "demibold": 600,
+  "bold": bold,
+  "extrabold": 800,
+  "black": 900,
+);
+
+$fontSize: (
+  "header": (
+    "h1": (
+      "font-size": rem(122),
+      "line-height": 98px,
+      "spacing": -4px,
+      "font-weight": 600
+    ),
+    "h2": (
+      "font-size": rem(92),
+      "line-height": 72px,
+      "spacing": -4px,
+      "font-weight": 600
+    ),
+    "h3": (
+      "font-size": rem(52),
+      "line-height": 46px,
+      "spacing": -2px,
+      "font-weight": 600
+    ),
+    "h4": (
+      "font-size": rem(48),
+      "line-height": 44px,
+      "spacing": -2px,
+      "font-weight": 500
+    ),
+    "h5": (
+      "font-size": rem(38),
+      "line-height": 38px,
+      "spacing": -1px,
+      "font-weight": 500
+    ),
+    "title": (
+      "font-size": rem(28),
+      "line-height": 28px,
+      "spacing": -1px,
+      "font-weight": 500
+    )
+  ),
+  "font": (
+    "body1": (
+      "font-size": rem(21),
+      "line-height": 29px,
+    ),
+    "body2": (
+      "font-size": rem(18),
+      "line-height": 26px,
+    ),
+    "body3": (
+      "font-size": rem(16),
+      "line-height": 23px,
+    ),
+    "label": (
+      "font-size": rem(14),
+      "line-height": 23px,
+    ),
+    "small": (
+      "font-size": rem(12),
+      "line-height": 14px,
+    ),
+  ),
+);
+
+$fontDecoration: (
+  "striked": line-through,
+  "underlined": underline,
+);
+
+$fontCase: (
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalized": capitalize,
+);
+
+$fontStyle: (
+  "normal": normal,
+  "italic": italic,
+  "oblique": oblique,
+);
+
+$textAlignment: (
+  "center": center,
+  "left": left,
+  "right": right,
+  "justified": justify,
 );

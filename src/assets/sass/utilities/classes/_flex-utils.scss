@@ -1,7 +1,7 @@
 @mixin flex-modifier($breakpoints, $flex-utilities) {
   @each $name, $breakpoint in $breakpoints {
     @include mq($name) {
-      @if ($name == 'xs') {
+      @if ($name == "xs") {
         .d-none {
           display: none !important;
         }
@@ -88,8 +88,11 @@
   }
 }
 
-@if ($grid-type == 'flex' or $grid-type == 'float') {
-  @include flex-modifier($breakpoints: $grid-breakpoints, $flex-utilities: $flex-utilities);
+@if ($grid-type == "flex" or $grid-type == "float") {
+  @include flex-modifier(
+    $breakpoints: $grid-breakpoints,
+    $flex-utilities: $flex-utilities
+  );
 } @else {
   @error "$grid-type should be 'flex' or 'float'";
 }

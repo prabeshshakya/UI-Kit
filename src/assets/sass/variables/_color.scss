@@ -1,46 +1,23 @@
 // Default Color
-$white: #FFFFFF !default;
+$white: #ffffff !default;
 $black: #000000 !default;
 
 // Base colors
-$primary-color: #4fC3f7 !default;
-$secondary-color: #66BB6A !default;
-$error-color: #ef5350 !default;
-$warning-color: #FFCA28 !default;
-$warning-alt-color: #FF9800 !default;
-$blue-grey: #9cb2bf !default;
-$base-grey: #333333 !default;
-$light-grey: lighten($base-grey, 15%);
-$xlight-grey: lighten($light-grey, 15%);
-$xxlight-grey: lighten($xlight-grey, 15%);
-$xxxlight-grey: lighten($xxlight-grey, 15%);
-$xxxxlight-grey: lighten($xxxlight-grey, 15%);
-
-$bg-color: #F6F8F9 !default;
+$primary-color: #FF6A39 !default;
+$secondary-color: #16817F !default;
+$blue: #435AFF !default;
+$royal-blue: #001E62 !default;
+$error-color: #DB193C !default;
+$success-color: #86A814 !default;
+$warning-color: #BAA613 !default;
 
 //Color Palette
 $colorMap: (
-  "white" : (
-    "base" : $white
+  "white": (
+    "base": $white,
   ),
-  "blue-grey" : (
-    "lighter" : lighten($blue-grey, 25%),
-    "light" : lighten($blue-grey, 20%),
-    "base" : lighten($blue-grey, 10%),
-    "dark" : $blue-grey,
-    "darker" : darken($blue-grey, 15%)
-  ),
-  "black" : (
+  "black": (
     "base": $black,
-    "black90" : rgba($black, 0.9), 
-    "black80" : rgba($black, 0.8), 
-    "black70" : rgba($black, 0.7), 
-    "black60" : rgba($black, 0.6), 
-    "black50" : rgba($black, 0.5), 
-    "black40" : rgba($black, 0.4), 
-    "black30" : rgba($black, 0.3), 
-    "black20" : rgba($black, 0.2), 
-    "black10" : rgba($black, 0.1), 
   ),
   "primary": (
     "base": $primary-color,
@@ -49,30 +26,29 @@ $colorMap: (
   ),
   "secondary": (
     "base": $secondary-color,
-    "dark": darken($secondary-color, 10%),
-    "light": lighten($secondary-color, 10%)
   ),
-  "error": (
+  "danger": (
     "base": $error-color,
-    "dark": darken($error-color, 10%),
-    "light": lighten($error-color, 10%)
   ),
-  "warning": (
-    "base": $warning-color,
-    "dark": darken($warning-color, 10%),
-    "light": lighten($warning-color, 10%)
+  "success": (
+    "base": $success-color,
   ),
-  "warning-alt": (
-    "base": $warning-alt-color,
-    "dark": darken($warning-alt-color, 10%),
-    "light": lighten($warning-alt-color, 10%)
+  "blue": (
+    "base": $blue,
+    "royal": $royal-blue
+  ),
+  "warning" : (
+    "base" : $warning-color
   ),
   "grey": (
-    "base" : $base-grey,
-    "light" : $light-grey,
-    "xlight" : $xlight-grey,
-    "xxlight" : $xxlight-grey,
-    "xxxlight" : $xxxlight-grey,
-    "xxxxlight" : $xxxlight-grey
+    "stroke": #e7e8e9,
+    "input-bg": #f8f8f8,
+    "text": #131e29,
+    "text60": rgba(#131e29, 0.6),
+    "text36": rgba(#131e29, 0.36),
+    "progress-bar-default" : #EEEFF0,
+    "light": #D9DBDD,
+    "icon": #AAAEB2,
+    "stroke-light": #EEEFF0,
   )
 );

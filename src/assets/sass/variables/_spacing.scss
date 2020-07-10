@@ -5,7 +5,7 @@ $justify-properties: (
   justify-content-between: space-between,
   justify-content-around: space-around,
   justify-content-initial: initial,
-  justify-content-inherit: inherit
+  justify-content-inherit: inherit,
 );
 
 $align-properties: (
@@ -13,7 +13,7 @@ $align-properties: (
   align-items-center: center,
   align-items-start: flex-start,
   align-items-end: flex-end,
-  align-items-base: baseline
+  align-items-base: baseline,
 );
 
 $align-self-properties: (
@@ -24,7 +24,7 @@ $align-self-properties: (
   align-self-end: flex-end,
   align-self-baseline: baseline,
   align-self-initial: initial,
-  align-self-inherit: inherit
+  align-self-inherit: inherit,
 );
 
 $align-content-properties: (
@@ -35,19 +35,19 @@ $align-content-properties: (
   align-content-between: space-between,
   align-content-around: space-around,
   align-content-initial: initial,
-  align-content-inherit: inherit
+  align-content-inherit: inherit,
 );
 
 $flex-direction: (
   flex-row: row,
   flex-row-reverse: row-reverse,
   flex-column: column,
-  flex-column-reverse: column-reverse
+  flex-column-reverse: column-reverse,
 );
 
 $flex-wrap: (
   flex-wrap: wrap,
-  flex-nowrap: nowrap
+  flex-nowrap: nowrap,
 );
 
 $flex-utilities: (
@@ -57,15 +57,20 @@ $flex-utilities: (
   align-content: $align-content-properties,
   flex-direction: $flex-direction,
   flex-wrap: $flex-wrap,
-  order: order
+  order: order,
 );
 
 $defaultSpacing: $base__font-size / 4;
 
 $spacing: ();
 $spaceFrom: -4;
-$spaceTill: 20;
+$spaceTill: 30;
 
 @for $i from $spaceFrom through $spaceTill {
-  $spacing: map-merge($spacing, (getSpacingName($i) : $defaultSpacing * $i));
+  $spacing: map-merge(
+    $spacing,
+    (
+      getSpacingName($i): $defaultSpacing * $i,
+    )
+  );
 }
