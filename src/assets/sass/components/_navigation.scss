@@ -1,0 +1,51 @@
+.header-box {
+  height: 100%;
+  padding: 3.5rem;
+  border-right: 1px solid #e6e6e6;
+  overflow: hidden;
+  background: white;
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  /* bottom: 0; */
+  display: grid;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 15%;
+  grid-template-rows: repeat(2, 1fr);
+
+  .logo {
+    justify-self: center;
+
+    @include e(heading) {
+      display: none;
+    }
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 1.5rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+    gap: 4px;
+    justify-self: center;
+    @include e(line) {
+      height: 3px;
+      background: $black;
+      width: 2rem;
+      margin: 0.15rem 0;
+
+      &:last-child {
+        width: 1.25rem;
+      }
+    }
+  }
+}

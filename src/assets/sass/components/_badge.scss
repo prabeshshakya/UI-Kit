@@ -1,0 +1,16 @@
+.badge{
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include m(tiny){
+    height: 20px;
+    @include getFontSize("body14");
+    font-weight: 700;
+  }
+  @include m(light){
+    border: 1px solid getColor("grey.borderGray");
+    color: getColor("warning.base");
+    background-color: $white;
+  }
+}
