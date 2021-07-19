@@ -1,15 +1,28 @@
 // This will generate utility class for header fonts
 // .${prefix}-h1
 // Example:
-// .lf-h1{
+// .prefix-h1{
 //    font-size: 52px;
 //    line-height: 63px;
 // }
 //
 @mixin generate-header-font($map: get("header", $fontSize)) {
-  @each $name, $value in $map {
-    .#{$prefix}#{$name} {
-      @include getHeaderFontSize("#{$name}");
+  @each $mainName, $mainValue in $map {
+    .#{$prefix}fs-#{$mainName} {
+      @include getHeaderFontSize("#{$mainName}");
+    }
+    @if (deep-map-check(get($mainName, $map), "responsive")) {
+      $maps: get("responsive", $mainValue);
+      @each $name, $value in $maps {
+        @include mqmax($name) {
+          .#{$prefix}fs-#{$mainName}-#{$name} {
+            font-size: get("font-size", $value);
+            @if (deep-map-check($value, "line-height")) {
+              line-height: get("line-height", $value);
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -20,14 +33,14 @@
 // This will generate utility class for body fonts
 // .${prefix}-body
 // Example:
-// .lf-body{
+// .prefix-body{
 //    font-size: 17px;
 //    line-height: 21px;
 // }
 //
 @mixin generate-font-class($map: get("font", $fontSize)) {
   @each $name, $value in $map {
-    .#{$prefix}#{$name} {
+    .#{$prefix}fs-#{$name} {
       @include getFontSize("#{$name}");
     }
   }
@@ -40,7 +53,7 @@
 // This will generate utility class for text-decorations
 // .${prefix}-text-striked
 // Example:
-// .lf-text-striked{
+// .prefix-text-striked{
 //    text-decoration:line-through;
 // }
 //
@@ -58,7 +71,7 @@
 // This will generate utility class for text-decorations
 // .${prefix}-text-uppercase
 // Example:
-// .lf-text-uppercase{
+// .prefix-text-uppercase{
 //    text-transform: uppercase;
 // }
 //
@@ -76,7 +89,7 @@
 // This will generate utility class for font-case
 // .${prefix}-text-uppercase
 // Example:
-// .lf-text-uppercase{
+// .prefix-text-uppercase{
 //    text-transform: uppercase;
 // }
 //
@@ -94,7 +107,7 @@
 // This will generate utility class for font-style
 // .${prefix}-text-italic
 // Example:
-// .lf-text-italic{
+// .prefix-text-italic{
 //    font-style: italic;
 // }
 //
@@ -112,7 +125,7 @@
 // This will generate utility class for text-alignments
 // .${prefix}-text-center
 // Example:
-// .lf-text-center{
+// .prefix-text-center{
 //    text-align: center;
 // }
 //
@@ -130,7 +143,7 @@
 // This will generate utility class for font-weight
 // .${prefix}-font-bold
 // Example:
-// .lf-text-bold{
+// .prefix-text-bold{
 //    font-weight: bold;
 // }
 //

@@ -5,100 +5,8 @@ $base__font-size: 1rem !default;
 
 // Custom font url
 // $font-url: "https://rsms.me/inter/inter.css" !default;
-$font-custom: "TT Commons" !default;
-
-$typefaces: (
-  'TTCommons-Black': (
-    family: 'TT Commons',
-    weight: 900,
-    style: normal
-  ),
-  'TTCommons-BlackItalic': (
-    family: 'TT Commons',
-    weight: 900,
-    style: italic
-  ),
-  'TTCommons-ExtraBold': (
-    family: 'TT Commons',
-    weight: 800,
-    style: normal
-  ),
-  'TTCommons-ExtraBoldItalic': (
-    family: 'TT Commons',
-    weight: 800,
-    style: italic
-  ),
-  'TTCommons-Bold': (
-    family: 'TT Commons',
-    weight: bold,
-    style: normal
-  ),
-  'TTCommons-BoldItalic': (
-    family: 'TT Commons',
-    weight: bold,
-    style: italic
-  ),
-  'TTCommons-DemiBold': (
-    family: 'TT Commons',
-    weight: 600,
-    style: normal
-  ),
-  'TTCommons-DemiBoldItalic': (
-    family: 'TT Commons',
-    weight: 600,
-    style: italic
-  ),
-  'TTCommons-Medium': (
-    family: 'TT Commons',
-    weight: 500,
-    style: normal
-  ),
-  'TTCommons-MediumItalic': (
-    family: 'TT Commons',
-    weight: 500,
-    style: italic
-  ),
-  'TTCommons-Regular': (
-    family: 'TT Commons',
-    weight: normal,
-    style: normal
-  ),
-  'TTCommons-Italic': (
-    family: 'TT Commons',
-    weight: normal,
-    style: italic
-  ),
-  'TTCommons-Light': (
-    family: 'TT Commons',
-    weight: 300,
-    style: normal
-  ), 
-   'TTCommons-LightItalic': (
-    family: 'TT Commons',
-    weight: 300,
-    style: italic
-  ),
-  'TTCommons-ExtraLight': (
-    family: 'TT Commons',
-    weight: 200,
-    style: normal
-  ),
-  'TTCommons-ExtraLightItalic': (
-    family: 'TT Commons',
-    weight: 200,
-    style: italic
-  ), 
-  'TTCommons-Thin': (
-    family: 'TT Commons',
-    weight: 100,
-    style: normal
-  ),
-  'TTCommons-ThinItalic': (
-    family: 'TT Commons',
-    weight: 100,
-    style: normal
-  )
-);
+$font-url: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" !default;
+$font-custom: "Poppins" !default;
 
 // Font Declaration
 $font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -125,38 +33,38 @@ $fontSize: (
       "font-size": rem(122),
       "line-height": 98px,
       "spacing": -4px,
-      "font-weight": 600
+      "font-weight": 600,
     ),
     "h2": (
       "font-size": rem(92),
       "line-height": 72px,
       "spacing": -4px,
-      "font-weight": 600
+      "font-weight": 600,
     ),
     "h3": (
       "font-size": rem(52),
       "line-height": 46px,
       "spacing": -2px,
-      "font-weight": 600
+      "font-weight": 600,
     ),
     "h4": (
       "font-size": rem(48),
       "line-height": 44px,
       "spacing": -2px,
-      "font-weight": 500
+      "font-weight": 500,
     ),
     "h5": (
       "font-size": rem(38),
       "line-height": 38px,
       "spacing": -1px,
-      "font-weight": 500
+      "font-weight": 500,
     ),
     "title": (
       "font-size": rem(28),
       "line-height": 28px,
       "spacing": -1px,
-      "font-weight": 500
-    )
+      "font-weight": 500,
+    ),
   ),
   "font": (
     "body1": (
@@ -178,6 +86,26 @@ $fontSize: (
     "small": (
       "font-size": rem(12),
       "line-height": 14px,
+    ),
+    "article": (
+      "font-size": rem(18),
+      "line-height": 29px,
+    ),
+    "body16": (
+      "font-size": rem(16),
+      "line-height": 26px,
+    ),
+    "body14": (
+      "font-size": rem(14),
+      "line-height": 20px,
+    ),
+    "caption": (
+      "font-size": rem(14),
+      "line-height": 16px,
+    ),
+    "tiny": (
+      "font-size": rem(12),
+      "line-height": 16px,
     ),
   ),
 );
