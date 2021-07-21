@@ -1,0 +1,22 @@
+.react-tabs{
+  @include e(tab-list){
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid getColor("grey.borderGray") ;
+  }
+  @include e(tab){
+    margin-right: getSpacing("10x");
+    margin-bottom: 0px;
+    @include getFontSize("body16");
+    padding-bottom: getSpacing("2x");
+    color: getColor("text.paragraph");
+    cursor: pointer;
+    @include m(selected){
+      color: getColor("primary.base");
+      box-shadow: 0 2px 0px 0 getColor("primary.base");
+    }
+    &:hover {
+      color: getColor("primary.base");
+    }
+  }
+}
