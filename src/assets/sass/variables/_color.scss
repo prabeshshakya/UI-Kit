@@ -1,15 +1,39 @@
 // Default Color
 $white: #ffffff !default;
 $black: #000000 !default;
+$blue: #0556f3;
+$purple: #6501e5;
+$purple-dark: #4f03af;
+$red: #e34c4c;
+$green: #56bd5b;
+$yellow: #f79522;
+$darkIndigo: #25265e;
+$lightIndigo: #a8a8bf;
+$gray: #d3dce6;
+$gray-light: #f9fafc;
+$gray-alt: #e8e8e8;
+$gray8: #eff2f7;
+$subtle-gray: #f5f8ff;
+$light-grey: #f1f5fd;
+$faint-grey: #f2f2f2;
+$purple-grey: #f8faff;
 
 // Base colors
-$primary-color: #FF6A39 !default;
-$secondary-color: #16817F !default;
-$blue: #435AFF !default;
-$royal-blue: #001E62 !default;
-$error-color: #DB193C !default;
-$success-color: #86A814 !default;
-$warning-color: #BAA613 !default;
+$primary-color: #ff6a39 !default;
+$secondary-color: #16817f !default;
+$blue: #435aff !default;
+$royal-blue: #001e62 !default;
+$error-color: #db193c !default;
+$success-color: #86a814 !default;
+$warning-color: #baa613 !default;
+$color-text: $darkIndigo;
+$color-text-light: $lightIndigo;
+$color-link: $primary-color;
+$dark-base: rgba(20, 28, 58, 0.9);
+$light-base: #fbfbfb;
+$code-base: #f5f5f5;
+$faint-base: $light-grey;
+$btn-gray: $gray8;
 
 //Color Palette
 $colorMap: (
@@ -23,22 +47,32 @@ $colorMap: (
     "base": $primary-color,
     "dark": darken($primary-color, 10%),
     "light": lighten($primary-color, 10%),
+    "60": rgba($primary-color, 0.6),
+    "40": rgba($primary-color, 0.4),
+    "20": rgba($primary-color, 0.2),
   ),
   "secondary": (
+    "dark": $purple-dark,
     "base": $secondary-color,
+    "60": rgba($secondary-color, 0.6),
+    "40": rgba($secondary-color, 0.4),
+    "20": rgba($secondary-color, 0.2),
+    "10": rgba($secondary-color, 0.1),
   ),
   "danger": (
     "base": $error-color,
+    "60": rgba($error-color, 0.6),
+    "20": rgba($error-color, 0.2),
   ),
   "success": (
     "base": $success-color,
   ),
   "blue": (
     "base": $blue,
-    "royal": $royal-blue
+    "royal": $royal-blue,
   ),
-  "warning" : (
-    "base" : $warning-color
+  "warning": (
+    "base": $warning-color,
   ),
   "grey": (
     "stroke": #e7e8e9,
@@ -46,9 +80,22 @@ $colorMap: (
     "text": #131e29,
     "text60": rgba(#131e29, 0.6),
     "text36": rgba(#131e29, 0.36),
-    "progress-bar-default" : #EEEFF0,
-    "light": #D9DBDD,
-    "icon": #AAAEB2,
-    "stroke-light": #EEEFF0,
-  )
+    "progress-bar-default": #eeeff0,
+    "light": #d9dbdd,
+    "icon": #aaaeb2,
+    "stroke-light": #eeeff0,
+    //extra grey
+    "borderGrayAlt": $gray-alt,
+    "borderGray": $gray,
+    "borderRed": $red,
+    "borderBlue": $primary-color,
+    "hoverAccentBlue": rgba($primary-color, 0.2),
+    "mainBg": $code-base,
+  ),
+  "text": (
+    "main": $color-text,
+    "paragraph": rgba($color-text, 0.8),
+    "caption": rgba($color-text, 0.67),
+    "light": $color-text-light,
+  ),
 );
