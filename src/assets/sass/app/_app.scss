@@ -1,56 +1,59 @@
-.doc-title{
-    font-weight: getFontWeight("thin");
-    font-size: getFontSize("32");
+.doc-title {
+  font-weight: getFontWeight("thin");
+  font-size: getFontSize("32");
 }
-code{
-    padding: getSpacing("1x");
-    margin: 0 getSpacing("1x");
+code {
+  padding: getSpacing("1x");
+  margin: 0 getSpacing("1x");
+  font-size: getFontSize("12");
+  background-color: getColor("blue-grey.lighter");
+  border-radius: $border-radius;
+  color: getColor("error.base");
+}
+
+.code-preview {
+  width: 100%;
+  padding: getSpacing("5x");
+  margin: getSpacing("6x") 0;
+  background-color: getColor("blue-grey.lighter");
+  pre {
+    background: none !important;
+    padding: 0px !important;
+    overflow-y: hidden;
+  }
+  code {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.kit-landing-page {
+  height: 100vh;
+}
+
+.menu-group {
+  @include e(title) {
+    font-weight: getFontWeight("normal");
+    text-transform: uppercase;
     font-size: getFontSize("12");
-    background-color: getColor("blue-grey.lighter");
-    border-radius: $border-radius;
-    color: getColor("error.base");
-}
-
-.code-preview{
-    width: 100%;
-    padding: getSpacing("5x");
-    margin: getSpacing("6x") 0;
-    background-color:  getColor("blue-grey.lighter");
-    pre{
-        background: none !important;
-        padding: 0px !important;
-        overflow-y: hidden;
+    letter-spacing: 2px;
+    border-bottom: 1px solid getColor("black.black10");
+    padding-bottom: getSpacing("2x");
+    margin-bottom: getSpacing("4x");
+  }
+  @include e(nodes) {
+    padding: getSpacing("1x") 0;
+    @include e(single) {
+      color: getColor("black.base");
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 600;
+      &:hover {
+        color: getColor("black.black80");
+      }
+      @include m(active) {
+        color: getColor("primary.base");
+      }
     }
-    code{
-        padding: 0;
-        margin: 0;
-    }
-}
-
-.kit-landing-page{
-    height: 100vh;
-}
-
-.menu-group{
-    @include e(title){
-        font-weight: getFontWeight("normal");
-        text-transform: uppercase;
-        font-size: getFontSize("12");
-        letter-spacing: 2px;
-        border-bottom: 1px solid getColor("black.black10");
-        padding-bottom: getSpacing("2x");
-        margin-bottom: getSpacing("4x");
-    }
-    @include e(nodes){
-        padding: getSpacing("1x") 0;
-        @include e(single){
-            color: getColor("black.black50");
-            &:hover{
-                color: getColor("black.black80");
-            }
-            @include m(active){
-                color: getColor("primary.base");
-            }
-        }
-    }
+  }
 }

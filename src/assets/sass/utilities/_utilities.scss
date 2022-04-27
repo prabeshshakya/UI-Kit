@@ -14,8 +14,9 @@
       font-family: map-get(map-get($typefaces, $file), family);
       font-style: map-get(map-get($typefaces, $file), style);
       font-weight: map-get(map-get($typefaces, $file), weight);
-      src: url('../fonts/#{$file}.ttf') format('truetype'), url('../fonts/#{$file}.woff') format('woff'),
-        url('../fonts/#{$file}.woff2') format('woff2');
+      src: url("../fonts/#{$file}.ttf") format("truetype"),
+        url("../fonts/#{$file}.woff") format("woff"),
+        url("../fonts/#{$file}.woff2") format("woff2");
     }
   }
 }
@@ -122,25 +123,25 @@
 // $break  - RWD break point values, change them in _config.scss. Default: bootstrap grid
 // @usage  - `.Nav {@include mq(sm) {...}}`
 @mixin mq($break) {
-  @if $break== 'xs' {
+  @if $break== "xs" {
     //lowest breakpoint value
     @content;
-  } @else if $break== 'sm' {
+  } @else if $break== "sm" {
     // phone
     @media (min-width: $sm-device) {
       @content;
     }
-  } @else if $break== 'md' {
+  } @else if $break== "md" {
     // tablet
     @media (min-width: $md-device) {
       @content;
     }
-  } @else if $break== 'lg' {
+  } @else if $break== "lg" {
     // laptop and desktop
     @media (min-width: $lg-device) {
       @content;
     }
-  } @else if $break== 'xl' {
+  } @else if $break== "xl" {
     // High res desktop and TVs
     @media (min-width: $xl-device) {
       @content;
@@ -156,29 +157,29 @@
 // if custom set to true $break will be the break point
 @mixin mqmax($break, $custom: false) {
   @if $custom==true {
-    @media (max-width: $break + 'px') {
+    @media (max-width: $break + "px") {
       @content;
     }
   } @else {
-    @if $break== 'xs' {
+    @if $break== "xs" {
       //lowest breakpoint value
       @content;
-    } @else if $break== 'sm' {
+    } @else if $break== "sm" {
       // phone
       @media (max-width: $sm-device) {
         @content;
       }
-    } @else if $break== 'md' {
+    } @else if $break== "md" {
       // tablet
       @media (max-width: $md-device) {
         @content;
       }
-    } @else if $break== 'lg' {
+    } @else if $break== "lg" {
       // laptop and desktop
       @media (max-width: $lg-device) {
         @content;
       }
-    } @else if $break== 'xl' {
+    } @else if $break== "xl" {
       // High res desktop and TVs
       @media (max-width: $xl-device) {
         @content;
@@ -220,7 +221,7 @@
 // $el-height  - Height for the pseudo element in px
 // @usage      - `.dropdown {@include psuedo-el('before') {...}}`
 @mixin psuedo-el($el, $el-width: null, $el-height: null) {
-  @if $el== 'before' or $el== 'after' {
+  @if $el== "before" or $el== "after" {
     &:#{$el} {
       @extend %pseudos;
       width: $el-width;
@@ -231,3 +232,14 @@
     @warn "#{$el} is not a valid pseudo-element";
   }
 }
+
+// @mixin flex($dir: "row", $align: null, $justify: null) {
+//   display: flex;
+//   flex-direction: $dir;
+//   @if ($align) {
+//     align-items: $align;
+//   }
+//   @if ($justify) {
+//     justify-content: $justify;
+//   }
+// }

@@ -1,0 +1,40 @@
+.page {
+  margin-top: 40px;
+  color: getColor("black.base");
+  @include e(title) {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  @include e(text) {
+    font-size: 18px;
+    color: getColor("black.base");
+    margin: 12px 0 0;
+  }
+  @include e(content) {
+    color: getColor("black.base");
+    line-height: 18px;
+    margin-top: 12px;
+  }
+  @include e(file-structure) {
+    ul {
+      li {
+        list-style-type: disc;
+        margin: 4px 0 0 20px;
+        span {
+          margin-top: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  @include e(list-paragraph) {
+    margin-top: 4px;
+    line-height: 18px;
+  }
+
+  @include e(list-heading) {
+    margin-top: 16px;
+    display: block;
+  }
+}
