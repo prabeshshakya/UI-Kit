@@ -25,6 +25,7 @@ const Kit = () => {
             </h2> */}
 
             <div className="menu-group">
+              <h4 className="menu-group__title">General</h4>
               <NavLink
                 to="/docs/introduction"
                 className="menu-group__nodes__single"
@@ -46,7 +47,7 @@ const Kit = () => {
               </NavLink>
             </div>
 
-            {/* <div className="menu-group">
+            <div className="menu-group">
               <h4 className="menu-group__title">Components</h4>
               <div className="menu-group__contents">
                 <div className="menu-group__nodes">
@@ -68,7 +69,7 @@ const Kit = () => {
                   </NavLink>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
           <div className="guide-content">
             <div className="d--flex justify-content--center container">

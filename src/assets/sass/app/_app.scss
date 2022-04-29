@@ -32,6 +32,7 @@ code {
 }
 
 .menu-group {
+  margin-bottom: 20px;
   @include e(title) {
     font-weight: getFontWeight("normal");
     text-transform: uppercase;
@@ -39,10 +40,10 @@ code {
     letter-spacing: 2px;
     border-bottom: 1px solid getColor("black.black10");
     padding-bottom: getSpacing("2x");
-    margin-bottom: getSpacing("4x");
+    margin-bottom: 8px;
   }
   @include e(nodes) {
-    padding: getSpacing("1x") 0;
+    // padding: getSpacing("1x") 0;
     @include e(single) {
       color: getColor("black.base");
       display: block;
