@@ -30,12 +30,12 @@ const Filestructure = () => {
           <br />
           The basic file structure of this SASS Starter Kit is as follows.
         </p>
-        <div className="page__file-structure">
+        <div className="page__brief">
           {/* app */}
           <ul>
             <li>
               <strong className="page__list-heading">app</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains all the partials for the apps/pages that
                 are in the projects. For example:
               </p>
@@ -50,14 +50,14 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading"> base</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains the partials for the styles that are common
                 within a project.
               </p>
               <ul>
                 <li>
                   <span>_base.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     A base rule is applied to HTML elements using an element
                     selector, a descendent selector, or a child selector, along
                     with any pseudo-classes. We cannot reference any element
@@ -69,7 +69,7 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span> _index.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Each folder on the SMACSS architecture will have its own
                     manifest partial. We import all the partials of the folder
                     to its respective manifest partial. Then all manifest
@@ -78,7 +78,7 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span>_normalize.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Here we correct the line height in all the browsers,
                     preventing adjustments of font size after orientations
                     changes in iOS.
@@ -91,20 +91,20 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading">component</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains the partials for all the components that
                 are used in a project like buttons, cards, avatar and more.
               </p>
               <ul>
                 <li>
                   <span>_button.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     The css for buttons are written in this partial.
                   </p>
                 </li>
                 <li>
                   <span> _cards.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     The design of cards varies according to projects. So there
                     is no default css for cards. The css for cards are written
                     in this partial.
@@ -112,7 +112,7 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span>_avatar.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Avatar is the profile image of the user. To use the css for
                     avatar, class “avatar” must be added to the div. For the
                     rounded border avatar, avatar--round must be appended and
@@ -127,20 +127,20 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span>_footer.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     The css for footer of the app is written in this partial.
                   </p>
                 </li>
                 <li>
                   <span>_index.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     In this partial, all the other partials of the component
                     folders are imported.
                   </p>
                 </li>
                 <li>
                   <span>_loader.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Loader helps us to know if datas or the app is being loaded
                     or not. So the css for the loader is written in this
                     partial.
@@ -148,7 +148,7 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span>_navbar.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Navbar is also known as header. The css for the header is
                     written in this partial.
                   </p>
@@ -169,7 +169,7 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading">libs</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains the partials for all the third party
                 libraries that are used in a project. For example: slick slider,
                 date picker, phone number input with country flag and country
@@ -185,27 +185,27 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading">states</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains the partials for different states.
               </p>
               <ul>
                 <li>
                   <span>_index.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Just as any other index partials, all the partials in the
                     folder is imported in this file.
                   </p>
                 </li>
                 <li>
                   <span> _print.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Codes for the boilerplate for printing websites are written
                     here.
                   </p>
                 </li>
                 <li>
                   <span>_state.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     A state is something that augments and overrides all other
                     styles. States are used as object classes for existing
                     elements.
@@ -218,7 +218,7 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading">utilities</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains the partials for classes, mixins and
                 functions which are placed in their respective folders
               </p>
@@ -299,46 +299,46 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading">Variables</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 This folder contains the partials for all the variables.
               </p>
               <ul>
                 <li>
                   <span>_breakpoint.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     In this partial, only the variables for the breakpoints of
                     different screen sizes are defined.
                   </p>
                 </li>
                 <li>
                   <span> _color.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     The variables of the colors are defined in this partial.
                   </p>
                 </li>
                 <li>
                   <span>_config.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Here you can define the variables, map, fonts and paths.
                   </p>
                 </li>
                 <li>
                   <span>_easing.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     In this partial, you can define the transition property for
                     the transitions that are necessary for the project.
                   </p>
                 </li>
                 <li>
                   <span>_fonts.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Here you can define the variables for font paths, font
                     family, font sizes, font weight.
                   </p>
                 </li>
                 <li>
                   <span>_grid.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     In this partial, you can set the total number of grids, grid
                     class, gutter width, grid breakpoints and container max
                     widths.
@@ -346,7 +346,7 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span>_index.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Like in the index partial of the components folder, the
                     index partial in the variable folder is also used to import
                     other SASS partials in the variables folder.
@@ -354,7 +354,7 @@ const Filestructure = () => {
                 </li>
                 <li>
                   <span>_spacing.scss</span>
-                  <p className="page__list-paragraph">
+                  <p className="page__brief">
                     Codes for the property of flex are defined in this partial.
                   </p>
                 </li>
@@ -365,7 +365,7 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading"> _shame.scss</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 The codes here are written in a rush to meet the deadline or as
                 a hack. There should be proper documentation for these codes as
                 well and the codes should be cleaned up in spare time.
@@ -375,7 +375,7 @@ const Filestructure = () => {
           <ul>
             <li>
               <strong className="page__list-heading"> _style.scss</strong>
-              <p className="page__list-paragraph">
+              <p className="page__brief">
                 Here all the partials are imported from other folders.
               </p>
             </li>

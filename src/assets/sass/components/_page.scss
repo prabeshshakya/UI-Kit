@@ -28,7 +28,7 @@
     }
   }
 
-  @include e(list-paragraph) {
+  @include e(brief) {
     margin-top: 4px;
     line-height: 20px;
   }
@@ -43,5 +43,12 @@
   .code-block {
     background-color: #f1f1f1;
     padding: 16px;
+  }
+
+  .usage-markup-preview {
+    margin-bottom: 20px;
+    @include m(m-top) {
+      margin-top: 20px;
+    }
   }
 }

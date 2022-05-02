@@ -1,33 +1,34 @@
-.font-weight{
-    @include m(thin){
-        font-weight: getFontWeight('thin') !important;
-    }
-    @include m(normal){
-        font-weight: getFontWeight('normal') !important;
-    }
-    @include m(bold){
-        font-weight: getFontWeight('bold') !important;
-    }
-    @include m(bolder){
-        font-weight: getFontWeight('bolder') !important;
-    }
+.font-weight {
+  @include m(thin) {
+    font-weight: getFontWeight("thin") !important;
+  }
+  @include m(normal) {
+    font-weight: getFontWeight("normal") !important;
+  }
+  @include m(bold) {
+    font-weight: getFontWeight("bold") !important;
+  }
+  @include m(bolder) {
+    font-weight: getFontWeight("bolder") !important;
+  }
 }
 
-.lead-text{
-    font-size: getFontSize("20");
+.lead-text {
+  font-size: getFontSize("20");
+  margin: 6px 0;
 }
 
-.text--uppercase{
-    text-transform: uppercase;
+.text--uppercase {
+  text-transform: uppercase;
 }
 
-.text--center{
-    text-align: center;
+.text--center {
+  text-align: center;
 }
 
-.warning--text{
-    color: getColor("warning.base");
+.warning--text {
+  color: getColor("warning.base");
 }
-.flex--1{
-    flex: 1;
+.flex--1 {
+  flex: 1;
 }
