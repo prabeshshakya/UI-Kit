@@ -40,7 +40,7 @@ const Kit = () => {
                 File Structure
               </NavLink>
               <NavLink
-                to="/docs/introduction#getting-started"
+                to="/docs/getting-started"
                 className="menu-group__nodes__single"
               >
                 Getting Started
