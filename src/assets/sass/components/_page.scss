@@ -52,3 +52,9 @@
     }
   }
 }
+
+.color-box {
+  p {
+    color: getColor("primary.base");
+  }
+}

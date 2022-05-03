@@ -79,6 +79,47 @@ const Kit = () => {
                 </div>
               </div>
             </div>
+            <div className="menu-group">
+              <h4 className="menu-group__title">Utilities</h4>
+              <div className="menu-group__contents">
+                <div className="menu-group__nodes">
+                  <NavLink
+                    to="/docs/colors"
+                    className="menu-group__nodes__single"
+                    activeClassName="menu-group__nodes__single--active"
+                  >
+                    Colors
+                  </NavLink>
+                </div>
+                <div className="menu-group__nodes">
+                  <NavLink
+                    to="/docs/fonts"
+                    className="menu-group__nodes__single"
+                    activeClassName="menu-group__nodes__single--active"
+                  >
+                    Fonts
+                  </NavLink>
+                </div>
+                <div className="menu-group__nodes">
+                  <NavLink
+                    to="/docs/spacing"
+                    className="menu-group__nodes__single"
+                    activeClassName="menu-group__nodes__single--active"
+                  >
+                    Spacing
+                  </NavLink>
+                </div>
+                <div className="menu-group__nodes">
+                  <NavLink
+                    to="/docs/units"
+                    className="menu-group__nodes__single"
+                    activeClassName="menu-group__nodes__single--active"
+                  >
+                    Units
+                  </NavLink>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="guide-content">
             <div className="d--flex justify-content--center container">
