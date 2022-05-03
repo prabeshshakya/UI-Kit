@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import AccordionDefault from "../kit/accordion/AccordionDefault";
 import Button from "../kit/button/Button";
 import FormElements from "../kit/form-elements/FormElements";
 import Introduction from "../kit/introduction/Introduction";
@@ -11,6 +12,7 @@ const KitRouter = () => (
     <Route path="/docs/forms" component={FormElements} />
     <Route path="/docs/introduction" component={Introduction} />
     <Route path="/docs/getting-started" component={Gettingstarted} />
+    <Route path="/docs/accordion" component={AccordionDefault} />
   </Switch>
 );
 

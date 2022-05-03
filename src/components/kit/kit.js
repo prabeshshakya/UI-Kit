@@ -52,6 +52,15 @@ const Kit = () => {
               <div className="menu-group__contents">
                 <div className="menu-group__nodes">
                   <NavLink
+                    to="/docs/accordion"
+                    className="menu-group__nodes__single"
+                    activeClassName="menu-group__nodes__single--active"
+                  >
+                    Accordion
+                  </NavLink>
+                </div>
+                <div className="menu-group__nodes">
+                  <NavLink
                     to="/docs/button"
                     className="menu-group__nodes__single"
                     activeClassName="menu-group__nodes__single--active"
