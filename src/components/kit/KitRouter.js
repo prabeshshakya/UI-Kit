@@ -6,6 +6,7 @@ import FormElements from "../kit/form-elements/FormElements";
 import Introduction from "../kit/introduction/Introduction";
 import Gettingstarted from "../kit/introduction/Gettingstarted";
 import Color from "../kit/utilities/color/Color";
+import Fonts from "../kit/utilities/font/Fonts";
 
 const KitRouter = () => (
   <Switch>
@@ -15,6 +16,7 @@ const KitRouter = () => (
     <Route path="/docs/getting-started" component={Gettingstarted} />
     <Route path="/docs/accordion" component={AccordionDefault} />
     <Route path="/docs/colors" component={Color} />
+    <Route path="/docs/fonts" component={Fonts} />
   </Switch>
 );
 

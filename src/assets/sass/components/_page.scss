@@ -57,4 +57,8 @@
   p {
     color: getColor("primary.base");
   }
+  .strong-title {
+    margin-top: 8px !important;
+    font-weight: bold;
+  }
 }

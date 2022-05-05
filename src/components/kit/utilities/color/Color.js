@@ -90,10 +90,6 @@ const Color = () => {
           "grey": (
             "base": $base-grey,
             "light": $light-grey,
-            "xlight": $xlight-grey,
-            "xxlight": $xxlight-grey,
-            "xxxlight": $xxxlight-grey,
-            "xxxxlight": $xxxlight-grey,
           ),
         );
                    
