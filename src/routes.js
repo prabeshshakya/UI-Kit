@@ -1,19 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import Kit from './components/kit';
-import Landing from './components/landing';
-
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import AccordionDefault from "./components/kit/accordion/AccordionDefault";
+import Button from "./components/kit/button/Button";
+import FormElements from "./components/kit/form-elements/FormElements";
+import Gettingstarted from "./components/kit/introduction/Gettingstarted";
+import Introduction from "./components/kit/introduction/Introduction";
+import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
+import Color from "./components/kit/utilities/color/Color";
+import Fonts from "./components/kit/utilities/font/Fonts";
 
 /**
  * App Router.
  */
 function AppRouter() {
   return (
-    <Router>
-        <Route path="/" exact component={Landing} />
-        <Route path="/docs" component={Kit} />
-    </Router>
+    <Switch>
+      <Route path="/" exact component={Introduction} />
+      <Route path="/button" component={Button} />
+      <Route path="/forms" component={FormElements} />
+      <Route path="/getting-started" component={Gettingstarted} />
+      <Route path="/accordion" component={AccordionDefault} />
+      <Route path="/colors" component={Color} />
+      <Route path="/fonts" component={Fonts} />
+    </Switch>
   );
 }
 
