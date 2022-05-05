@@ -7,6 +7,7 @@ import Introduction from "../kit/introduction/Introduction";
 import Gettingstarted from "../kit/introduction/Gettingstarted";
 import Color from "../kit/utilities/color/Color";
 import Fonts from "../kit/utilities/font/Fonts";
+import Spacing from "../kit/utilities/spacing/Spacing";
 
 const KitRouter = () => (
   <Switch>
@@ -17,6 +18,7 @@ const KitRouter = () => (
     <Route path="/docs/accordion" component={AccordionDefault} />
     <Route path="/docs/colors" component={Color} />
     <Route path="/docs/fonts" component={Fonts} />
+    <Route path="/docs/spacing" component={Spacing} />
   </Switch>
 );
 
