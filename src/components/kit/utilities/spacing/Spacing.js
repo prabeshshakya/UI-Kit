@@ -28,19 +28,19 @@ const Spacing = () => {
           horizontal properties. The spacing value can range from -16px to
           800px.This range can be changed in <code>_spacing.scss</code> file.
         </p>
-        <h4>Notation:</h4>
-        <p className="page__brief">
+        <h4 className="mt-2x">Notation:</h4>
+        <p className="page__brief mt-2x">
           The classes are named using the format <strong>{notation1}</strong>
           for xs and <strong>{notation2}</strong> for sm, md, lg, xl, and xxl.
         </p>
-        <p className="page__brief">
+        <p className="page__brief mt-2x">
           Where <strong>property</strong> is one of :
         </p>
         <ul>
           <li>m: for classes that set the margin</li>
           <li>p: for classes that set the padding</li>
         </ul>
-        <p className="page__brief">
+        <p className="page__brief mt-2x">
           Where <strong>sides</strong> is one of :
         </p>
         <ul>
@@ -55,6 +55,44 @@ const Spacing = () => {
             the element
           </li>
         </ul>
+
+        <p className="page__brief mt-2x">
+          Where <strong>size</strong> is one of :
+        </p>
+        <ul>
+          <li>
+            0x: for classes that eliminate the margin or padding by setting it
+            to 0
+          </li>
+          <li>
+            1x: (by default) for classes that set the margin or padding to
+            $defaultSpacing * 1
+          </li>
+          <li>
+            2x: (by default) for classes that set the margin or padding to
+            $defaultSpacing * 2
+          </li>
+          <li>
+            3x: (by default) for classes that set the margin or padding to
+            $defaultSpacing * 3
+          </li>
+          <li>
+            4x: (by default) for classes that set the margin or padding to
+            $defaultSpacing * 4
+          </li>
+          <li>
+            5x: (by default) for classes that set the margin or padding to
+            $defaultSpacing * 5{" "}
+          </li>
+          <li>auto: for classes that set the margin to auto</li>
+        </ul>
+        <div className="note-block mt-4x">
+          <strong>Note:</strong>
+          <p className="page__brief">
+            The size can be added in <code>_spacing.scss</code> file as
+            required.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -62,3 +62,9 @@
     font-weight: bold;
   }
 }
+
+.note-block {
+  background-color: getColor("white.base");
+  padding: 12px;
+  border-radius: 4px;
+}

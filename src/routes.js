@@ -8,6 +8,7 @@ import Introduction from "./components/kit/introduction/Introduction";
 import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
 import Color from "./components/kit/utilities/color/Color";
 import Fonts from "./components/kit/utilities/font/Fonts";
+import Spacing from "./components/kit/utilities/spacing/Spacing";
 
 /**
  * App Router.
@@ -22,6 +23,7 @@ function AppRouter() {
       <Route path="/accordion" component={AccordionDefault} />
       <Route path="/colors" component={Color} />
       <Route path="/fonts" component={Fonts} />
+      <Route path="/spacing" component={Spacing} />
     </Switch>
   );
 }
