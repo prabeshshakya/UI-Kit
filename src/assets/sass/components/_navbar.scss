@@ -5,6 +5,10 @@
   position: sticky;
   top: 0;
 
+  @include m(bordered){
+    border: 1px solid getColor("primary.base");
+  }
+
   @include e(header) {
     h1 {
       font-size: 16px;

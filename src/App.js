@@ -16,7 +16,7 @@ const App = () => {
               <h1>SASS Starter Kit</h1>
             </div>
             <div className="navbar__list">
-              <a href="#" className="navbar__item">
+              <a href="#" className="navbar__item navbar--bordered px-3x py-2x">
                 Github
               </a>
             </div>
@@ -112,7 +112,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="guide-content">
+            <div className="guide-content guide-content__inner">
               <div className="d--flex justify-content--center container">
                 <div className="col--12--md">
                   <MainRouter />

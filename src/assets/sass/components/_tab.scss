@@ -18,6 +18,7 @@
     @include e(tab){
         padding: getSpacing("3x") getSpacing("5x");
         cursor: pointer;
+        // list-style: none !important;
         &:hover{
             color: getColor("black.black60");
         }
