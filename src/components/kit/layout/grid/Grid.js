@@ -5,10 +5,16 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const Grid = () => {
 	const columnsNormal = `	
-<div class="row">
-	<div class="col-xs">Column</div>
-	<div class="col-xs">Column</div>
-	<div class="col-xs">Column</div>
+	<div class="container">
+	<div class="row">
+		<div class="col-xs">1 of 2</div>
+		<div class="col-xs">2 of 2</div>
+	</div>
+	<div class="row">
+		<div class="col-xs">1 of 3</div>
+		<div class="col-xs">2 of 3</div>
+		<div class="col-xs">3 of 3</div>
+	</div>
 </div>
 `;
 
@@ -89,9 +95,7 @@ const Grid = () => {
 								</tr>
 								<tr>
 									<th scope="row">Class prefix</th>
-									<td>
-										<code>.col-xs</code>
-									</td>
+									<td>none</td>
 									<td>
 										<code>.col-[size]-sm</code>
 									</td>
@@ -138,6 +142,7 @@ const Grid = () => {
 						</table>
 					</div>
 
+					<h2>Equal-width</h2>
 					<div className="usage-markup-preview">
 						<Tabs>
 							<TabList>
@@ -146,12 +151,16 @@ const Grid = () => {
 							</TabList>
 
 							<TabPanel>
-								<div className="preview-container">
-									<div className="container">
-										<div className="row">
-											<div className="col-xs">Column</div>
-											<div className="col-xs">Column</div>
-											<div className="col-xs">Column</div>
+								<div className="docs-container">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs">1 of 2</div>
+											<div class="col-xs">2 of 2</div>
+										</div>
+										<div class="row">
+											<div class="col-xs">1 of 3</div>
+											<div class="col-xs">2 of 3</div>
+											<div class="col-xs">3 of 3</div>
 										</div>
 									</div>
 								</div>
