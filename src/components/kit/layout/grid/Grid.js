@@ -1,22 +1,13 @@
 import React from "react";
-import { Syntax } from "../../../common/syntax-highlighter";
+import EqualWidth from "./EqualWidth";
+import SettingOneColumnWidth from "./SettingOneColumnWidth";
+import VariableWidthContent from "./VariableWidthContent";
+import ResponsiveClasses from "./ResponsiveClasses";
+import StackedToHorizontal from "./StackedToHorizontal";
+import MixAndMatch from "./MixAndMatch";
 
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const Grid = () => {
-	const columnsNormal = `	
-	<div class="container">
-	<div class="row">
-		<div class="col-xs">1 of 2</div>
-		<div class="col-xs">2 of 2</div>
-	</div>
-	<div class="row">
-		<div class="col-xs">1 of 3</div>
-		<div class="col-xs">2 of 3</div>
-		<div class="col-xs">3 of 3</div>
-	</div>
-</div>
-`;
 
 	return (
 		<div className="page mt--11x">
@@ -33,6 +24,7 @@ const Grid = () => {
 
 					<h2 className="mb-2x">Grid options</h2>
 					<p className="mb-4x">Grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follow:</p>
+				</div>	
 					<div className="doc-container">
 						<ul className="mb-2x">
 							<li>Extra small (xs)</li>
@@ -142,41 +134,13 @@ const Grid = () => {
 						</table>
 					</div>
 
-					<h2>Equal-width</h2>
-					<div className="usage-markup-preview">
-						<Tabs>
-							<TabList>
-								<Tab>Preview</Tab>
-								<Tab>Code</Tab>
-							</TabList>
-
-							<TabPanel>
-								<div className="docs-container">
-									<div class="container">
-										<div class="row">
-											<div class="col-xs">1 of 2</div>
-											<div class="col-xs">2 of 2</div>
-										</div>
-										<div class="row">
-											<div class="col-xs">1 of 3</div>
-											<div class="col-xs">2 of 3</div>
-											<div class="col-xs">3 of 3</div>
-										</div>
-									</div>
-								</div>
-							</TabPanel>
-							<TabPanel>
-								<div className="preview-container">
-									<div className="d-flex">
-										<div className="code-preview mt-0x">
-											<Syntax>{columnsNormal}</Syntax>
-										</div>
-									</div>
-								</div>
-							</TabPanel>
-						</Tabs>
-					</div>
-				</div>
+					<EqualWidth />
+					<SettingOneColumnWidth />
+					<VariableWidthContent />
+					<ResponsiveClasses />
+					<StackedToHorizontal />
+					<MixAndMatch />
+	
 			</div>
 		</div>
 	);
