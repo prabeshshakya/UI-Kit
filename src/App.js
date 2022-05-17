@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
 import "./assets/sass/style.scss";
-import "./assets/_docs/docs.scss";
 
 import MainRouter from "./routes";
 
@@ -101,10 +100,8 @@ const App = () => {
 							</div>
 						</div>
 						<div className="guide-content">
-							<div className="d--flex justify-content--center container">
-								<div className="col--12--md">
-									<MainRouter />
-								</div>
+							<div className="container">
+								<MainRouter />
 							</div>
 						</div>
 					</div>

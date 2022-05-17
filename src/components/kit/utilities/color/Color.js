@@ -3,19 +3,21 @@ import { Syntax } from "../../../common/syntax-highlighter";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const Color = () => {
-  const colorMap = `$colorMap: (
-        "white": (
-          "base": $white,
-        ),
-        );`;
+	const colorMap = `
+        $colorMap: (
+          "white": (
+            "base": $white,
+          ),
+        );
+        `;
 
-  const code = `
+	const code = `
         .color-box p{
-            color:getColor(“primary.base”)
-                      }
+          color:getColor(“primary.base”)
+        }
             
         `;
-  const variableCode = `
+	const variableCode = `
         // Default Color
         $white: #ffffff !default;
         $black: #000000 !default;
@@ -95,80 +97,69 @@ const Color = () => {
                    
         `;
 
-  return (
-    <div className="page mt--11x">
-      <div className="title-area  mb--7x">
-        <h2 className="title title--largest title--dark font-weight--thin mb--4x">
-          Colors
-        </h2>
-        <p className="lead-text">
-          Include color with utility classes and add your own custom color.
-        </p>
-        <div className="content-block">
-          <h3>Colors</h3>
-          <p className="page__brief">
-            We can use color utility to colorize text, background, buttons. We
-            can customize and add new colors as needed in _color.scss file. We
-            can find the list of color variables and an array of color palettes
-            in <code> _color.scss</code> file. Any additional colors or changes
-            in existing colors can be done in this file. The array of colors (
-            <code>$colorMap</code>) is being used in different functions and
-            mixins to apply colors as needed.
-          </p>
-          <Syntax>{colorMap}</Syntax>
-        </div>
-        <div className="content-block">
-          <h4>getColor()</h4>
-          <p className="page__brief">
-            In <code>_helpers.scss</code> file, we can find a function
-            <code>getColor()</code>, which maps the color from the color map
-            variable in
-            <code>_color.scss</code>.The <code>getColor()</code> function then
-            helps us to easily apply color from the variable file to the
-            respective component as necessary.
-          </p>
-        </div>
-        <div className="content-block">
-          <h4>Examples:</h4>
-          <p className="page__brief">Syntax for this function:</p>
-          <div className="usage-markup-preview">
-            <Tabs>
-              <TabList>
-                <Tab>Preview</Tab>
-                <Tab>Code</Tab>
-              </TabList>
-              <TabPanel>
-                <div className="preview-container">
-                  <div className="color-box">
-                    <p>This is a color sample text.</p>
-                  </div>
-                </div>
-              </TabPanel>
-              <TabPanel>
-                <div className="preview-container">
-                  <div className="d-flex">
-                    <div className="code-preview mt--0">
-                      <Syntax>{code}</Syntax>
-                    </div>
-                  </div>
-                </div>
-              </TabPanel>
-            </Tabs>
-          </div>
-        </div>
+	return (
+		<div className="page">
+			<div className="title-area">
+				<h2 className="page__title">Colors</h2>
+				<p className="lead-text">Include color with utility classes and add your own custom color.</p>
+				<div className="content-block">
+					<h3>Colors</h3>
+					<p className="page__brief">
+						We can use color utility to colorize text, background, buttons. We can customize and add new colors as needed in _color.scss file. We can find the list of color variables and an array of color palettes in <code> _color.scss</code> file. Any additional colors or changes in existing colors can be done in this file. The array of colors (<code>$colorMap</code>) is being used in different functions and mixins to apply colors as needed.
+					</p>
+					<div className="code-preview">
+						<Syntax language="scss">{colorMap}</Syntax>
+					</div>
+				</div>
+				<div className="content-block">
+					<h4>getColor()</h4>
+					<p className="page__brief">
+						In <code>_helpers.scss</code> file, we can find a function
+						<code>getColor()</code>, which maps the color from the color map variable in
+						<code>_color.scss</code>.The <code>getColor()</code> function then helps us to easily apply color from the variable file to the respective component as necessary.
+					</p>
+				</div>
+				<div className="content-block">
+					<h4>Examples:</h4>
+					<p className="page__brief">Syntax for this function:</p>
+					<div className="usage-markup-preview">
+						<Tabs>
+							<TabList>
+								<Tab>Preview</Tab>
+								<Tab>Code</Tab>
+							</TabList>
+							<TabPanel>
+								<div className="preview-container">
+									<div className="color-box">
+										<p>This is a color sample text.</p>
+									</div>
+								</div>
+							</TabPanel>
+							<TabPanel>
+								<div className="preview-container">
+									<div className="d-flex">
+										<div className="code-preview">
+											<Syntax language="scss">{code}</Syntax>
+										</div>
+									</div>
+								</div>
+							</TabPanel>
+						</Tabs>
+					</div>
+				</div>
 
-        <div className="content-block">
-          <h4>Variables</h4>
-          <p className="page__brief">
-            These are the color variables defined in the{" "}
-            <code>_color.scss</code> file. You can also include your own custom
-            color code as per your need.
-          </p>
-          <Syntax>{variableCode}</Syntax>
-        </div>
-      </div>
-    </div>
-  );
+				<div className="content-block">
+					<h4>Variables</h4>
+					<p className="page__brief">
+						These are the color variables defined in the <code>_color.scss</code> file. You can also include your own custom color code as per your need.
+					</p>
+					<div className="code-preview">
+						<Syntax language="scss">{variableCode}</Syntax>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Color;
