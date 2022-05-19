@@ -4,96 +4,96 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const Color = () => {
 	const colorMap = `
-        $colorMap: (
-          "white": (
-            "base": $white,
-          ),
-        );
+  $colorMap: (
+    "white": (
+      "base": $white,
+    ),
+  );
         `;
 
 	const code = `
-        .color-box p{
-          color:getColor(“primary.base”)
-        }
+    .color-box p{
+      color:getColor(“primary.base”)
+    }
             
         `;
 	const variableCode = `
-        // Default Color
-        $white: #ffffff !default;
-        $black: #000000 !default;
-        
-        // Base colors
-        $primary-color: #4fc3f7 !default;
-        $secondary-color: #66bb6a !default;
-        $error-color: #ef5350 !default;
-        $warning-color: #ffca28 !default;
-        $warning-alt-color: #ff9800 !default;
-        $blue-grey: #9cb2bf !default;
-        $base-grey: #333333 !default;
-        $light-grey: lighten($base-grey, 15%);
-        $xlight-grey: lighten($light-grey, 15%);
-        $xxlight-grey: lighten($xlight-grey, 15%);
-        $xxxlight-grey: lighten($xxlight-grey, 15%);
-        $xxxxlight-grey: lighten($xxxlight-grey, 15%);
-        
-        $bg-color: #f6f8f9 !default;
-        
-        //Color Palette
-        $colorMap: (
-          "white": (
-            "base": $white,
-          ),
-          "blue-grey": (
-            "lighter": lighten($blue-grey, 25%),
-            "light": lighten($blue-grey, 20%),
-            "base": lighten($blue-grey, 10%),
-            "dark": $blue-grey,
-            "darker": darken($blue-grey, 15%),
-          ),
-          "black": (
-            "base": $black,
-            "black90": rgba($black, 0.9),
-            "black80": rgba($black, 0.8),
-            "black70": rgba($black, 0.7),
-            "black60": rgba($black, 0.6),
-            "black50": rgba($black, 0.5),
-            "black40": rgba($black, 0.4),
-            "black30": rgba($black, 0.3),
-            "black20": rgba($black, 0.2),
-            "black10": rgba($black, 0.1),
-            "black38": #383838,
-            "black48": #f1f1f1,
-          ),
-          "primary": (
-            "base": $primary-color,
-            "dark": darken($primary-color, 10%),
-            "light": lighten($primary-color, 10%),
-          ),
-          "secondary": (
-            "base": $secondary-color,
-            "dark": darken($secondary-color, 10%),
-            "light": lighten($secondary-color, 10%),
-          ),
-          "error": (
-            "base": $error-color,
-            "dark": darken($error-color, 10%),
-            "light": lighten($error-color, 10%),
-          ),
-          "warning": (
-            "base": $warning-color,
-            "dark": darken($warning-color, 10%),
-            "light": lighten($warning-color, 10%),
-          ),
-          "warning-alt": (
-            "base": $warning-alt-color,
-            "dark": darken($warning-alt-color, 10%),
-            "light": lighten($warning-alt-color, 10%),
-          ),
-          "grey": (
-            "base": $base-grey,
-            "light": $light-grey,
-          ),
-        );
+  // Default Color
+  $white: #ffffff !default;
+  $black: #000000 !default;
+  
+  // Base colors
+  $primary-color: #4fc3f7 !default;
+  $secondary-color: #66bb6a !default;
+  $error-color: #ef5350 !default;
+  $warning-color: #ffca28 !default;
+  $warning-alt-color: #ff9800 !default;
+  $blue-grey: #9cb2bf !default;
+  $base-grey: #333333 !default;
+  $light-grey: lighten($base-grey, 15%);
+  $xlight-grey: lighten($light-grey, 15%);
+  $xxlight-grey: lighten($xlight-grey, 15%);
+  $xxxlight-grey: lighten($xxlight-grey, 15%);
+  $xxxxlight-grey: lighten($xxxlight-grey, 15%);
+  
+  $bg-color: #f6f8f9 !default;
+  
+  //Color Palette
+  $colorMap: (
+    "white": (
+      "base": $white,
+    ),
+    "blue-grey": (
+      "lighter": lighten($blue-grey, 25%),
+      "light": lighten($blue-grey, 20%),
+      "base": lighten($blue-grey, 10%),
+      "dark": $blue-grey,
+      "darker": darken($blue-grey, 15%),
+    ),
+    "black": (
+      "base": $black,
+      "black90": rgba($black, 0.9),
+      "black80": rgba($black, 0.8),
+      "black70": rgba($black, 0.7),
+      "black60": rgba($black, 0.6),
+      "black50": rgba($black, 0.5),
+      "black40": rgba($black, 0.4),
+      "black30": rgba($black, 0.3),
+      "black20": rgba($black, 0.2),
+      "black10": rgba($black, 0.1),
+      "black38": #383838,
+      "black48": #f1f1f1,
+    ),
+    "primary": (
+      "base": $primary-color,
+      "dark": darken($primary-color, 10%),
+      "light": lighten($primary-color, 10%),
+    ),
+    "secondary": (
+      "base": $secondary-color,
+      "dark": darken($secondary-color, 10%),
+      "light": lighten($secondary-color, 10%),
+    ),
+    "error": (
+      "base": $error-color,
+      "dark": darken($error-color, 10%),
+      "light": lighten($error-color, 10%),
+    ),
+    "warning": (
+      "base": $warning-color,
+      "dark": darken($warning-color, 10%),
+      "light": lighten($warning-color, 10%),
+    ),
+    "warning-alt": (
+      "base": $warning-alt-color,
+      "dark": darken($warning-alt-color, 10%),
+      "light": lighten($warning-alt-color, 10%),
+    ),
+    "grey": (
+      "base": $base-grey,
+      "light": $light-grey,
+    ),
+  );
                    
         `;
 

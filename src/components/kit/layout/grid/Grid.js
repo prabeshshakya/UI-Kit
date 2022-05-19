@@ -24,13 +24,13 @@ const Grid = () => {
 					<p className="mb-4x">Grid system can adapt across all six default breakpoints, and any breakpoints you customize. The six default grid tiers are as follow:</p>
 				</div>
 				<div className="doc-container">
-					<ul className="mb-2x">
-						<li>Extra small (xs)</li>
-						<li>Small (sm)</li>
-						<li>Medium (md)</li>
-						<li>Large (lg)</li>
-						<li>Extra large (xl)</li>
-						<li>Extra extra large (xxl)</li>
+					<ul className="mb-4x">
+						<li className="title--smallest">Extra small (xs)</li>
+						<li className="title--smallest">Small (sm)</li>
+						<li className="title--smallest">Medium (md)</li>
+						<li className="title--smallest">Large (lg)</li>
+						<li className="title--smallest">Extra large (xl)</li>
+						<li className="title--smallest">Extra extra large (xxl)</li>
 					</ul>
 
 					<p>As noted above, each of these breakpoints have their own container, unique class prefix, and modifiers. Here’s how the grid changes across these breakpoints:</p>
@@ -99,7 +99,7 @@ const Grid = () => {
 									<code>.col-[size]-xl</code>
 								</td>
 								<td>
-									<code>.col-[col-size]-xxl</code>
+									<code>.col-[size]-xxl</code>
 								</td>
 							</tr>
 							<tr>

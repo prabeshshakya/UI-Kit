@@ -4,15 +4,15 @@ import { Syntax } from "../../../common/syntax-highlighter";
 
 const EqualWidth = () => {
 	const code = `	
-	<div class="container">
+<div class="container">
 	<div class="row px-4x">
-		<div class="col-xs">1 of 2</div>
-		<div class="col-xs">2 of 2</div>
+		<div class="col-12">1 of 2</div>
+		<div class="col-12">2 of 2</div>
 	</div>
 	<div class="row px-4x">
-		<div class="col-xs">1 of 3</div>
-		<div class="col-xs">2 of 3</div>
-		<div class="col-xs">3 of 3</div>
+		<div class="col-12">1 of 3</div>
+		<div class="col-12">2 of 3</div>
+		<div class="col-12">3 of 3</div>
 	</div>
 </div>
 `;
@@ -20,7 +20,6 @@ const EqualWidth = () => {
 		<>
 			<h2>Equal-width</h2>
 			<div class="content-block">
-				<strong>Usage</strong>
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>

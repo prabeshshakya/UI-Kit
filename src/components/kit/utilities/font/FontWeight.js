@@ -46,7 +46,7 @@ const FontWeight = () => {
 				</p>
 			</div>
 			<div className="content-block">
-				<strong>Usage</strong>
+				<h4>Usage</h4>
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>
@@ -55,10 +55,10 @@ const FontWeight = () => {
 						</TabList>
 						<TabPanel>
 							<div className="preview-container">
-								<div className="font-weight--thin">This is thin text.</div>
-								<div className="font-weight--bold">This is bold text.</div>
-								<div className="font-weight--normal">This is normal text.</div>
-								<div className="font-weight--bolder">This is bolder text.</div>
+								<div className="font-weight--thin mb-2x">This is thin text.</div>
+								<div className="font-weight--bold mb-2x">This is bold text.</div>
+								<div className="font-weight--normal mb-2x">This is normal text.</div>
+								<div className="font-weight--bolder mb-2x">This is bolder text.</div>
 							</div>
 						</TabPanel>
 						<TabPanel>

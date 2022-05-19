@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "scss": "node-sass --watch ./src/assets/sass -o ./src/assets/css",
-    "scss-doc": "node-sass --watch ./src/assets/_docs -o ./src/assets/_docs"
+    "scss-doc": "node-sass --watch ./src/docs -o ./src/docs"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -65,7 +65,7 @@ const FontSize = () => {
 				</p>
 			</div>
 			<div className="content-block">
-				<strong>Usage</strong>
+				<h4>Usage</h4>
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>
@@ -74,12 +74,12 @@ const FontSize = () => {
 						</TabList>
 						<TabPanel>
 							<div className="preview-container">
-								<div className="title--largest">This is largest text.</div>
-								<div className="title--large">This is large text.</div>
-								<div className="title--medium">This is medium text.</div>
-								<div className="title--small">This is small text.</div>
-								<div className="title--smallest">This is smallest text.</div>
-								<div className="title--dark">This is dark text.</div>
+								<div className="title--largest mb-2x">This is largest text.</div>
+								<div className="title--large mb-2x">This is large text.</div>
+								<div className="title--medium mb-2x">This is medium text.</div>
+								<div className="title--small mb-2x">This is small text.</div>
+								<div className="title--smallest mb-2x">This is smallest text.</div>
+								<div className="title--dark mb-2x">This is dark text.</div>
 							</div>
 						</TabPanel>
 						<TabPanel>

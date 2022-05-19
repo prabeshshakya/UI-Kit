@@ -59,7 +59,9 @@ const Filestructure = () => {
 					</ul>
 
 					{/* component */}
-					<h3 className="page__list-heading">component</h3>
+					<h3 className="page__list-heading">
+						component <div className="badge">coming soon...</div>
+					</h3>
 					<p className="page__brief">This folder contains the partials for all the components that are used in a project like buttons, cards, avatar and more.</p>
 					<ul>
 						<li>
