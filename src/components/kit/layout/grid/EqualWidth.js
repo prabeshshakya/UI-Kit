@@ -30,11 +30,11 @@ const EqualWidth = () => {
 						<TabPanel>
 							<div className="docs-container">
 								<div class="container">
-									<div class="row px-4x">
+									<div class="row">
 										<div class="col-xs">1 of 2</div>
 										<div class="col-xs">2 of 2</div>
 									</div>
-									<div class="row px-4x">
+									<div class="row">
 										<div class="col-xs">1 of 3</div>
 										<div class="col-xs">2 of 3</div>
 										<div class="col-xs">3 of 3</div>

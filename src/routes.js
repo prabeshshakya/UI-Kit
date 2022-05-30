@@ -9,6 +9,7 @@ import Breakpoints from "./components/kit/layout/breakpoint/Breakpoint";
 import Grid from "./components/kit/layout/grid/Grid";
 import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
 import Color from "./components/kit/utilities/color/Color";
+import Spacing from "./components/kit/utilities/spacing/Spacing";
 import Fonts from "./components/kit/utilities/font/Fonts";
 
 /**
@@ -23,6 +24,7 @@ function AppRouter() {
 			<Route path="/getting-started" component={Gettingstarted} />
 			<Route path="/accordion" component={AccordionDefault} />
 			<Route path="/colors" component={Color} />
+			<Route path="/spacing" component={Spacing} />
 			<Route path="/fonts" component={Fonts} />
 			<Route path="/breakpoints" component={Breakpoints} />
 			<Route path="/grid" component={Grid} />

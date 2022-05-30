@@ -9,7 +9,7 @@ const StackedToHorizontal = () => {
             <div class="col-8-sm">col-8-sm</div>
             <div class="col-4-sm">col-4-sm</div>
         </div>
-        <div class="row px-4x">
+        <div class="row">
             <div class="col-sm">col-sm</div>
             <div class="col-sm">col-sm</div>
             <div class="col-sm">col-sm</div>
@@ -20,7 +20,6 @@ const StackedToHorizontal = () => {
 		<>
 			<h2>Stacked to horizontal</h2>
 			<div class="content-block">
-				<strong>Usage</strong>
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>
@@ -35,7 +34,7 @@ const StackedToHorizontal = () => {
 										<div class="col-8-sm">col-8-sm</div>
 										<div class="col-4-sm">col-4-sm</div>
 									</div>
-									<div class="row px-4x">
+									<div class="row">
 										<div class="col-sm">col-sm</div>
 										<div class="col-sm">col-sm</div>
 										<div class="col-sm">col-sm</div>

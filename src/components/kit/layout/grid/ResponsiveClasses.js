@@ -20,9 +20,8 @@ const ResponsiveClasses = () => {
 	return (
 		<>
 			<h2>Responsive classes</h2>
-			<h2>All breakpoints</h2>
+			<h3>All breakpoints</h3>
 			<div class="content-block">
-				<strong>Usage</strong>
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>
@@ -33,7 +32,7 @@ const ResponsiveClasses = () => {
 						<TabPanel>
 							<div className="docs-container">
 								<div class="container">
-									<div class="row px-4x">
+									<div class="row">
 										<div class="col-xs">col</div>
 										<div class="col-xs">col</div>
 										<div class="col-xs">col</div>

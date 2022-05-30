@@ -10,7 +10,7 @@ const VariableWidthContent = () => {
             <div class="col-auto-md">variable with content</div>
             <div class="col-2-lg">3 of 3</div>
         </div>
-        <div class="row px-4x">
+        <div class="row">
             <div class="col-xs">1 of 3</div>
             <div class="col-auto-md">variable with content</div>
             <div class="col-2-lg">3 of 3</div>
@@ -21,7 +21,6 @@ const VariableWidthContent = () => {
 		<>
 			<h2>Variable width content</h2>
 			<div class="content-block">
-				<strong>Usage</strong>
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>
@@ -37,7 +36,7 @@ const VariableWidthContent = () => {
 										<div class="col-auto-md">variable with content</div>
 										<div class="col-2-lg">3 of 3</div>
 									</div>
-									<div class="row px-4x">
+									<div class="row">
 										<div class="col-xs">1 of 3</div>
 										<div class="col-auto-md">variable with content</div>
 										<div class="col-2-lg">3 of 3</div>

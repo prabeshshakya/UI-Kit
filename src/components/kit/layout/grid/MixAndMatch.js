@@ -4,32 +4,29 @@ import { Syntax } from "../../../common/syntax-highlighter";
 
 const MixAndMatch = () => {
 	const code = `	
-	<div class="container">
+	<div className="container">
                                
-        <div class="row">
-            <div class="col-8-md">.col-8-md</div>
-            <div class="col-6 col-4-md">.col-6 .col-4-md</div>
+        <div className="row">
+            <div className="col-8-md">.col-8-md</div>
+            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
         </div>
-
                                 
-        <div class="row">
-            <div class="col-6 col-4-md">.col-6 .col-4-md</div>
-            <div class="col-6 col-4-md">.col-6 .col-4-md</div>
-            <div class="col-6 col-4-md">.col-6 .col-4-md</div>
+        <div className="row">
+            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
+            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
+            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
         </div>
-
                                 
-        <div class="row">
-            <div class="col-6">.col-6</div>
-            <div class="col-6">.col-6</div>
+        <div className="row">
+            <div className="col-6">.col-6</div>
+            <div className="col-6">.col-6</div>
         </div>
     </div>
 `;
 	return (
 		<>
 			<h2>Mix and match</h2>
-			<div class="content-block">
-				<strong>Usage</strong>
+			<div className="content-block">
 				<div className="usage-markup-preview">
 					<Tabs>
 						<TabList>
@@ -39,21 +36,21 @@ const MixAndMatch = () => {
 
 						<TabPanel>
 							<div className="docs-container">
-								<div class="container">
-									<div class="row">
-										<div class="col-8-md">.col-8-md</div>
-										<div class="col-6 col-4-md">.col-6 .col-4-md</div>
+								<div className="container">
+									<div className="row">
+										<div className="col-8-md">.col-8-md</div>
+										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
 									</div>
 
-									<div class="row">
-										<div class="col-6 col-4-md">.col-6 .col-4-md</div>
-										<div class="col-6 col-4-md">.col-6 .col-4-md</div>
-										<div class="col-6 col-4-md">.col-6 .col-4-md</div>
+									<div className="row">
+										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
+										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
+										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
 									</div>
 
-									<div class="row">
-										<div class="col-6">.col-6</div>
-										<div class="col-6">.col-6</div>
+									<div className="row">
+										<div className="col-6">.col-6</div>
+										<div className="col-6">.col-6</div>
 									</div>
 								</div>
 							</div>
