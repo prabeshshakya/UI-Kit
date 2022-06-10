@@ -1,5 +1,13 @@
 @import "../assets/sass/style.scss";
 
+.container{
+  max-width: 1380px;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .page {
   margin-top: 40px;
   color: getColor("black.base");
@@ -40,7 +48,7 @@
     display: block;
   }
   .content-block {
-    margin: 16px 0;
+    margin: 42px 0;
   }
   .code-block {
     background-color: #f1f1f1;
@@ -87,6 +95,11 @@
   
     ul{
       margin-bottom: getSpacing('5x');
+
+      &.list-style{
+        list-style-type: disc;
+        margin-left: getSpacing('6x');
+      }
     }
     li:not(.react-tabs__tab){
       margin-bottom: getSpacing('2x');
@@ -170,6 +183,11 @@
       }
     }
   }
+
+.example-row > div{
+border: 1px solid rgba(getColor('primary.base'),0.5);
+background: rgba(getColor('primary.base'),0.25);
+}
   
   .title-area{
     margin-bottom: 30px;
@@ -178,13 +196,14 @@
   .table{
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
   
     th{
         text-align: -webkit-match-parent;
         white-space: nowrap;
     }
   
-    td{
+    td, th{
         padding: 10px;
         border-bottom: 1px solid rgb(222, 226, 230);
         border-collapse: collapse;
@@ -192,3 +211,21 @@
     } 
   }
   
+
+  .docs-info{
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    background-color: rgba(getColor('primary.base'),0.25);
+    border-left: 0.25rem solid rgba(getColor('primary.base'),0.5);
+  }
+
+  .eg-box{
+    background: rgba(getColor('primary.base'),0.25);
+    padding: 0.5rem;
+    border: 1px solid rgba(getColor('primary.base'),0.5);
+
+    .flex-wrap & {
+      width: 100%;
+    }
+  }

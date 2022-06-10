@@ -11,7 +11,7 @@ const Grid = () => {
 		<div className="page">
 			<div className="title-area  mb-7x">
 				<h2 className="page__title">Grid</h2>
-				<p className="mb-5x">This section includes grid breakpoints for containers including rows and columns. This starter kit uses a 12 column grid layout which uses flexbox for responsive layouts.</p>
+				<p className="lead-text mb-5x">This section includes grid breakpoints for containers including rows and columns. This starter kit uses a 12 column grid layout which uses flexbox for responsive layouts.</p>
 
 				<div className="doc-container">
 					<h4># Basic Usage</h4>
@@ -112,21 +112,15 @@ const Grid = () => {
 							</tr>
 							<tr>
 								<th scope="row">Custom gutters</th>
-								<td colspan="6">
-									<a href="/docs/5.1/layout/gutters/">Yes</a>
-								</td>
+								<td colspan="6">Yes</td>
 							</tr>
 							<tr>
 								<th scope="row">Nestable</th>
-								<td colspan="6">
-									<a href="#nesting">Yes</a>
-								</td>
+								<td colspan="6">Yes</td>
 							</tr>
 							<tr>
 								<th scope="row">Column ordering</th>
-								<td colspan="6">
-									<a href="/docs/5.1/layout/columns/#reordering">Yes</a>
-								</td>
+								<td colspan="6">Yes</td>
 							</tr>
 						</tbody>
 					</table>

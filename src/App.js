@@ -67,6 +67,16 @@ const App = () => {
 										</NavLink>
 									</div>
 									<div className="menu-group__nodes">
+										<NavLink to="/Display" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">
+											Display
+										</NavLink>
+									</div>
+									<div className="menu-group__nodes">
+										<NavLink to="/flex" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">
+											Flex
+										</NavLink>
+									</div>
+									<div className="menu-group__nodes">
 										<NavLink to="/fonts" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">
 											Fonts
 										</NavLink>

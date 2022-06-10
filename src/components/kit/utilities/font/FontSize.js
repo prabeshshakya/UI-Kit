@@ -4,6 +4,15 @@ import { Syntax } from "../../../common/syntax-highlighter";
 
 const FontSize = () => {
 	const code = `
+  <div className="title--largest">This is largest text.</div>
+  <div className="title--large">This is large text.</div>
+  <div className="title--medium">This is medium text.</div>
+  <div className="title--small">This is small text.</div>
+  <div className="title--smallest">This is smallest text.</div>
+  <div className="title--dark">This is dark text.</div>
+  `;
+
+	const cssUsages = `
   //sass for generated class
   .title {
     @include m(largest) {
@@ -34,15 +43,8 @@ const FontSize = () => {
       color: getColor("black.base");
     }
   }
-
-  //
-  <div className="title--largest">This is largest text.</div>
-  <div className="title--large">This is large text.</div>
-  <div className="title--medium">This is medium text.</div>
-  <div className="title--small">This is small text.</div>
-  <div className="title--smallest">This is smallest text.</div>
-  <div className="title--dark">This is dark text.</div>
   `;
+
 	return (
 		<>
 			<div className="content-block">
@@ -74,12 +76,12 @@ const FontSize = () => {
 						</TabList>
 						<TabPanel>
 							<div className="preview-container">
-								<div className="title--largest mb-2x">This is largest text.</div>
-								<div className="title--large mb-2x">This is large text.</div>
-								<div className="title--medium mb-2x">This is medium text.</div>
-								<div className="title--small mb-2x">This is small text.</div>
-								<div className="title--smallest mb-2x">This is smallest text.</div>
-								<div className="title--dark mb-2x">This is dark text.</div>
+								<div className="title--largest mb-3x">This is largest text.</div>
+								<div className="title--large mb-3x">This is large text.</div>
+								<div className="title--medium mb-3x">This is medium text.</div>
+								<div className="title--small mb-3x">This is small text.</div>
+								<div className="title--smallest mb-3x">This is smallest text.</div>
+								<div className="title--dark mb-3x">This is dark text.</div>
 							</div>
 						</TabPanel>
 						<TabPanel>
@@ -92,6 +94,11 @@ const FontSize = () => {
 							</div>
 						</TabPanel>
 					</Tabs>
+				</div>
+
+				<h4>CSS Usages</h4>
+				<div className="code-preview">
+					<Syntax language="scss">{cssUsages}</Syntax>
 				</div>
 			</div>
 		</>

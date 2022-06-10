@@ -4,7 +4,14 @@ import { Syntax } from "../../../common/syntax-highlighter";
 
 const FontWeight = () => {
 	const code = `
-  .font-weight {
+<div className="font-weight--thin">This is thin text.</div>
+<div className="font-weight--bold">This is bold text.</div>
+<div className="font-weight--normal">This is normal text.</div>
+<div className="font-weight--bolder">This is bolder text.</div>
+  `;
+
+	const cssUsages = `
+.font-weight {
     @include m(thin) {
       font-weight: getFontWeight("thin") !important;
     }
@@ -15,15 +22,10 @@ const FontWeight = () => {
       font-weight: getFontWeight("bold") !important;
     }
     @include m(bolder) {
-      font-weight: getFontWeight("bolder") !important;
+      font-weight: getFontWeight ("bolder") !important;
     }
-  }
-  //
-  <div className="font-weight--thin">This is thin text.</div>
-  <div className="font-weight--bold">This is bold text.</div>
-  <div className="font-weight--normal">This is normal text.</div>
-  <div className="font-weight--bolder">This is bolder text.</div>
-  `;
+}
+	  `;
 	return (
 		<>
 			<div className="content-block">
@@ -55,10 +57,10 @@ const FontWeight = () => {
 						</TabList>
 						<TabPanel>
 							<div className="preview-container">
-								<div className="font-weight--thin mb-2x">This is thin text.</div>
-								<div className="font-weight--bold mb-2x">This is bold text.</div>
-								<div className="font-weight--normal mb-2x">This is normal text.</div>
-								<div className="font-weight--bolder mb-2x">This is bolder text.</div>
+								<div className="font-weight--thin mb-3x">This is thin text.</div>
+								<div className="font-weight--bold mb-3x">This is bold text.</div>
+								<div className="font-weight--normal mb-3x">This is normal text.</div>
+								<div className="font-weight--bolder mb-3x">This is bolder text.</div>
 							</div>
 						</TabPanel>
 						<TabPanel>
@@ -71,6 +73,11 @@ const FontWeight = () => {
 							</div>
 						</TabPanel>
 					</Tabs>
+				</div>
+
+				<h4>CSS Usage</h4>
+				<div className="code-preview">
+					<Syntax language="scss">{cssUsages}</Syntax>
 				</div>
 			</div>
 		</>
