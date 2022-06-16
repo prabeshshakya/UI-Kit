@@ -1,101 +1,193 @@
 import React from "react";
+import { Syntax } from "../../../common/syntax-highlighter";
 
-const Spacing = () => {
-  const notation1 = `
-    {property}-{sides}-{size}
-    `;
-  const notation2 = `
-    {property}-{sides}-{size}-{breakpoint}
-    `;
-  return (
-    <div className="page mt--11x">
-      <div className="title-area  mb--7x">
-        <h2 className="title title--largest title--dark font-weight--thin mb--4x">
-          Spacing
-        </h2>
-        <p className="lead-text">Documentation for spacing.</p>
-        <p className="page__brief">
-          Sass Starter kit has a wide range of shorthand responsive margin,
-          padding, and gap utility classes to modify an element’s appearance.
-        </p>
-      </div>
-      <div className="content-block">
-        <h3>Margin and Padding</h3>
-        <p className="page__brief">
-          We can assign responsive friendly margin or padding values to an
-          element or subset of its sides with shorthand classes. Includes
-          support for individual properties, all properties, and vertical and
-          horizontal properties. The spacing value can range from -16px to
-          800px.This range can be changed in <code>_spacing.scss</code> file.
-        </p>
-        <h4 className="mt-2x">Notation:</h4>
-        <p className="page__brief mt-2x">
-          The classes are named using the format <strong>{notation1}</strong>
-          for xs and <strong>{notation2}</strong> for sm, md, lg, xl, and xxl.
-        </p>
-        <p className="page__brief mt-2x">
-          Where <strong>property</strong> is one of :
-        </p>
-        <ul>
-          <li>m: for classes that set the margin</li>
-          <li>p: for classes that set the padding</li>
-        </ul>
-        <p className="page__brief mt-2x">
-          Where <strong>sides</strong> is one of :
-        </p>
-        <ul>
-          <li>t: for classes that set margin-top or padding-top</li>
-          <li>b: for classes that set margin-bottom or padding-bottom</li>
-          <li>l: for classes that set margin-left or padding-left </li>
-          <li>r: for classes that set margin-right or padding-right i</li>
-          <li>x: for classes that set both *-left and *-right</li>
-          <li>y: for classes that set both *-top and *-bottom</li>
-          <li>
-            blank: for classes that set a margin or padding on all 4 sides of
-            the element
-          </li>
-        </ul>
+const Color = () => {
+	const code = `
 
-        <p className="page__brief mt-2x">
-          Where <strong>size</strong> is one of :
-        </p>
-        <ul>
-          <li>
-            0x: for classes that eliminate the margin or padding by setting it
-            to 0
-          </li>
-          <li>
-            1x: (by default) for classes that set the margin or padding to
-            $defaultSpacing * 1
-          </li>
-          <li>
-            2x: (by default) for classes that set the margin or padding to
-            $defaultSpacing * 2
-          </li>
-          <li>
-            3x: (by default) for classes that set the margin or padding to
-            $defaultSpacing * 3
-          </li>
-          <li>
-            4x: (by default) for classes that set the margin or padding to
-            $defaultSpacing * 4
-          </li>
-          <li>
-            5x: (by default) for classes that set the margin or padding to
-            $defaultSpacing * 5{" "}
-          </li>
-          <li>auto: for classes that set the margin to auto</li>
-        </ul>
-        <div className="note-block mt-4x">
-          <strong>Note:</strong>
-          <p className="page__brief">
-            The size can be added in <code>_spacing.scss</code> file as
-            required.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+$defaultSpacing: $base__font-size / 4;
+
+$spacing: ();
+$spaceFrom: -4;
+$spaceTill: 20;
+
+@for $i from $spaceFrom through $spaceTill {
+	$spacing: map-merge($spacing, (getSpacingName($i) : $defaultSpacing * $i));
+}
+            
+        `;
+	return (
+		<div className="page">
+			<div className="title-area">
+				<h2 className="page__title">Spacing</h2>
+				<p className="lead-text">Sass Starter kit has a wide range of shorthand responsive margin and padding utility classes to modify an element’s appearance.</p>
+			</div>
+			<div className="content-block">
+				<h3>Margin and Padding</h3>
+				<p className="page__brief">
+					We can assign responsive friendly <code>margin</code> or <code>padding</code> values to an element or subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. The spacing value can range from <code>-16px</code> to <code>80px</code>.This range can be changed in <code>variables/_spacing.scss</code> file.
+				</p>
+			</div>
+			<div className="content-block">
+				<h4>Notation</h4>
+				<p className="page__brief">
+					The classes are named using the format
+					<code>[property] - [sides] - [size]</code>
+					for <code>xs</code> and
+					<code>[property] - [sides] - [size] - [breakpoint]</code>
+					for <code> sm, md, lg, xl, and xxl.</code>
+				</p>
+			</div>
+			<div className="content-block">
+				<h5>
+					Where <em>property</em> is one of :
+				</h5>
+
+				<ul>
+					<li>
+						<code>m</code>- for classes that set the <code>margin</code>
+					</li>
+					<li>
+						<code>p</code>- for classes that set the <code>padding</code>
+					</li>
+				</ul>
+
+				<h5>
+					Where <em>sides</em> is one of :
+				</h5>
+
+				<ul>
+					<li>
+						<code>t</code>- for classes that set <code>margin-top</code> or <code>padding-top</code>
+					</li>
+					<li>
+						<code>b</code>- for classes that set <code>margin-bottom</code> or <code>padding-bottom</code>
+					</li>
+					<li>
+						<code>l</code>- for classes that set <code>margin-left</code> or <code>padding-left</code>
+					</li>
+					<li>
+						<code>r</code>- for classes that set <code>margin-right</code> or <code>padding-right</code>
+					</li>
+					<li>
+						<code>x</code>- for classes that set <code>*-right</code> or <code>*-right</code>
+					</li>
+					<li>
+						<code>y</code>- for classes that set <code>*-top</code> or <code>*-bottom</code>
+					</li>
+					<li>
+						<em>blank</em> - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element.
+					</li>
+				</ul>
+
+				<h5>
+					Where <em>size</em> is one of:
+				</h5>
+
+				<ul>
+					<li>
+						<code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code>
+					</li>
+					<li>
+						<code>1</code> - for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacing * 1</code>
+					</li>
+					<li>
+						<code>2</code> - for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacing * 2</code>
+					</li>
+					<li>
+						<code>3</code> - for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacing * 3</code>
+					</li>
+					<li>
+						<code>4</code> - for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacing * 4</code>
+					</li>
+					<li>
+						<code>...</code> - for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacing * ...</code>
+					</li>
+					<li>
+						<code>20</code> - for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacing * 20</code>
+					</li>
+					<li>
+						<code>auto</code> - for classes that set the <code>margin</code> to <code>auto</code>
+					</li>
+				</ul>
+
+				<blockquote className="docs-info">
+					<strong>Note:</strong>
+					<code>$defaultSpacing</code> is based on <code>$base__font-size</code> defined.
+				</blockquote>
+
+				<blockquote className="docs-info">
+					<strong>Note:</strong>
+					<code>1x</code> is equivalent to <code>4px</code>
+				</blockquote>
+
+				<h4>Example:</h4>
+				<table className="table mb-8x">
+					<thead>
+						<tr>
+							<th>className</th>
+							<th>CSS Output</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>.m-0x</code>
+							</td>
+							<td>
+								<code>margin: 0px</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.m-1x</code>
+							</td>
+							<td>
+								<code>margin: 4px</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.m-2x</code>
+							</td>
+							<td>
+								<code>margin: 8px</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.m-3x</code>
+							</td>
+							<td>
+								<code>margin: 12px</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>...</code>
+							</td>
+							<td>
+								<code>...</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.m-20x</code>
+							</td>
+							<td>
+								<code>margin: 80px</code>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4>Variables</h4>
+				<p>Spacing utilities are declared via Sass loop and then generated with our map function.</p>
+				<div className="code-preview">
+					<Syntax language="scss">{code}</Syntax>
+				</div>
+			</div>
+		</div>
+	);
 };
 
-export default Spacing;
+export default Color;

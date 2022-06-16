@@ -14,11 +14,12 @@
     "react-tabs": "^3.0.0"
   },
   "scripts": {
-    "start": "react-scripts start run-script scss",
+    "start": "react-scripts start run-script scss scss-doc",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass --watch ./src/assets/sass -o ./src/assets/css"
+    "scss": "node-sass --watch ./src/assets/sass -o ./src/assets/css",
+    "scss-doc": "node-sass --watch ./src/docs -o ./src/docs"
   },
   "eslintConfig": {
     "extends": "react-app"
