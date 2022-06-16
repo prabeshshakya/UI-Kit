@@ -3,23 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-select": "^3.0.4",
     "react-syntax-highlighter": "^11.0.2",
-    "react-tabs": "^3.0.0"
+    "react-tabs": "^3.0.0",
+    "sass": "^1.52.3"
   },
   "scripts": {
     "start": "react-scripts start run-script scss scss-doc",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "node-sass --watch ./src/assets/sass -o ./src/assets/css",
-    "scss-doc": "node-sass --watch ./src/docs -o ./src/docs"
+    "scss": "sass --watch ./src/assets/sass -o ./src/assets/css",
+    "scss-doc": "sass --watch ./src/docs -o ./src/docs"
   },
   "eslintConfig": {
     "extends": "react-app"
