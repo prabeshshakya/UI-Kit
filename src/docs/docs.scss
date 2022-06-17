@@ -28,7 +28,6 @@
   @include e(file-structure) {
     ul {
       li {
-        list-style-type: disc;
         margin: 4px 0 0 20px;
         span {
           margin-top: 10px;
@@ -99,6 +98,11 @@
       &.list-style{
         list-style-type: disc;
         margin-left: getSpacing('6x');
+      }
+
+      li{
+        list-style: none;
+        margin-left: 0;
       }
     }
     li:not(.react-tabs__tab){
