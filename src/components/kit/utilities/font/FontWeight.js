@@ -1,31 +1,7 @@
 import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Syntax } from "../../../common/syntax-highlighter";
 
 const FontWeight = () => {
-	const code = `
-<div className="font-weight--thin">This is thin text.</div>
-<div className="font-weight--bold">This is bold text.</div>
-<div className="font-weight--normal">This is normal text.</div>
-<div className="font-weight--bolder">This is bolder text.</div>
-  `;
-
-	const cssUsages = `
-.font-weight {
-    @include m(thin) {
-      font-weight: getFontWeight("thin") !important;
-    }
-    @include m(normal) {
-      font-weight: getFontWeight("normal") !important;
-    }
-    @include m(bold) {
-      font-weight: getFontWeight("bold") !important;
-    }
-    @include m(bolder) {
-      font-weight: getFontWeight ("bolder") !important;
-    }
-}
-	  `;
 	return (
 		<>
 			<div className="content-block">
@@ -49,36 +25,235 @@ const FontWeight = () => {
 			</div>
 			<div className="content-block">
 				<h4>Usage</h4>
-				<div className="usage-markup-preview">
-					<Tabs>
-						<TabList>
-							<Tab>Preview</Tab>
-							<Tab>Code</Tab>
-						</TabList>
-						<TabPanel>
-							<div className="preview-container">
-								<div className="font-weight--thin mb-3x">This is thin text.</div>
-								<div className="font-weight--bold mb-3x">This is bold text.</div>
-								<div className="font-weight--normal mb-3x">This is normal text.</div>
-								<div className="font-weight--bolder mb-3x">This is bolder text.</div>
-							</div>
-						</TabPanel>
-						<TabPanel>
-							<div className="preview-container">
-								<div className="d-flex">
-									<div className="code-preview">
-										<Syntax>{code}</Syntax>
-									</div>
-								</div>
-							</div>
-						</TabPanel>
-					</Tabs>
-				</div>
+				<table className="table">
+					<thead>
+						<tr>
+							<th>ClassName</th>
+							<th>Result</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>.fw-thin</code>
+							</td>
+							<td>
+								<span className="fw-thin">This text has 100 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-extralight</code>
+							</td>
+							<td>
+								<span className="fw-extralight">This text has 200 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-light</code>
+							</td>
+							<td>
+								<span className="fw-light">This text has 300 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-normal</code>
+							</td>
+							<td>
+								<span className="fw-normal">This text has 400 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-medium</code>
+							</td>
+							<td>
+								<span className="fw-medium">This text has 500 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-semibold</code>
+							</td>
+							<td>
+								<span className="fw-semibold">This text has 600 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-bold</code>
+							</td>
+							<td>
+								<span className="fw-bold">This text has "bold" weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-extrabold</code>
+							</td>
+							<td>
+								<span className="fw-extrabold">This text has 800 weight</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.fw-black</code>
+							</td>
+							<td>
+								<span className="fw-black">This text has 900 weight</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-				<h4>CSS Usage</h4>
-				<div className="code-preview">
-					<Syntax language="scss">{cssUsages}</Syntax>
-				</div>
+			<div className="content-block">
+				<h3>Font Style</h3>
+				<p className="page__brief">We can quickly change the font-style of the text with these utilities.</p>
+
+				<h4>Usage</h4>
+				<table className="table">
+					<thead>
+						<tr>
+							<th>ClassName</th>
+							<th>Result</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>.text-normal</code>
+							</td>
+							<td>
+								<span className="text-normal">This is normal text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-italic</code>
+							</td>
+							<td>
+								<span className="text-italic">This is italic text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-oblique</code>
+							</td>
+							<td>
+								<span className="text-oblique">This is oblique text</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div className="content-block">
+				<h3>Text Transform</h3>
+				<p className="page__brief">We can quickly change the text transform of the text with these utilities.</p>
+
+				<h4>Usage</h4>
+				<table className="table">
+					<thead>
+						<tr>
+							<th>ClassName</th>
+							<th>Result</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>.text-uppercase</code>
+							</td>
+							<td>
+								<span className="text-uppercase">This is uppercase text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-lowercase</code>
+							</td>
+							<td>
+								<span className="text-lowercase">This is lowercase text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-capitalize</code>
+							</td>
+							<td>
+								<span className="text-capitalize">This is capitalize text</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div className="content-block">
+				<h3>Text Utilities</h3>
+				<p className="page__brief">We can quickly change the text utils of the text with these utilities.</p>
+
+				<h4>Usage</h4>
+				<table className="table">
+					<thead>
+						<tr>
+							<th>ClassName</th>
+							<th>Result</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>.text-center</code>
+							</td>
+							<td>
+								<span className="text-center d-block">This is center text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-left</code>
+							</td>
+							<td>
+								<span className="text-left d-block">This is left text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-right</code>
+							</td>
+							<td>
+								<span className="text-right d-block">This is right text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-justify</code>
+							</td>
+							<td>
+								<span className="text-justify d-block">This is justify text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-underline</code>
+							</td>
+							<td>
+								<span className="text-underline d-block">This is underline text</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>.text-striked</code>
+							</td>
+							<td>
+								<span className="text-striked d-block">This is striked text</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</>
 	);

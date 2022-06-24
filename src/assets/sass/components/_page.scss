@@ -1,6 +1,7 @@
 .page {
   margin-top: 40px;
   color: getColor("black.base");
+
   @include e(title) {
     font-size: 2rem;
     font-weight: 600;

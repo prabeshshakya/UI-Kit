@@ -1,0 +1,11 @@
+.ui-html-table{
+    width: 100%;
+    border-collapse: collapse;  
+    th, td{
+        padding: getSpacing('4x');
+        border-bottom: 1px solid rgba($black, 0.1);
+    }
+    th{
+        text-align: left;
+    }
+}

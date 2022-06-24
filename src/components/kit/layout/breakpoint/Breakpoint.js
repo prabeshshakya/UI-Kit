@@ -3,24 +3,24 @@ import { Syntax } from "../../../common/syntax-highlighter";
 
 const Breakpoints = () => {
 	const breakpoints = `
-		$sm-device: 576px; 
-		$md-device: 768px; 
-		$lg-device: 992px; 
-		$xl-device: 1200px;
+$sm-device: 576px; 
+$md-device: 768px; 
+$lg-device: 992px; 
+$xl-device: 1200px;
 		`;
 
 	const mobileFirstBreakpoints = `
-		@include mq('sm') {...}
-		@include mq('md') {...}
-		@include mq('xl') {...}
-		@include mq('xxl') {...}
+@include mq('sm') {...}
+@include mq('md') {...}
+@include mq('xl') {...}
+@include mq('xxl') {...}
 	`;
 
 	const desktopFirstBreakpoints = `
-		@include mqmax('sm') {...}
-		@include mqmax('md') {...}
-		@include mqmax('xl') {...}
-		@include mqmax('xxl') {...}
+@include mqmax('sm') {...}
+@include mqmax('md') {...}
+@include mqmax('xl') {...}
+@include mqmax('xxl') {...}
 	`;
 
 	return (
@@ -42,13 +42,13 @@ const Breakpoints = () => {
 						In-order to use this <strong>mediaquery</strong> we have two way approches.
 					</p>
 
-					<h4>Min width (Mobile First approch)</h4>
+					<h4>Min width (Mobile First approach)</h4>
 
 					<div className="code-preview mb-5x">
 						<Syntax language="scss">{mobileFirstBreakpoints}</Syntax>
 					</div>
 
-					<h4>Max width (Desktop First approch)</h4>
+					<h4>Max width (Desktop First approach)</h4>
 
 					<div className="code-preview mb-5x">
 						<Syntax language="scss">{desktopFirstBreakpoints}</Syntax>

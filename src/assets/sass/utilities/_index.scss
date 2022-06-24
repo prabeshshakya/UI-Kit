@@ -5,21 +5,5 @@
 // style.scss file.
 // ==========================================================================
 
-/* Normalize Code Start */
-@import 'normalize';
-/* Normalize Code End */
-
-@import 'utilities';
-@import 'helpers';
-
-/* Sass Compiled Custom Grid Code Start */
-@import 'grid';
-/* Sass Compiled Custom Grid Code End */
-/* Sass Compiled Custom Flex Utils Code Start */
-@import 'flex-utils';
-/* Sass Compiled Custom Flex Utils End */
-@import 'extends';
-@import 'mixin';
-
-//Component Utils
-@import './components/button';
+ @import "classes/index";
+ @import "extends";

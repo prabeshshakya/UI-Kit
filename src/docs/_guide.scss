@@ -1,0 +1,17 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: sticky;
+  top: 120px;
+  padding: getSpacing("6x");
+  background-color: #f1f1f1;
+  border-radius: 10px;
+
+}
+
+.guide-content {
+  flex: 1;
+  @include e(inner) {
+    padding-top: 120px;
+  }
+}

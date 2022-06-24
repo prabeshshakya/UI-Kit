@@ -11,9 +11,8 @@
 //
 // @return Unspecified (it may return anything as a result)
 // ---------------------------------------------------------
-@function deep-map-get ($map, $keys...) {
-
-  @if type-of($map) != 'map' {
+@function deep-map-get($map, $keys...) {
+  @if type-of($map) != "map" {
     @error 'The argument $map: `#{$map}` is of incorrect type: `#{type-of($map)}`. Type of `Map` is required!';
   }
 

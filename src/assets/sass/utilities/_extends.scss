@@ -1,0 +1,20 @@
+%btn-clear {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: left;
+    flex: 1;
+    width: 100%;
+    &:active {
+        .actionable & {
+            background-color: rgba($black, 0.03);
+        }
+    }
+}
+
+%ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

@@ -4,17 +4,17 @@ import { Syntax } from "../../common/syntax-highlighter";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const ButtonDefault = () => {
-	const code = `<button class="btn btn--primary btn--shadowed--primary mb-2x">Primary Button</button>
-<button class="btn btn--secondary btn--shadowed--secondary mb-2x">Primary Button</button>
-<button class="btn btn--error btn--shadowed--error mb-2x">Primary Button</button>
-<button class="btn btn--warning btn--shadowed--warning mb-2x">Primary Button</button>
-<button class="btn btn--warning-alt btn--shadowed--warning-alt mb-2x">Primary Button</button>
+	const code = `<button class="btn btn-primary btn--shadowed--primary mb-2x">Primary Button</button>
+<button class="btn btn-secondary btn--shadowed--secondary mb-2x">Primary Button</button>
+<button class="btn btn-error btn--shadowed--error mb-2x">Primary Button</button>
+<button class="btn btn-warning btn--shadowed--warning mb-2x">Primary Button</button>
+<button class="btn btn-warning-alt btn--shadowed--warning-alt mb-2x">Primary Button</button>
 <button class="btn btn--grey btn--shadowed--grey mb-2x">Primary Button</button>`;
 	return (
 		<div className="doc-container">
 			<h4>Button Shadow</h4>
 			<p className="page__brief">This modifier will add shadow to buttons and it has color variant same as the color.</p>
-			<table className="ui-html-table mt-4x mb-8x">
+			<table className="table mt-4x mb-8x">
 				<thead>
 					<tr>
 						<th>Class</th>
@@ -71,19 +71,19 @@ const ButtonDefault = () => {
 						<div className="preview-container">
 							<div>
 								<div>
-									<button className="btn btn--primary btn--shadowed--primary mb-2x">Primary Button</button>
+									<button className="btn btn-primary btn--shadowed--primary mb-2x">Primary Button</button>
 								</div>
 								<div>
-									<button className="btn btn--secondary btn--shadowed--secondary mb-2x">Secondary Button</button>
+									<button className="btn btn-secondary btn--shadowed--secondary mb-2x">Secondary Button</button>
 								</div>
 								<div>
-									<button className="btn btn--error btn--shadowed--error mb-2x">Error Button</button>
+									<button className="btn btn-error btn--shadowed--error mb-2x">Error Button</button>
 								</div>
 								<div>
-									<button className="btn btn--warning btn--shadowed--warning mb-2x">Warning Button</button>
+									<button className="btn btn-warning btn--shadowed--warning mb-2x">Warning Button</button>
 								</div>
 								<div>
-									<button className="btn btn--warning-alt btn--shadowed--warning-alt mb-2x">Warning Alt Button</button>
+									<button className="btn btn-warning-alt btn--shadowed--warning-alt mb-2x">Warning Alt Button</button>
 								</div>
 								<div>
 									<button className="btn btn--grey btn--shadowed--grey mb-2x">Grey Button</button>
