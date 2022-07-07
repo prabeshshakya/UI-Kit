@@ -4,6 +4,11 @@
       .#{$prefix}color-#{$name}--#{$colorKey} {
         color: $colorValue;
       }
+
+      .#{$prefix}bg-#{$name}--#{$colorKey} {
+        background-color: $colorValue;
+      }
     }
   }
+
 }

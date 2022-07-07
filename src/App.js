@@ -16,9 +16,9 @@ const App = () => {
 							<h1>SASS Starter Kit</h1>
 						</div>
 						<div className="navbar__list">
-							<a href="#" className="navbar__item">
+							<NavLink to="/" className="navbar__item">
 								Github
-							</a>
+							</NavLink>
 						</div>
 					</div>
 				</nav>
@@ -89,6 +89,16 @@ const App = () => {
 									<div className="menu-group__nodes">
 										<NavLink to="/units" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">
 											Units
+										</NavLink>
+									</div>
+								</div>
+							</div>
+							<div className="menu-group">
+								<h4 className="menu-group__title">Useful Mixins</h4>
+								<div className="menu-group__contents">
+									<div className="menu-group__nodes">
+										<NavLink to="/bem" className="menu-group__nodes__single" activeClassName="menu-group__nodes__single--active">
+											BEM
 										</NavLink>
 									</div>
 								</div>

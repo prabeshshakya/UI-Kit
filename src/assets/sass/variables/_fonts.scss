@@ -11,6 +11,28 @@ $font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   sans-serif;
 $font-primary: $font-sans;
 
+
+$breakpoints: (
+  small : 480px,
+  medium: 700px, // Previously 640px
+  large : 1024px
+);
+
+$p-font-sizes: (
+  null  : 15px,
+  small : 16px,
+  medium: 17px,
+  large : 19px
+);
+
+$h1-font-sizes: (
+  null  : 28px,
+  sm-device : 31px,
+  md-device: 33px,
+  lg-device : 36px
+);
+
+
 //font-weight
 $fontWeight: (
   "thin": 100,

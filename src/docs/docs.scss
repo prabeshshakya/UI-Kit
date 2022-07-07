@@ -51,15 +51,12 @@ code{
 //Sidebar
 .sidebar {
   width: 250px;
-  height: 100%;
+  height: calc(100vh - 120px);
   position: sticky;
   top: 120px;
-  padding: getSpacing("6x");
-  background-color: #f1f1f1;
-  border-radius: 10px;
-  @include m(bordered-right-1x) {
-     border-right: 1px solid lighten(#9cb2bf, 20%);
-  }
+  padding: 0 getSpacing("6x");
+  background-color: transparent;
+  overflow-y: auto;
 }
 
 .guide-wrapper{
@@ -156,6 +153,28 @@ code{
 .color-box-3 {
   p {
     color: getColor("grey.4");
+  }
+}
+
+
+.bg-box-1 {
+  p {
+    background-color: getColor("primary.base");
+    color: getColor('white.base');
+  }
+}
+
+.bg-box-2 {
+  p {
+    background-color: getColor("danger.light");
+    color: getColor('white.base');
+  }
+}
+
+.bg-box-3 {
+  p {
+    background-color: getColor("grey.4");
+    color: getColor('white.base');
   }
 }
 

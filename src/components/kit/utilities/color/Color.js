@@ -54,26 +54,46 @@ const Color = () => {
     .color-box-3 p {
       color:getColor("grey.4")
     }
-            
-        `;
+
+	//For Background Colors
+	.bg-box-1 {
+		p {
+		  background-color: getColor("primary.base");
+		  color: getColor('white.base');
+		}
+	  }
+	  
+	  .bg-box-2 {
+		p {
+		  background-color: getColor("danger.light");
+		  color: getColor('white.base');
+		}
+	  }
+	  
+	  .bg-box-3 {
+		p {
+		  background-color: getColor("grey.4");
+		  color: getColor('white.base');
+		}
+	  }`;
 
 	return (
 		<div className="page">
 			<div className="title-area">
-				<h2 className="page__title">Colors</h2>
+				<h2 className="page__title">Colors / Background Colors</h2>
 				<p className="lead-text">Include color with utility classes and add your own custom color.</p>
 				<div className="content-block">
-					<h3>Colors</h3>
 					<p className="page__brief">
-						We can use color utility to colorize text, background, buttons. We can customize and add new colors as needed in <code>_color.scss</code> file. We can find the list of color variables and an array of color palettes in <code> _color.scss</code> file. Any additional colors or changes in existing colors can be done in this file. The array of colors (<code>$colorMap</code>) is being used in different functions and mixins to apply colors as needed.
+						We can use color utility to colorize text, background. We can customize and add new colors as needed in <code>_color.scss</code> file. We can find the list of color variables and an array of color palettes in <code> _color.scss</code> file. Any additional colors or changes in existing colors can be done in this file. The array of colors (<code>$colorMap</code>) is being used in different functions and mixins to apply colors as needed.
 					</p>
 					<div className="code-preview">
 						<Syntax language="scss">{colorMap}</Syntax>
 					</div>
 				</div>
 				<div className="content-block">
-					<h3>Classes</h3>
-					<table className="ui-html-table">
+					<h3 className="mb-10x">Classes</h3>
+					<h4>Color Text</h4>
+					<table className="ui-html-table mb-10x">
 						<tr>
 							<td>
 								<code>color-primary--base</code>
@@ -113,6 +133,48 @@ const Color = () => {
 							<td>...</td>
 						</tr>
 					</table>
+
+					<h4>Background Colors</h4>
+					<table className="ui-html-table">
+						<tr>
+							<td>
+								<code>bg-primary--base</code>
+							</td>
+							<td>
+								<p className="bg-primary--base mb-0x color-white--base py-1x px-2x">This is primary text</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>bg-secondary--light</code>
+							</td>
+							<td>
+								<p className="bg-secondary--light mb-0x color-white--base py-1x px-2x">This is secondary text</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>bg-danger--base</code>
+							</td>
+							<td>
+								<p className="bg-danger--base mb-0x color-white--base py-1x px-2x">This is danger (Red) text</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>bg-grey--4</code>
+							</td>
+							<td>
+								<p className="bg-grey--4 mb-0x color-white--base py-1x px-2x">This is grey text</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>...</code>
+							</td>
+							<td>...</td>
+						</tr>
+					</table>
 				</div>
 				<div className="content-block">
 					<h4>getColor()</h4>
@@ -140,6 +202,16 @@ const Color = () => {
 										<p>This is a color sample text.</p>
 									</div>
 									<div className="color-box-3">
+										<p>This is a color sample text.</p>
+									</div>
+
+									<div className="bg-box-1">
+										<p>This is a color sample text.</p>
+									</div>
+									<div className="bg-box-2">
+										<p>This is a color sample text.</p>
+									</div>
+									<div className="bg-box-3">
 										<p>This is a color sample text.</p>
 									</div>
 								</div>

@@ -7,12 +7,13 @@ import Gettingstarted from "./components/kit/introduction/Gettingstarted";
 import Introduction from "./components/kit/introduction/Introduction";
 import Breakpoints from "./components/kit/layout/breakpoint/Breakpoint";
 import Grid from "./components/kit/layout/grid/Grid";
-import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
+//import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
 import Color from "./components/kit/utilities/color/Color";
 import Spacing from "./components/kit/utilities/spacing/Spacing";
 import Fonts from "./components/kit/utilities/font/Fonts";
 import Display from "./components/kit/utilities/display/Display";
 import Flex from "./components/kit/utilities/flex/Flex";
+import Bem from "./components/kit/mixins/helpers/Bem";
 
 /**
  * App Router.
@@ -32,6 +33,7 @@ function AppRouter() {
 			<Route path="/breakpoints" component={Breakpoints} />
 			<Route path="/grid" component={Grid} />
 			<Route path="/flex" component={Flex} />
+			<Route path="/bem" component={Bem} />
 		</Switch>
 	);
 }
