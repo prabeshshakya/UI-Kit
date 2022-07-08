@@ -157,6 +157,13 @@ const App = () => {
                     >
                       Fonts
                     </NavLink>
+                    <NavLink
+                      to="/usages/color"
+                      className="menu-group__nodes__single"
+                      activeClassName="menu-group__nodes__single--active"
+                    >
+                      Color
+                    </NavLink>
                   </div>
                 </div>
               </div>

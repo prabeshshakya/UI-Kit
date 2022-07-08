@@ -15,6 +15,7 @@ import Display from "./components/kit/utilities/display/Display";
 import Flex from "./components/kit/utilities/flex/Flex";
 import Bem from "./components/kit/mixins/helpers/Bem";
 import UsageFonts from "./components/kit/mixins/helpers/Fonts";
+import UsageColor from "./components/kit/mixins/helpers/Color";
 
 /**
  * App Router.
@@ -36,6 +37,7 @@ function AppRouter() {
       <Route path="/flex" component={Flex} />
       <Route path="/bem" component={Bem} />
       <Route path="/usages/fonts" component={UsageFonts} />
+      <Route path="/usages/color" component={UsageColor} />
     </Switch>
   );
 }
