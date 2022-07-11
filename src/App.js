@@ -164,6 +164,13 @@ const App = () => {
                     >
                       Color
                     </NavLink>
+                    <NavLink
+                      to="/usages/responsive"
+                      className="menu-group__nodes__single"
+                      activeClassName="menu-group__nodes__single--active"
+                    >
+                      Responsive
+                    </NavLink>
                   </div>
                 </div>
               </div>
