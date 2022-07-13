@@ -17,6 +17,7 @@ import Bem from "./components/kit/mixins/helpers/Bem";
 import UsageFonts from "./components/kit/mixins/helpers/Fonts";
 import UsageColor from "./components/kit/mixins/helpers/Color";
 import UsageResponsive from "./components/kit/mixins/helpers/Responsive";
+import UsageHelper from "./components/kit/mixins/helpers/Helper";
 
 /**
  * App Router.
@@ -40,6 +41,7 @@ function AppRouter() {
       <Route path="/usages/fonts" component={UsageFonts} />
       <Route path="/usages/color" component={UsageColor} />
       <Route path="/usages/responsive" component={UsageResponsive} />
+      <Route path="/usages/helper" component={UsageHelper} />
     </Switch>
   );
 }

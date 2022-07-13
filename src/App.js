@@ -171,6 +171,13 @@ const App = () => {
                     >
                       Responsive
                     </NavLink>
+                    <NavLink
+                      to="/usages/helper"
+                      className="menu-group__nodes__single"
+                      activeClassName="menu-group__nodes__single--active"
+                    >
+                      Helper
+                    </NavLink>
                   </div>
                 </div>
               </div>
