@@ -68,3 +68,40 @@
     }
   }
 }
+
+//media queries on basis of added breakpoint variables values.
+//$respBreakpoints - variable defined in _breakpoints.scss
+//$breakpoints-size-name - key defined on $respBreakpoints such as 'sm, md, lg, xl'.
+//$width - default value is 'max-width'. $value is mapped with $respWidth defined in _breakpoints.scss file.
+//***NOTE:: if $custom variable is true, $breakpoints-size-name must be defined on a number such as '576, or any number' and if false then much define key from $respBreakpoints variable
+/*
+Example:
+if custom variable is FALSE and $width value is 'max-width' or 'min-width'
+@mqminmax('md',false, 'min-width')
+----------------
+if custom variable is TRUE and $width value is 'max-width' or 'min-width'
+@mqminmax(1250 ,true)
+*/
+@mixin mqminmax($breakpoints-size-name, $custom: false, $width: "max-width") {
+  @if $custom== false {
+    @each $key, $val in $respBreakpoints {
+      @if $key == $breakpoints-size-name {
+        @each $widthSize in $respWidth {
+          @if $width == $widthSize {
+            @media only screen and ($width: $val) {
+              @content;
+            }
+          }
+        }
+      }
+    }
+  } @else {
+    @each $widthSize in $respWidth {
+      @if $width == $widthSize {
+        @media ($width: $breakpoints-size-name + "px") {
+          @content;
+        }
+      }
+    }
+  }
+}
