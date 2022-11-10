@@ -1,0 +1,22 @@
+// ==========================================================================
+// Style
+// Import all manifest partials from other folder to this file.
+//
+// ---------------------------------------------------------------------------
+//
+// Scalable and Modular Architecture for CSS (SMACSS)
+// With SMACSS, we divide our styles into fives categories: base, libs, modules, states, and utilities
+// ==========================================================================
+
+@import 'utilities/functions/index';
+@import 'variables/index';
+
+@import 'utilities/index';
+
+/* Sass Compiled Css Code Start */
+@import 'base/index';
+@import 'components/index';
+@import 'libs/index';
+@import 'states/index';
+@import 'app/index';
+@import 'shame';

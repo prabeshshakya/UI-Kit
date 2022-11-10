@@ -1,0 +1,22 @@
+.status-indicator{
+    width:$status-indicator-size;
+    height:$status-indicator-size;
+    flex-shrink: 0;
+    border-radius: 100%;
+    display: inline-block;
+    @include m(warning){
+        background: getColor("warning.base");
+    }
+    @include m(error){
+        background: getColor("error.base");
+    }
+    @include m(primary){
+        background: getColor("primary.base");
+    }
+    @include m(secondary){
+        background: getColor("secondary.base");
+    }
+    @include m(warning-alt){
+        background: getColor("warning-alt.base");
+    }
+}

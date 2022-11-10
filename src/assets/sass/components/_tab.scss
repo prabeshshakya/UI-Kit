@@ -3,23 +3,23 @@
         display: flex;
         position: relative;
         text-transform: uppercase;
-        font-size: getFontSize("12");
+        font-size: 12px;
         margin-bottom: getSpacing('4x');
         &:before{
             content: '';
             position: absolute;
             width: 100%;
-            height: 1px;
+            height: 1px; 
             left: 0;
             bottom: 0;
-            background-color: getColor("black.black20");
+            background-color: getColor("grey.5");
         }
     }
     @include e(tab){
         padding: getSpacing("3x") getSpacing("5x");
         cursor: pointer;
         &:hover{
-            color: getColor("black.black60");
+            color: getColor("grey.6");
         }
         @include m(selected){
             position: relative;

@@ -5,20 +5,21 @@ $gutter-width: 32px !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: $sm-device,
-  md: $md-device,
-  lg: $lg-device,
-  xl: $xl-device
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 ) !default;
 
 $container-max-widths: (
   sm: 540px,
-  md: 720px, 
+  md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1280px,
 ) !default;
 
-$grid-container: 'container';
-$grid-container-fluid: 'container--fluid';
-$row-name: 'row';
+$grid-container: "container";
+$grid-container-fluid: "container-fluid";
+$row-name: "row";
 $grid-type: flex; //type of grid (either 'float' or 'flex' only)

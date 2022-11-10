@@ -1,0 +1,29 @@
+.title {
+  @include m(largest) {
+    font-size: getFontSize("32");
+    font-weight: 700;
+  }
+  @include m(large) {
+    font-size: getFontSize("20");
+    font-weight: 700;
+  }
+  @include m(medium) {
+    font-size: getFontSize("18");
+    font-weight: 600;
+  }
+  @include m(small) {
+    font-size: getFontSize("16");
+    font-weight: 700;
+  }
+  @include m(smaller) {
+    font-size: getFontSize("14");
+    font-weight: 700;
+  }
+  @include m(smallest) {
+    font-size: getFontSize("12");
+    font-weight: 700;
+  }
+  @include m(dark) {
+    color: getColor("black.base");
+  }
+}

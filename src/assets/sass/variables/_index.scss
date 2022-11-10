@@ -3,16 +3,11 @@
 // This is the main file where all the individual variable are imported.
 // ==========================================================================
 
-@import 'config';
-@import 'fonts';
-@import 'breakpoints';
-@import 'grid';
-@import 'spacing';
-@import 'color';
-@import 'easing';
-@import 'navbar';
-@import 'form';
-
-
-//component variables
-@import './components/button';
+@import "config";
+@import "border-radius";
+@import "color";
+@import "easing";
+@import "flex";
+@import "fonts";
+@import "grid";
+@import "spacing";

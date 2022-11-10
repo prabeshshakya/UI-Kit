@@ -1,0 +1,38 @@
+//
+@mixin display-flex($dir: "row", $align: null, $justify: null) {
+  display: flex;
+  flex-direction: $dir;
+  @if ($align) {
+    align-items: $align;
+  }
+  @if ($justify) {
+    justify-content: $justify;
+  }
+}
+
+//mixins for input placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::placeholder {
+    @content;
+  }
+}
+
+//performs truncation on any text that overflows its
+//containing element and adds an ellipsis (…) to the end.
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

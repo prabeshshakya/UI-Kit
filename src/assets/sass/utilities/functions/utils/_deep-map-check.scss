@@ -11,8 +11,8 @@
 //
 // @return Bool
 // ---------------------------------------------------------
-@function deep-map-check ($map, $keys...) {
-  @if type-of($map) != 'map' {
+@function deep-map-check($map, $keys...) {
+  @if type-of($map) != "map" {
     @error 'The argument $map: `#{$map}` is of incorrect type: `#{type-of($map)}`. Type of `Map` is required!';
   }
 

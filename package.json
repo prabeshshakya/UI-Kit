@@ -18,8 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "scss": "sass --watch ./src/assets/sass -o ./src/assets/css",
-    "scss-doc": "sass --watch ./src/docs -o ./src/docs"
+    "scss": "sass --watch ./src/assets/sass:./src/assets/css",
+    "scss-doc": "sass --watch ./src/docs:./src/docs"
   },
   "eslintConfig": {
     "extends": "react-app"

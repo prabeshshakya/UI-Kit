@@ -110,22 +110,47 @@ $spaceTill: 20;
 					</li>
 				</ul>
 
-				<blockquote className="docs-info">
-					<strong>Note:</strong>
-					<code>$defaultSpacing</code> is based on <code>$base__font-size</code> defined.
-				</blockquote>
-
-				<blockquote className="docs-info">
-					<strong>Note:</strong>
-					<code>1x</code> is equivalent to <code>4px</code>
-				</blockquote>
+				<div className="content-block">
+					<h4>Variables</h4>
+					<p>
+						The variables for the spacing default (<code>$defaultSpacing</code>) value is located on <code>variables/_config.scss</code>
+					</p>
+				</div>
 
 				<h4>Example:</h4>
-				<table className="table mb-8x">
+				<table className="table mb-4x">
 					<thead>
 						<tr>
-							<th>className</th>
-							<th>CSS Output</th>
+							<th scope="col">
+								xs
+								<br />
+								<span>&lt;576px</span>
+							</th>
+							<th scope="col">
+								sm
+								<br />
+								<span>≥576px</span>
+							</th>
+							<th scope="col">
+								md
+								<br />
+								<span>≥768px</span>
+							</th>
+							<th scope="col">
+								lg
+								<br />
+								<span>≥992px</span>
+							</th>
+							<th scope="col">
+								xl
+								<br />
+								<span>≥1200px</span>
+							</th>
+							<th scope="col">
+								xxl
+								<br />
+								<span>≥1400px</span>
+							</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -134,47 +159,81 @@ $spaceTill: 20;
 								<code>.m-0x</code>
 							</td>
 							<td>
-								<code>margin: 0px</code>
+								<code>.m-0x-sm</code>
+							</td>
+							<td>
+								<code>.m-0x-md</code>
+							</td>
+							<td>
+								<code>.m-0x-lg</code>
+							</td>
+							<td>
+								<code>.m-0x-xl</code>
+							</td>
+							<td>
+								<code>.m-0x-xxl</code>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<code>.m-1x</code>
+								<code>.m[t,r,b,l,x,y]-0x</code>
 							</td>
 							<td>
-								<code>margin: 4px</code>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<code>.m-2x</code>
+								<code>.m[t,r,b,l,x,y]-0x-sm</code>
 							</td>
 							<td>
-								<code>margin: 8px</code>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<code>.m-3x</code>
+								<code>.m[t,r,b,l,x,y]-0x-md</code>
 							</td>
 							<td>
-								<code>margin: 12px</code>
+								<code>.m[t,r,b,l,x,y]-0x-lg</code>
+							</td>
+							<td>
+								<code>.m[t,r,b,l,x,y]-0x-xl</code>
+							</td>
+							<td>
+								<code>.m[t,r,b,l,x,y]-0x-xxl</code>
 							</td>
 						</tr>
+
 						<tr>
 							<td>
-								<code>...</code>
+								<code>.p-0x</code>
 							</td>
 							<td>
-								<code>...</code>
+								<code>.p-0x-sm</code>
+							</td>
+							<td>
+								<code>.p-0x-md</code>
+							</td>
+							<td>
+								<code>.p-0x-lg</code>
+							</td>
+							<td>
+								<code>.p-0x-xl</code>
+							</td>
+							<td>
+								<code>.p-0x-xxl</code>
 							</td>
 						</tr>
+
 						<tr>
 							<td>
-								<code>.m-20x</code>
+								<code>.p[t,r,b,l,x,y]-0x</code>
 							</td>
 							<td>
-								<code>margin: 80px</code>
+								<code>.p[t,r,b,l,x,y]-0x-sm</code>
+							</td>
+							<td>
+								<code>.p[t,r,b,l,x,y]-0x-md</code>
+							</td>
+							<td>
+								<code>.p[t,r,b,l,x,y]-0x-lg</code>
+							</td>
+							<td>
+								<code>.p[t,r,b,l,x,y]-0x-xl</code>
+							</td>
+							<td>
+								<code>.p[t,r,b,l,x,y]-0x-xxl</code>
 							</td>
 						</tr>
 					</tbody>
