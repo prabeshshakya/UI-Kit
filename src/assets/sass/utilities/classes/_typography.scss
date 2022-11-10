@@ -1,22 +1,3 @@
-// This will generate utility class for header fonts
-// .${prefix}-h1
-// Example:
-// .prefix-h1{
-//    font-size: 52px;
-//    line-height: 63px;
-// }
-//
-@mixin generate-font-class($map: $fontSize) {
-  @each $name, $value in $map {
-    .#{$prefix}fs-#{$name} {
-      @include getFontSize("#{$name}");
-    }
-  }
-}
-@if ($generate-header-font-classes) {
-  @include generate-font-class
-}
-
 // This will generate utility class for fonts Weight
 // .${prefix}-fw-thin
 // Example:
@@ -26,15 +7,15 @@
 //
 
 @mixin generate-font-weight($map: $fontWeight) {
-  @each $name, $value in $map {
-    .#{$prefix}fw-#{$name} {
-      //@include getFontWeight("#{$name}");
-      font-weight: $value;
-    }
-  }
+	@each $name, $value in $map {
+		.#{$prefix}fw-#{$name} {
+			//@include getFontWeight("#{$name}");
+			font-weight: $value;
+		}
+	}
 }
 @if ($generate-font-weight-classes) {
-  @include generate-font-weight
+	@include generate-font-weight;
 }
 
 // This will generate utility class for text-decorations
@@ -45,14 +26,14 @@
 // }
 //
 @mixin generate-font-decoration-class($map: $fontDecoration) {
-  @each $name, $value in $map {
-    .#{$prefix}text-#{$name} {
-      text-decoration: $value;
-    }
-  }
+	@each $name, $value in $map {
+		.#{$prefix}text-#{$name} {
+			text-decoration: $value;
+		}
+	}
 }
 @if ($generate-font-decoration-classes) {
-  @include generate-font-decoration-class;
+	@include generate-font-decoration-class;
 }
 
 // This will generate utility class for text-decorations
@@ -63,16 +44,15 @@
 // }
 //
 @mixin generate-font-case-class($map: $fontCase) {
-  @each $name, $value in $map {
-    .#{$prefix}text-#{$name} {
-      text-transform: $value;
-    }
-  }
+	@each $name, $value in $map {
+		.#{$prefix}text-#{$name} {
+			text-transform: $value;
+		}
+	}
 }
 @if ($generate-font-case-classes) {
-  @include generate-font-case-class;
+	@include generate-font-case-class;
 }
-
 
 // This will generate utility class for font-style
 // .${prefix}-text-italic
@@ -82,14 +62,14 @@
 // }
 //
 @mixin generate-font-style-class($map: $fontStyle) {
-  @each $name, $value in $map {
-    .#{$prefix}text-#{$name} {
-      font-style: $value;
-    }
-  }
+	@each $name, $value in $map {
+		.#{$prefix}text-#{$name} {
+			font-style: $value;
+		}
+	}
 }
 @if ($generate-font-style-classes) {
-  @include generate-font-style-class;
+	@include generate-font-style-class;
 }
 
 // This will generate utility class for text-alignments
@@ -100,14 +80,14 @@
 // }
 //
 @mixin generate-text-alignment-class($map: $textAlignment) {
-  @each $name, $value in $map {
-    .#{$prefix}text-#{$name} {
-      text-align: $value;
-    }
-  }
+	@each $name, $value in $map {
+		.#{$prefix}text-#{$name} {
+			text-align: $value;
+		}
+	}
 }
 @if ($generate-text-alignment-classes) {
-  @include generate-text-alignment-class;
+	@include generate-text-alignment-class;
 }
 
 // This will generate utility class for font-weight
@@ -118,12 +98,12 @@
 // }
 //
 @mixin generate-font-weight-class($map: $fontWeight) {
-  @each $name, $value in $map {
-    .#{$prefix}text-#{$name} {
-      font-weight: $value;
-    }
-  }
+	@each $name, $value in $map {
+		.#{$prefix}text-#{$name} {
+			font-weight: $value;
+		}
+	}
 }
 @if ($generate-font-weight-classes) {
-  @include generate-font-weight-class;
+	@include generate-font-weight-class;
 }
