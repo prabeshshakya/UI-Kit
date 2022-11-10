@@ -7207,39 +7207,39 @@ img {
     order: 12;
   }
 }
-.fw-thin {
+.fw-100 {
   font-weight: 100;
 }
 
-.fw-extralight {
+.fw-200 {
   font-weight: 200;
 }
 
-.fw-light {
+.fw-300 {
   font-weight: 300;
 }
 
-.fw-normal {
+.fw-400 {
   font-weight: 400;
 }
 
-.fw-medium {
+.fw-500 {
   font-weight: 500;
 }
 
-.fw-semibold {
+.fw-600 {
   font-weight: 600;
 }
 
-.fw-bold {
-  font-weight: bold;
+.fw-700 {
+  font-weight: 700;
 }
 
-.fw-extrabold {
+.fw-800 {
   font-weight: 800;
 }
 
-.fw-black {
+.fw-900 {
   font-weight: 900;
 }
 
@@ -7291,39 +7291,39 @@ img {
   text-align: justify;
 }
 
-.text-thin {
+.text-100 {
   font-weight: 100;
 }
 
-.text-extralight {
+.text-200 {
   font-weight: 200;
 }
 
-.text-light {
+.text-300 {
   font-weight: 300;
 }
 
-.text-normal {
+.text-400 {
   font-weight: 400;
 }
 
-.text-medium {
+.text-500 {
   font-weight: 500;
 }
 
-.text-semibold {
+.text-600 {
   font-weight: 600;
 }
 
-.text-bold {
-  font-weight: bold;
+.text-700 {
+  font-weight: 700;
 }
 
-.text-extrabold {
+.text-800 {
   font-weight: 800;
 }
 
-.text-black {
+.text-900 {
   font-weight: 900;
 }
 
