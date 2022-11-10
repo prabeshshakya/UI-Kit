@@ -24,36 +24,69 @@
 // Map found at /variables/fonts.scss
 
 @mixin getFontSize($key: null) {
-  font-size: unitConversion(get("#{$key}.font-size", $fontSize));
-  line-height: get("#{$key}.line-height", $fontSize);
-  font-weight: get("#{$key}.font-weight", $fontSize);
-  @if(deep-map-check(get("#{$key}", $fontSize), "text-decoration")){
-    text-decoration: get("#{$key}.text-decoration", $fontSize);
-  }
+	font-size: unitConversion(get("#{$key}.font-size", $fontSize));
+	line-height: get("#{$key}.line-height", $fontSize);
+	font-weight: get("#{$key}.font-weight", $fontSize);
+	@if (deep-map-check(get("#{$key}", $fontSize), "text-decoration")) {
+		text-decoration: get("#{$key}.text-decoration", $fontSize);
+	}
 }
 
+/* @mixin font-size($fs-map, $fs-breakpoints: $grid-breakpoints) {
+	@each $fs-breakpoint, $fs-font-size in $h1-font-sizes {
+		@if $fs-breakpoint == null {
+			font-size: $fs-font-size;
+		} @else {
+			// If $fs-font-size is a key that exists in
+			// $fs-breakpoints, use the value
+			@if map-has-key($fs-breakpoints, $fs-breakpoint) {
+				$fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+			}
+			@media screen and (min-width: $fs-breakpoint) {
+				font-size: $fs-font-size;
+			}
+		}
+	}
+} */
 
-@mixin font-size($fs-map, $fs-breakpoints: $grid-breakpoints) {
-  @each $fs-breakpoint, $fs-font-size in $h1-font-sizes {
-    @if $fs-breakpoint == null {
-      font-size: $fs-font-size;
-    }
-    @else {
-      // If $fs-font-size is a key that exists in
-      // $fs-breakpoints, use the value
-      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
-      }
-      @media screen and (min-width: $fs-breakpoint) {
-        font-size: $fs-font-size;
-      }
-    }
-  }
+@mixin font-sizes($name, $fs-breakpoints: $grid-breakpoints) {
+	$matched: true;
+	@each $key, $val in $font-sizes {
+		@if $name==$key {
+			@each $nestKey, $nestVal in $val {
+				@debug $fs-breakpoints;
+				@debug $nestKey;
+				@if $nestKey == "xs" {
+					font-size: $nestVal;
+				} @else if map-has-key($fs-breakpoints, $nestKey) {
+					$nestKey: map-get($fs-breakpoints, $nestKey);
+					@media screen and (min-width: $nestKey) {
+						font-size: $nestVal;
+					}
+				} @else {
+					$matched: false;
+				}
+			}
+		}
+	}
+
+	@if $matched == false {
+		@error "The name of Variable and breakpoint property for Typography is not matched";
+	}
 }
-
 
 h1 {
-  @include font-size($h1-font-sizes);
-
+	@include font-sizes("h1");
+}
+h2 {
+	@include font-sizes("h2");
+}
+/* 
+h2 {
+	@include font-sizes("h2");
 }
 
+p {
+	@include font-sizes("p");
+}
+ */
