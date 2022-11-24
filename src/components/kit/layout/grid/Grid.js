@@ -87,19 +87,19 @@ const Grid = () => {
 								<th scope="row">Class prefix</th>
 								<td>none</td>
 								<td>
-									<code>.col-[size]-sm</code>
+									<code>.col-sm-[size]</code>
 								</td>
 								<td>
-									<code>.col-[size]-md</code>
+									<code>.col-md-[size]</code>
 								</td>
 								<td>
-									<code>.col-[size]-lg</code>
+									<code>.col-lg-[size]</code>
 								</td>
 								<td>
-									<code>.col-[size]-xl</code>
+									<code>.col-xl-[size]</code>
 								</td>
 								<td>
-									<code>.col-[size]-xxl</code>
+									<code>.col-xxl-[size]</code>
 								</td>
 							</tr>
 							<tr>

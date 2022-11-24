@@ -9,30 +9,29 @@ $font-primary: $font-sans;
 
 $font-sizes: (
 	"h1": (
-		"xs": 0px,
-		"xl": 22px,
+		"xs": 2rem,
+		"xl": 2rem,
 	),
 	"h2": (
 		"xs": 24px,
-		"xl": 28px,
+		"xl": 1.5rem,
 	),
 	"h3": (
 		"xs": 22px,
-		"xl": 24px,
+		"xl": 1.17rem,
 	),
 	"h4": (
 		"xs": 20px,
-		"xl": 22px,
+		"xl": 1rem,
 	),
 	"h5": (
-		"xs": 20px,
+		"xs": 1rem,
 	),
 	"h6": (
-		"xs": 18px,
+		"xs": 1rem,
 	),
 	"p": (
 		"xs": 16px,
-		"xl": 18px,
 	),
 );
 
