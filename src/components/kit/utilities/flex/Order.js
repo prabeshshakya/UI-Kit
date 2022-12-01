@@ -117,19 +117,19 @@ const Order = () => {
 								<code>order-1</code>
 							</td>
 							<td>
-								<code>order-1-sm</code>
+								<code>order-sm-1</code>
 							</td>
 							<td>
-								<code>order-1-md</code>
+								<code>order-md-1</code>
 							</td>
 							<td>
-								<code>order-1-lg</code>
+								<code>order-lg-1</code>
 							</td>
 							<td>
-								<code>order-1-xl</code>
+								<code>order-xl-1</code>
 							</td>
 							<td>
-								<code>order-1-xxl</code>
+								<code>order-xxl-1</code>
 							</td>
 						</tr>
 						<tr>
@@ -137,19 +137,19 @@ const Order = () => {
 								<code>order-2</code>
 							</td>
 							<td>
-								<code>order-2-sm</code>
+								<code>orde-smr-2</code>
 							</td>
 							<td>
-								<code>order-2-md</code>
+								<code>orde-mdr-2</code>
 							</td>
 							<td>
-								<code>order-2-lg</code>
+								<code>orde-lgr-2</code>
 							</td>
 							<td>
-								<code>order-2-xl</code>
+								<code>orde-xlr-2</code>
 							</td>
 							<td>
-								<code>order-2-xxl</code>
+								<code>orde-xxlr-2</code>
 							</td>
 						</tr>
 						<tr>
@@ -177,19 +177,19 @@ const Order = () => {
 								<code>order-12</code>
 							</td>
 							<td>
-								<code>order-12-sm</code>
+								<code>order-sm-12</code>
 							</td>
 							<td>
-								<code>order-12-md</code>
+								<code>order-md-12</code>
 							</td>
 							<td>
-								<code>order-12-lg</code>
+								<code>order-lg-12</code>
 							</td>
 							<td>
-								<code>order-12-xl</code>
+								<code>order-xl-12</code>
 							</td>
 							<td>
-								<code>order-12-xxl</code>
+								<code>order-xxl-12</code>
 							</td>
 						</tr>
 					</tbody>

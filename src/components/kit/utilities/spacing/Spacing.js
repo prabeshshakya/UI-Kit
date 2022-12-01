@@ -159,19 +159,19 @@ $spaceTill: 20;
 								<code>.m-0x</code>
 							</td>
 							<td>
-								<code>.m-0x-sm</code>
+								<code>.m-sm-0x</code>
 							</td>
 							<td>
-								<code>.m-0x-md</code>
+								<code>.m-md-0x</code>
 							</td>
 							<td>
-								<code>.m-0x-lg</code>
+								<code>.m-lg-0x</code>
 							</td>
 							<td>
-								<code>.m-0x-xl</code>
+								<code>.m-xl-0x</code>
 							</td>
 							<td>
-								<code>.m-0x-xxl</code>
+								<code>.m-xxl-0x</code>
 							</td>
 						</tr>
 						<tr>
@@ -179,19 +179,19 @@ $spaceTill: 20;
 								<code>.m[t,r,b,l,x,y]-0x</code>
 							</td>
 							<td>
-								<code>.m[t,r,b,l,x,y]-0x-sm</code>
+								<code>.m[t,r,b,l,x,y]-sm-0x</code>
 							</td>
 							<td>
-								<code>.m[t,r,b,l,x,y]-0x-md</code>
+								<code>.m[t,r,b,l,x,y]-md-0x</code>
 							</td>
 							<td>
-								<code>.m[t,r,b,l,x,y]-0x-lg</code>
+								<code>.m[t,r,b,l,x,y]-lg-0x</code>
 							</td>
 							<td>
-								<code>.m[t,r,b,l,x,y]-0x-xl</code>
+								<code>.m[t,r,b,l,x,y]-xl-0x</code>
 							</td>
 							<td>
-								<code>.m[t,r,b,l,x,y]-0x-xxl</code>
+								<code>.m[t,r,b,l,x,y]-xxl-0x</code>
 							</td>
 						</tr>
 
@@ -200,19 +200,19 @@ $spaceTill: 20;
 								<code>.p-0x</code>
 							</td>
 							<td>
-								<code>.p-0x-sm</code>
+								<code>.p-sm-0x</code>
 							</td>
 							<td>
-								<code>.p-0x-md</code>
+								<code>.p-md-0x</code>
 							</td>
 							<td>
-								<code>.p-0x-lg</code>
+								<code>.p-lg-0x</code>
 							</td>
 							<td>
-								<code>.p-0x-xl</code>
+								<code>.p-xl-0x</code>
 							</td>
 							<td>
-								<code>.p-0x-xxl</code>
+								<code>.p-xxl-0x</code>
 							</td>
 						</tr>
 
@@ -221,19 +221,19 @@ $spaceTill: 20;
 								<code>.p[t,r,b,l,x,y]-0x</code>
 							</td>
 							<td>
-								<code>.p[t,r,b,l,x,y]-0x-sm</code>
+								<code>.p[t,r,b,l,x,y]-sm-0x</code>
 							</td>
 							<td>
-								<code>.p[t,r,b,l,x,y]-0x-md</code>
+								<code>.p[t,r,b,l,x,y]-md-0x</code>
 							</td>
 							<td>
-								<code>.p[t,r,b,l,x,y]-0x-lg</code>
+								<code>.p[t,r,b,l,x,y]-lg-0x</code>
 							</td>
 							<td>
-								<code>.p[t,r,b,l,x,y]-0x-xl</code>
+								<code>.p[t,r,b,l,x,y]-xl-0x</code>
 							</td>
 							<td>
-								<code>.p[t,r,b,l,x,y]-0x-xxl</code>
+								<code>.p[t,r,b,l,x,y]-xxl-0x</code>
 							</td>
 						</tr>
 					</tbody>

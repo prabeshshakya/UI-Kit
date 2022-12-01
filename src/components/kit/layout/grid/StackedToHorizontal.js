@@ -6,8 +6,8 @@ const StackedToHorizontal = () => {
 	const code = `	
 	<div class="container">
         <div class="row">
-            <div class="col-8-sm">col-8-sm</div>
-            <div class="col-4-sm">col-4-sm</div>
+            <div class="col-sm-8">col-sm-8</div>
+            <div class="col-sm-4">col-sm-4</div>
         </div>
         <div class="row">
             <div class="col-sm">col-sm</div>
@@ -31,8 +31,8 @@ const StackedToHorizontal = () => {
 							<div className="docs-container">
 								<div class="container">
 									<div class="row">
-										<div class="col-8-sm">col-8-sm</div>
-										<div class="col-4-sm">col-4-sm</div>
+										<div class="col-sm-8">col-sm-8</div>
+										<div class="col-sm-4">col-sm-4</div>
 									</div>
 									<div class="row">
 										<div class="col-sm">col-sm</div>

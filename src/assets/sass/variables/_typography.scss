@@ -8,67 +8,73 @@ $font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 $font-primary: $font-sans;
 
 $font-sizes: (
-	"h1": (
-		"xs": 0px,
-		"xl": 22px,
+	h1: (
+		xs: 2rem,
+		md: 2rem,
+		// so on..
 	),
-	"h2": (
-		"xs": 24px,
-		"xl": 28px,
+	h2: (
+		xs: 24px,
+		xl: 1.5rem,
+		// so on..
 	),
-	"h3": (
-		"xs": 22px,
-		"xl": 24px,
+	h3: (
+		xs: 22px,
+		xl: 1.17rem,
+		// so on..
 	),
-	"h4": (
-		"xs": 20px,
-		"xl": 22px,
+	h4: (
+		xs: 20px,
+		xl: 1rem,
+		// so on..
 	),
-	"h5": (
-		"xs": 20px,
+	h5: (
+		xs: 1rem,
+		// so on..
 	),
-	"h6": (
-		"xs": 18px,
+	h6: (
+		xs: 1rem,
+		// so on..
 	),
-	"p": (
-		"xs": 16px,
-		"xl": 18px,
+	p: (
+		xs: 16px,
+		// so on..
 	),
 );
 
 //font-weight
 $fontWeight: (
-	"100": 100,
-	"200": 200,
-	"300": 300,
-	"400": 400,
-	"500": 500,
-	"600": 600,
-	"700": 700,
-	"800": 800,
-	"900": 900,
+	//100: 100,
+	//200: 200,
+	300: 300,
+	400: 400,
+	500: 500,
+	600: 600,
+	700: 700,
+	//800: 800,
+	//900: 900,
 );
 
 $fontDecoration: (
-	"striked": line-through,
-	"underline": underline,
+	//striked: line-through,
+	underline: underline
 );
 
 $fontCase: (
-	"uppercase": uppercase,
-	"lowercase": lowercase,
-	"capitalize": capitalize,
+	uppercase: uppercase,
+	lowercase: lowercase,
+	capitalize: capitalize,
 );
 
 $fontStyle: (
-	"normal": normal,
-	"italic": italic,
-	"oblique": oblique,
+	normal: normal,
+	italic: italic,
+	//oblique: oblique,
 );
 
 $textAlignment: (
-	"center": center,
-	"left": left,
-	"right": right,
-	"justify": justify,
+	center: center,
+	left: left,
+	right: right,
+	//justify: justify,
 );

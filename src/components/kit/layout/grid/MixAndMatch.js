@@ -7,14 +7,14 @@ const MixAndMatch = () => {
 	<div className="container">
                                
         <div className="row">
-            <div className="col-8-md">.col-8-md</div>
-            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
+            <div className="col-md-8">.col-md-8</div>
+            <div className="col-6 col-md-4">.col-6 .col-md-4</div>
         </div>
                                 
         <div className="row">
-            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
-            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
-            <div className="col-6 col-4-md">.col-6 .col-4-md</div>
+            <div className="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div className="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div className="col-6 col-md-4">.col-6 .col-md-4</div>
         </div>
                                 
         <div className="row">
@@ -38,14 +38,14 @@ const MixAndMatch = () => {
 							<div className="docs-container">
 								<div className="container">
 									<div className="row">
-										<div className="col-8-md">.col-8-md</div>
-										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
+										<div className="col-md-8">.col-md-8</div>
+										<div className="col-6 col-md-4">.col-6 .col-md-4</div>
 									</div>
 
 									<div className="row">
-										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
-										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
-										<div className="col-6 col-4-md">.col-6 .col-4-md</div>
+										<div className="col-6 col-md-4">.col-6 .col-md-4</div>
+										<div className="col-6 col-md-4">.col-6 .col-md-4</div>
+										<div className="col-6 col-md-4">.col-6 .col-md-4</div>
 									</div>
 
 									<div className="row">

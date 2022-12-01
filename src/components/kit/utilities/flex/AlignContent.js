@@ -185,19 +185,19 @@ const AlignContent = () => {
 							<code>align-content-start</code>
 						</td>
 						<td>
-							<code>align-content-start-sm</code>
+							<code>align-content-sm-start</code>
 						</td>
 						<td>
-							<code>align-content-start-md</code>
+							<code>align-content-md-start</code>
 						</td>
 						<td>
-							<code>align-content-start-lg</code>
+							<code>align-content-lg-start</code>
 						</td>
 						<td>
-							<code>align-content-start-xl</code>
+							<code>align-content-xl-start</code>
 						</td>
 						<td>
-							<code>align-content-start-xxl</code>
+							<code>align-content-xxl-start</code>
 						</td>
 					</tr>
 					<tr>
@@ -205,19 +205,19 @@ const AlignContent = () => {
 							<code>align-content-end</code>
 						</td>
 						<td>
-							<code>align-content-end-sm</code>
+							<code>align-content-sm-end</code>
 						</td>
 						<td>
-							<code>align-content-end-md</code>
+							<code>align-content-md-end</code>
 						</td>
 						<td>
-							<code>align-content-end-lg</code>
+							<code>align-content-lg-end</code>
 						</td>
 						<td>
-							<code>align-content-end-xl</code>
+							<code>align-content-xl-end</code>
 						</td>
 						<td>
-							<code>align-content-end-xxl</code>
+							<code>align-content-xxl-end</code>
 						</td>
 					</tr>
 					<tr>
@@ -225,19 +225,19 @@ const AlignContent = () => {
 							<code>align-content-center</code>
 						</td>
 						<td>
-							<code>align-content-center-sm</code>
+							<code>align-content-sm-center</code>
 						</td>
 						<td>
-							<code>align-content-center-md</code>
+							<code>align-content-md-center</code>
 						</td>
 						<td>
-							<code>align-content-center-lg</code>
+							<code>align-content-lg-center</code>
 						</td>
 						<td>
-							<code>align-content-center-xl</code>
+							<code>align-content-xl-center</code>
 						</td>
 						<td>
-							<code>align-content-center-xxl</code>
+							<code>align-content-xxl-center</code>
 						</td>
 					</tr>
 					<tr>
@@ -245,19 +245,19 @@ const AlignContent = () => {
 							<code>align-content-between</code>
 						</td>
 						<td>
-							<code>align-content-between-sm</code>
+							<code>align-content-sm-between</code>
 						</td>
 						<td>
-							<code>align-content-between-md</code>
+							<code>align-content-md-between</code>
 						</td>
 						<td>
-							<code>align-content-between-lg</code>
+							<code>align-content-lg-between</code>
 						</td>
 						<td>
-							<code>align-content-between-xl</code>
+							<code>align-content-xl-between</code>
 						</td>
 						<td>
-							<code>align-content-between-xxl</code>
+							<code>align-content-xxl-between</code>
 						</td>
 					</tr>
 					<tr>
@@ -265,19 +265,19 @@ const AlignContent = () => {
 							<code>align-content-stretch</code>
 						</td>
 						<td>
-							<code>align-content-stretch-sm</code>
+							<code>align-content-sm-stretch</code>
 						</td>
 						<td>
-							<code>align-content-stretch-md</code>
+							<code>align-content-md-stretch</code>
 						</td>
 						<td>
-							<code>align-content-stretch-lg</code>
+							<code>align-content-lg-stretch</code>
 						</td>
 						<td>
-							<code>align-content-stretch-xl</code>
+							<code>align-content-xl-stretch</code>
 						</td>
 						<td>
-							<code>align-content-stretch-xxl</code>
+							<code>align-content-xxl-stretch</code>
 						</td>
 					</tr>
 					<tr>
@@ -285,19 +285,19 @@ const AlignContent = () => {
 							<code>align-content-auto</code>
 						</td>
 						<td>
-							<code>align-content-auto-sm</code>
+							<code>align-content-sm-auto</code>
 						</td>
 						<td>
-							<code>align-content-auto-md</code>
+							<code>align-content-md-auto</code>
 						</td>
 						<td>
-							<code>align-content-auto-lg</code>
+							<code>align-content-lg-auto</code>
 						</td>
 						<td>
-							<code>align-content-auto-xl</code>
+							<code>align-content-xl-auto</code>
 						</td>
 						<td>
-							<code>align-content-auto-xxl</code>
+							<code>align-content-xxl-auto</code>
 						</td>
 					</tr>
 					<tr>
@@ -305,19 +305,19 @@ const AlignContent = () => {
 							<code>align-content-initial</code>
 						</td>
 						<td>
-							<code>align-content-initial-sm</code>
+							<code>align-content-sm-initial</code>
 						</td>
 						<td>
-							<code>align-content-initial-md</code>
+							<code>align-content-md-initial</code>
 						</td>
 						<td>
-							<code>align-content-initial-lg</code>
+							<code>align-content-lg-initial</code>
 						</td>
 						<td>
-							<code>align-content-initial-xl</code>
+							<code>align-content-xl-initial</code>
 						</td>
 						<td>
-							<code>align-content-initial-xxl</code>
+							<code>align-content-xxl-initial</code>
 						</td>
 					</tr>
 					<tr>
@@ -325,19 +325,19 @@ const AlignContent = () => {
 							<code>align-content-inherit</code>
 						</td>
 						<td>
-							<code>align-content-inherit-sm</code>
+							<code>align-content-sm-inherit</code>
 						</td>
 						<td>
-							<code>align-content-inherit-md</code>
+							<code>align-content-md-inherit</code>
 						</td>
 						<td>
-							<code>align-content-inherit-lg</code>
+							<code>align-content-lg-inherit</code>
 						</td>
 						<td>
-							<code>align-content-inherit-xl</code>
+							<code>align-content-xl-inherit</code>
 						</td>
 						<td>
-							<code>align-content-inherit-xxl</code>
+							<code>align-content-xxl-inherit</code>
 						</td>
 					</tr>
 				</tbody>

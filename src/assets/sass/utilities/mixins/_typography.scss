@@ -21,7 +21,7 @@ Note: make sure key exists in the map
 					font-size: $nestVal;
 				} @else if map-has-key($fs-breakpoints, $nestKey) {
 					$nestKey: map-get($fs-breakpoints, $nestKey);
-					@media screen and (min-width: $nestKey) {
+					@include mq($nestKey) {
 						font-size: $nestVal;
 					}
 				} @else {

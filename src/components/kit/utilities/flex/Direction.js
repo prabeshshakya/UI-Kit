@@ -107,19 +107,19 @@ const Direction = () => {
 							<code>.flex-row</code>
 						</td>
 						<td>
-							<code>.flex-row-sm</code>
+							<code>.flex-sm-row</code>
 						</td>
 						<td>
-							<code>.flex-row-md</code>
+							<code>.flex-md-row</code>
 						</td>
 						<td>
-							<code>.flex-row-lg</code>
+							<code>.flex-lg-row</code>
 						</td>
 						<td>
-							<code>.flex-row-xl</code>
+							<code>.flex-xl-row</code>
 						</td>
 						<td>
-							<code>.flex-row-xxl</code>
+							<code>.flex-xxl-row</code>
 						</td>
 					</tr>
 					<tr>
@@ -127,19 +127,19 @@ const Direction = () => {
 							<code>.flex-row-reverse</code>
 						</td>
 						<td>
-							<code>.flex-row-reverse-sm</code>
+							<code>.flex-sm-row-reverse</code>
 						</td>
 						<td>
-							<code>.flex-row-reverse-md</code>
+							<code>.flex-md-row-reverse</code>
 						</td>
 						<td>
-							<code>.flex-row-reverse-lg</code>
+							<code>.flex-lg-row-reverse</code>
 						</td>
 						<td>
-							<code>.flex-row-reverse-xl</code>
+							<code>.flex-xl-row-reverse</code>
 						</td>
 						<td>
-							<code>.flex-row-reverse-xxl</code>
+							<code>.flex-xxl-row-reverse</code>
 						</td>
 					</tr>
 				</tbody>

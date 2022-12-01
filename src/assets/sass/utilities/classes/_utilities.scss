@@ -1,0 +1,42 @@
+/* 
+$key: display,
+$nestKey: block,
+$breakpoint: xxl,
+$breakpointVal: 1400,
+*/
+
+@mixin utilities($name) {
+	@each $breakpoint, $breakpointVal in $grid-breakpoints {
+		@each $key, $val in $name {
+			@if $breakpoint != "xs" {
+				@include mq($breakpoint) {
+					@each $nestKey, $nestVal in $val {
+						@if $key == "display" {
+							.d-#{$breakpoint}-#{$nestKey} {
+								#{$key}: #{$nestVal};
+							}
+						} @else {
+							.#{$key}-#{$breakpoint}-#{$nestKey} {
+								#{$key}: #{$nestVal};
+							}
+						}
+					}
+				}
+			} @else {
+				@each $nestKey, $nestVal in $val {
+					@if $key == "display" {
+						.d-#{$nestKey} {
+							#{$key}: #{$nestVal};
+						}
+					} @else {
+						.#{$key}-#{$nestKey} {
+							#{$key}: #{$nestVal};
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include utilities($utilities);
