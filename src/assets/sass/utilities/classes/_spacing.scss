@@ -1,6 +1,6 @@
 @each $breakpointName, $breakpointVal in $grid-breakpoints {
 	@if $breakpointName != "xs" {
-		@media screen and (min-width: $breakpointVal) {
+		@include mq($breakpointVal) {
 			@each $prop, $abbrev in (margin: m, padding: p) {
 				@each $size, $length in $spacing {
 					.#{$abbrev}-#{$breakpointName}-#{$size} {

@@ -162,19 +162,19 @@ const AlignItems = () => {
 							<code>align-items-start</code>
 						</td>
 						<td>
-							<code>align-items-start-sm</code>
+							<code>align-items-sm-start</code>
 						</td>
 						<td>
-							<code>align-items-start-md</code>
+							<code>align-items-md-start</code>
 						</td>
 						<td>
-							<code>align-items-start-lg</code>
+							<code>align-items-lg-start</code>
 						</td>
 						<td>
-							<code>align-items-start-xl</code>
+							<code>align-items-xl-start</code>
 						</td>
 						<td>
-							<code>align-items-start-xxl</code>
+							<code>align-items-xxl-start</code>
 						</td>
 					</tr>
 					<tr>
@@ -182,19 +182,19 @@ const AlignItems = () => {
 							<code>align-items-end</code>
 						</td>
 						<td>
-							<code>align-items-end-sm</code>
+							<code>align-items-sm-end</code>
 						</td>
 						<td>
-							<code>align-items-end-md</code>
+							<code>align-items-md-end</code>
 						</td>
 						<td>
-							<code>align-items-end-lg</code>
+							<code>align-items-lg-end</code>
 						</td>
 						<td>
-							<code>align-items-end-xl</code>
+							<code>align-items-xl-end</code>
 						</td>
 						<td>
-							<code>align-items-end-xxl</code>
+							<code>align-items-xxl-end</code>
 						</td>
 					</tr>
 					<tr>
@@ -202,19 +202,19 @@ const AlignItems = () => {
 							<code>align-items-base</code>
 						</td>
 						<td>
-							<code>align-items-base-sm</code>
+							<code>align-items-sm-base</code>
 						</td>
 						<td>
-							<code>align-items-base-md</code>
+							<code>align-items-md-base</code>
 						</td>
 						<td>
-							<code>align-items-base-lg</code>
+							<code>align-items-lg-base</code>
 						</td>
 						<td>
-							<code>align-items-base-xl</code>
+							<code>align-items-xl-base</code>
 						</td>
 						<td>
-							<code>align-items-base-xxl</code>
+							<code>align-items-xxl-base</code>
 						</td>
 					</tr>
 					<tr>
@@ -222,19 +222,19 @@ const AlignItems = () => {
 							<code>align-items-stretch</code>
 						</td>
 						<td>
-							<code>align-items-stretch-sm</code>
+							<code>align-items-sm-stretch</code>
 						</td>
 						<td>
-							<code>align-items-stretch-md</code>
+							<code>align-items-md-stretch</code>
 						</td>
 						<td>
-							<code>align-items-stretch-lg</code>
+							<code>align-items-lg-stretch</code>
 						</td>
 						<td>
-							<code>align-items-stretch-xl</code>
+							<code>align-items-xl-stretch</code>
 						</td>
 						<td>
-							<code>align-items-stretch-xxl</code>
+							<code>align-items-xxl-stretch</code>
 						</td>
 					</tr>
 				</tbody>

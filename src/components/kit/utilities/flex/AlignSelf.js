@@ -173,19 +173,19 @@ const AlignSelf = () => {
 							<code>align-self-start</code>
 						</td>
 						<td>
-							<code>align-self-start-sm</code>
+							<code>align-self-sm-start</code>
 						</td>
 						<td>
-							<code>align-self-start-md</code>
+							<code>align-self-md-start</code>
 						</td>
 						<td>
-							<code>align-self-start-lg</code>
+							<code>align-self-lg-start</code>
 						</td>
 						<td>
-							<code>align-self-start-xl</code>
+							<code>align-self-xl-start</code>
 						</td>
 						<td>
-							<code>align-self-start-xxl</code>
+							<code>align-self-xxl-start</code>
 						</td>
 					</tr>
 					<tr>
@@ -193,19 +193,19 @@ const AlignSelf = () => {
 							<code>align-self-end</code>
 						</td>
 						<td>
-							<code>align-self-end-sm</code>
+							<code>align-self-sm-end</code>
 						</td>
 						<td>
-							<code>align-self-end-md</code>
+							<code>align-self-md-end</code>
 						</td>
 						<td>
-							<code>align-self-end-lg</code>
+							<code>align-self-lg-end</code>
 						</td>
 						<td>
-							<code>align-self-end-xl</code>
+							<code>align-self-xl-end</code>
 						</td>
 						<td>
-							<code>align-self-end-xxl</code>
+							<code>align-self-xxl-end</code>
 						</td>
 					</tr>
 					<tr>
@@ -213,19 +213,19 @@ const AlignSelf = () => {
 							<code>align-self-center</code>
 						</td>
 						<td>
-							<code>align-self-center-sm</code>
+							<code>align-self-sm-center</code>
 						</td>
 						<td>
-							<code>align-self-center-md</code>
+							<code>align-self-md-center</code>
 						</td>
 						<td>
-							<code>align-self-center-lg</code>
+							<code>align-self-lg-center</code>
 						</td>
 						<td>
-							<code>align-self-center-xl</code>
+							<code>align-self-xl-center</code>
 						</td>
 						<td>
-							<code>align-self-center-xxl</code>
+							<code>align-self-xxl-center</code>
 						</td>
 					</tr>
 					<tr>
@@ -233,19 +233,19 @@ const AlignSelf = () => {
 							<code>align-items-baseline</code>
 						</td>
 						<td>
-							<code>align-items-baseline-sm</code>
+							<code>align-items-sm-baseline</code>
 						</td>
 						<td>
-							<code>align-items-baseline-md</code>
+							<code>align-items-md-baseline</code>
 						</td>
 						<td>
-							<code>align-items-baseline-lg</code>
+							<code>align-items-lg-baseline</code>
 						</td>
 						<td>
-							<code>align-items-baseline-xl</code>
+							<code>align-items-xl-baseline</code>
 						</td>
 						<td>
-							<code>align-items-baseline-xxl</code>
+							<code>align-items-xxl-baseline</code>
 						</td>
 					</tr>
 					<tr>
@@ -253,19 +253,19 @@ const AlignSelf = () => {
 							<code>align-self-stretch</code>
 						</td>
 						<td>
-							<code>align-self-stretch-sm</code>
+							<code>align-self-sm-stretch</code>
 						</td>
 						<td>
-							<code>align-self-stretch-md</code>
+							<code>align-self-md-stretch</code>
 						</td>
 						<td>
-							<code>align-self-stretch-lg</code>
+							<code>align-self-lg-stretch</code>
 						</td>
 						<td>
-							<code>align-self-stretch-xl</code>
+							<code>align-self-xl-stretch</code>
 						</td>
 						<td>
-							<code>align-self-stretch-xxl</code>
+							<code>align-self-xxl-stretch</code>
 						</td>
 					</tr>
 					<tr>
@@ -273,19 +273,19 @@ const AlignSelf = () => {
 							<code>align-self-auto</code>
 						</td>
 						<td>
-							<code>align-self-auto-sm</code>
+							<code>align-self-sm-auto</code>
 						</td>
 						<td>
-							<code>align-self-auto-md</code>
+							<code>align-self-md-auto</code>
 						</td>
 						<td>
-							<code>align-self-auto-lg</code>
+							<code>align-self-lg-auto</code>
 						</td>
 						<td>
-							<code>align-self-auto-xl</code>
+							<code>align-self-xl-auto</code>
 						</td>
 						<td>
-							<code>align-self-auto-xxl</code>
+							<code>align-self-xxl-auto</code>
 						</td>
 					</tr>
 					<tr>
@@ -293,19 +293,19 @@ const AlignSelf = () => {
 							<code>align-self-initial</code>
 						</td>
 						<td>
-							<code>align-self-initial-sm</code>
+							<code>align-self-sm-initial</code>
 						</td>
 						<td>
-							<code>align-self-initial-md</code>
+							<code>align-self-md-initial</code>
 						</td>
 						<td>
-							<code>align-self-initial-lg</code>
+							<code>align-self-lg-initial</code>
 						</td>
 						<td>
-							<code>align-self-initial-xl</code>
+							<code>align-self-xl-initial</code>
 						</td>
 						<td>
-							<code>align-self-initial-xxl</code>
+							<code>align-self-xxl-initial</code>
 						</td>
 					</tr>
 					<tr>
@@ -313,19 +313,19 @@ const AlignSelf = () => {
 							<code>align-self-inherit</code>
 						</td>
 						<td>
-							<code>align-self-inherit-sm</code>
+							<code>align-self-sm-inherit</code>
 						</td>
 						<td>
-							<code>align-self-inherit-md</code>
+							<code>align-self-md-inherit</code>
 						</td>
 						<td>
-							<code>align-self-inherit-lg</code>
+							<code>align-self-lg-inherit</code>
 						</td>
 						<td>
-							<code>align-self-inherit-xl</code>
+							<code>align-self-xl-inherit</code>
 						</td>
 						<td>
-							<code>align-self-inherit-xxl</code>
+							<code>align-self-xxl-inherit</code>
 						</td>
 					</tr>
 				</tbody>

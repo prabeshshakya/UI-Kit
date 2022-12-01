@@ -33,7 +33,32 @@ Example:
 if custom variable is TRUE and $width value is 'max-width' or 'min-width'
 @mqminmax(1250 ,true)
 */
-@mixin mq($breakpoints-size-name, $custom: false) {
+
+@mixin mq($mq-breakpoint, $mq-breakpoints: $grid-breakpoints) {
+	// If $mq-breakpoint is a key that exists in
+	// $mq-breakpoints, get and use the value
+	@if map-has-key($mq-breakpoints, $mq-breakpoint) {
+		$mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+	}
+
+	@media screen and (min-width: #{$mq-breakpoint}) {
+		@content;
+	}
+}
+
+@mixin mqmax($mq-breakpoint, $mq-breakpoints: $grid-breakpoints) {
+	// If $mq-breakpoint is a key that exists in
+	// $mq-breakpoints, get and use the value
+	@if map-has-key($mq-breakpoints, $mq-breakpoint) {
+		$mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint) - 1px;
+	}
+
+	@media screen and (max-width: #{$mq-breakpoint}) {
+		@content;
+	}
+}
+
+/* @mixin mq($breakpoints-size-name, $custom: false) {
 	@if $custom == false {
 		@each $key, $val in $grid-breakpoints {
 			@if $key == "xs" {
@@ -64,5 +89,12 @@ if custom variable is TRUE and $width value is 'max-width' or 'min-width'
 		@media (max-width: $breakpoints-size-name+"px") {
 			@content;
 		}
+	}
+}
+ */
+
+.aa {
+	@include mqmax("lg") {
+		background: #000;
 	}
 }

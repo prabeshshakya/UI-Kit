@@ -163,19 +163,19 @@ const JustifyContent = () => {
 							<code>justify-content-initial</code>
 						</td>
 						<td>
-							<code>justify-content-initial-sm</code>
+							<code>justify-content-sm-initial</code>
 						</td>
 						<td>
-							<code>justify-content-initial-md</code>
+							<code>justify-content-md-initial</code>
 						</td>
 						<td>
-							<code>justify-content-initial-lg</code>
+							<code>justify-content-lg-initial</code>
 						</td>
 						<td>
-							<code>justify-content-initial-xl</code>
+							<code>justify-content-xl-initial</code>
 						</td>
 						<td>
-							<code>justify-content-initial-xxl</code>
+							<code>justify-content-xxl-initial</code>
 						</td>
 					</tr>
 					<tr>
@@ -183,19 +183,19 @@ const JustifyContent = () => {
 							<code>justify-content-start</code>
 						</td>
 						<td>
-							<code>justify-content-start-sm</code>
+							<code>justify-content-sm-start</code>
 						</td>
 						<td>
-							<code>justify-content-start-md</code>
+							<code>justify-content-md-start</code>
 						</td>
 						<td>
-							<code>justify-content-start-lg</code>
+							<code>justify-content-lg-start</code>
 						</td>
 						<td>
-							<code>justify-content-start-xl</code>
+							<code>justify-content-xl-start</code>
 						</td>
 						<td>
-							<code>justify-content-start-xxl</code>
+							<code>justify-content-xxl-start</code>
 						</td>
 					</tr>
 					<tr>
@@ -203,19 +203,19 @@ const JustifyContent = () => {
 							<code>justify-content-end</code>
 						</td>
 						<td>
-							<code>justify-content-end-sm</code>
+							<code>justify-content-sm-end</code>
 						</td>
 						<td>
-							<code>justify-content-end-md</code>
+							<code>justify-content-md-end</code>
 						</td>
 						<td>
-							<code>justify-content-end-lg</code>
+							<code>justify-content-lg-end</code>
 						</td>
 						<td>
-							<code>justify-content-end-xl</code>
+							<code>justify-content-xl-end</code>
 						</td>
 						<td>
-							<code>justify-content-end-xxl</code>
+							<code>justify-content-xxl-end</code>
 						</td>
 					</tr>
 					<tr>
@@ -223,19 +223,19 @@ const JustifyContent = () => {
 							<code>justify-content-center</code>
 						</td>
 						<td>
-							<code>justify-content-center-sm</code>
+							<code>justify-content-sm-center</code>
 						</td>
 						<td>
-							<code>justify-content-center-md</code>
+							<code>justify-content-md-center</code>
 						</td>
 						<td>
-							<code>justify-content-center-lg</code>
+							<code>justify-content-lg-center</code>
 						</td>
 						<td>
-							<code>justify-content-center-xl</code>
+							<code>justify-content-xl-center</code>
 						</td>
 						<td>
-							<code>justify-content-center-xxl</code>
+							<code>justify-content-xxl-center</code>
 						</td>
 					</tr>
 					<tr>
@@ -243,19 +243,19 @@ const JustifyContent = () => {
 							<code>justify-content-between</code>
 						</td>
 						<td>
-							<code>justify-content-between-sm</code>
+							<code>justify-content-sm-between</code>
 						</td>
 						<td>
-							<code>justify-content-between-md</code>
+							<code>justify-content-md-between</code>
 						</td>
 						<td>
-							<code>justify-content-between-lg</code>
+							<code>justify-content-lg-between</code>
 						</td>
 						<td>
-							<code>justify-content-between-xl</code>
+							<code>justify-content-xl-between</code>
 						</td>
 						<td>
-							<code>justify-content-between-xxl</code>
+							<code>justify-content-xxl-between</code>
 						</td>
 					</tr>
 					<tr>
@@ -263,19 +263,19 @@ const JustifyContent = () => {
 							<code>justify-content-around</code>
 						</td>
 						<td>
-							<code>justify-content-around-sm</code>
+							<code>justify-content-sm-around</code>
 						</td>
 						<td>
-							<code>justify-content-around-md</code>
+							<code>justify-content-md-around</code>
 						</td>
 						<td>
-							<code>justify-content-around-lg</code>
+							<code>justify-content-lg-around</code>
 						</td>
 						<td>
-							<code>justify-content-around-xl</code>
+							<code>justify-content-xl-around</code>
 						</td>
 						<td>
-							<code>justify-content-around-xxl</code>
+							<code>justify-content-xxl-around</code>
 						</td>
 					</tr>
 				</tbody>
