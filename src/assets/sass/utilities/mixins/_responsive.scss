@@ -34,33 +34,35 @@ if custom variable is TRUE and $width value is 'max-width' or 'min-width'
 @mqminmax(1250 ,true)
 */
 @mixin mq($breakpoints-size-name, $custom: false) {
-  @if $custom== false {
-    @each $key, $val in $grid-breakpoints {
-      @if $key == $breakpoints-size-name {
-        @media only screen and (min-width: $val) {
-          @content;
-        }
-      }
-    }
-  } @else {
-    @media (min-width: $breakpoints-size-name + "px") {
-      @content;
-    }
-  }
+	@if $custom == false {
+		@each $key, $val in $grid-breakpoints {
+			@if $key == "xs" {
+				@content;
+			} @else {
+				@media only screen and (min-width: $val) {
+					@content;
+				}
+			}
+		}
+	} @else {
+		@media (min-width: $breakpoints-size-name + "px") {
+			@content;
+		}
+	}
 }
 
 @mixin mqmax($breakpoints-size-name, $custom: false) {
-  @if $custom== false {
-    @each $key, $val in $grid-breakpoints {
-      @if $key == $breakpoints-size-name {
-        @media only screen and (max-width: $val - 1px) {
-          @content;
-        }
-      }
-    }
-  } @else {
-    @media (max-width: $breakpoints-size-name+"px") {
-      @content;
-    }
-  }
+	@if $custom== false {
+		@each $key, $val in $grid-breakpoints {
+			@if $key == $breakpoints-size-name {
+				@media only screen and (max-width: $val - 1px) {
+					@content;
+				}
+			}
+		}
+	} @else {
+		@media (max-width: $breakpoints-size-name+"px") {
+			@content;
+		}
+	}
 }

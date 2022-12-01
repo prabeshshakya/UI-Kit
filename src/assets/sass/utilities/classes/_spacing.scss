@@ -40,23 +40,23 @@
 		}
 
 		// Some special margin utils
-		.m-auto#{$infix} {
+		.m#{$infix}-auto {
 			margin: auto !important;
 		}
-		.mt-auto#{$infix},
-		.my-auto#{$infix} {
+		.mt#{$infix}-auto,
+		.my#{$infix}-auto {
 			margin-top: auto !important;
 		}
-		.mr-auto#{$infix},
-		.mx-auto#{$infix} {
+		.mr#{$infix}-auto,
+		.mx#{$infix}-auto {
 			margin-right: auto !important;
 		}
-		.mb-auto#{$infix},
-		.my-auto#{$infix} {
+		.mb#{$infix}-auto,
+		.my#{$infix}-auto {
 			margin-bottom: auto !important;
 		}
-		.ml-auto#{$infix},
-		.mx-auto#{$infix} {
+		.ml#{$infix}-auto,
+		.mx#{$infix}-auto {
 			margin-left: auto !important;
 		}
 	}

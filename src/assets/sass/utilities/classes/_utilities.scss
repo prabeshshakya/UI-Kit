@@ -1,0 +1,37 @@
+@mixin utilities($name) {
+	// @each $breakpoint, $breakpointVal in $grid-breakpoints {
+	// 	@debug $breakpoint;
+	// 	@each $key, $val in $name {
+	// 		@each $nestKey, $nestVal in $val {
+	// 			@if ($breakpoint == "xs") {
+	// 				@include mq($breakpointVal) {
+	// 					.#{$key}-xs-#{$nestKey} {
+	// 						#{$key}: #{$nestVal};
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	@each $key, $val in $grid-breakpoints {
+		@if $name==$key {
+			@each $nestKey, $nestVal in $val {
+				@if ($nestKey == "xs") {
+					@debug $nestKey;
+					border: $nestVal;
+				} @else if map-has-key($grid-breakpoints, $nestKey) {
+					$nestKey: map-get($grid-breakpoints, $nestKey);
+					@debug $nestKey;
+					@media screen and (min-width: $nestKey) {
+						border: $nestVal;
+					}
+				} @else {
+					$matched: false;
+				}
+			}
+		}
+	}
+}
+
+@include utilities($utilities);
