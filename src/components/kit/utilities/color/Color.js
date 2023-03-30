@@ -21,7 +21,7 @@ const Color = () => {
             and mixins to apply colors as needed.
           </p>
         </div>
-        <div className="content-block">
+        <div className="content-block mt-sm-4x">
           <h4>Color Text</h4>
           <table className="ui-html-table mb-10x">
             <tr>
@@ -46,6 +46,36 @@ const Color = () => {
             </tr>
             <tr>
               <td>
+                <code>color-white--base</code>
+              </td>
+              <td className=" py-1x px-2x">
+                <p className="color-white--base bg-primary--base mb-0x">
+                  This is white text
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>color-black--base</code>
+              </td>
+              <td>
+                <p className="color-black--base mb-0x">
+                  This is black text
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>color-success--base</code>
+              </td>
+              <td>
+                <p className="color-success--base mb-0x">
+                  This is success (green) text
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
                 <code>color-danger--base</code>
               </td>
               <td>
@@ -56,10 +86,22 @@ const Color = () => {
             </tr>
             <tr>
               <td>
+                <code>color-warning--base</code>
+              </td>
+              <td>
+                <p className="color-warning--base mb-0x">
+                  This is warning (Yellow) text
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
                 <code>color-grey--4</code>
               </td>
               <td>
-                <p className="color-grey--4 mb-0x">This is grey text</p>
+                <p className="color-grey--4 mb-0x">
+                  This is grey text
+                </p>
               </td>
             </tr>
             <tr>

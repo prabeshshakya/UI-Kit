@@ -12,3 +12,13 @@
   }
 
 }
+
+// @function getColorMap($color-variable) {
+//   $color-map: ();
+//   @if ($color-variable == 'gray-shade'){
+//     $color-map: $gray-shade;
+//   } @else if ($color-variable == 'blue-shade'){
+//     $color-map: $blue-shade;
+//   }
+//   @return $color-map;
+// }

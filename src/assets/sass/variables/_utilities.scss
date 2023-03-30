@@ -74,4 +74,34 @@ $utilities: (
 		9: 9,
 		10: 10,
 	),
+
+	width:(
+		auto:auto,
+		100: 100%,
+	),
+
+	height:(
+		auto:auto,
+		100:100%,
+	),
+
+	border-radius:(
+  		1: 4px,
+  		2: 6px,
+  		3: 8px,
+  		4: 12px,
+  		5: 24px,
+  		6: 32px,
+  		full: 50%,
+  		pill: 50rem
+	),
+
+	box-shadow:(
+		none: none,
+        normal:  0 .5rem 1rem black,
+        sm:  0 .125rem .25rem black,
+        lg:  0 1rem 3rem black,
+		inset: inset 0 1px 2px black,
+	),
+	
 );
