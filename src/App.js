@@ -46,6 +46,18 @@ const App = () => {
                 >
                   Getting Started
                 </NavLink>
+                <NavLink
+                  to="/toolingsetup"
+                  className="menu-group__nodes__single"
+                >
+                  Tooling setup
+                </NavLink>
+                <NavLink
+                  to="/typography"
+                  className="menu-group__nodes__single"
+                >
+                  Typography
+                </NavLink>
               </div>
 
               <div className="menu-group">
