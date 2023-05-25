@@ -1,22 +1,38 @@
-.react-tabs{
-  @include e(tab-list){
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid getColor("grey.borderGray") ;
-  }
-  @include e(tab){
-    margin-right: getSpacing("10x");
-    margin-bottom: 0px;
-    @include getFontSize("body16");
-    padding-bottom: getSpacing("2x");
-    color: getColor("text.paragraph");
-    cursor: pointer;
-    @include m(selected){
-      color: getColor("primary.base");
-      box-shadow: 0 2px 0px 0 getColor("primary.base");
-    }
-    &:hover {
-      color: getColor("primary.base");
-    }
-  }
+.react-tabs {
+	@include e(tab-list) {
+		display: flex;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 12px;
+		margin-bottom: getSpacing('4x');
+		&:before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			left: 0;
+			bottom: 0;
+			background-color: getColor('grey.5');
+		}
+	}
+	@include e(tab) {
+		padding: getSpacing('3x') getSpacing('5x');
+		cursor: pointer;
+		&:hover {
+			color: getColor('grey.6');
+		}
+		@include m(selected) {
+			position: relative;
+			color: getColor('black.base');
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				bottom: 0;
+				background-color: getColor('primary.base');
+			}
+		}
+	}
 }

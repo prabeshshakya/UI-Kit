@@ -1,19 +1,48 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import Kit from './components/kit';
-import Landing from './components/landing';
-
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import AccordionDefault from "./components/kit/accordion/AccordionDefault";
+import Button from "./components/kit/button/Button";
+import FormElements from "./components/kit/form-elements/FormElements";
+import Gettingstarted from "./components/kit/introduction/Gettingstarted";
+import Introduction from "./components/kit/introduction/Introduction";
+import Breakpoints from "./components/kit/layout/breakpoint/Breakpoint";
+import Grid from "./components/kit/layout/grid/Grid";
+//import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
+import Color from "./components/kit/utilities/color/Color";
+import Spacing from "./components/kit/utilities/spacing/Spacing";
+import Fonts from "./components/kit/utilities/font/Fonts";
+import Display from "./components/kit/utilities/display/Display";
+import Flex from "./components/kit/utilities/flex/Flex";
+import Bem from "./components/kit/mixins/helpers/Bem";
+import UsageFonts from "./components/kit/mixins/helpers/Fonts";
+import UsageColor from "./components/kit/mixins/helpers/Color";
+import UsageResponsive from "./components/kit/mixins/helpers/Responsive";
+import UsageHelper from "./components/kit/mixins/helpers/Helper";
 
 /**
  * App Router.
  */
 function AppRouter() {
   return (
-    <Router>
-        <Route path="/" exact component={Landing} />
-        <Route path="/docs" component={Kit} />
-    </Router>
+    <Switch>
+      <Route path="/" exact component={Introduction} />
+      <Route path="/button" component={Button} />
+      <Route path="/forms" component={FormElements} />
+      <Route path="/getting-started" component={Gettingstarted} />
+      <Route path="/accordion" component={AccordionDefault} />
+      <Route path="/colors" component={Color} />
+      <Route path="/display" component={Display} />
+      <Route path="/spacing" component={Spacing} />
+      <Route path="/fonts" component={Fonts} />
+      <Route path="/breakpoints" component={Breakpoints} />
+      <Route path="/grid" component={Grid} />
+      <Route path="/flex" component={Flex} />
+      <Route path="/bem" component={Bem} />
+      <Route path="/usages/fonts" component={UsageFonts} />
+      <Route path="/usages/color" component={UsageColor} />
+      <Route path="/usages/responsive" component={UsageResponsive} />
+      <Route path="/usages/helper" component={UsageHelper} />
+    </Switch>
   );
 }
 

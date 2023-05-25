@@ -16,7 +16,7 @@
 @function em($target, $context: $base__font-size) {
   $target: addPxUnit($target);
   $context: addPxUnit($context);
-  @return ($target/$context) * 1em;
+  @return calc($target/$context) * 1em;
 }
 
 // Convert pixels to rem
@@ -26,7 +26,7 @@
 @function rem($target, $context: $base__font-size) {
   $target: addPxUnit($target);
   $context: addPxUnit($context);
-  @return $target/$context * 1rem;
+  @return calc($target/$context) * 1rem;
 }
 
 // Convert pixels to percentage

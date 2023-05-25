@@ -1,33 +1,37 @@
-// This mixin will extract header font size & line-height information from $fontSize map
-// $fontSize -> header -> {key}
-// { $enableLineHeight } boolean to toggle lineheight
-// Usage
-// h1{ @include getHeaderFontSize("h1") }
-// Note: make sure key exists in the map
-// Map found at /variables/fonts.scss
+/* =====================================
 
-@mixin getHeaderFontSize($key: null, $enableLineHeight: true) {
-  font-size: unitConversion(get("header.#{$key}.font-size", $fontSize));
-  @if ($enableLineHeight) {
-    line-height: get("header.#{$key}.line-height", $fontSize);
-  }
-  letter-spacing: get("header.#{$key}.spacing", $fontSize);
-  font-weight: get("header.#{$key}.font-weight", $fontSize);
+This mixin will extract  font size from $fontSize map (Map found at /variables/typography.scss)
+
+$fontSize -> header -> {key}
+{ $enableLineHeight } boolean to toggle lineheight
+
+@@Usage
+h1{
+	@include getFontSize("h1")
 }
+Note: make sure key exists in the map 
+=========================================*/
 
-// This mixin will extract body font size & line-height information from $fontSize map
-// $fontSize -> font -> {key}
-// { $enableLineHeight } boolean to toggle lineheight
-// Usage
-// .card-title { @include getFontSize("body1") }
-// Note: make sure key exists in the map
-// Map found at /variables/fonts.scss
+@mixin getFontSize($name, $fs-breakpoints: $grid-breakpoints) {
+	$matched: true;
+	@each $key, $val in $font-sizes {
+		@if $name==$key {
+			@each $nestKey, $nestVal in $val {
+				@if $nestKey == "xs" {
+					font-size: $nestVal;
+				} @else if map-has-key($fs-breakpoints, $nestKey) {
+					$nestKey: map-get($fs-breakpoints, $nestKey);
+					@include mq($nestKey) {
+						font-size: $nestVal;
+					}
+				} @else {
+					$matched: false;
+				}
+			}
+		}
+	}
 
-@mixin getFontSize($key: null, $enableLineHeight: true) {
-  font-size: unitConversion(get("font.#{$key}.font-size", $fontSize));
-  @if ($enableLineHeight) {
-    line-height: get("font.#{$key}.line-height", $fontSize);
-  }
+	@if $matched == false {
+		@error "The name of Variable and breakpoint property for Typography is not matched";
+	}
 }
-
-

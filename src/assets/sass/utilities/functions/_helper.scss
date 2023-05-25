@@ -60,13 +60,7 @@
   @return $weight;
 }
 
-@function getFontSize($key: "", $map: get("font", $fontSize)) {
-  $size: get("#{$key}.font-size", $map);
-
-  @return $size;
-}
-
-@function getHeaderFontSize($key: "", $map: get("header", $fontSize)) {
+@function getFontSize($key: "", $map: $fontSize) {
   $size: get("#{$key}.font-size", $map);
 
   @return $size;
@@ -76,6 +70,12 @@
   $space: get($key, $map);
 
   @return $space;
+}
+
+@function getRadius($key: "", $map: $radius) {
+  $radius: get($key, $map);
+
+  @return $radius;
 }
 
 @function getSpacingName($space) {

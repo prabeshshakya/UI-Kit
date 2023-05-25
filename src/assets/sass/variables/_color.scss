@@ -1,4 +1,4 @@
-// Default Color
+// Base Color
 $white: #ffffff !default;
 $black: #000000 !default;
 $blue: #0556f3;
@@ -18,84 +18,57 @@ $light-grey: #f1f5fd;
 $faint-grey: #f2f2f2;
 $purple-grey: #f8faff;
 
-// Base colors
-$primary-color: #ff6a39 !default;
-$secondary-color: #16817f !default;
-$blue: #435aff !default;
-$royal-blue: #001e62 !default;
-$error-color: #db193c !default;
-$success-color: #86a814 !default;
-$warning-color: #baa613 !default;
-$color-text: $darkIndigo;
-$color-text-light: $lightIndigo;
-$color-link: $primary-color;
-$dark-base: rgba(20, 28, 58, 0.9);
-$light-base: #fbfbfb;
-$code-base: #f5f5f5;
-$faint-base: $light-grey;
-$btn-gray: $gray8;
+$primary: #4fc3f7 !default;
+$secondary: #66bb6a !default;
+
+$green: #249F5D !default;
+$red: #ef5350 !default;
 
 //Color Palette
+
 $colorMap: (
   "white": (
     "base": $white,
   ),
   "black": (
-    "base": $black,
+    "base": $black
   ),
   "primary": (
-    "base": $primary-color,
-    "dark": darken($primary-color, 10%),
-    "light": lighten($primary-color, 10%),
-    "60": rgba($primary-color, 0.6),
-    "40": rgba($primary-color, 0.4),
-    "20": rgba($primary-color, 0.2),
+    "base": $primary,
+    "dark": darken($primary, 10%),
+    "light": lighten($primary, 10%),
   ),
   "secondary": (
-    "dark": $purple-dark,
-    "base": $secondary-color,
-    "60": rgba($secondary-color, 0.6),
-    "40": rgba($secondary-color, 0.4),
-    "20": rgba($secondary-color, 0.2),
-    "10": rgba($secondary-color, 0.1),
+    "base": $secondary,
+    "dark": darken($secondary, 10%),
+    "light": lighten($secondary, 10%),
   ),
   "danger": (
-    "base": $error-color,
-    "60": rgba($error-color, 0.6),
-    "20": rgba($error-color, 0.2),
+    "base": $red,
+    "light": lighten($red, 10%),
+    "dark": darken($red, 10%),
   ),
   "success": (
-    "base": $success-color,
-  ),
-  "blue": (
-    "base": $blue,
-    "royal": $royal-blue,
-  ),
-  "warning": (
-    "base": $warning-color,
+    "base": $green,
+    "light": lighten($green, 10%),
+    "dark": darken($green, 10%),
   ),
   "grey": (
-    "stroke": #e7e8e9,
-    "input-bg": #f8f8f8,
-    "text": #131e29,
-    "text60": rgba(#131e29, 0.6),
-    "text36": rgba(#131e29, 0.36),
-    "progress-bar-default": #eeeff0,
-    "light": #d9dbdd,
-    "icon": #aaaeb2,
-    "stroke-light": #eeeff0,
-    //extra grey
-    "borderGrayAlt": $gray-alt,
-    "borderGray": $gray,
-    "borderRed": $red,
-    "borderBlue": $primary-color,
-    "hoverAccentBlue": rgba($primary-color, 0.2),
-    "mainBg": $code-base,
-  ),
-  "text": (
-    "main": $color-text,
-    "paragraph": rgba($color-text, 0.8),
-    "caption": rgba($color-text, 0.67),
-    "light": $color-text-light,
-  ),
+    'base': #f5f8fa,
+    'disabled': #e6ebee,
+    '1': #f9f9f9,
+    '2': #b8c2c8,
+    '3': #959595,
+    '4': #333333,
+    '5': rgba($black, 0.2),
+    '6': rgba($black, 0.6)
+  )
+);
+
+
+// @@ This color map is used for Buttons
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'danger': getColor('danger.base'),
 );

@@ -3,6 +3,17 @@
 // Define variables, maps and fonts at this partial.
 // ==========================================================================
 
+
+// Base font size
+
+
+$base__header__line: 1.25 !default;
+$base__body__line: 1.5 !default;
+$base__font-size: 0.875rem !default;
+
+//Default Spacing Unit
+$defaultSpacing: rem(4, 16);
+
 // CONSTANTS
 $rem: "rem";
 $em: "em";
@@ -27,6 +38,11 @@ $list-border-radius: 8px;
 $button-border-radius: 8px;
 $button-round: 24px;
 
+
+
+// Default radius
+$radius: 3px;
+
 // ==========================================================================
 // Features
 // Set true to enable features
@@ -42,3 +58,6 @@ $generate-font-weight-classes: true;
 $generate-header-font-classes: true;
 $generate-text-alignment-classes: true;
 $generate-font-decoration-classes: true;
+
+$generate-radius-classes: true;
+
