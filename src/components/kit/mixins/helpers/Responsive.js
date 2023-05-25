@@ -91,12 +91,12 @@ const Responsive = () => {
             values should be provided.
           </p>
         </div>
-        <div className="doc-container">
+        {/* <div className="doc-container">
           <h4>CSS Usages</h4>
           <div className="code-preview">
             <Syntax language="scss">{cssUsages}</Syntax>
           </div>
-        </div>
+        </div> */}
         <blockquote className="docs-info">
           <strong>Note:</strong> Some of the <code>$break</code> value are
           <code>xs, sm, md, lg, xl.</code> These will be apply for both
@@ -104,7 +104,7 @@ const Responsive = () => {
           value.
         </blockquote>
 
-        <div className="content-block">
+        {/* <div className="content-block">
           <h4>mqmax()</h4>
           <p className="page__brief">
             This mixins is used for desktop first approach.
@@ -119,7 +119,7 @@ const Responsive = () => {
             true, <code>$break</code> value or custom value should be given and
             it will work as a breakpoint.
           </p>
-        </div>
+        </div> */}
         <div className="doc-container">
           <h4>CSS Usages</h4>
           <div className="code-preview">
@@ -128,6 +128,8 @@ const Responsive = () => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 
