@@ -5,6 +5,8 @@ $breakpoint: xxl,
 $breakpointVal: 1400,
 */
 
+
+
 @mixin utilities($name) {
 	@each $breakpoint, $breakpointVal in $grid-breakpoints {
 		@each $key, $val in $name {

@@ -43,6 +43,8 @@ $button-round: 24px;
 // Default radius
 $radius: 3px;
 
+
+
 // ==========================================================================
 // Features
 // Set true to enable features
@@ -58,6 +60,8 @@ $generate-font-weight-classes: true;
 $generate-header-font-classes: true;
 $generate-text-alignment-classes: true;
 $generate-font-decoration-classes: true;
+$generate-responsive-mq-classes:false;
+$generate-responsive-mqmax-classes:false;
 
 $generate-radius-classes: true;
 

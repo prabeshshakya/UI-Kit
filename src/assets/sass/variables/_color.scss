@@ -21,10 +21,9 @@ $purple-grey: #f8faff;
 $primary: #4fc3f7 !default;
 $secondary: #66bb6a !default;
 
+$yellow:  #ffc107 !default;
 $green: #249F5D !default;
 $red: #ef5350 !default;
-
-//Color Palette
 
 $colorMap: (
   "white": (
@@ -53,6 +52,13 @@ $colorMap: (
     "light": lighten($green, 10%),
     "dark": darken($green, 10%),
   ),
+
+  "warning": (
+    "base": $yellow,
+    "light": lighten($yellow, 10%),
+    "dark": darken($yellow, 10%),
+  ),
+  
   "grey": (
     'base': #f5f8fa,
     'disabled': #e6ebee,
@@ -72,3 +78,8 @@ $theme-colors: (
   'secondary': $secondary,
   'danger': getColor('danger.base'),
 );
+
+
+.page__title{
+  color: color-danger--base;
+}

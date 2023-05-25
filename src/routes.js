@@ -4,6 +4,8 @@ import AccordionDefault from "./components/kit/accordion/AccordionDefault";
 import Button from "./components/kit/button/Button";
 import FormElements from "./components/kit/form-elements/FormElements";
 import Gettingstarted from "./components/kit/introduction/Gettingstarted";
+import Toolingsetup from "./components/kit/introduction/Toolingsetup";
+import Typography from "./components/kit/introduction/Typography";
 import Introduction from "./components/kit/introduction/Introduction";
 import Breakpoints from "./components/kit/layout/breakpoint/Breakpoint";
 import Grid from "./components/kit/layout/grid/Grid";
@@ -19,6 +21,7 @@ import UsageColor from "./components/kit/mixins/helpers/Color";
 import UsageResponsive from "./components/kit/mixins/helpers/Responsive";
 import UsageHelper from "./components/kit/mixins/helpers/Helper";
 
+
 /**
  * App Router.
  */
@@ -29,6 +32,8 @@ function AppRouter() {
       <Route path="/button" component={Button} />
       <Route path="/forms" component={FormElements} />
       <Route path="/getting-started" component={Gettingstarted} />
+      <Route path="/typography" component={Typography} />
+      <Route path="/toolingsetup" component={Toolingsetup} />
       <Route path="/accordion" component={AccordionDefault} />
       <Route path="/colors" component={Color} />
       <Route path="/display" component={Display} />

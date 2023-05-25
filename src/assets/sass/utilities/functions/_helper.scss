@@ -85,3 +85,15 @@
     @return "#{$space}x";
   }
 }
+
+// @function getResponsiveDesignMq($mq-breakpoint, $mq-breakpoints: $grid-breakpoints){
+//   $grid-breakpoints: map-get($mq-breakpoint, $mq-breakpoints);
+
+//   @return $breakpoints;
+// }
+
+// @function getResponsiveDesignMqmax($mq-breakpoint, $mq-breakpoints: $grid-breakpoints){
+//   $grid-breakpoints: map-get($mq-breakpoint, $mq-breakpoints);
+
+//   @return $breakpoints;
+// }
