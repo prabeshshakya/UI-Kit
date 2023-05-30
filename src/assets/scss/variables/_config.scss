@@ -3,33 +3,26 @@
 // Define variables, maps and fonts at this partial.
 // ==========================================================================
 
-
 // Base font size
-
 
 $base__header__line: 1.25 !default;
 $base__body__line: 1.5 !default;
-$base__font-size: 0.875rem !default;
+$base__font-size: 16px !default;
 
 //Default Spacing Unit
-$defaultSpacing: rem(4, 16);
+$defaultSpacing: rem(4);
 
 // CONSTANTS
-$rem: "rem";
-$em: "em";
-$px: "px";
-
-//Enter your Web Address here for print media
-$domain-name: "www.domain-name.com";
+$rem: 'rem';
+$em: 'em';
+$px: 'px';
 
 //Path to Assets
-$path--rel: "../images";
+$path--rel: '../images';
 
-$unit: "rem";
+$unit: 'rem';
 
-// Customize your prefix
-// append "-" to the prefix
-$prefix: "";
+$prefix: '';
 
 $default-border-radius: 5px;
 $input-border-radius: 4px;
@@ -38,12 +31,12 @@ $list-border-radius: 8px;
 $button-border-radius: 8px;
 $button-round: 24px;
 
-
-
 // Default radius
 $radius: 3px;
 
-
+$grid-count: 12 !default;
+$grid-class: col !default;
+$gutter-width: 32px !default;
 
 // ==========================================================================
 // Features
@@ -60,8 +53,6 @@ $generate-font-weight-classes: true;
 $generate-header-font-classes: true;
 $generate-text-alignment-classes: true;
 $generate-font-decoration-classes: true;
-$generate-responsive-mq-classes:false;
-$generate-responsive-mqmax-classes:false;
+$generate-responsive-mq-classes: true;
 
 $generate-radius-classes: true;
-

@@ -1,21 +1,22 @@
 // Custom font url
-// $font-url: "https://rsms.me/inter/inter.css" !default;
-$font-url: "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" !default;
-$font-custom: "Inter" !default;
+$font-url: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' !default;
+$font-custom: 'Inter' !default;
 
 // Font Declaration
-$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+	Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+	sans-serif;
 $font-primary: $font-sans;
 
 $font-sizes: (
 	h1: (
-		xs: 2rem,
-		md: 2rem,
+		xs: rem(32),
+		md: rem(30),
 		// so on..
 	),
 	h2: (
-		xs: 24px,
-		xl: 1.5rem,
+		xs: rem(18),
+		xl: rem(22),
 		// so on..
 	),
 	h3: (
@@ -37,27 +38,26 @@ $font-sizes: (
 		// so on..
 	),
 	p: (
-		xs: 16px,
+		xs: 1rem,
 		// so on..
 	),
 );
 
-//font-weight
 $fontWeight: (
-	//100: 100,
-	//200: 200,
+	100: 100,
+	200: 200,
 	300: 300,
 	400: 400,
 	500: 500,
 	600: 600,
 	700: 700,
-	//800: 800,
-	//900: 900,
+	800: 800,
+	900: 900,
 );
 
 $fontDecoration: (
-	//striked: line-through,
-	underline: underline
+	striked: line-through,
+	underline: underline,
 );
 
 $fontCase: (
@@ -69,12 +69,10 @@ $fontCase: (
 $fontStyle: (
 	normal: normal,
 	italic: italic,
-	//oblique: oblique,
 );
 
 $textAlignment: (
 	center: center,
 	left: left,
 	right: right,
-	//justify: justify,
 );
