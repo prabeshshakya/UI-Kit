@@ -4,7 +4,7 @@
 		$mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
 	}
 
-	@if ($generate-responsive-mq-classes == true) {
+	@if ($generate-responsive-classes) {
 		@media screen and (min-width: #{$mq-breakpoint}) {
 			@content;
 		}
@@ -17,7 +17,7 @@
 		$mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint) - 1px;
 	}
 
-	@if ($generate-responsive-mq-classes == true) {
+	@if ($generate-responsive-classes) {
 		@media screen and (max-width: #{$mq-breakpoint}) {
 			@content;
 		}
