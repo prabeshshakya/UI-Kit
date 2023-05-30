@@ -18,7 +18,7 @@ Note: make sure key exists in the map
 			@each $nestKey, $nestVal in $val {
 				@if $nestKey == 'xs' {
 					font-size: $nestVal;
-				} @else if ($generate-responsive-mq-classes == true) {
+				} @else if ($generate-responsive-classes == true) {
 					@if map-has-key($fs-breakpoints, $nestKey) {
 						$nestKey: map-get($fs-breakpoints, $nestKey);
 						@include mq($nestKey) {

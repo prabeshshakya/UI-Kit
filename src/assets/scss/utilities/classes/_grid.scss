@@ -103,6 +103,7 @@
 ) {
 	@each $name, $breakpoint in $breakpoints {
 		//Generates common styles for grid classes
+
 		@for $i from 1 through $columns {
 			@if $breakpoint == 0 {
 				.#{$grid-class}-#{$i} {
@@ -123,6 +124,7 @@
 			}
 		}
 		//Generates breakpoint wise grid classes
+
 		@include mq($name) {
 			@if $grid-type == 'flex' {
 				// Provides basic `.col-{bp}` classes for equal-width flexbox columns
