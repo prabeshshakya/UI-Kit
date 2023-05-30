@@ -1,10 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import { NavLink } from "react-router-dom";
-import "./docs/docs.scss";
+import { NavLink } from 'react-router-dom';
+import './docs/docs.scss';
 
-import MainRouter from "./routes";
+import MainRouter from './routes';
 
 const App = () => {
   return (
@@ -34,28 +34,16 @@ const App = () => {
                 >
                   Introduction
                 </NavLink>
-                <NavLink
-                  to="/#filestructure"
-                  className="menu-group__nodes__single"
-                >
+                <NavLink to="/#filestructure" className="menu-group__nodes__single">
                   File Structure
                 </NavLink>
-                <NavLink
-                  to="/getting-started"
-                  className="menu-group__nodes__single"
-                >
+                <NavLink to="/getting-started" className="menu-group__nodes__single">
                   Getting Started
                 </NavLink>
-                <NavLink
-                  to="/toolingsetup"
-                  className="menu-group__nodes__single"
-                >
+                <NavLink to="/toolingsetup" className="menu-group__nodes__single">
                   Tooling setup
                 </NavLink>
-                <NavLink
-                  to="/typography"
-                  className="menu-group__nodes__single"
-                >
+                <NavLink to="/typography" className="menu-group__nodes__single">
                   Typography
                 </NavLink>
               </div>
