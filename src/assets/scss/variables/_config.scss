@@ -7,7 +7,7 @@
 
 $base__header__line: 1.25 !default;
 $base__body__line: 1.5 !default;
-$base__font-size: 16px !default;
+$base__font-size: 1rem !default;
 
 //Default Spacing Unit
 $defaultSpacing: rem(4);
@@ -33,10 +33,6 @@ $button-round: 24px;
 
 // Default radius
 $radius: 3px;
-
-$grid-count: 12 !default;
-$grid-class: col !default;
-$gutter-width: 32px !default;
 
 // ==========================================================================
 // Features

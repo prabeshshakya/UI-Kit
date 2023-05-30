@@ -29,14 +29,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	// Global Clearfixing
-	@if $grid-type == float {
-		&:after {
-			clear: both;
-			content: '';
-			display: block;
-		}
-	}
 }
 
 // Base Code
