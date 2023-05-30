@@ -45,20 +45,6 @@ body {
 	font-size: 100%;
 }
 
-html.full-height {
-	height: 100%;
-	body {
-		height: 100%;
-	}
-}
-
-html.full-height {
-	height: 100%;
-	body {
-		height: 100%;
-	}
-}
-
 body {
 	-webkit-font-smoothing: antialiased;
 	color: getColor('black.base');
@@ -74,16 +60,6 @@ a {
 	text-decoration: none;
 	&:hover {
 		color: getColor('primary.dark');
-	}
-}
-
-@if $grid-type == float {
-	a,
-	span,
-	strong {
-		&:after {
-			@extend %clearfix-none;
-		}
 	}
 }
 
