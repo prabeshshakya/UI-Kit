@@ -13,25 +13,22 @@ Note: make sure key exists in the map
 =========================================*/
 
 @mixin getFontSize($name, $fs-breakpoints: $grid-breakpoints) {
-	$matched: true;
 	@each $key, $val in $font-sizes {
 		@if $name==$key {
 			@each $nestKey, $nestVal in $val {
-				@if $nestKey == "xs" {
+				@if $nestKey == 'xs' {
 					font-size: $nestVal;
-				} @else if map-has-key($fs-breakpoints, $nestKey) {
-					$nestKey: map-get($fs-breakpoints, $nestKey);
-					@include mq($nestKey) {
-						font-size: $nestVal;
+				} @else if ($generate-responsive-mq-classes == true) {
+					@if map-has-key($fs-breakpoints, $nestKey) {
+						$nestKey: map-get($fs-breakpoints, $nestKey);
+						@include mq($nestKey) {
+							font-size: $nestVal;
+						}
+					} @else {
+						@error "The name of Variable '#{$nestKey}' and breakpoint property for Typography is not matched";
 					}
-				} @else {
-					$matched: false;
 				}
 			}
 		}
-	}
-
-	@if $matched == false {
-		@error "The name of Variable and breakpoint property for Typography is not matched";
 	}
 }

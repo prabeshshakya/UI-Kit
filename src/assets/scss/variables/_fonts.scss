@@ -5,131 +5,123 @@ $base__font-size: 1rem !default;
 
 // Custom font url
 // $font-url: "https://rsms.me/inter/inter.css" !default;
-$font-url: "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" !default;
-$font-custom: "Poppins" !default;
-
-// Font Declaration
-$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-  sans-serif;
-$font-primary: $font-sans;
 
 //font-weight
 $fontWeight: (
-  "thin": 100,
-  "extralight": 200,
-  "light": 300,
-  "normal": 400,
-  "medium": 500,
-  "demibold": 600,
-  "bold": bold,
-  "extrabold": 800,
-  "black": 900,
+	'thin': 100,
+	'extralight': 200,
+	'light': 300,
+	'normal': 400,
+	'medium': 500,
+	'demibold': 600,
+	'bold': bold,
+	'extrabold': 800,
+	'black': 900,
 );
 
 $fontSize: (
-  "header": (
-    "h1": (
-      "font-size": rem(122),
-      "line-height": 98px,
-      "spacing": -4px,
-      "font-weight": 600,
-    ),
-    "h2": (
-      "font-size": rem(92),
-      "line-height": 72px,
-      "spacing": -4px,
-      "font-weight": 600,
-    ),
-    "h3": (
-      "font-size": rem(52),
-      "line-height": 46px,
-      "spacing": -2px,
-      "font-weight": 600,
-    ),
-    "h4": (
-      "font-size": rem(48),
-      "line-height": 44px,
-      "spacing": -2px,
-      "font-weight": 500,
-    ),
-    "h5": (
-      "font-size": rem(38),
-      "line-height": 38px,
-      "spacing": -1px,
-      "font-weight": 500,
-    ),
-    "title": (
-      "font-size": rem(28),
-      "line-height": 28px,
-      "spacing": -1px,
-      "font-weight": 500,
-    ),
-  ),
-  "font": (
-    "body1": (
-      "font-size": rem(21),
-      "line-height": 29px,
-    ),
-    "body2": (
-      "font-size": rem(18),
-      "line-height": 26px,
-    ),
-    "body3": (
-      "font-size": rem(16),
-      "line-height": 23px,
-    ),
-    "label": (
-      "font-size": rem(14),
-      "line-height": 23px,
-    ),
-    "small": (
-      "font-size": rem(12),
-      "line-height": 14px,
-    ),
-    "article": (
-      "font-size": rem(18),
-      "line-height": 29px,
-    ),
-    "body16": (
-      "font-size": rem(16),
-      "line-height": 26px,
-    ),
-    "body14": (
-      "font-size": rem(14),
-      "line-height": 20px,
-    ),
-    "caption": (
-      "font-size": rem(14),
-      "line-height": 16px,
-    ),
-    "tiny": (
-      "font-size": rem(12),
-      "line-height": 16px,
-    ),
-  ),
+	'header': (
+		'h1': (
+			'font-size': rem(122),
+			'line-height': 98px,
+			'spacing': -4px,
+			'font-weight': 600,
+		),
+		'h2': (
+			'font-size': rem(92),
+			'line-height': 72px,
+			'spacing': -4px,
+			'font-weight': 600,
+		),
+		'h3': (
+			'font-size': rem(52),
+			'line-height': 46px,
+			'spacing': -2px,
+			'font-weight': 600,
+		),
+		'h4': (
+			'font-size': rem(48),
+			'line-height': 44px,
+			'spacing': -2px,
+			'font-weight': 500,
+		),
+		'h5': (
+			'font-size': rem(38),
+			'line-height': 38px,
+			'spacing': -1px,
+			'font-weight': 500,
+		),
+		'title': (
+			'font-size': rem(28),
+			'line-height': 28px,
+			'spacing': -1px,
+			'font-weight': 500,
+		),
+	),
+	'font': (
+		'body1': (
+			'font-size': rem(21),
+			'line-height': 29px,
+		),
+		'body2': (
+			'font-size': rem(18),
+			'line-height': 26px,
+		),
+		'body3': (
+			'font-size': rem(16),
+			'line-height': 23px,
+		),
+		'label': (
+			'font-size': rem(14),
+			'line-height': 23px,
+		),
+		'small': (
+			'font-size': rem(12),
+			'line-height': 14px,
+		),
+		'article': (
+			'font-size': rem(18),
+			'line-height': 29px,
+		),
+		'body16': (
+			'font-size': rem(16),
+			'line-height': 26px,
+		),
+		'body14': (
+			'font-size': rem(14),
+			'line-height': 20px,
+		),
+		'caption': (
+			'font-size': rem(14),
+			'line-height': 16px,
+		),
+		'tiny': (
+			'font-size': rem(12),
+			'line-height': 16px,
+		),
+	),
 );
 
 $fontDecoration: (
-  "striked": line-through,
-  "underlined": underline,
+	'striked': line-through,
+	'underlined': underline,
 );
 
 $fontCase: (
-  "uppercase": uppercase,
-  "lowercase": lowercase,
-  "capitalized": capitalize,
+	'uppercase': uppercase,
+	'lowercase': lowercase,
+	'capitalized': capitalize,
 );
 
 $fontStyle: (
-  "normal": normal,
-  "italic": italic,
-  "oblique": oblique,
+	'normal': normal,
+	'italic': italic,
+	'oblique': oblique,
 );
 
 $textAlignment: (
-  "center": center,
-  "left": left,
-  "right": right,
-  "justified": justify,
+	'center': center,
+	'left': left,
+	'right': right,
+	'justified': justify,
 );

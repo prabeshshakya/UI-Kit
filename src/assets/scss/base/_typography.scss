@@ -1,0 +1,43 @@
+ul,
+ol {
+	list-style: none;
+	@include getFontSize('p');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-primary;
+	line-height: $base__header__line;
+}
+
+h1 {
+	@include getFontSize('h1');
+}
+
+h2 {
+	@include getFontSize('h2');
+}
+
+h3 {
+	@include getFontSize('h3');
+}
+
+h4 {
+	@include getFontSize('h4');
+}
+
+h5 {
+	@include getFontSize('h5');
+}
+
+h6 {
+	@include getFontSize('h6');
+}
+
+p {
+	@include getFontSize('p');
+}
