@@ -23,8 +23,14 @@
 						#{$prop}-left: $length !important;
 					}
 
-					.gap-#{$breakpointName}-#{$size} {
-						gap: $length !important;
+					.gap-#{$breakpointName}-#{$size},
+					.gap-x-#{$breakpointName}-#{$size} {
+						--gutter-x: #{$length};
+					}
+
+					.gap-#{$breakpointName}-#{$size},
+					.gap-y-#{$breakpointName}-#{$size} {
+						--gutter-y: #{$length};
 					}
 				}
 			}
@@ -72,8 +78,14 @@
 					#{$prop}-left: $length !important;
 				}
 
-				.gap-#{$size} {
-					gap: $length !important;
+				.gap-#{$size},
+				.gap-x-#{$size} {
+					--gutter-x: #{$length};
+				}
+
+				.gap-#{$size},
+				.gap-y-#{$size} {
+					--gutter-y: #{$length};
 				}
 			}
 
