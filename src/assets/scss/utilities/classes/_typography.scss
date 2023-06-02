@@ -8,7 +8,7 @@
 
 @mixin generate-font-weight($map: $fontWeight) {
 	@each $name, $value in $map {
-		.#{$prefix}fw-#{$name} {
+		.fw-#{$name} {
 			//@include getFontWeight("#{$name}");
 			font-weight: $value;
 		}
@@ -25,9 +25,9 @@
 //    text-decoration:line-through;
 // }
 //
-@mixin generate-font-decoration-class($map: $fontDecoration) {  
+@mixin generate-font-decoration-class($map: $fontDecoration) {
 	@each $name, $value in $map {
-		.#{$prefix}text-#{$name} {
+		.text-#{$name} {
 			text-decoration: $value;
 		}
 	}
@@ -45,7 +45,7 @@
 //
 @mixin generate-font-case-class($map: $fontCase) {
 	@each $name, $value in $map {
-		.#{$prefix}text-#{$name} {
+		.text-#{$name} {
 			text-transform: $value;
 		}
 	}
@@ -63,7 +63,7 @@
 //
 @mixin generate-font-style-class($map: $fontStyle) {
 	@each $name, $value in $map {
-		.#{$prefix}text-#{$name} {
+		.text-#{$name} {
 			font-style: $value;
 		}
 	}
@@ -80,30 +80,24 @@
 // }
 //
 @mixin generate-text-alignment-class($map: $textAlignment) {
-	@each $name, $value in $map {
-		.#{$prefix}text-#{$name} {
-			text-align: $value;
+	@each $breakpointName, $breakpointVal in $grid-breakpoints {
+		@if $breakpointName != 'xs' {
+			@include mq($breakpointName) {
+				@each $name, $value in $map {
+					.text-#{$breakpointName}-#{$name} {
+						text-align: $value;
+					}
+				}
+			}
+		} @else {
+			@each $name, $value in $map {
+				.text-#{$name} {
+					text-align: $value;
+				}
+			}
 		}
 	}
 }
 @if ($generate-text-alignment-classes) {
 	@include generate-text-alignment-class;
-}
-
-// This will generate utility class for font-weight
-// .${prefix}-font-bold
-// Example:
-// .prefix-text-bold{
-//    font-weight: bold;
-// }
-//
-@mixin generate-font-weight-class($map: $fontWeight) {
-	@each $name, $value in $map {
-		.#{$prefix}text-#{$name} {
-			font-weight: $value;
-		}
-	}
-}
-@if ($generate-font-weight-classes) {
-	@include generate-font-weight-class;
 }
