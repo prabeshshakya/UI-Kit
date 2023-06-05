@@ -7,6 +7,7 @@
 		"react-dom": "^16.8.6",
 		"react-icons": "^3.7.0",
 		"react-router-dom": "^5.0.1",
+		"react-router-hash-link": "^2.4.3",
 		"react-scripts": "5.0.1",
 		"react-select": "^3.0.4",
 		"react-syntax-highlighter": "^11.0.2",
@@ -14,11 +15,11 @@
 		"sass": "^1.52.3"
 	},
 	"scripts": {
-		"start": "react-scripts start run-script scss scss-doc",
+		"start": "react-scripts start run-script sass scss-doc",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"scss": "sass --watch ./src/assets/sass:./src/assets/css",
+		"scss": "sass --watch ./src/assets/scss:./src/assets/css",
 		"scss-doc": "sass --watch ./src/docs:./src/docs"
 	},
 	"eslintConfig": {

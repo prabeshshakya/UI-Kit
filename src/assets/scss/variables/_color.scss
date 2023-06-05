@@ -1,0 +1,69 @@
+// Base Color
+$white: #ffffff !default;
+$black: #000000 !default;
+$blue: #0556f3;
+$purple: #6501e5;
+$purple-dark: #4f03af;
+$red: #e34c4c;
+$green: #56bd5b;
+$yellow: #f79522;
+
+$primary: #4fc3f7 !default;
+$secondary: #66bb6a !default;
+
+$yellow: #ffc107 !default;
+$green: #249f5d !default;
+$red: #ef5350 !default;
+
+$colorMap: (
+	'white': (
+		'base': $white,
+	),
+	'black': (
+		'base': $black,
+	),
+	'primary': (
+		'base': $primary,
+		'dark': darken($primary, 10%),
+		'light': lighten($primary, 10%),
+	),
+	'secondary': (
+		'base': $secondary,
+		'dark': darken($secondary, 10%),
+		'light': lighten($secondary, 10%),
+	),
+	'danger': (
+		'base': $red,
+		'light': lighten($red, 10%),
+		'dark': darken($red, 10%),
+	),
+	'success': (
+		'base': $green,
+		'light': lighten($green, 10%),
+		'dark': darken($green, 10%),
+	),
+
+	'warning': (
+		'base': $yellow,
+		'light': lighten($yellow, 10%),
+		'dark': darken($yellow, 10%),
+	),
+
+	'grey': (
+		'base': #f5f8fa,
+		'disabled': #e6ebee,
+		'1': #f9f9f9,
+		'2': #b8c2c8,
+		'3': #959595,
+		'4': #333333,
+		'5': rgba($black, 0.2),
+		'6': rgba($black, 0.6),
+	),
+);
+
+// @@ This color map is used for Buttons and Backgrounds
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'danger': getColor('danger.base'),
+);
