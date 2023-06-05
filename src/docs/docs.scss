@@ -7,7 +7,7 @@
 @import 'navbar';
 
 .container {
-	max-width: 1380px;
+	max-width: 1440px;
 }
 
 code {
@@ -51,13 +51,17 @@ code {
 
 //Sidebar
 .sidebar {
-	width: 250px;
-	height: calc(100vh - 120px);
+	height: calc(100vh - 82px);
 	position: sticky;
-	top: 120px;
-	padding: 0 getSpacing('6x');
+	top: 5.125rem;
+	padding-top: getSpacing('11x');
 	background-color: transparent;
 	overflow-y: auto;
+
+	@include m('right') {
+		@extend .sidebar;
+		top: 82px;
+	}
 }
 
 .guide-wrapper {
@@ -76,8 +80,6 @@ code {
 }
 
 .page {
-	margin-top: 40px;
-	color: getColor('black.base');
 	@include e(title) {
 		font-size: 2rem;
 		font-weight: 300;
@@ -323,7 +325,7 @@ code {
 }
 
 .menu-group {
-	margin-bottom: 20px;
+	margin-bottom: 32px;
 	@include e(title) {
 		font-weight: normal;
 		text-transform: uppercase;
@@ -339,9 +341,9 @@ code {
 			color: getColor('black.base');
 			display: block;
 			margin-bottom: 12px;
-			font-weight: 600;
+			font-size: 14px;
 			&:hover {
-				color: rgba($black, 0.8);
+				color: getColor('primary.base');
 			}
 			@include m(active) {
 				color: getColor('primary.base');
