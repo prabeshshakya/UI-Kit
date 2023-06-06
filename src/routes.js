@@ -3,13 +3,12 @@ import { Route, Switch } from 'react-router-dom';
 import AccordionDefault from './pages/accordion/AccordionDefault';
 import Button from './pages/button/Button';
 import FormElements from './pages/form-elements/FormElements';
-import Gettingstarted from './pages/introduction/Gettingstarted';
-import Toolingsetup from './pages/introduction/Toolingsetup';
-import Typography from './pages/introduction/Typography';
-import Introduction from './pages/introduction/Introduction';
+import Gettingstarted from './pages/introduction/gettingStarted/Gettingstarted';
+import Toolingsetup from './pages/introduction/toolingSetup/Toolingsetup';
+import Typography from './pages/introduction/typography/Typography';
+import Introduction from './pages/introduction/intro/Introduction';
 import Breakpoints from './pages/layout/breakpoint/Breakpoint';
 import Grid from './pages/layout/grid/Grid';
-//import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Color from './pages/utilities/color/Color';
 import Spacing from './pages/utilities/spacing/Spacing';
 import Fonts from './pages/utilities/font/Fonts';
@@ -49,7 +48,7 @@ function AppRouter() {
 				component={Typography}
 			/>
 			<Route
-				path='/toolingsetup'
+				path='/tooling-setup'
 				component={Toolingsetup}
 			/>
 			<Route

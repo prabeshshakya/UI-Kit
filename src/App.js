@@ -5,7 +5,7 @@ import './docs/docs.scss';
 
 import MainRouter from './routes';
 import Nav from './components/navbar';
-import LeftSidebar from './components/sidebar/LeftSidebar';
+import Sidebar from './components/sidebar/Sidebar';
 
 const App = () => {
 	return (
@@ -15,7 +15,7 @@ const App = () => {
 				<div className='container'>
 					<div className='guide-wrapper row'>
 						<div className='col-2'>
-							<LeftSidebar />
+							<Sidebar />
 						</div>
 						<div className='col-10'>
 							<MainRouter />

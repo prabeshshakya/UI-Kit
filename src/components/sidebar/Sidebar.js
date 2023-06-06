@@ -13,27 +13,25 @@ const LeftSidebar = () => {
 				>
 					Introduction
 				</NavLink>
-				<NavLink
-					to='/#filestructure'
-					className='menu-group__nodes__single'
-				>
-					File Structure
-				</NavLink>
+
 				<NavLink
 					to='/getting-started'
 					className='menu-group__nodes__single'
+					activeClassName='menu-group__nodes__single--active'
 				>
 					Getting Started
 				</NavLink>
 				<NavLink
-					to='/toolingsetup'
+					to='/tooling-setup'
 					className='menu-group__nodes__single'
+					activeClassName='menu-group__nodes__single--active'
 				>
 					Tooling setup
 				</NavLink>
 				<NavLink
 					to='/typography'
 					className='menu-group__nodes__single'
+					activeClassName='menu-group__nodes__single--active'
 				>
 					Typography
 				</NavLink>

@@ -1,35 +1,31 @@
 .navbar {
-  padding: 20px 0;
-  background-color: getColor("grey.4");
-  color: getcolor("primary.base");
-  position: sticky;
-  top: 0;
-  z-index: 1;
+	padding: 20px 0;
+	background-color: getColor('grey.4');
+	color: getColor('primary.base');
+	position: sticky;
+	top: 0;
+	z-index: 1;
 
-  @include e(header) {
-    h1 {
-      font-size: 16px;
-      color: getColor("white.base");
-    }
-  }
+	@include e('header') {
+		h1 {
+			font-size: 16px;
+			color: getColor('white.base');
+		}
+	}
 
-  @include e(flex) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @include m(sticky) {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
-  @include m(bordered-bottom) {
-    border-bottom: 1px solid #9cb2bf;
-  }
+	@include e('flex') {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	@include m('sticky') {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
 
-
-  @include e(left) {
-    display: flex;
-    align-items: center;
-  }
+	@include e('left') {
+		display: flex;
+		align-items: center;
+	}
 }
