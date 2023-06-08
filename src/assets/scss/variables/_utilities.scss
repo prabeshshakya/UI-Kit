@@ -36,13 +36,20 @@ $utilities: (
 		inherit: inherit,
 	),
 	flex: (
+		wrap: wrap,
+		nowrap: nowrap,
+	),
+	direction: (
 		row: row,
 		row-reverse: row-reverse,
 		column: column,
 		column-reverse: column-reverse,
-		wrap: wrap,
-		nowrap: nowrap,
 	),
+	grow: (
+		0: 0,
+		1: 1,
+	),
+
 	display: (
 		block: block,
 		inline: inline,
@@ -78,29 +85,16 @@ $utilities: (
 	width: (
 		auto: auto,
 		100: 100%,
+		100vw: 100vw,
 	),
 
 	height: (
 		auto: auto,
 		100: 100%,
+		100vh: 100vh,
 	),
 
-	border-radius: (
-		1: 4px,
-		2: 6px,
-		3: 8px,
-		4: 12px,
-		5: 24px,
-		6: 32px,
-		full: 50%,
-		pill: 50rem,
-	),
+	border-radius: $border-radius,
 
-	box-shadow: (
-		none: none,
-		normal: 0 0.5rem 1rem black,
-		sm: 0 0.125rem 0.25rem black,
-		lg: 0 1rem 3rem black,
-		inset: inset 0 1px 2px black,
-	),
+	box-shadow: $box-shadow,
 );

@@ -7,13 +7,32 @@
 
 $base__header__line: 1.25 !default;
 $base__body__line: 1.5 !default;
-$base__font-size: 16 !default;
+$base__font-size: 16 !default; //don't add unit here. Unit will added from the function.
 
 //Default Spacing Unit
 $defaultSpacing: rem(4);
 
 //Path to Assets
 $path--rel: '../images';
+
+$border-radius: (
+	1: 4px,
+	2: 6px,
+	3: 8px,
+	4: 12px,
+	5: 24px,
+	6: 32px,
+	full: 50%,
+	pill: 50rem,
+);
+
+$box-shadow: (
+	none: none,
+	normal: 0 0.5rem 1rem black,
+	1: 0 0.125rem 0.25rem black,
+	2: 0 1rem 3rem black,
+	inset: inset 0 1px 2px black,
+);
 
 // ==========================================================================
 // Features
