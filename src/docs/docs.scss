@@ -12,16 +12,16 @@
 
 //Sidebar
 .sidebar {
-	height: calc(100vh - 82px);
+	height: calc(100vh - 70px);
 	position: sticky;
-	top: 5.125rem;
+	top: 70px;
 	padding-top: getSpacing('11x');
 	background-color: transparent;
 	overflow-y: auto;
 
 	@include m('right') {
 		@extend .sidebar;
-		top: 82px;
+		top: 70px;
 	}
 }
 
@@ -87,6 +87,12 @@
 		background-color: getColor('grey.4');
 		color: getColor('white.base');
 	}
+}
+
+.example-row {
+	background: #e5f7ff;
+	padding: getSpacing('3x');
+	margin-bottom: getSpacing('2x');
 }
 
 .color-box {
@@ -237,8 +243,4 @@ code:not(pre > code) {
 	background: rgba(getColor('primary.base'), 0.25);
 	padding: 0.5rem;
 	border: 1px solid rgba(getColor('primary.base'), 0.5);
-
-	.flex-wrap & {
-		width: 100%;
-	}
 }

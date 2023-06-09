@@ -1,12 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { logo } from '../../assets/images';
 
 const Nav = () => {
 	return (
 		<nav className='navbar'>
 			<div className='container navbar__flex'>
 				<div className='navbar__header'>
-					<h1>SASS Starter Kit</h1>
+					<img
+						src={logo}
+						alt='startkit Logo'
+						width={120}
+					/>
 				</div>
 				<div className='navbar__list'>
 					<NavLink

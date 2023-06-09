@@ -1,3 +1,3 @@
-import logo from './images/logo_leapfrog.svg';
+import logo from './images/starter-kit-logo.svg';
 
 export { logo };

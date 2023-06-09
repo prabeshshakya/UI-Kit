@@ -14,11 +14,9 @@ import Spacing from './pages/utilities/spacing/Spacing';
 import Fonts from './pages/utilities/font/Fonts';
 import Display from './pages/utilities/display/Display';
 import Flex from './pages/utilities/flex/Flex';
-import Bem from './pages/mixins/helpers/Bem';
-import UsageFonts from './pages/mixins/helpers/Fonts';
-import UsageColor from './pages/mixins/helpers/Color';
-import UsageResponsive from './pages/mixins/helpers/Responsive';
-import UsageHelper from './pages/mixins/helpers/Helper';
+import Bem from './pages/usages/bem/Bem';
+import UsageResponsive from './pages/usages/Responsive';
+import UsageHelper from './pages/usages/Helper';
 
 /**
  * App Router.
@@ -87,14 +85,7 @@ function AppRouter() {
 				path='/bem'
 				component={Bem}
 			/>
-			<Route
-				path='/usages/fonts'
-				component={UsageFonts}
-			/>
-			<Route
-				path='/usages/color'
-				component={UsageColor}
-			/>
+
 			<Route
 				path='/usages/responsive'
 				component={UsageResponsive}

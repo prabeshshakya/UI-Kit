@@ -35,9 +35,10 @@ $utilities: (
 		initial: initial,
 		inherit: inherit,
 	),
-	flex: (
+	wrap: (
 		wrap: wrap,
 		nowrap: nowrap,
+		wrap-reverse: wrap-reverse,
 	),
 	direction: (
 		row: row,

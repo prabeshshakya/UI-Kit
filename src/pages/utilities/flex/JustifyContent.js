@@ -5,27 +5,27 @@ import { Syntax } from '../../../components/common/syntax-highlighter';
 const JustifyContent = () => {
 	const code = `
     
-<div className="d-flex justify-content-start mb-3x">
+<div className="d-flex justify-content-start">
     <div>Flex item</div>
     <div>Flex item</div>
     <div>Flex item</div>
 </div>
-<div className="d-flex justify-content-end mb-3x">
+<div className="d-flex justify-content-end">
     <div>Flex item</div>
     <div>Flex item</div>
     <div>Flex item</div>
 </div>
-<div className="d-flex justify-content-center mb-3x">
+<div className="d-flex justify-content-center">
     <div>Flex item</div>
     <div>Flex item</div>
     <div>Flex item</div>
 </div>
-<div className="d-flex justify-content-between mb-3x">
+<div className="d-flex justify-content-between">
     <div>Flex item</div>
     <div>Flex item</div>
     <div>Flex item</div>
 </div>
-<div className="d-flex justify-content-around mb-3x">
+<div className="d-flex justify-content-around">
     <div>Flex item</div>
     <div>Flex item</div>
     <div>Flex item</div>
@@ -33,8 +33,8 @@ const JustifyContent = () => {
 
     `;
 	return (
-		<div className='content-block'>
-			<h2>Justify content</h2>
+		<>
+			<h2 id='justify-content'>Justify content</h2>
 			<p className='page__brief'>
 				Use <code>justify-content</code> utilities on flexbox containers to
 				change the alignment of flex items on the main axis (the x-axis to
@@ -85,31 +85,39 @@ const JustifyContent = () => {
 						<div className='preview-container'>
 							<div className='example-row'>
 								<h5 className='text-center'>start</h5>
-								<div className='d-flex justify-content-start mb-3x'>
+								<div className='d-flex justify-content-start'>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
+							</div>
+							<div className='example-row'>
 								<h5 className='text-center'>End</h5>
-								<div className='d-flex justify-content-end mb-3x'>
+								<div className='d-flex justify-content-end'>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
+							</div>
+							<div className='example-row'>
 								<h5 className='text-center'>Center</h5>
-								<div className='d-flex justify-content-center mb-3x'>
+								<div className='d-flex justify-content-center'>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
+							</div>
+							<div className='example-row'>
 								<h5 className='text-center'>Between</h5>
-								<div className='d-flex justify-content-between mb-3x'>
+								<div className='d-flex justify-content-between'>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
+							</div>
+							<div className='example-row'>
 								<h5 className='text-center'>Around</h5>
-								<div className='d-flex justify-content-around mb-3x'>
+								<div className='d-flex justify-content-around'>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
@@ -129,167 +137,169 @@ const JustifyContent = () => {
 				</Tabs>
 			</div>
 
-			<h4>Available Classes</h4>
+			<div className='content-block'>
+				<h4>Available Classes</h4>
 
-			<table className='table mb-4x'>
-				<thead>
-					<tr>
-						<th scope='col'>
-							xs
-							<br />
-							<span>&lt;576px</span>
-						</th>
-						<th scope='col'>
-							sm
-							<br />
-							<span>≥576px</span>
-						</th>
-						<th scope='col'>
-							md
-							<br />
-							<span>≥768px</span>
-						</th>
-						<th scope='col'>
-							lg
-							<br />
-							<span>≥992px</span>
-						</th>
-						<th scope='col'>
-							xl
-							<br />
-							<span>≥1200px</span>
-						</th>
-						<th scope='col'>
-							xxl
-							<br />
-							<span>≥1400px</span>
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<code>justify-content-initial</code>
-						</td>
-						<td>
-							<code>justify-content-sm-initial</code>
-						</td>
-						<td>
-							<code>justify-content-md-initial</code>
-						</td>
-						<td>
-							<code>justify-content-lg-initial</code>
-						</td>
-						<td>
-							<code>justify-content-xl-initial</code>
-						</td>
-						<td>
-							<code>justify-content-xxl-initial</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>justify-content-start</code>
-						</td>
-						<td>
-							<code>justify-content-sm-start</code>
-						</td>
-						<td>
-							<code>justify-content-md-start</code>
-						</td>
-						<td>
-							<code>justify-content-lg-start</code>
-						</td>
-						<td>
-							<code>justify-content-xl-start</code>
-						</td>
-						<td>
-							<code>justify-content-xxl-start</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>justify-content-end</code>
-						</td>
-						<td>
-							<code>justify-content-sm-end</code>
-						</td>
-						<td>
-							<code>justify-content-md-end</code>
-						</td>
-						<td>
-							<code>justify-content-lg-end</code>
-						</td>
-						<td>
-							<code>justify-content-xl-end</code>
-						</td>
-						<td>
-							<code>justify-content-xxl-end</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>justify-content-center</code>
-						</td>
-						<td>
-							<code>justify-content-sm-center</code>
-						</td>
-						<td>
-							<code>justify-content-md-center</code>
-						</td>
-						<td>
-							<code>justify-content-lg-center</code>
-						</td>
-						<td>
-							<code>justify-content-xl-center</code>
-						</td>
-						<td>
-							<code>justify-content-xxl-center</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>justify-content-between</code>
-						</td>
-						<td>
-							<code>justify-content-sm-between</code>
-						</td>
-						<td>
-							<code>justify-content-md-between</code>
-						</td>
-						<td>
-							<code>justify-content-lg-between</code>
-						</td>
-						<td>
-							<code>justify-content-xl-between</code>
-						</td>
-						<td>
-							<code>justify-content-xxl-between</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>justify-content-around</code>
-						</td>
-						<td>
-							<code>justify-content-sm-around</code>
-						</td>
-						<td>
-							<code>justify-content-md-around</code>
-						</td>
-						<td>
-							<code>justify-content-lg-around</code>
-						</td>
-						<td>
-							<code>justify-content-xl-around</code>
-						</td>
-						<td>
-							<code>justify-content-xxl-around</code>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+				<table className='table mb-4x'>
+					<thead>
+						<tr>
+							<th scope='col'>
+								xs
+								<br />
+								<span>&lt;576px</span>
+							</th>
+							<th scope='col'>
+								sm
+								<br />
+								<span>≥576px</span>
+							</th>
+							<th scope='col'>
+								md
+								<br />
+								<span>≥768px</span>
+							</th>
+							<th scope='col'>
+								lg
+								<br />
+								<span>≥992px</span>
+							</th>
+							<th scope='col'>
+								xl
+								<br />
+								<span>≥1200px</span>
+							</th>
+							<th scope='col'>
+								xxl
+								<br />
+								<span>≥1400px</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<code>justify-content-initial</code>
+							</td>
+							<td>
+								<code>justify-content-sm-initial</code>
+							</td>
+							<td>
+								<code>justify-content-md-initial</code>
+							</td>
+							<td>
+								<code>justify-content-lg-initial</code>
+							</td>
+							<td>
+								<code>justify-content-xl-initial</code>
+							</td>
+							<td>
+								<code>justify-content-xxl-initial</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>justify-content-start</code>
+							</td>
+							<td>
+								<code>justify-content-sm-start</code>
+							</td>
+							<td>
+								<code>justify-content-md-start</code>
+							</td>
+							<td>
+								<code>justify-content-lg-start</code>
+							</td>
+							<td>
+								<code>justify-content-xl-start</code>
+							</td>
+							<td>
+								<code>justify-content-xxl-start</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>justify-content-end</code>
+							</td>
+							<td>
+								<code>justify-content-sm-end</code>
+							</td>
+							<td>
+								<code>justify-content-md-end</code>
+							</td>
+							<td>
+								<code>justify-content-lg-end</code>
+							</td>
+							<td>
+								<code>justify-content-xl-end</code>
+							</td>
+							<td>
+								<code>justify-content-xxl-end</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>justify-content-center</code>
+							</td>
+							<td>
+								<code>justify-content-sm-center</code>
+							</td>
+							<td>
+								<code>justify-content-md-center</code>
+							</td>
+							<td>
+								<code>justify-content-lg-center</code>
+							</td>
+							<td>
+								<code>justify-content-xl-center</code>
+							</td>
+							<td>
+								<code>justify-content-xxl-center</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>justify-content-between</code>
+							</td>
+							<td>
+								<code>justify-content-sm-between</code>
+							</td>
+							<td>
+								<code>justify-content-md-between</code>
+							</td>
+							<td>
+								<code>justify-content-lg-between</code>
+							</td>
+							<td>
+								<code>justify-content-xl-between</code>
+							</td>
+							<td>
+								<code>justify-content-xxl-between</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>justify-content-around</code>
+							</td>
+							<td>
+								<code>justify-content-sm-around</code>
+							</td>
+							<td>
+								<code>justify-content-md-around</code>
+							</td>
+							<td>
+								<code>justify-content-lg-around</code>
+							</td>
+							<td>
+								<code>justify-content-xl-around</code>
+							</td>
+							<td>
+								<code>justify-content-xxl-around</code>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</>
 	);
 };
 export default JustifyContent;

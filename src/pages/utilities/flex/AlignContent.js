@@ -45,7 +45,7 @@ const AlignContent = () => {
     `;
 	return (
 		<div className='content-block'>
-			<h2>Align Content</h2>
+			<h2 id='align-content'>Align Content</h2>
 			<p className='page__brief'>
 				The align-content property modifies the behavior of the flex-wrap
 				property. It is similar to align-items, but instead of aligning flex
@@ -95,7 +95,7 @@ const AlignContent = () => {
 				</li>
 			</ul>
 
-			<div className='usage-markup-preview'>
+			<div className='content-block'>
 				<Tabs>
 					<TabList>
 						<Tab>Preview</Tab>
@@ -103,8 +103,8 @@ const AlignContent = () => {
 					</TabList>
 					<TabPanel>
 						<div className='preview-container'>
-							<div className='example-row'>
-								<h5 className='text-center'>Align-content-start</h5>
+							<h5 className='text-center'>Align-content-start</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex flex-wrap align-content-start mb-3x'
 									style={{ height: '150px' }}
@@ -112,9 +112,26 @@ const AlignContent = () => {
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
+									<div className='eg-box'>Flex item</div>
 								</div>
+							</div>
 
-								<h5 className='text-center'>Align-content-end</h5>
+							<h5 className='text-center'>Align-content-end</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex flex-wrap align-content-end mb-3x'
 									style={{ height: '150px' }}
@@ -123,7 +140,9 @@ const AlignContent = () => {
 									<div className='eg-box'>Aligned flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-content-center</h5>
+							</div>
+							<h5 className='text-center'>Align-content-center</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex flex-wrap align-content-center mb-3x'
 									style={{ height: '150px' }}
@@ -132,7 +151,9 @@ const AlignContent = () => {
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-content-between</h5>
+							</div>
+							<h5 className='text-center'>Align-content-between</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex flex-wrap align-content-between mb-3x'
 									style={{ height: '150px' }}
@@ -141,7 +162,9 @@ const AlignContent = () => {
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-content-around</h5>
+							</div>
+							<h5 className='text-center'>Align-content-around</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex flex-wrap align-content-around mb-3x'
 									style={{ height: '150px' }}
@@ -150,7 +173,9 @@ const AlignContent = () => {
 									<div className='eg-box'>Flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-content-stretch</h5>
+							</div>
+							<h5 className='text-center'>Align-content-stretch</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex flex-wrap align-content-stretch mb-3x'
 									style={{ height: '150px' }}

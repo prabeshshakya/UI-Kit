@@ -4,25 +4,25 @@ import { Syntax } from '../../../components/common/syntax-highlighter';
 
 const AlignItems = () => {
 	const code = `
-	<div className="d-flex align-items-start mb-3x">
+	<div className="d-flex align-items-start">
 		<div>Flex item</div>
 		<div>Flex item</div>
 		<div>Flex item</div>
 	</div>
 
-	<div className="d-flex align-items-end mb-3x">
+	<div className="d-flex align-items-end">
 		<div>Flex item</div>
 		<div>Flex item</div>
 		<div>Flex item</div>
 	</div>
 	
-	<div className="d-flex align-items-center mb-3x">
+	<div className="d-flex align-items-center">
 		<div>Flex item</div>
 		<div>Flex item</div>
 		<div>Flex item</div>
 	</div>
 	
-	<div className="d-flex align-items-base mb-3x">
+	<div className="d-flex align-items-base">
 		<div>Flex item</div>
 		<div>Flex item</div>
 		<div>Flex item</div>
@@ -33,12 +33,12 @@ const AlignItems = () => {
 		<div>Flex item</div>
 		<div>Flex item</div>
 	</div>
-	
-
     `;
+
 	return (
 		<div className='content-block'>
-			<h2>Align Items</h2>
+			<h2 id='align-items'>Align Items</h2>
+
 			<p className='page__brief'>
 				Use <code>align-items</code> utilities on flexbox containers to change
 				the alignment of flex items on the cross axis (the y-axis to start,
@@ -73,75 +73,82 @@ const AlignItems = () => {
 				</li>
 			</ul>
 
-			<div className='usage-markup-preview'>
-				<Tabs>
-					<TabList>
-						<Tab>Preview</Tab>
-						<Tab>Code</Tab>
-					</TabList>
-					<TabPanel>
-						<div className='preview-container'>
-							<div className='example-row'>
-								<h5 className='text-center'>Start</h5>
-								<div
-									className='d-flex align-items-start mb-3x'
-									style={{ height: '100px' }}
-								>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-								</div>
-								<h5 className='text-center'>End</h5>
-								<div
-									className='d-flex align-items-end mb-3x'
-									style={{ height: '100px' }}
-								>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-								</div>
-								<h5 className='text-center'>Center</h5>
-								<div
-									className='d-flex align-items-center mb-3x'
-									style={{ height: '100px' }}
-								>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-								</div>
-								<h5 className='text-center'>Baseline</h5>
-								<div
-									className='d-flex align-items-base mb-3x'
-									style={{ height: '100px' }}
-								>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-								</div>
+			<Tabs>
+				<TabList>
+					<Tab>Preview</Tab>
+					<Tab>Code</Tab>
+				</TabList>
+				<TabPanel>
+					<h5 className='text-center'>Start</h5>
+					<div className='example-row'>
+						<div
+							className='d-flex align-items-start'
+							style={{ height: '100px' }}
+						>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+						</div>
+					</div>
 
-								<h5 className='text-center'>Stretch</h5>
-								<div
-									className='d-flex align-items-stretch'
-									style={{ height: '100px' }}
-								>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-									<div className='eg-box'>Flex item</div>
-								</div>
+					<h5 className='text-center'>End</h5>
+					<div className='example-row'>
+						<div
+							className='d-flex align-items-end'
+							style={{ height: '100px' }}
+						>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+						</div>
+					</div>
+
+					<h5 className='text-center'>Center</h5>
+					<div className='example-row'>
+						<div
+							className='d-flex align-items-center'
+							style={{ height: '100px' }}
+						>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+						</div>
+					</div>
+
+					<h5 className='text-center'>Baseline</h5>
+					<div className='example-row'>
+						<div
+							className='d-flex align-items-base'
+							style={{ height: '100px' }}
+						>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+						</div>
+					</div>
+
+					<h5 className='text-center'>Stretch</h5>
+					<div className='example-row'>
+						<div
+							className='d-flex align-items-stretch'
+							style={{ height: '100px' }}
+						>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+							<div className='eg-box'>Flex item</div>
+						</div>
+					</div>
+				</TabPanel>
+				<TabPanel>
+					<div className='preview-container'>
+						<div className='d-flex'>
+							<div className='code-preview'>
+								<Syntax language='html'>{code}</Syntax>
 							</div>
 						</div>
-					</TabPanel>
-					<TabPanel>
-						<div className='preview-container'>
-							<div className='d-flex'>
-								<div className='code-preview'>
-									<Syntax language='html'>{code}</Syntax>
-								</div>
-							</div>
-						</div>
-					</TabPanel>
-				</Tabs>
-			</div>
+					</div>
+				</TabPanel>
+			</Tabs>
 
 			<h4>Available Classes</h4>
 

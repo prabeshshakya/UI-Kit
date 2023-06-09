@@ -4,51 +4,24 @@ import { Syntax } from '../../../components/common/syntax-highlighter';
 
 const Order = () => {
 	const code = `
-<div class="d-flex flex-nowrap">
+<div class="d-flex">
 	<div class="order-3">First flex item</div>
 	<div class="order-2">Second flex item</div>
 	<div class="order-1">Third flex item</div>
 </div>
     `;
 
-	const OrderMixins = `
-	@each $types, $map in $flex-utilities {
-        @if ($types == order) {
-          @for $i from 1 through $grid-count {
-            @if $breakpoint == 0 {
-              .#{$types}-#{$i} {
-                #{$types}: #{$i};
-              }
-            } @else {
-              .#{$types}-#{$i}-#{$name} {
-                #{$types}: #{$i};
-              }
-            }
-          }
-        }
-        @each $type, $properties in $map {
-          @if $breakpoint == 0 {
-            .#{$type} {
-              #{$types}: $properties;
-            }
-          } @else {
-            .#{$type}-#{$name} {
-              #{$types}: $properties;
-            }
-          }
-        }
-      }
-	`;
 	return (
 		<>
 			<div className='content-block'>
-				<h2>Order</h2>
+				<h2 id='order'>Order</h2>
 				<p className='page__brief'>
 					We can use order utilities on flexbox items to change the visual order
 					of specific flex items. We only provide options for making an item
 					first or last and a reset to use the DOM order. As order takes any
-					integer value from 0 to the number of grid counts. The default value
-					of the order will be 0.
+					integer value from 1 to 10. The variable for <code>order</code> is
+					defined on
+					<code>variables/_utilities.scss</code>
 				</p>
 
 				<div className='usage-markup-preview'>
@@ -60,7 +33,7 @@ const Order = () => {
 						<TabPanel>
 							<div className='preview-container'>
 								<div className='example-row'>
-									<div class='d-flex flex-nowrap'>
+									<div class='d-flex'>
 										<div class='order-3 eg-box'>First flex item</div>
 										<div class='order-2 eg-box'>Second flex item</div>
 										<div class='order-1 eg-box'>Third flex item</div>
@@ -143,80 +116,63 @@ const Order = () => {
 								<code>order-2</code>
 							</td>
 							<td>
-								<code>orde-smr-2</code>
+								<code>orde-sm-2</code>
 							</td>
 							<td>
-								<code>orde-mdr-2</code>
+								<code>orde-md-2</code>
 							</td>
 							<td>
-								<code>orde-lgr-2</code>
+								<code>orde-lg-2</code>
 							</td>
 							<td>
-								<code>orde-xlr-2</code>
+								<code>orde-xl-2</code>
 							</td>
 							<td>
-								<code>orde-xxlr-2</code>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<code>...</code>
-							</td>
-							<td>
-								<code>...</code>
-							</td>
-							<td>
-								<code>...</code>
-							</td>
-							<td>
-								<code>...</code>
-							</td>
-							<td>
-								<code>...</code>
-							</td>
-							<td>
-								<code>...</code>
+								<code>orde-xxl-2</code>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<code>order-12</code>
+								<code>...</code>
 							</td>
 							<td>
-								<code>order-sm-12</code>
+								<code>...</code>
 							</td>
 							<td>
-								<code>order-md-12</code>
+								<code>...</code>
 							</td>
 							<td>
-								<code>order-lg-12</code>
+								<code>...</code>
 							</td>
 							<td>
-								<code>order-xl-12</code>
+								<code>...</code>
 							</td>
 							<td>
-								<code>order-xxl-12</code>
+								<code>...</code>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<code>order-10</code>
+							</td>
+							<td>
+								<code>order-sm-10</code>
+							</td>
+							<td>
+								<code>order-md-10</code>
+							</td>
+							<td>
+								<code>order-lg-10</code>
+							</td>
+							<td>
+								<code>order-xl-10</code>
+							</td>
+							<td>
+								<code>order-xxl-10</code>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-
-				<blockquote className='docs-info'>
-					<strong>Note:</strong> The count upto 12 is generated from{' '}
-					<code> $grid-count</code>
-				</blockquote>
-			</div>
-
-			<div className='content-block'>
-				<h3>Mixins</h3>
-				<p>
-					The mixins for <code>Order</code> is located at{' '}
-					<code>utilities/_flex-utils.scss</code>
-				</p>
-
-				<div className='code-preview'>
-					<Syntax language='scss'>{OrderMixins}</Syntax>
-				</div>
 			</div>
 		</>
 	);

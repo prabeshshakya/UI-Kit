@@ -43,7 +43,7 @@ const AlignSelf = () => {
     `;
 	return (
 		<div className='content-block'>
-			<h2>Align Self</h2>
+			<h2 id='align-self'>Align Self</h2>
 			<p className='page__brief'>
 				Use <code>align-self</code> utilities on flexbox items to individually
 				change their alignment on the cross axis (the y-axis to start, x-axis if{' '}
@@ -94,8 +94,8 @@ const AlignSelf = () => {
 					</TabList>
 					<TabPanel>
 						<div className='preview-container'>
-							<div className='example-row'>
-								<h5 className='text-center'>Align-self-start</h5>
+							<h5 className='text-center'>Align-self-start</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex mb-3x'
 									style={{ height: '100px' }}
@@ -106,8 +106,10 @@ const AlignSelf = () => {
 									</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
+							</div>
 
-								<h5 className='text-center'>Align-self-end</h5>
+							<h5 className='text-center'>Align-self-end</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex mb-3x'
 									style={{ height: '100px' }}
@@ -116,7 +118,9 @@ const AlignSelf = () => {
 									<div className='align-self-end eg-box'>Aligned flex item</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-self-center</h5>
+							</div>
+							<h5 className='text-center'>Align-self-center</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex mb-3x'
 									style={{ height: '100px' }}
@@ -127,7 +131,9 @@ const AlignSelf = () => {
 									</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-self-baseline</h5>
+							</div>
+							<h5 className='text-center'>Align-self-baseline</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex mb-3x'
 									style={{ height: '100px' }}
@@ -138,7 +144,9 @@ const AlignSelf = () => {
 									</div>
 									<div className='eg-box'>Flex item</div>
 								</div>
-								<h5 className='text-center'>Align-self-stretch</h5>
+							</div>
+							<h5 className='text-center'>Align-self-stretch</h5>
+							<div className='example-row p-0x'>
 								<div
 									className='d-flex mb-3x'
 									style={{ height: '100px' }}

@@ -16,8 +16,12 @@ $breakpointVal: 1400,
 								#{$key}: #{$nestVal};
 							}
 						} @else if $key == 'direction' {
-							.flex-direction-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
+							.flex-#{$breakpoint}-#{$nestKey} {
+								flex-#{$key}: #{$nestVal};
+							}
+						} @else if $key == 'wrap' {
+							.flex-#{$breakpoint}-#{$nestKey} {
+								flex-#{$key}: #{$nestVal};
 							}
 						} @else if $key == 'grow' {
 							.flex-grow-#{$breakpoint}-#{$nestKey} {
@@ -53,8 +57,12 @@ $breakpointVal: 1400,
 							#{$key}: #{$nestVal};
 						}
 					} @else if $key == 'direction' {
-						.flex-direction-#{$nestKey} {
-							#{$key}: #{$nestVal};
+						.flex-#{$nestKey} {
+							flex-#{$key}: #{$nestVal};
+						}
+					} @else if $key == 'wrap' {
+						.flex-#{$nestKey} {
+							flex-#{$key}: #{$nestVal};
 						}
 					} @else if $key == 'grow' {
 						.flex-grow-#{$nestKey} {

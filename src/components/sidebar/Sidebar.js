@@ -130,20 +130,7 @@ const LeftSidebar = () => {
 						>
 							BEM
 						</NavLink>
-						<NavLink
-							to='/usages/fonts'
-							className='menu-group__nodes__single'
-							activeClassName='menu-group__nodes__single--active'
-						>
-							Fonts
-						</NavLink>
-						<NavLink
-							to='/usages/color'
-							className='menu-group__nodes__single'
-							activeClassName='menu-group__nodes__single--active'
-						>
-							Color
-						</NavLink>
+
 						<NavLink
 							to='/usages/responsive'
 							className='menu-group__nodes__single'

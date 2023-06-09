@@ -2,7 +2,7 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Syntax } from '../../../components/common/syntax-highlighter';
 
-const Direction = () => {
+const Wrap = () => {
 	const code = `
     <div class="d-flex flex-row mb-3">
         <div>Flex item 1</div>
@@ -19,13 +19,13 @@ const Direction = () => {
         `;
 	return (
 		<div className='content-block'>
-			<h2 id='direction'>Direction</h2>
+			<h2 id='wrap'>Wrap</h2>
 			<p className='page__brief'>
-				We can set the direction of flex items in a flex container with
-				direction utilities. By default, the flex-direction is set to horizontal
-				i.e. <code>flex-direction: row</code>. However, we may encounter
-				situations where we need to change the direction of flex items. We can
-				use the following properties for changing the flex-direction property :
+				Change how flex items wrap in a flex container. Choose from no wrapping
+				at all (the browser default) with <code>.flex-nowrap</code>, wrapping
+				with
+				<code>.flex-wrap</code>, or reverse wrapping with{' '}
+				<code>.flex-wrap-reverse</code>.
 			</p>
 
 			<div className='mb-5x'>
@@ -189,4 +189,4 @@ const Direction = () => {
 	);
 };
 
-export default Direction;
+export default Wrap;
