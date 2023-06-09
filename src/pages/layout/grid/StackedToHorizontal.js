@@ -4,21 +4,21 @@ import { Syntax } from '../../../components/common/syntax-highlighter';
 
 const StackedToHorizontal = () => {
 	const code = `	
-	<div class="container">
-        <div class="row">
-            <div class="col-sm-8">col-sm-8</div>
-            <div class="col-sm-4">col-sm-4</div>
-        </div>
-        <div class="row">
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-        </div>
-    </div>
+<div class="container">
+ <div class="row">
+  <div class="col-sm-8">col-sm-8</div>
+  <div class="col-sm-4">col-sm-4</div>
+ </div>
+ <div class="row">
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+  <div class="col-sm">col-sm</div>
+ </div>
+</div>
 `;
 	return (
 		<>
-			<h2>Stacked to horizontal</h2>
+			<h2 id='stacked-horizontal'>Stacked to horizontal</h2>
 			<div class='content-block'>
 				<div className='usage-markup-preview'>
 					<Tabs>
@@ -30,14 +30,28 @@ const StackedToHorizontal = () => {
 						<TabPanel>
 							<div className='docs-container'>
 								<div class='container'>
-									<div class='row'>
-										<div class='col-sm-8'>col-sm-8</div>
-										<div class='col-sm-4'>col-sm-4</div>
+									<div className='example-row'>
+										<div class='row'>
+											<div class='col-sm-8'>
+												<div className='eg-box'>col-sm-8</div>
+											</div>
+											<div class='col-sm-4'>
+												<div className='eg-box'>col-sm-4</div>
+											</div>
+										</div>
 									</div>
-									<div class='row'>
-										<div class='col-sm'>col-sm</div>
-										<div class='col-sm'>col-sm</div>
-										<div class='col-sm'>col-sm</div>
+									<div className='example-row'>
+										<div class='row'>
+											<div class='col-sm'>
+												<div className='eg-box'>col-sm</div>
+											</div>
+											<div class='col-sm'>
+												<div className='eg-box'>col-sm</div>
+											</div>
+											<div class='col-sm'>
+												<div className='eg-box'>col-sm</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -46,7 +60,7 @@ const StackedToHorizontal = () => {
 							<div className='preview-container'>
 								<div className='d-flex'>
 									<div className='code-preview'>
-										<Syntax>{code}</Syntax>
+										<Syntax language='html'>{code}</Syntax>
 									</div>
 								</div>
 							</div>

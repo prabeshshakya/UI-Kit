@@ -4,23 +4,23 @@ import { Syntax } from '../../../components/common/syntax-highlighter';
 
 const ResponsiveClasses = () => {
 	const code = `	
-	<div class="container">
-        <div class="row px-4x">
-            <div class="col-xs">col</div>
-            <div class="col-xs">col</div>
-            <div class="col-xs">col</div>
-            <div class="col-xs">col</div>
-        </div>
-        <div class="row">
-            <div class="col-8">col-8</div>
-            <div class="col-4">col-4</div>
-        </div>
-    </div>
+<div class="container">
+ <div class="row px-4x">
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+  <div class="col">col</div>
+ </div>
+ <div class="row">
+  <div class="col-8">col-8</div>
+  <div class="col-4">col-4</div>
+ </div>
+</div>
 `;
 	return (
 		<>
 			<h2>Responsive classes</h2>
-			<h3>All breakpoints</h3>
+			<h3 id='all-breakpoint'>All breakpoints</h3>
 			<div class='content-block'>
 				<div className='usage-markup-preview'>
 					<Tabs>
@@ -32,15 +32,32 @@ const ResponsiveClasses = () => {
 						<TabPanel>
 							<div className='docs-container'>
 								<div class='container'>
-									<div class='row'>
-										<div class='col-xs'>col</div>
-										<div class='col-xs'>col</div>
-										<div class='col-xs'>col</div>
-										<div class='col-xs'>col</div>
+									<div className='example-row'>
+										<div class='row'>
+											<div class='col'>
+												<div className='eg-box'>col</div>
+											</div>
+											<div class='col'>
+												<div className='eg-box'>col</div>
+											</div>
+											<div class='col'>
+												<div className='eg-box'>col</div>
+											</div>
+											<div class='col'>
+												<div className='eg-box'>col</div>
+											</div>
+										</div>
 									</div>
-									<div class='row'>
-										<div class='col-8'>col-8</div>
-										<div class='col-4'>col-4</div>
+
+									<div className='example-row'>
+										<div class='row'>
+											<div class='col-8'>
+												<div className='eg-box'>col-8</div>
+											</div>
+											<div class='col-4'>
+												<div className='eg-box'>col-4</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -49,7 +66,7 @@ const ResponsiveClasses = () => {
 							<div className='preview-container'>
 								<div className='d-flex'>
 									<div className='code-preview'>
-										<Syntax>{code}</Syntax>
+										<Syntax language='html'>{code}</Syntax>
 									</div>
 								</div>
 							</div>

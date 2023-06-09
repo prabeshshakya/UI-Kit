@@ -4,22 +4,22 @@ import { Syntax } from '../../../components/common/syntax-highlighter';
 
 const VariableWidthContent = () => {
 	const code = `	
-	<div class="container">
-        <div class="row justify-content-center-md">
-            <div class="c-lgol-2">1 of 3</div>
-            <div class="col-md-auto">variable with content</div>
-            <div class="c-lgol-2">3 of 3</div>
-        </div>
-        <div class="row">
-            <div class="col-xs">1 of 3</div>
-            <div class="col-md-auto">variable with content</div>
-            <div class="c-lgol-2">3 of 3</div>
-        </div>
-    </div>
+<div class="container">
+ <div class="row justify-content-md-center">
+  <div class="col-2">1 of 3</div>
+  <div class="col-md-auto">variable with content</div>
+  <div class="col-2">3 of 3</div>
+ </div>
+ <div class="row">
+  <div class="col">1 of 3</div>
+  <div class="col-md-auto">variable with content</div>
+  <div class="col-2">3 of 3</div>
+ </div>
+</div>
 `;
 	return (
 		<>
-			<h2>Variable width content</h2>
+			<h2 id='variable-width-content'>Variable width content</h2>
 			<div class='content-block'>
 				<div className='usage-markup-preview'>
 					<Tabs>
@@ -31,15 +31,32 @@ const VariableWidthContent = () => {
 						<TabPanel>
 							<div className='docs-container'>
 								<div class='container'>
-									<div class='row justify-content-center-md'>
-										<div class='col-lg-2'>1 of 3</div>
-										<div class='col-md-auto'>variable with content</div>
-										<div class='col-lg-2'>3 of 3</div>
+									<div className='example-row'>
+										<div class='row justify-content-md-center'>
+											<div class='col-lg-2'>
+												<div className='eg-box'>1 of 3</div>
+											</div>
+											<div class='col-md-auto'>
+												<div className='eg-box'>variable with content</div>
+											</div>
+											<div class='col-lg-2'>
+												<div className='eg-box'>3 of 3</div>
+											</div>
+										</div>
 									</div>
-									<div class='row'>
-										<div class='col-xs'>1 of 3</div>
-										<div class='col-md-auto'>variable with content</div>
-										<div class='col-lg-2'>3 of 3</div>
+
+									<div className='example-row'>
+										<div class='row'>
+											<div class='col'>
+												<div className='eg-box'>1 of 3</div>
+											</div>
+											<div class='col-md-auto'>
+												<div className='eg-box'>variable with content</div>
+											</div>
+											<div class='col-lg-2'>
+												<div className='eg-box'>3 of 3</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -48,7 +65,7 @@ const VariableWidthContent = () => {
 							<div className='preview-container'>
 								<div className='d-flex'>
 									<div className='code-preview'>
-										<Syntax>{code}</Syntax>
+										<Syntax language='html'>{code}</Syntax>
 									</div>
 								</div>
 							</div>
