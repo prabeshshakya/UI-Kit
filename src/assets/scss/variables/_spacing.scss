@@ -1,6 +1,6 @@
 $spacing: ();
 $spaceFrom: -4;
-$spaceTill: 30;
+$spaceTill: 20;
 
 @for $i from $spaceFrom through $spaceTill {
 	$spacing: map-merge(

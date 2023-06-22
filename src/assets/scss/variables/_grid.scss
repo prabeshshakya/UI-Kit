@@ -1,7 +1,7 @@
 //Grid variables
 $grid-count: 12 !default;
 $grid-class: col !default;
-$gutter-width: 32px !default;
+$gutter-width: rem(32) !default;
 
 $grid-breakpoints: (
 	xs: 0,

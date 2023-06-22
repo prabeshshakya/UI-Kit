@@ -23,14 +23,24 @@
 						#{$prop}-left: $length !important;
 					}
 
+					.gutter-#{$breakpointName}-#{$size},
+					.gutter-x-#{$breakpointName}-#{$size} {
+						--gutter-x: #{$length};
+					}
+
+					.gutter-#{$breakpointName}-#{$size},
+					.gutter-y-#{$breakpointName}-#{$size} {
+						--gutter-y: #{$length};
+					}
+
 					.gap-#{$breakpointName}-#{$size},
 					.gap-x-#{$breakpointName}-#{$size} {
-						--gutter-x: #{$length};
+						gap: #{$length};
 					}
 
 					.gap-#{$breakpointName}-#{$size},
 					.gap-y-#{$breakpointName}-#{$size} {
-						--gutter-y: #{$length};
+						gap: #{$length};
 					}
 				}
 			}
