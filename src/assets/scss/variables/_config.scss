@@ -15,40 +15,11 @@ $defaultSpacing: rem(4);
 //Path to Assets
 $path--rel: '../images';
 
-$border-radius: (
-	1: 4px,
-	2: 6px,
-	3: 8px,
-	4: 12px,
-	5: 24px,
-	6: 32px,
-	full: 50%,
-	pill: 50rem,
-);
-
-$box-shadow: (
-	none: none,
-	normal: 0 0.5rem 1rem black,
-	1: 0 0.125rem 0.25rem black,
-	2: 0 1rem 3rem black,
-	inset: inset 0 1px 2px black,
-);
-
 // ==========================================================================
 // Features
 // Set true to enable features
 // ==========================================================================
 
 // Utility Classes
-$generate-font-classes: true;
 $generate-color-classes: true;
-$generate-button-classes: true;
-$generate-font-case-classes: true;
-$generate-font-style-classes: true;
-$generate-font-weight-classes: true;
-$generate-header-font-classes: true;
-$generate-text-alignment-classes: true;
-$generate-font-decoration-classes: true;
 $generate-responsive-classes: true;
-
-$generate-radius-classes: true;

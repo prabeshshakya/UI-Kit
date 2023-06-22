@@ -11,15 +11,6 @@
 	margin-left: auto;
 }
 
-// //Common properties of flexed grid columns
-// %grid-column-flex {
-// 	position: relative;
-// 	width: 100%;
-// 	min-height: 1px; // Prevent columns from collapsing when empty
-// 	padding-right: calc($gutter-width / 2);
-// 	padding-left: calc($gutter-width / 2);
-// }
-
 // // Container mixin
 // // $container-name - class name of container
 @mixin make-container($container-name: $grid-container-fluid) {
@@ -51,93 +42,6 @@
 		@extend %common-container;
 	}
 }
-
-// Row mixin
-// $row-name    - class name for row
-
-// @mixin make-row($row-name: $row-name, $gutter: $gutter-width) {
-// 	.#{$row-name} {
-// 		--gutter-x: #{$gutter};
-// 		--gutter-y: 0;
-// 		display: flex;
-// 		flex-wrap: wrap;
-// 		margin-right: calc(-0.5 * var(--gutter-x));
-// 		margin-left: calc(-0.5 * var(--gutter-x));
-// 		margin-top: calc(-1 * var(--gutter-y));
-// 	}
-// }
-
-// Flex column mixin
-// Ported from bootstrap
-// $columns    - total number of columns
-// $size       - Size of column (Eg. 1,2,6,...)
-
-// @mixin make-col($size: false, $columns: $grid-columns) {
-// 	flex-shrink: 0;
-// 	width: 100%;
-// 	max-width: 100%;
-// 	padding-right: calc(var(--gutter-x) * 0.5);
-// 	padding-left: calc(var(--gutter-x) * 0.5);
-// }
-
-// Grid classes mixin
-// $columns     - total number of columns
-// $gutter      - spacing between the grid columns
-// $grid-class  - grid class name (Eg: 'col' in col-xs-1)
-// $breakpoints - Map for breakpoints
-// $grid-type        - type of grid (either 'float' or 'flex')
-
-// @mixin make-grid(
-// 	$columns: $grid-count,
-// 	$gutter: $gutter-width,
-// 	$grid-class: $grid-class,
-// 	$breakpoints: $grid-breakpoints,
-// 	$grid-type: $grid-type
-// ) {
-// 	@each $name, $breakpoint in $breakpoints {
-// 		//Generates common styles for grid classes
-
-// 		@for $i from 1 through $columns {
-// 			@if $breakpoint == 'xs' {
-// 				.#{$grid-class}-#{$i} {
-// 					@extend %grid-column-flex;
-// 				}
-// 			} @else {
-// 				.#{$grid-class}-#{$name}-#{$i} {
-// 					@extend %grid-column-flex;
-// 				}
-// 			}
-// 		}
-// 		//Generates breakpoint wise grid classes
-
-// 		@include mq($name) {
-// 			// Provides basic `.col-{bp}` classes for equal-width flexbox columns
-// 			// Ported from bootstrap 4
-// 			.#{$grid-class}-#{$name} {
-// 				flex-basis: 0;
-// 				flex-grow: 1;
-// 				max-width: 100%;
-// 			}
-// 			.#{$grid-class}-#{$name}-auto {
-// 				flex: 0 0 auto;
-// 				width: auto;
-// 				max-width: none; // Reset earlier grid tiers
-// 			}
-
-// 			@for $i from 1 through $columns {
-// 				@if $breakpoint == 'xs' {
-// 					.#{$grid-class}-#{$i} {
-// 						@include make-col($i, $columns);
-// 					}
-// 				} @else {
-// 					.#{$grid-class}-#{$name}-#{$i} {
-// 						@include make-col($i, $columns);
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
 @mixin make-row($row-name: $row-name, $gutter: $gutter-width) {
 	.#{$row-name} {
