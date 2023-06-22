@@ -88,14 +88,24 @@
 					#{$prop}-left: $length !important;
 				}
 
+				.gutter-#{$size},
+				.gutter-x-#{$size} {
+					--gutter-x: #{$length};
+				}
+
+				.gutter-#{$size},
+				.gutter-y-#{$size} {
+					--gutter-y: #{$length};
+				}
+
 				.gap-#{$size},
 				.gap-x-#{$size} {
-					--gutter-x: #{$length};
+					gap: #{$length};
 				}
 
 				.gap-#{$size},
 				.gap-y-#{$size} {
-					--gutter-y: #{$length};
+					gap: #{$length};
 				}
 			}
 
