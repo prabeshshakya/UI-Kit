@@ -3,10 +3,11 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"react": "^16.8.6",
+		"react": "^16.14.0",
 		"react-dom": "^16.8.6",
 		"react-icons": "^3.7.0",
 		"react-router-dom": "^5.0.1",
+		"react-router-hash-link": "^2.4.3",
 		"react-scripts": "5.0.1",
 		"react-select": "^3.0.4",
 		"react-syntax-highlighter": "^11.0.2",

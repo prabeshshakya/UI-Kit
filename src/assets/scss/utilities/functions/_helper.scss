@@ -54,12 +54,6 @@
 // @return color
 // ---------------------------------------------------------
 
-@function getFontWeight($key: '', $map: $fontWeight) {
-	$weight: get($key, $map);
-
-	@return $weight;
-}
-
 @function getFontSize($key: '', $map: $fontSize) {
 	$size: get('#{$key}.font-size', $map);
 
@@ -72,12 +66,6 @@
 	@return $space;
 }
 
-@function getRadius($key: '', $map: $radius) {
-	$radius: get($key, $map);
-
-	@return $radius;
-}
-
 @function getSpacingName($space) {
 	@if $space < 0 {
 		@return 'neg#{$space}x';
@@ -85,15 +73,3 @@
 		@return '#{$space}x';
 	}
 }
-
-// @function getResponsiveDesignMq($mq-breakpoint, $mq-breakpoints: $grid-breakpoints){
-//   $grid-breakpoints: map-get($mq-breakpoint, $mq-breakpoints);
-
-//   @return $breakpoints;
-// }
-
-// @function getResponsiveDesignMqmax($mq-breakpoint, $mq-breakpoints: $grid-breakpoints){
-//   $grid-breakpoints: map-get($mq-breakpoint, $mq-breakpoints);
-
-//   @return $breakpoints;
-// }

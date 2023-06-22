@@ -1,54 +1,101 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import AccordionDefault from "./components/kit/accordion/AccordionDefault";
-import Button from "./components/kit/button/Button";
-import FormElements from "./components/kit/form-elements/FormElements";
-import Gettingstarted from "./components/kit/introduction/Gettingstarted";
-import Toolingsetup from "./components/kit/introduction/Toolingsetup";
-import Typography from "./components/kit/introduction/Typography";
-import Introduction from "./components/kit/introduction/Introduction";
-import Breakpoints from "./components/kit/layout/breakpoint/Breakpoint";
-import Grid from "./components/kit/layout/grid/Grid";
-//import PageNotFound from "./components/kit/PageNotFound/PageNotFound";
-import Color from "./components/kit/utilities/color/Color";
-import Spacing from "./components/kit/utilities/spacing/Spacing";
-import Fonts from "./components/kit/utilities/font/Fonts";
-import Display from "./components/kit/utilities/display/Display";
-import Flex from "./components/kit/utilities/flex/Flex";
-import Bem from "./components/kit/mixins/helpers/Bem";
-import UsageFonts from "./components/kit/mixins/helpers/Fonts";
-import UsageColor from "./components/kit/mixins/helpers/Color";
-import UsageResponsive from "./components/kit/mixins/helpers/Responsive";
-import UsageHelper from "./components/kit/mixins/helpers/Helper";
-
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import AccordionDefault from './pages/accordion/AccordionDefault';
+import Button from './pages/button/Button';
+import FormElements from './pages/form-elements/FormElements';
+import Gettingstarted from './pages/introduction/gettingStarted/Gettingstarted';
+import Toolingsetup from './pages/introduction/toolingSetup/Toolingsetup';
+import Typography from './pages/introduction/typography/Typography';
+import Introduction from './pages/introduction/intro/Introduction';
+import Breakpoints from './pages/layout/breakpoint/Breakpoint';
+import Grid from './pages/layout/grid/Grid';
+import Color from './pages/utilities/color/Color';
+import Spacing from './pages/utilities/spacing/Spacing';
+import Fonts from './pages/utilities/font/Fonts';
+import Display from './pages/utilities/display/Display';
+import Flex from './pages/utilities/flex/Flex';
+import Bem from './pages/usages/bem/Bem';
+import UsageResponsive from './pages/usages/Responsive';
+import UsageHelper from './pages/usages/Helper';
 
 /**
  * App Router.
  */
 function AppRouter() {
-  return (
-    <Switch>
-      <Route path="/" exact component={Introduction} />
-      <Route path="/button" component={Button} />
-      <Route path="/forms" component={FormElements} />
-      <Route path="/getting-started" component={Gettingstarted} />
-      <Route path="/typography" component={Typography} />
-      <Route path="/toolingsetup" component={Toolingsetup} />
-      <Route path="/accordion" component={AccordionDefault} />
-      <Route path="/colors" component={Color} />
-      <Route path="/display" component={Display} />
-      <Route path="/spacing" component={Spacing} />
-      <Route path="/fonts" component={Fonts} />
-      <Route path="/breakpoints" component={Breakpoints} />
-      <Route path="/grid" component={Grid} />
-      <Route path="/flex" component={Flex} />
-      <Route path="/bem" component={Bem} />
-      <Route path="/usages/fonts" component={UsageFonts} />
-      <Route path="/usages/color" component={UsageColor} />
-      <Route path="/usages/responsive" component={UsageResponsive} />
-      <Route path="/usages/helper" component={UsageHelper} />
-    </Switch>
-  );
+	return (
+		<Switch>
+			<Route
+				path='/'
+				exact
+				component={Introduction}
+			/>
+			<Route
+				path='/button'
+				component={Button}
+			/>
+			<Route
+				path='/forms'
+				component={FormElements}
+			/>
+			<Route
+				path='/getting-started'
+				component={Gettingstarted}
+			/>
+			<Route
+				path='/typography'
+				component={Typography}
+			/>
+			<Route
+				path='/tooling-setup'
+				component={Toolingsetup}
+			/>
+			<Route
+				path='/accordion'
+				component={AccordionDefault}
+			/>
+			<Route
+				path='/colors'
+				component={Color}
+			/>
+			<Route
+				path='/display'
+				component={Display}
+			/>
+			<Route
+				path='/spacing'
+				component={Spacing}
+			/>
+			<Route
+				path='/fonts'
+				component={Fonts}
+			/>
+			<Route
+				path='/breakpoints'
+				component={Breakpoints}
+			/>
+			<Route
+				path='/grid'
+				component={Grid}
+			/>
+			<Route
+				path='/flex'
+				component={Flex}
+			/>
+			<Route
+				path='/bem'
+				component={Bem}
+			/>
+
+			<Route
+				path='/usages/responsive'
+				component={UsageResponsive}
+			/>
+			<Route
+				path='/usages/helper'
+				component={UsageHelper}
+			/>
+		</Switch>
+	);
 }
 
 export default AppRouter;

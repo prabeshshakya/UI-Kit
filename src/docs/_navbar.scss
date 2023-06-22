@@ -1,35 +1,49 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .navbar {
-  padding: 20px 0;
-  background-color: getColor("grey.4");
-  color: getcolor("primary.base");
-  position: sticky;
-  top: 0;
-  z-index: 1;
+	padding: 10px 0;
+	background: linear-gradient(to right, #102b7b, #2ecc71, #102b7b, #2ecc71);
+	background-size: 400% 400%;
+	animation: gradient 180s ease infinite;
+	color: getColor('primary.base');
+	position: sticky;
+	top: 0;
+	z-index: 1;
 
-  @include e(header) {
-    h1 {
-      font-size: 16px;
-      color: getColor("white.base");
-    }
-  }
+	@include e('header') {
+		h1 {
+			font-size: 16px;
+			color: getColor('white.base');
+		}
+	}
 
-  @include e(flex) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  @include m(sticky) {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
-  @include m(bordered-bottom) {
-    border-bottom: 1px solid #9cb2bf;
-  }
+	@include e('flex') {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	@include m('sticky') {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
 
+	@include e('left') {
+		display: flex;
+		align-items: center;
+	}
 
-  @include e(left) {
-    display: flex;
-    align-items: center;
-  }
+	a {
+		color: getColor('white.base');
+	}
 }

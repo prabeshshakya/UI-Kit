@@ -1,84 +1,33 @@
-/* 
-$key: display,
-$nestKey: block,
-$breakpoint: xxl,
-$breakpointVal: 1400,
-*/
+@mixin createClasses($maps...) {
+	@each $map in $maps {
+		$propertyName: map-get($map, 'name');
+		$prefix: map-get($map, 'prefix');
+		$responsive: map-get($map, 'responsive');
 
-@mixin utilities($name) {
-	@each $breakpoint, $breakpointVal in $grid-breakpoints {
-		@each $key, $val in $name {
-			@if $breakpoint != 'xs' {
-				@include mq($breakpoint) {
-					@each $nestKey, $nestVal in $val {
-						@if $key == 'display' {
-							.d-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						} @else if $key == 'direction' {
-							.flex-direction-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						} @else if $key == 'grow' {
-							.flex-grow-#{$breakpoint}-#{$nestKey} {
-								flex-#{$key}: #{$nestVal};
-							}
-						} @else if $key == 'width' {
-							.w-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						} @else if $key == 'height' {
-							.h-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						} @else if $key == 'border-radius' {
-							.radius-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						} @else if $key == 'box-shadow' {
-							.shadow-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						} @else {
-							.#{$key}-#{$breakpoint}-#{$nestKey} {
-								#{$key}: #{$nestVal};
-							}
-						}
-					}
+		@each $value, $key in map-get($map, 'values') {
+			@if ($prefix) {
+				.#{$prefix}-#{$value} {
+					#{$propertyName}: #{$key};
 				}
 			} @else {
-				@each $nestKey, $nestVal in $val {
-					@if $key == 'display' {
-						.d-#{$nestKey} {
-							#{$key}: #{$nestVal};
-						}
-					} @else if $key == 'direction' {
-						.flex-direction-#{$nestKey} {
-							#{$key}: #{$nestVal};
-						}
-					} @else if $key == 'grow' {
-						.flex-grow-#{$nestKey} {
-							flex-#{$key}: #{$nestVal};
-						}
-					} @else if $key == 'width' {
-						.w-#{$nestKey} {
-							#{$key}: #{$nestVal};
-						}
-					} @else if $key == 'height' {
-						.h-#{$nestKey} {
-							#{$key}: #{$nestVal};
-						}
-					} @else if $key == 'border-radius' {
-						.radius-#{$nestKey} {
-							#{$key}: #{$nestVal};
-						}
-					} @else if $key == 'box-shadow' {
-						.shadow-#{$nestKey} {
-							#{$key}: #{$nestVal};
-						}
-					} @else {
-						.#{$key}-#{$nestKey} {
-							#{$key}: #{$nestVal};
+				.#{$propertyName}-#{$value} {
+					#{$propertyName}: #{$key};
+				}
+			}
+
+			@if ($responsive) {
+				@each $breakpoint, $breakpointVal in $grid-breakpoints {
+					@if $breakpoint != 'xs' {
+						@include mq($breakpoint) {
+							@if ($prefix) {
+								.#{$prefix}-#{$breakpoint}-#{$value} {
+									#{$propertyName}: #{$key};
+								}
+							} @else {
+								.#{$propertyName}-#{$breakpoint}-#{$value} {
+									#{$propertyName}: #{$key};
+								}
+							}
 						}
 					}
 				}
@@ -87,4 +36,23 @@ $breakpointVal: 1400,
 	}
 }
 
-@include utilities($utilities);
+@include createClasses(
+	$align-content,
+	$align-items,
+	$align-self,
+	$border-radius,
+	$box-shadow,
+	$direction,
+	$display,
+	$grow,
+	$height,
+	$justify-content,
+	$order,
+	$text-alignment,
+	$width,
+	$wrap,
+	$font-weight,
+	$text-decoration,
+	$text-transform,
+	$font-style
+);
