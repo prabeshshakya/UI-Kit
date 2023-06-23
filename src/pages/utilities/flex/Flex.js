@@ -6,7 +6,7 @@ import Direction from './Direction';
 import JustifyContent from './JustifyContent';
 import Order from './Order';
 import Sidebar from './Sidebar';
-import { Syntax } from '../../../components/common/syntax-highlighter';
+import { Syntax } from '../../../docs/syntax-highlighter';
 import Wrap from './Wrap';
 
 const Flex = () => {

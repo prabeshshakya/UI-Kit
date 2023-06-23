@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Syntax } from '../../../components/common/syntax-highlighter';
+import { Syntax } from '../../../docs/syntax-highlighter';
 
 const Direction = () => {
 	const code = `

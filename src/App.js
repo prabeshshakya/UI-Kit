@@ -4,8 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './docs/docs.scss';
 
 import MainRouter from './routes';
-import Nav from './components/navbar';
-import Sidebar from './components/sidebar/Sidebar';
+import Nav from './docs/navbar';
+import Sidebar from './docs/sidebar/Sidebar';
 
 const App = () => {
 	return (

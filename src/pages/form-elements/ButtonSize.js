@@ -1,7 +1,7 @@
-import React from "react";
-import { Syntax } from "../../common/syntax-highlighter";
+import React from 'react';
+import { Syntax } from '../../docs/syntax-highlighter';
 
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const ButtonSize = () => {
 	const code = `<div>
@@ -14,10 +14,13 @@ const ButtonSize = () => {
 </div>`;
 
 	return (
-		<div className="doc-container">
+		<div className='doc-container'>
 			<h4>Button Sizes</h4>
-			<p>There are several modifier classes that will apply different sizes to a button</p>
-			<table className="ui-html-table mt-4x mb-8x">
+			<p>
+				There are several modifier classes that will apply different sizes to a
+				button
+			</p>
+			<table className='ui-html-table mt-4x mb-8x'>
 				<thead>
 					<tr>
 						<th>Class</th>
@@ -42,12 +45,13 @@ const ButtonSize = () => {
 							<code>.btn--block</code>
 						</td>
 						<td>
-							Will apply <code>width: 100%</code> so that it would cover all the space available.
+							Will apply <code>width: 100%</code> so that it would cover all the
+							space available.
 						</td>
 					</tr>
 				</tbody>
 			</table>
-			<div className="usage-markup-preview">
+			<div className='usage-markup-preview'>
 				<Tabs>
 					<TabList>
 						<Tab>Preview</Tab>
@@ -55,21 +59,29 @@ const ButtonSize = () => {
 					</TabList>
 
 					<TabPanel>
-						<div className="preview-container">
+						<div className='preview-container'>
 							<div>
-								<button className="btn btn--primary btn--large m-2x">Large Button</button>
-								<button className="btn btn--primary btn--small m-2x">Small Button</button>
+								<button className='btn btn--primary btn--large m-2x'>
+									Large Button
+								</button>
+								<button className='btn btn--primary btn--small m-2x'>
+									Small Button
+								</button>
 							</div>
 							<div>
-								<button className="btn btn--error btn--block m-2x">Block Button</button>
-								<button className="btn btn--outlined--error btn--block m-2x">Block Button</button>
+								<button className='btn btn--error btn--block m-2x'>
+									Block Button
+								</button>
+								<button className='btn btn--outlined--error btn--block m-2x'>
+									Block Button
+								</button>
 							</div>
 						</div>
 					</TabPanel>
 					<TabPanel>
-						<div className="preview-container">
-							<div className="d-flex">
-								<div className="code-preview">
+						<div className='preview-container'>
+							<div className='d-flex'>
+								<div className='code-preview'>
 									<Syntax>{code}</Syntax>
 								</div>
 							</div>

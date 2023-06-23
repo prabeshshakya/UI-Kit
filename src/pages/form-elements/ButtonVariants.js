@@ -1,7 +1,7 @@
-import React from "react";
-import { Syntax } from "../../common/syntax-highlighter";
+import React from 'react';
+import { Syntax } from '../../docs/syntax-highlighter';
 
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const ButtonDefault = () => {
 	const code = `<div>
@@ -36,10 +36,13 @@ const ButtonDefault = () => {
 </div>`;
 
 	return (
-		<div className="doc-container">
+		<div className='doc-container'>
 			<h4>Button Variants</h4>
-			<p>There are several modifier classes that will apply different look to the buttons.</p>
-			<table className="ui-html-table mt-4x mb-8x">
+			<p>
+				There are several modifier classes that will apply different look to the
+				buttons.
+			</p>
+			<table className='ui-html-table mt-4x mb-8x'>
 				<thead>
 					<tr>
 						<th>Class</th>
@@ -164,7 +167,7 @@ const ButtonDefault = () => {
 					</tr>
 				</tbody>
 			</table>
-			<div className="usage-markup-preview">
+			<div className='usage-markup-preview'>
 				<Tabs>
 					<TabList>
 						<Tab>Preview</Tab>
@@ -172,48 +175,82 @@ const ButtonDefault = () => {
 					</TabList>
 
 					<TabPanel>
-						<div className="preview-container">
+						<div className='preview-container'>
 							<div>
 								<div>
-									<button className="btn btn--primary m-2x">Primary Button</button>
-									<button className="btn btn--outlined--primary m-2x">Primary Outlined Button</button>
-									<button className="btn btn--text--primary m-2x">Primary Text Button</button>
+									<button className='btn btn--primary m-2x'>
+										Primary Button
+									</button>
+									<button className='btn btn--outlined--primary m-2x'>
+										Primary Outlined Button
+									</button>
+									<button className='btn btn--text--primary m-2x'>
+										Primary Text Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--secondary m-2x">Secondary Button</button>
-									<button className="btn btn--outlined--secondary m-2x">Secondary Outlined Button</button>
-									<button className="btn btn--text--secondary m-2x">Secondary Text Button</button>
+									<button className='btn btn--secondary m-2x'>
+										Secondary Button
+									</button>
+									<button className='btn btn--outlined--secondary m-2x'>
+										Secondary Outlined Button
+									</button>
+									<button className='btn btn--text--secondary m-2x'>
+										Secondary Text Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--error m-2x">Error Button</button>
-									<button className="btn btn--outlined--error m-2x">Error Outlined Button</button>
-									<button className="btn btn--text--error m-2x">Error Text Button</button>
+									<button className='btn btn--error m-2x'>Error Button</button>
+									<button className='btn btn--outlined--error m-2x'>
+										Error Outlined Button
+									</button>
+									<button className='btn btn--text--error m-2x'>
+										Error Text Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--warning m-2x">Warning Button</button>
-									<button className="btn btn--outlined--warning m-2x">Warning Outlined Button</button>
-									<button className="btn btn--text--warning m-2x">Warning Text Button</button>
+									<button className='btn btn--warning m-2x'>
+										Warning Button
+									</button>
+									<button className='btn btn--outlined--warning m-2x'>
+										Warning Outlined Button
+									</button>
+									<button className='btn btn--text--warning m-2x'>
+										Warning Text Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--warning-alt m-2x">Warning Alt Button</button>
-									<button className="btn btn--outlined--warning-alt m-2x">Warning Alt Outlined Button</button>
-									<button className="btn btn--text--warning-alt m-2x">Warning Alt Text Button</button>
+									<button className='btn btn--warning-alt m-2x'>
+										Warning Alt Button
+									</button>
+									<button className='btn btn--outlined--warning-alt m-2x'>
+										Warning Alt Outlined Button
+									</button>
+									<button className='btn btn--text--warning-alt m-2x'>
+										Warning Alt Text Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--grey m-2x">Grey Button</button>
-									<button className="btn btn--outlined--grey m-2x">Grey Outlined Button</button>
-									<button className="btn btn--text--grey m-2x">Grey Text Button</button>
+									<button className='btn btn--grey m-2x'>Grey Button</button>
+									<button className='btn btn--outlined--grey m-2x'>
+										Grey Outlined Button
+									</button>
+									<button className='btn btn--text--grey m-2x'>
+										Grey Text Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--grey btn--rounded m-2x">Grey Button</button>
+									<button className='btn btn--grey btn--rounded m-2x'>
+										Grey Button
+									</button>
 								</div>
 							</div>
 						</div>
 					</TabPanel>
 					<TabPanel>
-						<div className="preview-container">
-							<div className="d-flex">
-								<div className="code-preview">
+						<div className='preview-container'>
+							<div className='d-flex'>
+								<div className='code-preview'>
 									<Syntax>{code}</Syntax>
 								</div>
 							</div>
