@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import { Syntax } from '../../../components/common/syntax-highlighter';
+import { Syntax } from '../../../docs/syntax-highlighter';
 
 const Gettingstarted = () => {
 	const code = `$container-max-widths {

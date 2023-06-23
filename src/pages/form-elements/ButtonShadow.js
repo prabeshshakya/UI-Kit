@@ -1,7 +1,7 @@
-import React from "react";
-import { Syntax } from "../../common/syntax-highlighter";
+import React from 'react';
+import { Syntax } from '../../docs/syntax-highlighter';
 
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const ButtonDefault = () => {
 	const code = `<button class="btn btn--primary btn--shadowed--primary m-2x">Primary Button</button>
@@ -11,10 +11,13 @@ const ButtonDefault = () => {
 <button class="btn btn--warning-alt btn--shadowed--warning-alt m-2x">Primary Button</button>
 <button class="btn btn--grey btn--shadowed--grey m-2x">Primary Button</button>`;
 	return (
-		<div className="doc-container">
+		<div className='doc-container'>
 			<h4>Button Shadow</h4>
-			<p>This modifier will add shadow to buttons and it has color variant same as the color.</p>
-			<table className="ui-html-table mt-4x mb-8x">
+			<p>
+				This modifier will add shadow to buttons and it has color variant same
+				as the color.
+			</p>
+			<table className='ui-html-table mt-4x mb-8x'>
 				<thead>
 					<tr>
 						<th>Class</th>
@@ -60,7 +63,7 @@ const ButtonDefault = () => {
 					</tr>
 				</tbody>
 			</table>
-			<div className="usage-markup-preview">
+			<div className='usage-markup-preview'>
 				<Tabs>
 					<TabList>
 						<Tab>Preview</Tab>
@@ -68,33 +71,45 @@ const ButtonDefault = () => {
 					</TabList>
 
 					<TabPanel>
-						<div className="preview-container">
+						<div className='preview-container'>
 							<div>
 								<div>
-									<button className="btn btn--primary btn--shadowed--primary m-2x">Primary Button</button>
+									<button className='btn btn--primary btn--shadowed--primary m-2x'>
+										Primary Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--secondary btn--shadowed--secondary m-2x">Secondary Button</button>
+									<button className='btn btn--secondary btn--shadowed--secondary m-2x'>
+										Secondary Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--error btn--shadowed--error m-2x">Error Button</button>
+									<button className='btn btn--error btn--shadowed--error m-2x'>
+										Error Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--warning btn--shadowed--warning m-2x">Warning Button</button>
+									<button className='btn btn--warning btn--shadowed--warning m-2x'>
+										Warning Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--warning-alt btn--shadowed--warning-alt m-2x">Warning Alt Button</button>
+									<button className='btn btn--warning-alt btn--shadowed--warning-alt m-2x'>
+										Warning Alt Button
+									</button>
 								</div>
 								<div>
-									<button className="btn btn--grey btn--shadowed--grey m-2x">Grey Button</button>
+									<button className='btn btn--grey btn--shadowed--grey m-2x'>
+										Grey Button
+									</button>
 								</div>
 							</div>
 						</div>
 					</TabPanel>
 					<TabPanel>
-						<div className="preview-container">
-							<div className="d-flex">
-								<div className="code-preview">
+						<div className='preview-container'>
+							<div className='d-flex'>
+								<div className='code-preview'>
 									<Syntax>{code}</Syntax>
 								</div>
 							</div>

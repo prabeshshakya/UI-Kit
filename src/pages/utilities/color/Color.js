@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
-import { Syntax } from '../../../components/common/syntax-highlighter';
+import { Syntax } from '../../../docs/syntax-highlighter';
 
 const Color = () => {
 	const colorMap = `

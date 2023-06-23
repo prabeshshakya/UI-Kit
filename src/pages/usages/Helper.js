@@ -1,5 +1,5 @@
 import React from 'react';
-import { Syntax } from '../../components/common/syntax-highlighter';
+import { Syntax } from '../../docs/syntax-highlighter';
 
 const Responsive = () => {
 	const displayFlex = `
