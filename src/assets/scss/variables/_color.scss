@@ -67,3 +67,5 @@ $theme-colors: (
 	'secondary': $secondary,
 	'danger': getColor('danger.base'),
 );
+
+$border-color: getColor('grey.3');

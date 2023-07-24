@@ -1,0 +1,65 @@
+.input-group{
+    @include m('default'){
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include m('inline'){
+        display: flex;
+        align-items: center;
+    }
+
+    @include e(icon){
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 37px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include m(right){
+            right: 0;
+        }
+
+        @include m(left){
+            left: 0;
+        }
+    }
+}
+
+.form-control{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid $border-color;
+    transition: all 0.2s linear;
+
+    @include m(error){
+        border-color: getColor('danger.base');
+    }
+
+    &:focus{
+        border: 1px solid $primary;
+    }
+}
+
+.form-label{
+    font-weight: 500;
+}
+
+.form-icon{
+    position: relative;
+    display: inline-block;
+
+    @include m(right){
+        .form-control{
+            padding-right: 44px !important;
+        }
+    }
+    @include m(left){
+        .form-control{
+            padding-left: 44px !important;
+        }
+    }
+}
