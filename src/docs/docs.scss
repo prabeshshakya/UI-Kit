@@ -5,8 +5,10 @@
 @import "tab";
 @import "guide";
 @import "navbar";
+@import "responsive";
 
 .container {
+  max-width: 1440px;
   max-width: 1440px;
 }
 
@@ -18,7 +20,17 @@
   padding-top: getSpacing("11x");
   background-color: transparent;
   overflow-y: auto;
+  height: calc(100vh - 70px);
+  position: sticky;
+  top: 70px;
+  padding-top: getSpacing("11x");
+  background-color: transparent;
+  overflow-y: auto;
 
+  @include m("right") {
+    @extend .sidebar;
+    top: 70px;
+  }
   @include m("right") {
     @extend .sidebar;
     top: 70px;
@@ -26,6 +38,8 @@
 }
 
 .lead-text {
+  font-size: 20px;
+  margin: 6px 0;
   font-size: 20px;
   margin: 6px 0;
 }
@@ -154,7 +168,6 @@ code:not(pre > code) {
   width: 100%;
   margin: 0;
   position: relative;
-  margin-bottom: 1rem;
   pre {
     padding: getSpacing("5x") !important;
     overflow-y: hidden;

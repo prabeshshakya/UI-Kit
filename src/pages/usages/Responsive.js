@@ -1,110 +1,232 @@
-import React from 'react';
-import { Syntax } from '../../docs/syntax-highlighter';
+import { Syntax } from "../../docs/syntax-highlighter";
 
+const responsiveMixinDef = `
+  // Available breakpoints
+  $grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+  ) !default;
+
+
+  // Media query with min width
+  @mixin mq($mq-breakpoint, $mq-breakpoints: $grid-breakpoints) {
+    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+      $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+    }
+
+    @if ($generate-responsive-classes) {
+      @media screen and (min-width: #{$mq-breakpoint}) {
+        @content;
+      }
+    }
+  }
+
+  // Media query with max width
+  @mixin mqmax($mq-breakpoint, $mq-breakpoints: $grid-breakpoints) {
+    @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+      $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint) - 1px;
+    }
+
+    @if ($generate-responsive-classes) {
+      @media screen and (max-width: #{$mq-breakpoint}) {
+        @content;
+      }
+    }
+  }
+`;
+
+const mqExample = `
+  .mobile-first-example::before {
+    content: "Default rule";
+    @include mq(map-get($grid-breakpoints, sm)) {
+      content: "min-width: 576px";
+    }
+    @include mq(map-get($grid-breakpoints, md)) {
+      content: "min-width: 768px";
+    }
+    @include mq(map-get($grid-breakpoints, lg)) {
+      content: "min-width: 992px";
+    }
+    // usage with arbitrary values
+    @include mq(1024px) {
+      content: "min-width: 1024px";
+    }
+    @include mq(map-get($grid-breakpoints, xl)) {
+      content: "min-width: 1200px";
+    }
+    @include mq(map-get($grid-breakpoints, xxl)) {
+      content: "min-width: 1400px";
+    }
+  }
+`;
+
+const mqmaxExample = `
+.non-mobile-first-example::before {
+  content: "Default rule";
+  @include mqmax(map-get($grid-breakpoints, xxl)) {
+    content: "max-width: 1400px";
+  }
+  @include mqmax(map-get($grid-breakpoints, xl)) {
+    content: "max-width: 1200px";
+  }
+  // usage with arbitrary values
+  @include mqmax(1024px) {
+    content: "max-width: 1024px";
+  }
+  @include mqmax(map-get($grid-breakpoints, lg)) {
+    content: "max-width: 992px";
+  }
+  @include mqmax(map-get($grid-breakpoints, md)) {
+    content: "max-width: 768px";
+  }
+  @include mqmax(map-get($grid-breakpoints, sm)) {
+    content: "max-width: 576px";
+  }
+
+  @include mqmax(map-get($grid-breakpoints, xs)) {
+    content: "max-width: 0";
+  }
+}`;
+
+// const
 const Responsive = () => {
-	const cssUsages = `
-  @mixin mq($break) {
-    @if $break== "xs" {
-      //lowest breakpoint value
-      @content;
-    } @else if $break== "sm" {
-      // phone
-      @media (min-width: $sm-device) {
-        @content;
-      }
-    } @else if $break== "md" {
-      // tablet
-      @media (min-width: $md-device) {
-        @content;
-      }
-    } @else if $break== "lg" {
-      // laptop and desktop
-      @media (min-width: $lg-device) {
-        @content;
-      }
-    } @else if $break== "xl" {
-      // High res desktop and TVs
-      @media (min-width: $xl-device) {
-        @content;
-      }
-    } @else {
-      @error "No value could be retrieved for '#{$break}'";
-    }
-  }
-    `;
+  return (
+    <div className="page">
+      <div className="title-area">
+        <h2 className="page__title">Responsive</h2>
+        <p className="lead-text">
+          We use media queries for making our layout and components responsive
+          according to viewport or browser width. Here are some examples of the
+          usage of media queries with the mixins provided.
+        </p>
+        {/* mobile first example with min-width */}
+        <div className="content-block">
+          <h4>Mobile first approach</h4>
+          <p className="page__brief">
+            This approach uses <b className="fw-600">min-width</b> media
+            condition. For mobile first approach{" "}
+            <b className="fw-600">mq($break)</b> mixin is provided. The usage of
+            the mixin and the generated output is show below. Here{" "}
+            <code>$break</code> is a required argument where RWD breakpoint
+            values should be provided.
+          </p>
 
-	const mqMaxUsages = `
-  @mixin mqmax($break, $custom: false) {
-    @if $custom==true {
-      @media (max-width: $break + "px") {
-        @content;
-      }
-    } @else {
-      @if $break== "xs" {
-        //lowest breakpoint value
-        @content;
-      } @else if $break== "sm" {
-        // phone
-        @media (max-width: $sm-device) {
-          @content;
-        }
-      } @else if $break== "md" {
-        // tablet
-        @media (max-width: $md-device) {
-          @content;
-        }
-      } @else if $break== "lg" {
-        // laptop and desktop
-        @media (max-width: $lg-device) {
-          @content;
-        }
-      } @else if $break== "xl" {
-        // High res desktop and TVs
-        @media (max-width: $xl-device) {
-          @content;
-        }
-      } @else {
-        @error "No value could be retrieved for '#{$break}'";
-      }
-    }
-  }
-    `;
-
-	return (
-		<div className='page'>
-			<div className='title-area'>
-				<h2 className='page__title'>Responsive</h2>
-				<p className='lead-text'>
-					Here are few responsive mixins, which will help us building responsive
-					layout across devices.
-				</p>
-				<div className='content-block'>
-					<h4>mq()</h4>
-					<p className='page__brief'>
-						This mixins is used for mobile first approach.
-					</p>
-					<p className='page__brief'>
-						<strong>Syntax: mq($break)</strong>
-					</p>
-					<p className='page__brief'>
-						Here <code>$break</code> is a required argument where RWD breakpoint
-						values should be provided.
-					</p>
-				</div>
-				{/* <div className="doc-container">
-          <h4>CSS Usages</h4>
-          <div className="code-preview">
-            <Syntax language="scss">{cssUsages}</Syntax>
+          <div className="row mb-4x">
+            <div className="col-6">
+              <p className="page_brief">
+                <b className="fw-500">Mixin input:</b>
+                <br />
+                <code>.item{`{`}</code>
+                <br />
+                <code>&nbsp;&nbsp;@include mq(992px){`{`}</code>
+                <br />
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
+                <br />
+                <code>&nbsp;&nbsp;{`}`}</code>
+                <br />
+                <code>{`}`}</code>
+              </p>
+            </div>
+            <div className="col-6">
+              <p className="page_brief">
+                <b className="fw-500">Mixin output:</b>
+                <br />
+                <code>.item{`{`}</code>
+                <br />
+                <code>
+                  &nbsp;&nbsp;@media screen and (min-width:992px){`{`}
+                </code>
+                <br />
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
+                <br />
+                <code>&nbsp;&nbsp;{`}`}</code>
+                <br />
+                <code>{`}`}</code>
+              </p>
+            </div>
           </div>
-        </div> */}
-				<blockquote className='docs-info'>
-					<strong>Note:</strong> Some of the <code>$break</code> value are
-					<code>xs, sm, md, lg, xl.</code> These will be apply for both
-					<code>mq()</code> and <code>mqmax()</code> mixin's <code>$break</code>
-					value.
-				</blockquote>
+          <h4>Example</h4>
+          <div className="example-row">
+            <p className="mb-1x">
+              <small>Resize window to view responsive effects.</small>
+            </p>
+            <div className="eg-box mobile-first-example"></div>
+          </div>
+          <div className="mb-4x">
+            <Syntax language="scss">{mqExample}</Syntax>
+          </div>
+        </div>
 
-				{/* <div className="content-block">
+        {/* non mobile first example with max-width */}
+        <div className="content-block">
+          <h4>Non-mobile first approach</h4>
+          <p className="page__brief">
+            This approach uses <b className="fw-600">max-width</b> media
+            condition. For non-mobile first approach{" "}
+            <b className="fw-600">mqmax($break)</b> mixin is provided. The usage
+            of the mixin and the generated output is show below. Here{" "}
+            <code>$break</code> is a required argument where RWD breakpoint
+            values should be provided.
+          </p>
+
+          <div className="row mb-4x">
+            <div className="col-6">
+              <p className="page_brief">
+                <b className="fw-500">Mixin input:</b>
+                <br />
+                <code>.item{`{`}</code>
+                <br />
+                <code>&nbsp;&nbsp;@include mqmax(992px){`{`}</code>
+                <br />
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
+                <br />
+                <code>&nbsp;&nbsp;{`}`}</code>
+                <br />
+                <code>{`}`}</code>
+              </p>
+            </div>
+            <div className="col-6">
+              <p className="page_brief">
+                <b className="fw-500">Mixin output:</b>
+                <br />
+                <code>.item{`{`}</code>
+                <br />
+                <code>
+                  &nbsp;&nbsp;@media screen and (max-width:992px){`{`}
+                </code>
+                <br />
+                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
+                <br />
+                <code>&nbsp;&nbsp;{`}`}</code>
+                <br />
+                <code>{`}`}</code>
+              </p>
+            </div>
+          </div>
+          <h4>Example</h4>
+          <div className="example-row">
+            <p className="mb-1x">
+              <small>Resize window to view responsive effects.</small>
+            </p>
+            <div className="eg-box non-mobile-first-example"></div>
+          </div>
+          <div className="mb-4x">
+            <Syntax language="scss">{mqmaxExample}</Syntax>
+          </div>
+        </div>
+
+        <blockquote className="docs-info">
+          <strong>Note:</strong> Some of the <code>$break</code> value are
+          <code>xs, sm, md, lg, xl.</code> These will be apply for both
+          <code>mq()</code> and <code>mqmax()</code> mixin's <code>$break</code>
+          value.
+        </blockquote>
+
+        {/* <div className="content-block">
           <h4>mqmax()</h4>
           <p className="page__brief">
             This mixins is used for desktop first approach.
@@ -120,15 +242,15 @@ const Responsive = () => {
             it will work as a breakpoint.
           </p>
         </div> */}
-				<div className='doc-container'>
-					<h4>CSS Usages</h4>
-					<div className='code-preview'>
-						<Syntax language='scss'>{mqMaxUsages}</Syntax>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+        <div className="doc-container">
+          <h4>Media query mixin</h4>
+          <div className="code-preview">
+            <Syntax language="scss">{responsiveMixinDef}</Syntax>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Responsive;
