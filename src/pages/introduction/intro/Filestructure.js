@@ -61,7 +61,7 @@ const Filestructure = () => {
             <span>
               <code>_base.scss</code>
             </span>
-            <p>
+            <p className="mt-2x">
               A base rule is applied to HTML elements using an element selector,
               a descendent selector, or a child selector, along with any
               pseudo-classes. We cannot reference any element defined here by
@@ -74,7 +74,7 @@ const Filestructure = () => {
             <span>
               <code>_index.scss</code>
             </span>
-            <p>
+            <p className="mt-2x">
               Each folder on the SMACSS architecture will have its own manifest
               partial. We import all the partials of the folder to its
               respective manifest partial. Then all manifest partials will be
@@ -85,7 +85,7 @@ const Filestructure = () => {
             <span>
               <code>_normalize.scss</code>
             </span>
-            <p>
+            <p className="mt-2x">
               Here we correct the line height in all the browsers, preventing
               adjustments of font size after orientations changes in iOS.
             </p>
@@ -99,7 +99,7 @@ const Filestructure = () => {
         <h3>
           component <div className="badge">coming soon...</div>
         </h3>
-        <p>
+        <p className="mt-2x">
           This folder contains the partials for all the components that are used
           in a project like buttons, cards, avatar and more.
         </p>
@@ -109,12 +109,14 @@ const Filestructure = () => {
               <li>
                 <code>_button.scss</code>
 
-                <p>The css for buttons are written in this partial.</p>
+                <p className="mt-2x">
+                  The css for buttons are written in this partial.
+                </p>
               </li>
               <li>
                 <code>_cards.scss</code>
 
-                <p>
+                <p className="mt-2x">
                   The design of cards varies according to projects. So there is
                   no default css for cards. The css for cards are written in
                   this partial.
@@ -123,7 +125,7 @@ const Filestructure = () => {
               <li>
                 <code>_avatar.scss</code>
 
-                <p>
+                <p className="mt-2x">
                   Avatar is the profile image of the user. To use the css for
                   avatar, class “avatar” must be added to the div. For the
                   rounded border avatar, avatar--round must be appended and for
@@ -138,25 +140,27 @@ const Filestructure = () => {
               </li>
               <li>
                 <code>_footer.scss</code>
-                <p>The css for footer of the app is written in this partial.</p>
+                <p className="mt-2x">
+                  The css for footer of the app is written in this partial.
+                </p>
               </li>
               <li>
                 <code>_index.scss</code>
-                <p>
+                <p className="mt-2x">
                   In this partial, all the other partials of the component
                   folders are imported.
                 </p>
               </li>
               <li>
                 <code>_loader.scss</code>
-                <p>
+                <p className="mt-2x">
                   Loader helps us to know if datas or the app is being loaded or
                   not. So the css for the loader is written in this partial.
                 </p>
               </li>
               <li>
                 <code>_navbar.scss</code>
-                <p>
+                <p className="mt-2x">
                   Navbar is also known as header. The css for the header is
                   written in this partial.
                 </p>
@@ -204,20 +208,20 @@ const Filestructure = () => {
         <ul>
           <li>
             <code>_index.scss</code>
-            <p>
+            <p className="mt-2x">
               Just as any other index partials, all the partials in the folder
               is imported in this file.
             </p>
           </li>
           <li>
             <code>_print.scss</code>
-            <p>
+            <p className="mt-2x">
               Codes for the boilerplate for printing websites are written here.
             </p>
           </li>
           <li>
             <code>_state.scss</code>
-            <p>
+            <p className="mt-2x">
               A state is something that augments and overrides all other styles.
               States are used as object classes for existing elements.
             </p>
@@ -319,43 +323,47 @@ const Filestructure = () => {
         <ul>
           <li>
             <code>_breakpoint.scss</code>
-            <p>
+            <p className="mt-2x">
               In this partial, only the variables for the breakpoints of
               different screen sizes are defined.
             </p>
           </li>
           <li>
             <code> _color.scss</code>
-            <p>The variables of the colors are defined in this partial.</p>
+            <p className="mt-2x">
+              The variables of the colors are defined in this partial.
+            </p>
           </li>
           <li>
             <code>_config.scss</code>
-            <p>Here you can define the variables, map, fonts and paths.</p>
+            <p className="mt-2x">
+              Here you can define the variables, map, fonts and paths.
+            </p>
           </li>
           <li>
             <code>_easing.scss</code>
-            <p>
+            <p className="mt-2x">
               In this partial, you can define the transition property for the
               transitions that are necessary for the project.
             </p>
           </li>
           <li>
             <code>_fonts.scss</code>
-            <p>
+            <p className="mt-2x">
               Here you can define the variables for font paths, font family,
               font sizes, font weight.
             </p>
           </li>
           <li>
             <code>_grid.scss</code>
-            <p>
+            <p className="mt-2x">
               In this partial, you can set the total number of grids, grid
               class, gutter width, grid breakpoints and container max widths.
             </p>
           </li>
           <li>
             <code>_index.scss</code>
-            <p>
+            <p className="mt-2x">
               Like in the index partial of the components folder, the index
               partial in the variable folder is also used to import other SASS
               partials in the variables folder.
@@ -363,7 +371,9 @@ const Filestructure = () => {
           </li>
           <li>
             <code>_spacing.scss</code>
-            <p>Codes for the property of flex are defined in this partial.</p>
+            <p className="mt-2x">
+              Codes for the property of flex are defined in this partial.
+            </p>
           </li>
         </ul>
       </div>
@@ -375,7 +385,7 @@ const Filestructure = () => {
         <ul>
           <li>
             <code> _shame.scss</code>
-            <p>
+            <p className="mt-2x">
               The codes here are written in a rush to meet the deadline or as a
               hack. There should be proper documentation for these codes as well
               and the codes should be cleaned up in spare time.
@@ -389,7 +399,9 @@ const Filestructure = () => {
         <ul>
           <li>
             <code>_style.scss</code>
-            <p>Here all the partials are imported from other folders.</p>
+            <p className="mt-2x">
+              Here all the partials are imported from other folders.
+            </p>
           </li>
         </ul>
       </div>
