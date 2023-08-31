@@ -3,8 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import AccordionDefault from "./pages/accordion/AccordionDefault";
 import Button from "./pages/button/Button";
 import FormElements from "./pages/form-elements/FormElements";
-import Gettingstarted from "./pages/introduction/gettingStarted/Gettingstarted";
-import Toolingsetup from "./pages/introduction/toolingSetup/Toolingsetup";
+// import Gettingstarted from "./pages/introduction/gettingStarted/Gettingstarted";
+// import Toolingsetup from "./pages/introduction/toolingSetup/Toolingsetup";
 import Typography from "./pages/introduction/typography/Typography";
 import Introduction from "./pages/introduction/intro/Introduction";
 import Breakpoints from "./pages/layout/breakpoint/Breakpoint";
@@ -27,9 +27,9 @@ function AppRouter() {
       <Route path="/" exact component={Introduction} />
       <Route path="/button" component={Button} />
       <Route path="/forms" component={FormElements} />
-      <Route path="/getting-started" component={Gettingstarted} />
+      {/* <Route path="/getting-started" component={Gettingstarted} /> */}
       <Route path="/typography" component={Typography} />
-      <Route path="/tooling-setup" component={Toolingsetup} />
+      {/* <Route path="/tooling-setup" component={Toolingsetup} /> */}
       <Route path="/accordion" component={AccordionDefault} />
       <Route path="/colors" component={Color} />
       <Route path="/display" component={Display} />

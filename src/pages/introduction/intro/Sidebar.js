@@ -14,7 +14,7 @@ const Sidebar = () => {
         <div className="menu-group__title">on this page</div>
         <NavHashLink
           smooth
-          to="/#introduction"
+          to="/#getstarted"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
           scroll={(el) => scrollWithOffset(el)}
@@ -24,7 +24,7 @@ const Sidebar = () => {
 
         <NavHashLink
           smooth
-          to="/#sass"
+          to="/#template"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
           scroll={(el) => scrollWithOffset(el)}

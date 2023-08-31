@@ -5,7 +5,7 @@ const LeftSidebar = () => {
   return (
     <aside className="sidebar">
       <div className="menu-group">
-        <h4 className="menu-group__title">General</h4>
+        <h4 className="menu-group__title">Getting Started</h4>
         <NavLink
           to="/"
           className="menu-group__nodes__single"
@@ -14,20 +14,20 @@ const LeftSidebar = () => {
           Introduction
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/getting-started"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
         >
           Getting Started
-        </NavLink>
-        <NavLink
+        </NavLink> */}
+        {/* <NavLink
           to="/tooling-setup"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
         >
           Tooling setup
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/typography"
           className="menu-group__nodes__single"
