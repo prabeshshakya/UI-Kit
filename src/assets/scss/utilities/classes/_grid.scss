@@ -129,8 +129,10 @@
 						@include make-col($i, $columns);
 					}
 				} @else {
-					.col-#{$breakpointName}-#{$i} {
-						@include make-col($i, $columns);
+					@include mq($breakpointName) {
+						.col-#{$breakpointName}-#{$i} {
+							@include make-col($i, $columns);
+						}
 					}
 				}
 			}
