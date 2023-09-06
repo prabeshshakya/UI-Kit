@@ -1,8 +1,11 @@
 import React from "react";
 
-import Filestructure from "./Filestructure";
+import Folderstructure from "./Folderstructure";
+// import Filestructure from "./Filestructure";
 import Sidebar from "./Sidebar";
 import { Syntax } from "../../../docs/syntax-highlighter";
+import { Link } from "react-router-dom";
+
 // import { Link } from "react-router-dom";
 
 const Intro = () => {
@@ -45,140 +48,15 @@ const Intro = () => {
       <div className="row">
         <div className="col-10">
           <div className="page">
-            {/* <div className="content-block">
-              <h2 id="introduction" className="page__title">
-                Introduction
-              </h2>
-              <p className="lead-text">Sass Starter kit intro.</p>
-              <p>
-                A Syntactically Awesome Stylesheets (Sass) Starter Kit is a
-                collection of resources, templates, and tools designed to help
-                developers get started with using Sass to enhance their CSS
-                workflow. This type of starter kit provides a foundation for
-                creating and managing styles using the Sass preprocessor, which
-                offers various features and benefits compared to writing raw
-                CSS. Here's what you might find in a Sass Starter Kit:
-              </p>
-
-              <ol type="1">
-                <li>
-                  <b>Sass Compiler Setup:</b> Instructions on setting up a Sass
-                  compiler, such as the Dart-based Sass compiler, which
-                  translates your Sass code into standard CSS.
-                </li>
-                <li>
-                  <b>File Structure:</b> Guidance on how to structure your Sass
-                  project, including creating folders for partials (modular
-                  style components) and main Sass files.
-                </li>
-                <li>
-                  <b>Basic Sass Syntax:</b> An introduction to Sass syntax,
-                  including variables, nesting, mixins, functions, and more.
-                </li>
-                <li>
-                  <b>Sass Variables and Mixins:</b> Pre-defined variables and
-                  mixins that you can use to streamline your styling tasks and
-                  promote consistent design choices.
-                </li>
-                <li>
-                  <b>Styling Examples:</b> Sample Sass code snippets
-                  demonstrating how to create common UI elements, layouts, and
-                  responsive designs using Sass features.
-                </li>
-                <li>
-                  <b>Partials:</b> Examples of how to break down your styles
-                  into smaller partial files and use the @import directive to
-                  organize and manage your code.
-                </li>
-                <li>
-                  <b>Mixins Library:</b> A library of reusable mixins that cover
-                  various styling needs, such as creating gradients,
-                  vendor-prefixing, and handling media queries.
-                </li>
-                <li>
-                  <b>Functions and Operators:</b> Demonstrations of how to use
-                  Sass functions and operators for calculations, color
-                  manipulation, and other dynamic styling.
-                </li>
-                <li>
-                  <b>Integration with Build Tools:</b> Information on
-                  integrating Sass with build tools like Webpack, Gulp, or Grunt
-                  to automate the compilation process and enhance your
-                  development workflow.
-                </li>
-                <li>
-                  <b>Debugging and Troubleshooting:</b> Tips for debugging Sass
-                  code, understanding error messages, and resolving common
-                  issues.
-                </li>
-                <li>
-                  <b>Deployment and Output Styles:</b> Guidance on configuring
-                  the Sass compiler to generate different output styles, such as
-                  nested, compact, expanded, and compressed, for production.
-                </li>
-                <li>
-                  <b>Resources and References:</b> Links to official Sass
-                  documentation, online tutorials, and additional learning
-                  resources to further develop your Sass skills.
-                </li>
-              </ol>
-              <p>
-                A Sass Starter Kit is meant to provide developers, especially
-                those who are new to Sass, with a jump-start into using the
-                preprocessor effectively. It can help streamline the learning
-                curve and provide best practices for structuring and maintaining
-                styles in a scalable and maintainable manner. As you become more
-                comfortable with Sass, you can customize and expand upon the
-                starter kit to suit your specific project requirements and
-                preferences.
-              </p>
-
-              <h2 className="title" id="sass">
-                Sass.
-              </h2>
-              <p>
-                Syntactically Awesome Stylesheets (Sass) is a scripting language
-                that serves as a powerful extension of CSS (Cascading Style
-                Sheets). It introduces various enhancements and features to make
-                working with stylesheets more efficient and maintainable. Sass
-                is used to generate standard CSS that web browsers can
-                understand, but it provides a more flexible and expressive way
-                to write and organize your styles. You can find the detailed
-                documentation of SASS in the given link
-                <Link
-                  className="ml-1x"
-                  to="https://sass-lang.com/documentation"
-                  target="_blank"
-                >
-                  sass-lang.com/documentation
-                </Link>
-              </p>
-              <p>
-                SCSS is also backward compatible. It can be used to write older
-                version CSS as well.
-              </p>
-            </div> */}
-
             <div className="content-block">
-              <h2 id="getstarted" className="page__title">
-                Get started with Starter kit
+              <h2 id="setup" className="page__title">
+                Setup
               </h2>
-              <p>
-                A Syntactically Awesome Stylesheets (Sass) Starter Kit is a
-                collection of resources, templates, and tools designed to help
-                developers get started with using Sass to enhance their CSS
-                workflow.
-              </p>
-            </div>
 
-            <div className="content-block">
-              <h2 id="tooling-setup" className="page__title">
-                Tooling setup
-              </h2>
               <p>
                 To use our build system and run our documentation locally,
-                you’ll need to install Node. Follow these steps and you should
-                be ready to rock:
+                you’ll need to install <code>Node.</code> Follow these steps and
+                you should be ready to rock:
               </p>
               <ol type="1">
                 <li>
@@ -204,8 +82,9 @@ const Intro = () => {
                   </a>
                 </li>
                 <li>
-                  Navigate to the root /UI-KIT directory and run npm install to
-                  install our local dependencies listed in package.json.
+                  Navigate to the root <code>/UI-KIT</code> directory and run
+                  <code>npm install</code> to install our local dependencies
+                  listed in package.json.
                 </li>
               </ol>
 
@@ -304,9 +183,95 @@ const Intro = () => {
               </p>
               <Syntax language="scss">{indexScss}</Syntax>
             </div>
-            <div className="content-block">
-              <Filestructure />
+
+            <div class="content-block">
+              <h3 id="download">How to install sass in new project.</h3>
+              <p>
+                To create and install a React app, you can use the official
+                Create React App tool, which simplifies the setup process.
+                Here's a step-by-step guide on how to do this:
+              </p>
             </div>
+            <div class="content-block">
+              <h4>Prerequisites:</h4>
+              <p>
+                Before you begin, make sure you have Node.js and npm (Node
+                Package Manager) installed on your system. You can download and
+                install them from the official Node.js website.
+              </p>
+              <p>Now, follow these steps to create and install a React app:</p>
+            </div>
+            <div class="content-block">
+              <h3>Step 1: Install Create React App</h3>
+              <p>
+                Open your terminal (command prompt or terminal emulator) and run
+                the following command to install Create React App globally:
+              </p>
+              <div className="code-preview">
+                <Syntax language="properties">
+                  npm install -g create-react-app
+                </Syntax>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h3>Step 2: Create a New React App</h3>
+              <p>
+                Once Create React App is installed, you can create a new React
+                app by running the following command:
+              </p>
+              <div className="code-preview">
+                <Syntax language="properties">
+                  npx create-react-app my-react-app
+                </Syntax>
+              </div>
+              <p>
+                Replace my-react-app with your desired app name. This command
+                will set up a new React project with all the necessary files and
+                dependencies.
+              </p>
+            </div>
+
+            <div class="content-block">
+              <h3>Step 3: Navigate to the Project Directory</h3>
+              <p>
+                Change your current directory to the newly created app folder:
+              </p>
+              <div className="code-preview">
+                <Syntax language="properties">cd my-react-app</Syntax>
+              </div>
+            </div>
+            <div class="content-block">
+              <h3>Step 4: Start the Development Server</h3>
+              <p>
+                To start the development server and see your React app in
+                action, run the following command:
+              </p>
+              <div className="code-preview">
+                <Syntax language="properties">npm start</Syntax>
+              </div>
+            </div>
+            <div class="content-block">
+              <h3>
+                Step 5: Clone the sass starter kit and paste src folder to the
+                new project.
+              </h3>
+            </div>
+            <div class="content-block">
+              <h3>Step 6: Import the style.scss file to App.js</h3>
+              <div className="code-preview">
+                <Syntax language="properties">
+                  import "./docs/docs.scss";
+                </Syntax>
+              </div>
+            </div>
+
+            <div className="content-block">
+              <Folderstructure />
+            </div>
+            {/* <div className="content-block">
+              <Filestructure />
+            </div> */}
           </div>
         </div>
         <div className="col-2">

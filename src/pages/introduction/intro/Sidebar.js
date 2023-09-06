@@ -14,25 +14,34 @@ const Sidebar = () => {
         <div className="menu-group__title">on this page</div>
         <NavHashLink
           smooth
-          to="/#getstarted"
+          to="/#setup"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
           scroll={(el) => scrollWithOffset(el)}
         >
-          Introduction
+          Setup
         </NavHashLink>
 
         <NavHashLink
           smooth
-          to="/#template"
+          to="/#structure"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
           scroll={(el) => scrollWithOffset(el)}
         >
-          Sass
+          Structure
         </NavHashLink>
 
         <NavHashLink
+          smooth
+          to="/#folderstructure"
+          className="menu-group__nodes__single"
+          activeClassName="menu-group__nodes__single--active"
+          scroll={(el) => scrollWithOffset(el)}
+        >
+          Folder Structure
+        </NavHashLink>
+        {/* <NavHashLink
           smooth
           to="/#filestructure"
           className="menu-group__nodes__single"
@@ -40,7 +49,7 @@ const Sidebar = () => {
           scroll={(el) => scrollWithOffset(el)}
         >
           File Structure
-        </NavHashLink>
+        </NavHashLink> */}
       </div>
     </div>
   );

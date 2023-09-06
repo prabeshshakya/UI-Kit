@@ -11,23 +11,9 @@ const LeftSidebar = () => {
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"
         >
-          Introduction
+          Setup
         </NavLink>
 
-        {/* <NavLink
-          to="/getting-started"
-          className="menu-group__nodes__single"
-          activeClassName="menu-group__nodes__single--active"
-        >
-          Getting Started
-        </NavLink> */}
-        {/* <NavLink
-          to="/tooling-setup"
-          className="menu-group__nodes__single"
-          activeClassName="menu-group__nodes__single--active"
-        >
-          Tooling setup
-        </NavLink> */}
         <NavLink
           to="/typography"
           className="menu-group__nodes__single"
@@ -35,6 +21,19 @@ const LeftSidebar = () => {
         >
           Typography
         </NavLink>
+      </div>
+
+      <div className="menu-group">
+        <h4 className="menu-group__title">Forms</h4>
+        <div className="menu-group__nodes">
+          <NavLink
+            to="/forms"
+            className="menu-group__nodes__single"
+            activeClassName="menu-group__nodes__single--active"
+          >
+            Form Elements
+          </NavLink>
+        </div>
       </div>
 
       <div className="menu-group">
@@ -56,15 +55,6 @@ const LeftSidebar = () => {
               activeClassName="menu-group__nodes__single--active"
             >
               Button
-            </NavLink>
-          </div>
-          <div className="menu-group__nodes">
-            <NavLink
-              to="/forms"
-              className="menu-group__nodes__single"
-              activeClassName="menu-group__nodes__single--active"
-            >
-              Form Elements
             </NavLink>
           </div>
         </div>

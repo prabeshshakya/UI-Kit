@@ -103,78 +103,75 @@ const Filestructure = () => {
           This folder contains the partials for all the components that are used
           in a project like buttons, cards, avatar and more.
         </p>
+
         <ul>
           <li>
-            <ul>
-              <li>
-                <code>_button.scss</code>
+            <code>_button.scss</code>
 
-                <p className="mt-2x">
-                  The css for buttons are written in this partial.
-                </p>
-              </li>
-              <li>
-                <code>_cards.scss</code>
+            <p className="mt-2x">
+              The css for buttons are written in this partial.
+            </p>
+          </li>
+          <li>
+            <code>_cards.scss</code>
 
-                <p className="mt-2x">
-                  The design of cards varies according to projects. So there is
-                  no default css for cards. The css for cards are written in
-                  this partial.
-                </p>
-              </li>
-              <li>
-                <code>_avatar.scss</code>
+            <p className="mt-2x">
+              The design of cards varies according to projects. So there is no
+              default css for cards. The css for cards are written in this
+              partial.
+            </p>
+          </li>
+          <li>
+            <code>_avatar.scss</code>
 
-                <p className="mt-2x">
-                  Avatar is the profile image of the user. To use the css for
-                  avatar, class “avatar” must be added to the div. For the
-                  rounded border avatar, avatar--round must be appended and for
-                  smaller avatar avatar--sm must be appender.
-                </p>
-              </li>
-              <li>
-                <code>_badge.scss</code>
-              </li>
-              <li>
-                <code>_cssgrid.scss</code>
-              </li>
-              <li>
-                <code>_footer.scss</code>
-                <p className="mt-2x">
-                  The css for footer of the app is written in this partial.
-                </p>
-              </li>
-              <li>
-                <code>_index.scss</code>
-                <p className="mt-2x">
-                  In this partial, all the other partials of the component
-                  folders are imported.
-                </p>
-              </li>
-              <li>
-                <code>_loader.scss</code>
-                <p className="mt-2x">
-                  Loader helps us to know if datas or the app is being loaded or
-                  not. So the css for the loader is written in this partial.
-                </p>
-              </li>
-              <li>
-                <code>_navbar.scss</code>
-                <p className="mt-2x">
-                  Navbar is also known as header. The css for the header is
-                  written in this partial.
-                </p>
-              </li>
-              <li>
-                <code>_navigation.scss</code>
-              </li>
-              <li>
-                <code>_tabs.scss</code>
-              </li>
-              <li>
-                <code>_components.scss</code>
-              </li>
-            </ul>
+            <p className="mt-2x">
+              Avatar is the profile image of the user. To use the css for
+              avatar, class “avatar” must be added to the div. For the rounded
+              border avatar, avatar--round must be appended and for smaller
+              avatar avatar--sm must be appender.
+            </p>
+          </li>
+          <li>
+            <code>_badge.scss</code>
+          </li>
+          <li>
+            <code>_cssgrid.scss</code>
+          </li>
+          <li>
+            <code>_footer.scss</code>
+            <p className="mt-2x">
+              The css for footer of the app is written in this partial.
+            </p>
+          </li>
+          <li>
+            <code>_index.scss</code>
+            <p className="mt-2x">
+              In this partial, all the other partials of the component folders
+              are imported.
+            </p>
+          </li>
+          <li>
+            <code>_loader.scss</code>
+            <p className="mt-2x">
+              Loader helps us to know if datas or the app is being loaded or
+              not. So the css for the loader is written in this partial.
+            </p>
+          </li>
+          <li>
+            <code>_navbar.scss</code>
+            <p className="mt-2x">
+              Navbar is also known as header. The css for the header is written
+              in this partial.
+            </p>
+          </li>
+          <li>
+            <code>_navigation.scss</code>
+          </li>
+          <li>
+            <code>_tabs.scss</code>
+          </li>
+          <li>
+            <code>_components.scss</code>
           </li>
         </ul>
       </div>
