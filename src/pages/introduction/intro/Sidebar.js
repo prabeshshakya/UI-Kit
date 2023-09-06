@@ -34,6 +34,16 @@ const Sidebar = () => {
 
         <NavHashLink
           smooth
+          to="/#download"
+          className="menu-group__nodes__single"
+          activeClassName="menu-group__nodes__single--active"
+          scroll={(el) => scrollWithOffset(el)}
+        >
+          Download
+        </NavHashLink>
+
+        <NavHashLink
+          smooth
           to="/#folderstructure"
           className="menu-group__nodes__single"
           activeClassName="menu-group__nodes__single--active"

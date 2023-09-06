@@ -185,7 +185,7 @@ const Intro = () => {
             </div>
 
             <div class="content-block">
-              <h3 id="download">How to install sass in new project.</h3>
+              <h3 id="download">How to install Sass in New project.</h3>
               <p>
                 To create and install a React app, you can use the official
                 Create React App tool, which simplifies the setup process.
