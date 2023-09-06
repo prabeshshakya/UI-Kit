@@ -7,83 +7,112 @@ const Folderstructure = () => {
       <div class="content-block">
         <h3 id="folderstructure">Folder Structure</h3>
 
-        <div class="folder-preview">
-          <div className="folder">
-            src/
-            <div className="folder">
-              assets/
-              <div className="folder">images/</div>
-              <div className="folder">
-                scss/
-                <div className="folder">
-                  base/
-                  <div className="folder">__index.scss</div>
-                  <div className="folder">_base.scss</div>
-                  <div className="folder">_folder.scss</div>
-                  <div className="folder">_normalize.scss</div>
-                  <div className="folder">_typography.scss</div>
-                </div>
-                <div className="folder">
-                  components/
-                  <div className="folder">__index.scss</div>
-                </div>
-                <div className="folder">
-                  layouts/
-                  <div className="folder">__index.scss</div>
-                  <div className="folder">_footer.scss</div>
-                  <div className="folder">_header.scss</div>
-                  <div className="folder">_sidebar.scss</div>
-                </div>
-                <div className="folder">
-                  mixins/
-                  <div className="folder">__index.scss</div>
-                  <div className="folder">_bem.scss</div>
-                  <div className="folder">_font-import-util.scss</div>
-                  <div className="folder">_general.scss</div>
-                  <div className="folder">_responsive.scss</div>
-                  <div className="folder">_typography.scss</div>
-                </div>
-                <div className="folder">
-                  utilities/
-                  <div className="folder">
-                    classes/
-                    <div className="folder">__index.scss</div>
-                    <div className="folder">_colors.scss</div>
-                    <div className="folder">_grid.scss</div>
-                    <div className="folder">_spacing.scss</div>
-                    <div className="folder">_utilities.scss</div>
-                  </div>
-                  <div className="folder">
-                    functions/
-                    <div className="folder">
-                      utils/
-                      <div className="folder">__index.scss</div>
-                      <div className="folder">_deep-map-check.scss</div>
-                      <div className="folder">_deep-map-get.scss</div>
-                      <div className="folder">_sdeep-map-merge.scss</div>
-                      <div className="folder">_get.scss</div>
-                      <div className="folder">_str-explode.scss</div>
-                    </div>
-                    <div className="folder">__index.scss</div>
-                    <div className="folder">_helper/scss</div>
-                    <div className="folder">_unit-utils</div>
-                  </div>
-                  <div className="folder">__index.scss</div>
-                </div>
-                <div className="folder">
-                  variables/
-                  <div className="folder">__index.scss</div>
-                  <div className="folder">_color.scss</div>
-                  <div className="folder">_config.scss</div>
-                  <div className="folder">_easing.scss</div>
-                  <div className="folder">_grid.scss</div>
-                  <div className="folder">_spacing.scss</div>
-                  <div className="folder">_typography.scss</div>
-                  <div className="folder">_utilities.scss</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="folder-structure">
+          <ul className="tree">
+            <li>src/</li>
+            <li className="has-subtree">
+              <ul className="tree">
+                <li>assets/</li>
+                <li className="has-subtree">
+                  <ul className="tree">
+                    <li>images/</li>
+                    <li>scss/</li>
+
+                    <li className="has-subtree">
+                      <ul className="tree">
+                        <li>base/</li>
+
+                        <li className="has-subtree">
+                          <ul className="tree">
+                            <li>__index.scss</li>
+                            <li>_base.scss</li>
+                            <li>_folder.scss</li>
+                            <li>_normalize.scss</li>
+                            <li>_typography.scss</li>
+                          </ul>
+                        </li>
+                        <li>components/</li>
+                        <li className="has-subtree">
+                          <ul className="tree">
+                            <li>__index.scss</li>
+                          </ul>
+                        </li>
+                        <li>layouts/</li>
+                        <li className="has-subtree">
+                          <ul className="tree">
+                            <li>__index.scss</li>
+                            <li>_footer.scss</li>
+                            <li>_header.scss</li>
+                            <li>_sidebar.scss</li>
+                          </ul>
+                        </li>
+                        <li>mixins/</li>
+                        <li className="has-subtree">
+                          <ul className="tree">
+                            <li>__index.scss</li>
+                            <li>_bem.scss</li>
+                            <li>_font-import-util.scss</li>
+                            <li>_general.scss</li>
+                            <li>_responsive.scss</li>
+                            <li>_typography.scss</li>
+                          </ul>
+                        </li>
+                        <li>utilities/</li>
+                        <li className="has-subtree">
+                          <ul className="tree">
+                            <li>classes/</li>
+                            <li className="has-subtree">
+                              <ul className="tree">
+                                <li>__index.scss</li>
+                                <li>_bem.scss</li>
+                                <li>_font-import-util.scss</li>
+                                <li>_general.scss</li>
+                                <li>_responsive.scss</li>
+                                <li>_typography.scss</li>
+                              </ul>
+                            </li>
+                            <li>functions/</li>
+                            <li className="has-subtree">
+                              <ul className="tree">
+                                <li>utils/</li>
+                                <li className="has-subtree">
+                                  <ul className="tree">
+                                    <li>__index.scss</li>
+                                    <li>_deep-map-check.scss</li>
+                                    <li>_deep-map-get.scss</li>
+                                    <li>_sdeep-map-merge.scss</li>
+                                    <li>_get.scss</li>
+                                    <li>_str-explode.scss</li>
+                                  </ul>
+                                </li>
+                                <li>__index.scss</li>
+                                <li>_helper/scss</li>
+                                <li>_unit-utils</li>
+                              </ul>
+                            </li>
+                            <li>__index.scss</li>
+                          </ul>
+                        </li>
+                        <li>variables/</li>
+                        <li className="has-subtree">
+                          <ul className="tree">
+                            <li>__index.scss</li>
+                            <li>_color.scss</li>
+                            <li>_config.scss</li>
+                            <li>_easing.scss</li>
+                            <li>_grid.scss</li>
+                            <li>_spacing.scss</li>
+                            <li>_typography.scss</li>
+                            <li>_utilities.scss</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
