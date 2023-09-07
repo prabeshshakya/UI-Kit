@@ -1,0 +1,28 @@
+.folder-structure {
+  color: getColor("grey.2");
+  background: getColor("grey.5");
+  padding: 1.25rem;
+  border-radius: 4px;
+}
+
+.tree {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 0 !important;
+  li {
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    &:not(.has-subtree) {
+      border-left: 1px solid getColor("grey.2");
+      &::before {
+        content: "";
+        margin-right: 10px;
+        height: 1px;
+        width: 20px;
+        background: getColor("grey.2");
+        display: block;
+      }
+    }
+  }
+}
