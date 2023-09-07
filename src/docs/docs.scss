@@ -1,246 +1,247 @@
 // Typography and Colors should be from scss folder
 
-@import '../assets/scss/style.scss';
-@import 'table';
-@import 'tab';
-@import 'guide';
-@import 'navbar';
+@import "../assets/scss/style.scss";
+@import "table";
+@import "tab";
+@import "guide";
+@import "navbar";
 
 .container {
-	max-width: 1440px;
+  max-width: 1440px;
 }
 
 //Sidebar
 .sidebar {
-	height: calc(100vh - 70px);
-	position: sticky;
-	top: 70px;
-	padding-top: getSpacing('11x');
-	background-color: transparent;
-	overflow-y: auto;
+  height: calc(100vh - 70px);
+  position: sticky;
+  top: 70px;
+  padding-top: getSpacing("11x");
+  background-color: transparent;
+  overflow-y: auto;
 
-	@include m('right') {
-		@extend .sidebar;
-		top: 70px;
-	}
+  @include m("right") {
+    @extend .sidebar;
+    top: 70px;
+  }
 }
 
 .lead-text {
-	font-size: 20px;
-	margin: 6px 0;
+  font-size: 20px;
+  margin: 6px 0;
 }
 
 .page {
-	margin-top: getSpacing('10x');
+  margin-top: getSpacing("10x");
 
-	@include e('title') {
-		font-size: 2rem;
-		font-weight: 300;
-	}
+  @include e("title") {
+    font-size: 2rem;
+    font-weight: 300;
+  }
 }
 
 .content-block {
-	margin: 42px 0;
+  margin: 42px 0;
 }
 
 .color-box {
-	.strong-title {
-		margin-top: 8px !important;
-		font-weight: bold;
-	}
+  .strong-title {
+    margin-top: 8px !important;
+    font-weight: bold;
+  }
 }
 
 .color-box-1 {
-	p {
-		color: getColor('primary.base');
-	}
+  p {
+    color: getColor("primary.base");
+  }
 }
 
 .color-box-2 {
-	p {
-		color: getColor('danger.light');
-	}
+  p {
+    color: getColor("danger.light");
+  }
 }
 
 .color-box-3 {
-	p {
-		color: getColor('grey.4');
-	}
+  p {
+    color: getColor("grey.4");
+  }
 }
 
 .bg-box-1 {
-	p {
-		background-color: getColor('primary.base');
-		color: getColor('white.base');
-	}
+  p {
+    background-color: getColor("primary.base");
+    color: getColor("white.base");
+  }
 }
 
 .bg-box-2 {
-	p {
-		background-color: getColor('danger.light');
-		color: getColor('white.base');
-	}
+  p {
+    background-color: getColor("danger.light");
+    color: getColor("white.base");
+  }
 }
 
 .bg-box-3 {
-	p {
-		background-color: getColor('grey.4');
-		color: getColor('white.base');
-	}
+  p {
+    background-color: getColor("grey.4");
+    color: getColor("white.base");
+  }
 }
 
 .example-row {
-	background: #e5f7ff;
-	padding: getSpacing('3x');
-	margin-bottom: getSpacing('2x');
+  background: #e5f7ff;
+  padding: getSpacing("3x");
+  margin-bottom: getSpacing("2x");
 }
 
 .color-box {
-	p {
-		color: getColor('primary.base');
-	}
-	.strong-title {
-		margin-top: 8px !important;
-		font-weight: bold;
-	}
+  p {
+    color: getColor("primary.base");
+  }
+  .strong-title {
+    margin-top: 8px !important;
+    font-weight: bold;
+  }
 }
 
 .note-block {
-	background-color: getColor('white.base');
-	padding: 12px;
-	border-radius: 4px;
+  background-color: getColor("white.base");
+  padding: 12px;
+  border-radius: 4px;
 }
 
 .guide-wrapper {
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		margin-bottom: getSpacing('3x');
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: getSpacing("3x");
+  }
 
-	h3 {
-		font-size: 20px;
-	}
-	h4:not(.menu-group__title) {
-		font-size: 18px;
-	}
+  h3 {
+    font-size: 20px;
+  }
+  h4:not(.menu-group__title) {
+    font-size: 18px;
+  }
 
-	ul {
-		margin-bottom: getSpacing('5x');
+  ul {
+    margin-bottom: getSpacing("5x");
 
-		&.list-style {
-			list-style-type: disc;
-			margin-left: getSpacing('6x');
-		}
-	}
-	li:not(.react-tabs__tab) {
-		margin-bottom: getSpacing('2x');
-	}
+    &.list-style {
+      list-style-type: disc;
+      margin-left: getSpacing("6x");
+    }
+  }
+  li:not(.react-tabs__tab) {
+    margin-bottom: getSpacing("2x");
+  }
 }
 
 code:not(pre > code) {
-	padding: getSpacing('1x');
-	margin: 0 getSpacing('1x');
-	font-size: 12px;
-	background-color: #e9eef1;
-	border-radius: 2px;
-	color: getColor('danger.base');
+  padding: getSpacing("1x");
+  margin: 0 getSpacing("1x");
+  font-size: 12px;
+  background-color: #e9eef1;
+  border-radius: 2px;
+  color: getColor("danger.base");
 }
 
 .code-preview {
-	width: 100%;
-	margin: 0;
-	position: relative;
-	pre {
-		padding: getSpacing('5x') !important;
-		overflow-y: hidden;
-		white-space: pre;
-		border-radius: 4px;
-	}
-	code {
-		padding: 0;
-		margin: 0;
-		background: transparent;
-		color: inherit;
-	}
+  width: 100%;
+  margin: 0;
+  position: relative;
+  margin-bottom: 1rem;
+  pre {
+    padding: getSpacing("5x") !important;
+    overflow-y: hidden;
+    white-space: pre;
+    border-radius: 4px;
+  }
+  code {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    color: inherit;
+  }
 
-	.copy {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		background-color: #545454;
-		color: white;
-		border: none;
-		padding: 6px;
-		font-size: 12px;
-		border-radius: 4px;
-		cursor: pointer;
-		&:hover {
-			background: #494949;
-		}
-	}
+  .copy {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #545454;
+    color: white;
+    border: none;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background: #494949;
+    }
+  }
 }
 
 .menu-group {
-	margin-bottom: 32px;
-	@include e('title') {
-		font-weight: normal;
-		text-transform: uppercase;
-		font-size: 12px;
-		letter-spacing: 2px;
-		border-bottom: 1px solid rgba($black, 0.1);
-		padding-bottom: getSpacing('2x');
-		margin-bottom: 8px;
-	}
-	@include e('nodes') {
-		padding: 0;
-		@include e('single') {
-			color: getColor('black.base');
-			display: block;
-			margin-bottom: 12px;
-			font-size: 14px;
-			&:hover {
-				color: getColor('primary.base');
-			}
-			@include m('active') {
-				color: getColor('primary.base');
-			}
-		}
-	}
+  margin-bottom: 32px;
+  @include e("title") {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba($black, 0.1);
+    padding-bottom: getSpacing("2x");
+    margin-bottom: 8px;
+  }
+  @include e("nodes") {
+    padding: 0;
+    @include e("single") {
+      color: getColor("black.base");
+      display: block;
+      margin-bottom: 12px;
+      font-size: 14px;
+      &:hover {
+        color: getColor("primary.base");
+      }
+      @include m("active") {
+        color: getColor("primary.base");
+      }
+    }
+  }
 }
 
 .table {
-	width: 100%;
-	border-collapse: collapse;
-	table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
 
-	th {
-		text-align: -webkit-match-parent;
-		white-space: nowrap;
-	}
+  th {
+    text-align: -webkit-match-parent;
+    white-space: nowrap;
+  }
 
-	td,
-	th {
-		padding: 10px;
-		border-bottom: 1px solid rgb(222, 226, 230);
-		border-collapse: collapse;
-		white-space: nowrap;
-	}
+  td,
+  th {
+    padding: 10px;
+    border-bottom: 1px solid rgb(222, 226, 230);
+    border-collapse: collapse;
+    white-space: nowrap;
+  }
 }
 
 .docs-info {
-	padding: 1.25rem;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
-	background-color: rgba(getColor('primary.base'), 0.25);
-	border-left: 0.25rem solid rgba(getColor('primary.base'), 0.5);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  background-color: rgba(getColor("primary.base"), 0.25);
+  border-left: 0.25rem solid rgba(getColor("primary.base"), 0.5);
 }
 
 .eg-box {
-	background: rgba(getColor('primary.base'), 0.25);
-	padding: 0.5rem;
-	border: 1px solid rgba(getColor('primary.base'), 0.5);
+  background: rgba(getColor("primary.base"), 0.25);
+  padding: 0.5rem;
+  border: 1px solid rgba(getColor("primary.base"), 0.5);
 }
