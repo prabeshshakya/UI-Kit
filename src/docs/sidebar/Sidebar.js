@@ -122,13 +122,6 @@ const LeftSidebar = () => {
             </NavLink>
 
             <NavLink
-              to="/usages/responsive"
-              className="menu-group__nodes__single"
-              activeClassName="menu-group__nodes__single--active"
-            >
-              Responsive
-            </NavLink>
-            <NavLink
               to="/usages/helper"
               className="menu-group__nodes__single"
               activeClassName="menu-group__nodes__single--active"
