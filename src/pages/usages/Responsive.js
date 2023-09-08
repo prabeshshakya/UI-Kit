@@ -92,6 +92,31 @@ const mqmaxExample = `
   }
 }`;
 
+
+
+const mqInputExample = `.item{
+  @include mq(992px){
+    background-color: getColor(primary.base);
+  }
+}`
+const mqOutputExample = `.item{
+  @media screen and (min-width:992px){
+    background-color: getColor(primary.base);
+  }
+}`
+
+const mqMaxInputExapmle = `.item{
+  @include mqmax(992px){
+    background-color: getColor(primary.base);
+  }
+}`
+const mqMaxOutputExample = `.item{
+  @media screen and (max-width:992px){
+    background-color: getColor(primary.base);
+  }
+}`
+
+
 // const
 const Responsive = () => {
   return (
@@ -118,34 +143,16 @@ const Responsive = () => {
           <div className="row mb-4x">
             <div className="col-6">
               <p className="page_brief">
-                <b className="fw-500">Mixin input:</b>
-                <br />
-                <code>.item{`{`}</code>
-                <br />
-                <code>&nbsp;&nbsp;@include mq(992px){`{`}</code>
-                <br />
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
-                <br />
-                <code>&nbsp;&nbsp;{`}`}</code>
-                <br />
-                <code>{`}`}</code>
+              <p className="fw-500 mb-2x">Mixin input:</p>
+                <Syntax language="scss">{mqInputExample}</Syntax>
               </p>
             </div>
             <div className="col-6">
               <p className="page_brief">
-                <b className="fw-500">Mixin output:</b>
-                <br />
-                <code>.item{`{`}</code>
-                <br />
-                <code>
-                  &nbsp;&nbsp;@media screen and (min-width:992px){`{`}
-                </code>
-                <br />
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
-                <br />
-                <code>&nbsp;&nbsp;{`}`}</code>
-                <br />
-                <code>{`}`}</code>
+                <p className="fw-500 mb-2x">Mixin output:</p>
+                <Syntax language="scss">
+                  {mqOutputExample}
+                </Syntax>
               </p>
             </div>
           </div>
@@ -156,14 +163,11 @@ const Responsive = () => {
             </p>
             <div className="eg-box mobile-first-example"></div>
           </div>
-          <div className="mb-4x">
-            <Syntax language="scss">{mqExample}</Syntax>
-          </div>
         </div>
 
         {/* non mobile first example with max-width */}
         <div className="content-block">
-          <h4>Non-mobile first approach</h4>
+          <h4>Desktop first approach</h4>
           <p className="page__brief">
             This approach uses <b className="fw-600">max-width</b> media
             condition. For non-mobile first approach{" "}
@@ -176,34 +180,14 @@ const Responsive = () => {
           <div className="row mb-4x">
             <div className="col-6">
               <p className="page_brief">
-                <b className="fw-500">Mixin input:</b>
-                <br />
-                <code>.item{`{`}</code>
-                <br />
-                <code>&nbsp;&nbsp;@include mqmax(992px){`{`}</code>
-                <br />
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
-                <br />
-                <code>&nbsp;&nbsp;{`}`}</code>
-                <br />
-                <code>{`}`}</code>
+                <p className="fw-500 mb-2x">Mixin input:</p>
+                <Syntax language="scss">{mqMaxInputExapmle}</Syntax>
               </p>
             </div>
             <div className="col-6">
               <p className="page_brief">
-                <b className="fw-500">Mixin output:</b>
-                <br />
-                <code>.item{`{`}</code>
-                <br />
-                <code>
-                  &nbsp;&nbsp;@media screen and (max-width:992px){`{`}
-                </code>
-                <br />
-                <code>&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333333;</code>
-                <br />
-                <code>&nbsp;&nbsp;{`}`}</code>
-                <br />
-                <code>{`}`}</code>
+                <p className="fw-500 mb-2x">Mixin output:</p>
+                <Syntax language="scss">{mqMaxOutputExample}</Syntax>
               </p>
             </div>
           </div>
@@ -215,7 +199,7 @@ const Responsive = () => {
             <div className="eg-box non-mobile-first-example"></div>
           </div>
           <div className="mb-4x">
-            <Syntax language="scss">{mqmaxExample}</Syntax>
+            {/* Define how non-mobile first works */}
           </div>
         </div>
 
