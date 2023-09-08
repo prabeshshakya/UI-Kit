@@ -1,0 +1,48 @@
+.mobile-first-example::before {
+  content: "Default rule";
+  @include mq(map-get($grid-breakpoints, sm)) {
+    content: "min-width: 576px";
+  }
+  @include mq(map-get($grid-breakpoints, md)) {
+    content: "min-width: 768px";
+  }
+  @include mq(map-get($grid-breakpoints, lg)) {
+    content: "min-width: 992px";
+  }
+  // usage with arbitrary values
+  @include mq(1024px) {
+    content: "min-width: 1024px";
+  }
+  @include mq(map-get($grid-breakpoints, xl)) {
+    content: "min-width: 1200px";
+  }
+  @include mq(map-get($grid-breakpoints, xxl)) {
+    content: "min-width: 1400px";
+  }
+}
+.non-mobile-first-example::before {
+  content: "Default rule";
+  @include mqmax(map-get($grid-breakpoints, xxl)) {
+    content: "max-width: 1400px";
+  }
+  @include mqmax(map-get($grid-breakpoints, xl)) {
+    content: "max-width: 1200px";
+  }
+  // usage with arbitrary values
+  @include mqmax(1024px) {
+    content: "max-width: 1024px";
+  }
+  @include mqmax(map-get($grid-breakpoints, lg)) {
+    content: "max-width: 992px";
+  }
+  @include mqmax(map-get($grid-breakpoints, md)) {
+    content: "max-width: 768px";
+  }
+  @include mqmax(map-get($grid-breakpoints, sm)) {
+    content: "max-width: 576px";
+  }
+
+  @include mqmax(map-get($grid-breakpoints, xs)) {
+    content: "max-width: 0";
+  }
+}
