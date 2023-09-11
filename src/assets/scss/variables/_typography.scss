@@ -1,44 +1,44 @@
 // Custom font url
-$font-url: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap' !default;
-$font-custom: 'Inter' !default;
+$font-url: "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" !default;
+$font-custom: "Inter" !default;
 
 // Font Declaration
-$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-	Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-	sans-serif;
+$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  sans-serif;
 $font-primary: $font-sans;
 
 $font-sizes: (
-	h1: (
-		xs: rem(32),
-		md: rem(30),
-		// so on..
-	),
-	h2: (
-		xs: rem(18),
-		xl: rem(22),
-		// so on..
-	),
-	h3: (
-		xs: 22px,
-		xl: 18px,
-		// so on..
-	),
-	h4: (
-		xs: 20px,
-		xl: 1rem,
-		// so on..
-	),
-	h5: (
-		xs: 1rem,
-		// so on..
-	),
-	h6: (
-		xs: 1rem,
-		// so on..
-	),
-	p: (
-		xs: 1rem,
-		// so on..
-	),
+  h1: (
+    xs: rem(30),
+    md: rem(32),
+    // so on..
+  ),
+  h2: (
+    xs: rem(18),
+    md: rem(24),
+    // so on..
+  ),
+  h3: (
+    xs: rem(16),
+    md: rem(20),
+    // so on..
+  ),
+  h4: (
+    xs: rem(14),
+    md: rem(18),
+    // so on..
+  ),
+  h5: (
+    xs: rem(16),
+    // so on..
+  ),
+  h6: (
+    xs: rem(16),
+    // so on..
+  ),
+  p: (
+    xs: rem(16),
+    // so on..
+  ),
 );
