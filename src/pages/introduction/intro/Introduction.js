@@ -71,7 +71,7 @@ const Intro = () => {
                 </li>
                 <li>
                   Clone the repo from github. (Contact Prabesh Shakya for github
-                  access.)
+                  access).
                   <a
                     className="ml-1x"
                     href="https://github.com/prabeshshakya/UI-Kit"
@@ -164,10 +164,11 @@ const Intro = () => {
                 files, such as:
               </p>
               <Syntax language="scss">{specificScss}</Syntax>
-              <p>
-                <i>Note:</i> The name of a partial file always begins with an
-                underscore <code>_</code>.
-              </p>
+              <blockquote className="docs-info">
+                <strong>Note:</strong> The name of a partial file always begins
+                with an underscore <code>_</code>.
+              </blockquote>
+
               <p>
                 As you might have noticed, in every folder, there is a file,
                 called <code>__index.scss</code>. It is there because you no
