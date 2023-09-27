@@ -1,16 +1,11 @@
 // Base Color
+$primary: #4fc3f7 !default;
+$secondary: #2ecc71 !default;
 $white: #ffffff !default;
 $black: #000000 !default;
-$blue: #0556f3;
+$blue: #102b7b;
 $purple: #6501e5;
 $purple-dark: #4f03af;
-$red: #e34c4c;
-$green: #56bd5b;
-$yellow: #f79522;
-
-$primary: #4fc3f7 !default;
-$secondary: #66bb6a !default;
-
 $yellow: #ffc107 !default;
 $green: #249f5d !default;
 $red: #ef5350 !default;
@@ -18,9 +13,11 @@ $red: #ef5350 !default;
 $colorMap: (
   "white": (
     "base": $white,
+    "dark": #f4f7f9,
   ),
   "black": (
     "base": $black,
+    "light": #1b1a19,
   ),
   "primary": (
     "base": $primary,

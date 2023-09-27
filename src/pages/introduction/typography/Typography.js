@@ -101,69 +101,71 @@ xs: rem(16),
             <p>
               All HTML headings, &lt;h1&gt; through &lt;/h1&gt;, are available.
             </p>
-            <table className="ui-html-table mt-4x mb-8x">
-              <thead>
-                <th>Heading</th>
-                <th>Example</th>
-                <th>Font size</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <code>&lt;h1&gt; &lt;/h1&gt;</code>
-                  </td>
-                  <td>
-                    <h1 className="mb-0x">h1 heading</h1>
-                  </td>
-                  <td>32px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <code>&lt;h2&gt; &lt;/h2&gt;</code>
-                  </td>
-                  <td>
-                    <h2 className="mb-0x">h2 heading</h2>
-                  </td>
-                  <td>24px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <code>&lt;h3&gt; &lt;/h3&gt;</code>
-                  </td>
-                  <td>
-                    <h3 className="mb-0x">h3 heading</h3>
-                  </td>
-                  <td>20px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <code>&lt;h4&gt; &lt;/h4&gt;</code>
-                  </td>
-                  <td>
-                    <h4 className="mb-0x">h4 heading</h4>
-                  </td>
-                  <td>18px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <code>&lt;h5&gt; &lt;/h5&gt;</code>
-                  </td>
-                  <td>
-                    <h5 className="mb-0x">h5 heading</h5>
-                  </td>
-                  <td>16px</td>
-                </tr>
-                <tr>
-                  <td>
-                    <code>&lt;h6&gt; &lt;/h6&gt;</code>
-                  </td>
-                  <td>
-                    <h6 className="mb-0x">h6 heading</h6>
-                  </td>
-                  <td>16px</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table__wrapper">
+              <table className="ui-html-table mt-4x mb-8x">
+                <thead>
+                  <th>Heading</th>
+                  <th>Example</th>
+                  <th>Font size</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <code>&lt;h1&gt; &lt;/h1&gt;</code>
+                    </td>
+                    <td>
+                      <h1 className="mb-0x">h1 heading</h1>
+                    </td>
+                    <td>32px</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>&lt;h2&gt; &lt;/h2&gt;</code>
+                    </td>
+                    <td>
+                      <h2 className="mb-0x">h2 heading</h2>
+                    </td>
+                    <td>24px</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>&lt;h3&gt; &lt;/h3&gt;</code>
+                    </td>
+                    <td>
+                      <h3 className="mb-0x">h3 heading</h3>
+                    </td>
+                    <td>20px</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>&lt;h4&gt; &lt;/h4&gt;</code>
+                    </td>
+                    <td>
+                      <h4 className="mb-0x">h4 heading</h4>
+                    </td>
+                    <td>18px</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>&lt;h5&gt; &lt;/h5&gt;</code>
+                    </td>
+                    <td>
+                      <h5 className="mb-0x">h5 heading</h5>
+                    </td>
+                    <td>16px</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <code>&lt;h6&gt; &lt;/h6&gt;</code>
+                    </td>
+                    <td>
+                      <h6 className="mb-0x">h6 heading</h6>
+                    </td>
+                    <td>16px</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div className="content-block">
             <h4 id="variables">Variables</h4>

@@ -1,9 +1,9 @@
-import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Syntax } from '../../../docs/syntax-highlighter';
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Syntax } from "../../../docs/syntax-highlighter";
 
 const AlignItems = () => {
-	const code = `
+  const code = `
 	<div className="d-flex align-items-start">
 		<div>Flex item</div>
 		<div>Flex item</div>
@@ -35,242 +35,246 @@ const AlignItems = () => {
 	</div>
     `;
 
-	return (
-		<div className='content-block'>
-			<h2 id='align-items'>Align Items</h2>
+  return (
+    <>
+      <div className="content-block">
+        <h2 id="align-items">Align Items</h2>
 
-			<p className='page__brief'>
-				Use <code>align-items</code> utilities on flexbox containers to change
-				the alignment of flex items on the cross axis (the y-axis to start,
-				x-axis if <code>flex-direction: column</code>). Choose from{' '}
-				<code>start</code>, <code>end</code>, <code>center</code>,{' '}
-				<code>baseline</code>, or <code>stretch</code> (browser default).
-			</p>
+        <p className="page__brief">
+          Use <code>align-items</code> utilities on flexbox containers to change
+          the alignment of flex items on the cross axis (the y-axis to start,
+          x-axis if <code>flex-direction: column</code>). Choose from{" "}
+          <code>start</code>, <code>end</code>, <code>center</code>,{" "}
+          <code>baseline</code>, or <code>stretch</code> (browser default).
+        </p>
 
-			<p>
-				Following are the variations for <code>align-items</code>:
-			</p>
-			<ul className='list-style'>
-				<li>
-					<code>align-items-stretch:</code> Items are stretched to fit the
-					container(Browser default)
-				</li>
-				<li>
-					<code>align-items-center:</code> Items are positioned at the center of
-					the container
-				</li>
-				<li>
-					<code>align-items-start:</code> Items are positioned at the beginning
-					of the container
-				</li>
-				<li>
-					<code>align-items-end:</code> Items are positioned at the end of the
-					container
-				</li>
-				<li>
-					<code>align-items-base:</code> Items are positioned at the baseline of
-					the container
-				</li>
-			</ul>
+        <p>
+          Following are the variations for <code>align-items</code>:
+        </p>
+        <ul className="list-style">
+          <li>
+            <code>align-items-stretch:</code> Items are stretched to fit the
+            container(Browser default)
+          </li>
+          <li>
+            <code>align-items-center:</code> Items are positioned at the center
+            of the container
+          </li>
+          <li>
+            <code>align-items-start:</code> Items are positioned at the
+            beginning of the container
+          </li>
+          <li>
+            <code>align-items-end:</code> Items are positioned at the end of the
+            container
+          </li>
+          <li>
+            <code>align-items-base:</code> Items are positioned at the baseline
+            of the container
+          </li>
+        </ul>
 
-			<Tabs>
-				<TabList>
-					<Tab>Preview</Tab>
-					<Tab>Code</Tab>
-				</TabList>
-				<TabPanel>
-					<h5 className='text-center'>Start</h5>
-					<div className='example-row'>
-						<div
-							className='d-flex align-items-start'
-							style={{ height: '100px' }}
-						>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-						</div>
-					</div>
+        <Tabs>
+          <TabList>
+            <Tab>Preview</Tab>
+            <Tab>Code</Tab>
+          </TabList>
+          <TabPanel>
+            <h5 className="text-center">Start</h5>
+            <div className="example-row">
+              <div
+                className="d-flex align-items-start"
+                style={{ height: "100px" }}
+              >
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+              </div>
+            </div>
 
-					<h5 className='text-center'>End</h5>
-					<div className='example-row'>
-						<div
-							className='d-flex align-items-end'
-							style={{ height: '100px' }}
-						>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-						</div>
-					</div>
+            <h5 className="text-center">End</h5>
+            <div className="example-row">
+              <div
+                className="d-flex align-items-end"
+                style={{ height: "100px" }}
+              >
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+              </div>
+            </div>
 
-					<h5 className='text-center'>Center</h5>
-					<div className='example-row'>
-						<div
-							className='d-flex align-items-center'
-							style={{ height: '100px' }}
-						>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-						</div>
-					</div>
+            <h5 className="text-center">Center</h5>
+            <div className="example-row">
+              <div
+                className="d-flex align-items-center"
+                style={{ height: "100px" }}
+              >
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+              </div>
+            </div>
 
-					<h5 className='text-center'>Baseline</h5>
-					<div className='example-row'>
-						<div
-							className='d-flex align-items-base'
-							style={{ height: '100px' }}
-						>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-						</div>
-					</div>
+            <h5 className="text-center">Baseline</h5>
+            <div className="example-row">
+              <div
+                className="d-flex align-items-base"
+                style={{ height: "100px" }}
+              >
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+              </div>
+            </div>
 
-					<h5 className='text-center'>Stretch</h5>
-					<div className='example-row'>
-						<div
-							className='d-flex align-items-stretch'
-							style={{ height: '100px' }}
-						>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-							<div className='eg-box'>Flex item</div>
-						</div>
-					</div>
-				</TabPanel>
-				<TabPanel>
-					<div className='preview-container'>
-						<div className='d-flex'>
-							<div className='code-preview'>
-								<Syntax language='html'>{code}</Syntax>
-							</div>
-						</div>
-					</div>
-				</TabPanel>
-			</Tabs>
-
-			<h4>Available Classes</h4>
-
-			<table className='table mb-4x'>
-				<thead>
-					<tr>
-						<th scope='col'>
-							xs
-							<br />
-							<span>&lt;576px</span>
-						</th>
-						<th scope='col'>
-							sm
-							<br />
-							<span>≥576px</span>
-						</th>
-						<th scope='col'>
-							md
-							<br />
-							<span>≥768px</span>
-						</th>
-						<th scope='col'>
-							lg
-							<br />
-							<span>≥992px</span>
-						</th>
-						<th scope='col'>
-							xl
-							<br />
-							<span>≥1200px</span>
-						</th>
-						<th scope='col'>
-							xxl
-							<br />
-							<span>≥1400px</span>
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<code>align-items-start</code>
-						</td>
-						<td>
-							<code>align-items-sm-start</code>
-						</td>
-						<td>
-							<code>align-items-md-start</code>
-						</td>
-						<td>
-							<code>align-items-lg-start</code>
-						</td>
-						<td>
-							<code>align-items-xl-start</code>
-						</td>
-						<td>
-							<code>align-items-xxl-start</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>align-items-end</code>
-						</td>
-						<td>
-							<code>align-items-sm-end</code>
-						</td>
-						<td>
-							<code>align-items-md-end</code>
-						</td>
-						<td>
-							<code>align-items-lg-end</code>
-						</td>
-						<td>
-							<code>align-items-xl-end</code>
-						</td>
-						<td>
-							<code>align-items-xxl-end</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>align-items-base</code>
-						</td>
-						<td>
-							<code>align-items-sm-base</code>
-						</td>
-						<td>
-							<code>align-items-md-base</code>
-						</td>
-						<td>
-							<code>align-items-lg-base</code>
-						</td>
-						<td>
-							<code>align-items-xl-base</code>
-						</td>
-						<td>
-							<code>align-items-xxl-base</code>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<code>align-items-stretch</code>
-						</td>
-						<td>
-							<code>align-items-sm-stretch</code>
-						</td>
-						<td>
-							<code>align-items-md-stretch</code>
-						</td>
-						<td>
-							<code>align-items-lg-stretch</code>
-						</td>
-						<td>
-							<code>align-items-xl-stretch</code>
-						</td>
-						<td>
-							<code>align-items-xxl-stretch</code>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	);
+            <h5 className="text-center">Stretch</h5>
+            <div className="example-row">
+              <div
+                className="d-flex align-items-stretch"
+                style={{ height: "100px" }}
+              >
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+                <div className="eg-box">Flex item</div>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="preview-container">
+              <div className="d-flex">
+                <div className="code-preview">
+                  <Syntax language="html">{code}</Syntax>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+        </Tabs>
+      </div>
+      <div class="content-block">
+        <h4>Available Classes</h4>
+        <div className="table__wrapper">
+          <table className="table mb-4x">
+            <thead>
+              <tr>
+                <th scope="col">
+                  xs
+                  <br />
+                  <span>&lt;576px</span>
+                </th>
+                <th scope="col">
+                  sm
+                  <br />
+                  <span>≥576px</span>
+                </th>
+                <th scope="col">
+                  md
+                  <br />
+                  <span>≥768px</span>
+                </th>
+                <th scope="col">
+                  lg
+                  <br />
+                  <span>≥992px</span>
+                </th>
+                <th scope="col">
+                  xl
+                  <br />
+                  <span>≥1200px</span>
+                </th>
+                <th scope="col">
+                  xxl
+                  <br />
+                  <span>≥1400px</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>align-items-start</code>
+                </td>
+                <td>
+                  <code>align-items-sm-start</code>
+                </td>
+                <td>
+                  <code>align-items-md-start</code>
+                </td>
+                <td>
+                  <code>align-items-lg-start</code>
+                </td>
+                <td>
+                  <code>align-items-xl-start</code>
+                </td>
+                <td>
+                  <code>align-items-xxl-start</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>align-items-end</code>
+                </td>
+                <td>
+                  <code>align-items-sm-end</code>
+                </td>
+                <td>
+                  <code>align-items-md-end</code>
+                </td>
+                <td>
+                  <code>align-items-lg-end</code>
+                </td>
+                <td>
+                  <code>align-items-xl-end</code>
+                </td>
+                <td>
+                  <code>align-items-xxl-end</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>align-items-base</code>
+                </td>
+                <td>
+                  <code>align-items-sm-base</code>
+                </td>
+                <td>
+                  <code>align-items-md-base</code>
+                </td>
+                <td>
+                  <code>align-items-lg-base</code>
+                </td>
+                <td>
+                  <code>align-items-xl-base</code>
+                </td>
+                <td>
+                  <code>align-items-xxl-base</code>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>align-items-stretch</code>
+                </td>
+                <td>
+                  <code>align-items-sm-stretch</code>
+                </td>
+                <td>
+                  <code>align-items-md-stretch</code>
+                </td>
+                <td>
+                  <code>align-items-lg-stretch</code>
+                </td>
+                <td>
+                  <code>align-items-xl-stretch</code>
+                </td>
+                <td>
+                  <code>align-items-xxl-stretch</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </>
+  );
 };
 export default AlignItems;

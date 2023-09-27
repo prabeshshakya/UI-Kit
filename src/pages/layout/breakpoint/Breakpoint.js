@@ -26,20 +26,23 @@ $xl-device: 1200px;
   return (
     <div className="page">
       <div className="title-area">
-        <h2 className="page__title">Breakpoints</h2>
+        <div className="content-block">
+          <h2 className="page__title">Breakpoints</h2>
 
-        <p>
-          These breakpoints are customizable via Sass—you’ll find them in a Sass
-          map in our <code>variables/_breakpoints.scss</code> stylesheet and{" "}
-          <strong>mixins</strong> are available in our{" "}
-          <code>utilities/_utilities.scss</code>
-        </p>
-
-        <div className="code-preview mb-5x">
-          <Syntax language="scss">{breakpoints}</Syntax>
+          <p>
+            These breakpoints are customizable via Sass—you’ll find them in a
+            Sass map in our <code>variables/_breakpoints.scss</code> stylesheet
+            and <strong>mixins</strong> are available in our{" "}
+            <code>utilities/_utilities.scss</code>
+          </p>
+        </div>
+        <div className="content-block">
+          <div className="code-preview mb-5x">
+            <Syntax language="scss">{breakpoints}</Syntax>
+          </div>
         </div>
 
-        <div className="doc-container">
+        <div className="content-block">
           <h4>Basic Usage</h4>
           <p className="page__brief mb-4x">
             In-order to use this <strong>mediaquery</strong> we have two way

@@ -9,37 +9,38 @@
 
 // Reset CSS
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // Base Code
 html,
 body {
-	font-size: 100%;
+  font-size: 100%;
+  background-color: getColor("white.dark");
 }
 
 body {
-	-webkit-font-smoothing: antialiased;
-	color: getColor('black.base');
-	font-family: $font-primary;
-	font-size: $base__font-size;
-	text-rendering: optimizeLegibility;
-	line-height: $base__body__line;
+  -webkit-font-smoothing: antialiased;
+  color: getColor("black.light");
+  font-family: $font-primary;
+  font-size: $base__font-size;
+  text-rendering: optimizeLegibility;
+  line-height: $base__body__line;
 }
 
 a {
-	outline: none;
-	color: getColor('primary.base');
-	text-decoration: none;
-	&:hover {
-		color: getColor('primary.dark');
-	}
+  outline: none;
+  color: getColor("primary.base");
+  text-decoration: none;
+  &:hover {
+    color: getColor("primary.dark");
+  }
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
