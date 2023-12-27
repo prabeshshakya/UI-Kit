@@ -21,6 +21,7 @@
 		"eject": "react-scripts eject",
 		"scss": "sass --watch ./src/assets/scss:./src/assets/css",
 		"scss-doc": "sass --watch ./src/docs:./src/docs"
+		
 	},
 	"eslintConfig": {
 		"extends": "react-app"
