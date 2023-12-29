@@ -48,6 +48,13 @@ xs: rem(16),
 ),
 );
 	`;
+
+  const h1 = `<h1> </h1>`;
+  const h2 = `<h2> </h2>`;
+  const h3 = `<h3> </h3>`;
+  const h4 = `<h4> </h4>`;
+  const h5 = `<h5> </h5>`;
+  const h6 = `<h6> </h6>`;
   return (
     <div className="row">
       <div className="col-10">
@@ -111,7 +118,7 @@ xs: rem(16),
                 <tbody>
                   <tr>
                     <td>
-                      <code>&lt;h1&gt; &lt;/h1&gt;</code>
+                      <code>{h1}</code>
                     </td>
                     <td>
                       <h1 className="mb-0x">h1 heading</h1>
@@ -120,7 +127,7 @@ xs: rem(16),
                   </tr>
                   <tr>
                     <td>
-                      <code>&lt;h2&gt; &lt;/h2&gt;</code>
+                      <code>{h2}</code>
                     </td>
                     <td>
                       <h2 className="mb-0x">h2 heading</h2>
@@ -129,7 +136,7 @@ xs: rem(16),
                   </tr>
                   <tr>
                     <td>
-                      <code>&lt;h3&gt; &lt;/h3&gt;</code>
+                      <code>{h3}</code>
                     </td>
                     <td>
                       <h3 className="mb-0x">h3 heading</h3>
@@ -138,7 +145,7 @@ xs: rem(16),
                   </tr>
                   <tr>
                     <td>
-                      <code>&lt;h4&gt; &lt;/h4&gt;</code>
+                      <code>{h4}</code>
                     </td>
                     <td>
                       <h4 className="mb-0x">h4 heading</h4>
@@ -147,7 +154,7 @@ xs: rem(16),
                   </tr>
                   <tr>
                     <td>
-                      <code>&lt;h5&gt; &lt;/h5&gt;</code>
+                      <code>{h5}</code>
                     </td>
                     <td>
                       <h5 className="mb-0x">h5 heading</h5>
@@ -156,7 +163,7 @@ xs: rem(16),
                   </tr>
                   <tr>
                     <td>
-                      <code>&lt;h6&gt; &lt;/h6&gt;</code>
+                      <code>{h6}</code>
                     </td>
                     <td>
                       <h6 className="mb-0x">h6 heading</h6>

@@ -267,3 +267,29 @@ code:not(pre > code) {
   padding: 0.5rem;
   border: 1px solid rgba(getColor("primary.base"), 0.5);
 }
+
+body {
+  background-color: getColor("white.dark");
+  color: getColor("black.light");
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-primary;
+  font-size: $base__font-size;
+  text-rendering: optimizeLegibility;
+  line-height: $base__body__line;
+}
+
+a {
+  outline: none;
+  color: getColor("primary.base");
+  text-decoration: none;
+  &:hover {
+    color: getColor("primary.dark");
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
