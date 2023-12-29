@@ -274,7 +274,7 @@ body {
   font-size: 100%;
   -webkit-font-smoothing: antialiased;
   font-family: $font-primary;
-  font-size: $base__font-size;
+  font-size: rem($base__font-size);
   text-rendering: optimizeLegibility;
   line-height: $base__body__line;
 }
