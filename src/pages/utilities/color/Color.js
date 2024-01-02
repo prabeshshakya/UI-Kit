@@ -164,10 +164,13 @@ $colorMap: (
       <div className="col">
         <div className="page">
           <div className="title-area">
-            <h2 className="page__title">Colors / Background Colors</h2>
-            <p className="lead-text">
-              Include color with utility classes and add your own custom color.
-            </p>
+            <div className="content-block">
+              <h2 className="page__title">Colors / Background Colors</h2>
+              <p className="lead-text">
+                Include color with utility classes and add your own custom
+                color.
+              </p>
+            </div>
             <div className="content-block">
               <p className="page__brief">
                 We can use color utility to colorize text, background. We can
@@ -191,39 +194,41 @@ $colorMap: (
                   </TabList>
                   <TabPanel>
                     <div className="preview-container">
-                      <table className="ui-html-table mb-10x">
-                        <tr>
-                          <td>
-                            <h3 className="color-primary--base mb-0x">
-                              This is primary text
-                            </h3>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h3 className="color-secondary--light mb-0x">
-                              This is secondary text
-                            </h3>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h3 className="color-black--base mb-0x">
-                              This is black text
-                            </h3>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h3 className="color-success--base mb-0x">
-                              This is success (green) text
-                            </h3>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>...</td>
-                        </tr>
-                      </table>
+                      <div class="table__wrapper">
+                        <table className="ui-html-table mb-10x">
+                          <tr>
+                            <td>
+                              <h3 className="color-primary--base mb-0x">
+                                This is primary text
+                              </h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3 className="color-secondary--light mb-0x">
+                                This is secondary text
+                              </h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3 className="color-black--base mb-0x">
+                                This is black text
+                              </h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h3 className="color-success--base mb-0x">
+                                This is success (green) text
+                              </h3>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>...</td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
                   </TabPanel>
                   <TabPanel>
@@ -237,7 +242,8 @@ $colorMap: (
                   </TabPanel>
                 </Tabs>
               </div>
-
+            </div>
+            <div className="content-block mt-sm-4x">
               <h4 id="background-color">Background Colors</h4>
 
               <div className="usage-markup-preview">
@@ -376,26 +382,28 @@ $colorMap: (
                 Variables in SCSS are prefixed with a <code>'$'</code> sign and
                 can be named whatever you like.
               </p>
-              <div className="content-block">
-                <h4>Examples:</h4>
-                <div className="code-preview">
-                  <Syntax language="scss">{customColorVariable}</Syntax>
-                </div>
+            </div>
+            <div className="content-block">
+              <h4>Examples:</h4>
+              <div className="code-preview">
+                <Syntax language="scss">{customColorVariable}</Syntax>
               </div>
-
+            </div>
+            <div className="content-block">
               <h3>
                 For setting up Scss color variable with <code>$colorMap</code>
               </h3>
 
               <p>First, you have to created a color variable.</p>
+            </div>
 
-              <div className="content-block">
-                <h4>Examples:</h4>
-                <div className="code-preview">
-                  <Syntax language="scss">{customColorMap}</Syntax>
-                </div>
+            <div className="content-block">
+              <h4>Examples:</h4>
+              <div className="code-preview">
+                <Syntax language="scss">{customColorMap}</Syntax>
               </div>
-
+            </div>
+            <div className="content-block">
               <p>
                 After creating Scss color with Scss map. We can use it in HTML
                 as:

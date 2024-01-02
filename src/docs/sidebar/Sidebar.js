@@ -24,42 +24,6 @@ const LeftSidebar = () => {
       </div>
 
       <div className="menu-group">
-        <h4 className="menu-group__title">Forms</h4>
-        <div className="menu-group__nodes">
-          <NavLink
-            to="/forms"
-            className="menu-group__nodes__single"
-            activeClassName="menu-group__nodes__single--active"
-          >
-            Form Elements
-          </NavLink>
-        </div>
-      </div>
-
-      <div className="menu-group">
-        <h4 className="menu-group__title">Components</h4>
-        <div className="menu-group__contents">
-          <div className="menu-group__nodes">
-            <NavLink
-              to="/accordion"
-              className="menu-group__nodes__single"
-              activeClassName="menu-group__nodes__single--active"
-            >
-              Accordion
-            </NavLink>
-          </div>
-          <div className="menu-group__nodes">
-            <NavLink
-              to="/button"
-              className="menu-group__nodes__single"
-              activeClassName="menu-group__nodes__single--active"
-            >
-              Button
-            </NavLink>
-          </div>
-        </div>
-      </div>
-      <div className="menu-group">
         <h4 className="menu-group__title">Utilities</h4>
         <div className="menu-group__contents">
           <div className="menu-group__nodes">

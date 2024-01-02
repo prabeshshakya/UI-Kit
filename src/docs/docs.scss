@@ -55,6 +55,10 @@
 
 .content-block {
   margin: 42px 0;
+  background: white;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: rgba(179, 179, 179, 0.25) 0px 2px 4px 0px;
 }
 
 .color-box {
@@ -217,10 +221,10 @@ code:not(pre > code) {
       margin-bottom: 12px;
       font-size: 14px;
       &:hover {
-        color: getColor("primary.base");
+        color: getColor("secondary.base");
       }
       @include m("active") {
-        color: getColor("primary.base");
+        color: getColor("secondary.base");
       }
     }
   }
@@ -230,6 +234,7 @@ code:not(pre > code) {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
+  overflow: auto;
 
   th {
     text-align: -webkit-match-parent;
@@ -242,6 +247,10 @@ code:not(pre > code) {
     border-bottom: 1px solid rgb(222, 226, 230);
     border-collapse: collapse;
     white-space: nowrap;
+  }
+
+  @include e(wrapper) {
+    overflow: auto;
   }
 }
 
@@ -257,4 +266,30 @@ code:not(pre > code) {
   background: rgba(getColor("primary.base"), 0.25);
   padding: 0.5rem;
   border: 1px solid rgba(getColor("primary.base"), 0.5);
+}
+
+body {
+  background-color: getColor("white.dark");
+  color: getColor("black.light");
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-primary;
+  font-size: rem($base__font-size);
+  text-rendering: optimizeLegibility;
+  line-height: $base__body__line;
+}
+
+a {
+  outline: none;
+  color: getColor("primary.base");
+  text-decoration: none;
+  &:hover {
+    color: getColor("primary.dark");
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }

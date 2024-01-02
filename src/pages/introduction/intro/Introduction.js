@@ -87,27 +87,28 @@ const Intro = () => {
                   listed in package.json.
                 </li>
               </ol>
-
-              <div className="content-block">
-                <h4 id="npm">npm</h4>
-                <p className="page__list-paragraph">Install with npm:</p>
-                <div className="code-preview">
-                  <Syntax language="properties">$ npm install</Syntax>
-                </div>
+            </div>
+            <div className="content-block">
+              <h4 id="npm">npm</h4>
+              <p className="page__list-paragraph">Install with npm:</p>
+              <div className="code-preview">
+                <Syntax language="properties">$ npm install</Syntax>
               </div>
-              <div className="content-block">
-                <h4 id="yarn">yarn</h4>
-                <p className="page__list-paragraph">Install with yarn:</p>
-                <div className="code-preview">
-                  <Syntax language="properties">$ yarn install</Syntax>
-                </div>
+            </div>
+            <div className="content-block">
+              <h4 id="yarn">yarn</h4>
+              <p className="page__list-paragraph">Install with yarn:</p>
+              <div className="code-preview">
+                <Syntax language="properties">$ yarn install</Syntax>
               </div>
-              <div className="content-block">
-                <h4 id="npm-script">Using npm scripts</h4>
-                <p>
-                  Run npm run to see all the npm scripts in your terminal.
-                  Primary tasks include:
-                </p>
+            </div>
+            <div className="content-block">
+              <h4 id="npm-script">Using npm scripts</h4>
+              <p>
+                Run npm run to see all the npm scripts in your terminal. Primary
+                tasks include:
+              </p>
+              <div className="table__wrapper">
                 <table className="ui-html-table mt-4x mb-8x">
                   <thead>
                     <th>Task</th>

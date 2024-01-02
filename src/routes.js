@@ -22,7 +22,7 @@ import UsageHelper from "./pages/usages/Helper";
 function AppRouter() {
   return (
     <Switch>
-      <Route path="/" exact component={Introduction} />
+      <Route exact path="/" component={Introduction} />
       <Route path="/button" component={Button} />
       <Route path="/forms" component={FormElements} />
       <Route path="/typography" component={Typography} />
@@ -35,7 +35,6 @@ function AppRouter() {
       <Route path="/grid" component={Grid} />
       <Route path="/flex" component={Flex} />
       <Route path="/bem" component={Bem} />
-
       <Route path="/usages/responsive" component={UsageResponsive} />
       <Route path="/usages/helper" component={UsageHelper} />
     </Switch>
