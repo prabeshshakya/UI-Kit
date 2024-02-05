@@ -15,6 +15,7 @@ import Flex from "./pages/utilities/flex/Flex";
 import Bem from "./pages/usages/bem/Bem";
 import UsageResponsive from "./pages/usages/Responsive";
 import UsageHelper from "./pages/usages/Helper";
+import Icons from "./pages/icons/Icons";
 
 /**
  * App Router.
@@ -27,6 +28,7 @@ function AppRouter() {
       <Route path="/forms" component={FormElements} />
       <Route path="/typography" component={Typography} />
       <Route path="/accordion" component={AccordionDefault} />
+      <Route path="/Icon" component={Icons} />
       <Route path="/colors" component={Color} />
       <Route path="/display" component={Display} />
       <Route path="/spacing" component={Spacing} />
