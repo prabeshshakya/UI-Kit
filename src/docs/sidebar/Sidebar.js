@@ -73,6 +73,19 @@ const LeftSidebar = () => {
           </div>
         </div>
       </div>
+
+      <div className="menu-group">
+        <h4 className="menu-group__title">Extend</h4>
+        <div className="menu-group__contents">
+          <NavLink
+            to="/Icon"
+            className="menu-group__nodes__single"
+            activeClassName="menu-group__nodes__single--active"
+          >
+            Icon
+          </NavLink>
+        </div>
+      </div>
       <div className="menu-group">
         <h4 className="menu-group__title">Usages</h4>
         <div className="menu-group__contents">
